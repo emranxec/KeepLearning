@@ -1863,7 +1863,82 @@ public class UniversityController {
 > Entity inheritance means that we can use polymorphic queries for retrieving 
 all the subclass entities when querying for a superclass.
 
+##### Hibernate Single Table Strategy
 
+- Simplest to implement.
+- Only one table to deal with.
+- Tables are not normalized.
+
+> In case of single table strategy, there is a single table created per inheritance hierachy.
+```java
+@Entity
+@Table(name="VEHICLE")
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE) //Least normalisation strategy
+public class Vehicle{}
+
+@Entity
+@Table(name="TWO_WHEELER")
+//@DiscriminatorValue("Bike")
+public class TwoWheeler extends Vehicle{}
+
+
+@Entity
+@Table(name="FOUR_WHEELER")
+//@DiscriminatorValue("Car")
+public class FourWheeler extends Vehicle{}
+```
+##### Hibernate Table Per Class Strategy
+- You can define NOT NULL constraints on the table.
+- Tables are not normalized.
+- Select statements require more time to execute as UNION operation is applied.
+
+>In case of table per class strategy, there are no. of tables created equivalent to exact no.
+> of concrete entites defined in the inheritance hierachy.
+
+```java
+@Entity
+@Table(name="VEHICLE")
+@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS) //slightly more normalized
+public class Vehicle{}
+
+@Entity
+@Table(name="TWO_WHEELER")
+public class TwoWheeler extends Vehicle{}
+
+@Entity
+@Table(name="FOUR_WHEELER")
+public class FourWheeler extends Vehicle{}
+
+```
+##### Hibernate Joined Table Strategy
+- Tables are normalized.
+- You can define NOT NULL constraints.
+- Low performance as it runs OUTER JOIN as well as INNER JOIN in select stements.
+
+> All the entries in the DB will be created in one table that is corresponding table of parent entity and the tables 
+> corresponding to the child entities will have reference to it.
+
+```JAVA
+@Entity
+@Table(name="VEHICLE")
+@Inheritance(strategy=InheritanceType.JOINED)//Highly normalized
+public class Vehicle {}
+
+@Entity
+@Table(name="TWO_WHEELER")
+@PrimaryKeyJoinColumn(name="ID")
+public class TwoWheeler extends Vehicle{}
+
+@Entity
+@Table(name="FOUR_WHEELER")
+@PrimaryKeyJoinColumn(name="ID")
+public class FourWheeler extends Vehicle{}
+```
+
+> @Inheritance - It is used to define the type of inheritance used in hibernate and it is defined in the parent class.
+
+>@DiscriminatorValue - This annotation is used to specify the DType column name. Here we have defined it as PERMANENT_EMP  
+> in case of PermanentEmployee.java and CONTRACT_EMPLOYEE in case of ContractEmployee.java
 
 ----
 ## Q. Why microservices?

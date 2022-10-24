@@ -8,7 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="springframework.boot.spring.starter.web" level="project" />
-    <orderEntry type="library" name="hibernate.core" level="project" />
     <orderEntry type="library" name="net.sf.ehcache" level="project" />
+    <orderEntry type="library" name="hibernate.core" level="application" />
   </component>
 </module>
