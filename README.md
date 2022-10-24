@@ -1059,6 +1059,15 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 the account holder information like withdrawal details will be serialized and sent 
 to the server where the details are deserialized and used to perform operations.
 
+
+#### SerialVersionUID
+> The Serialization runtime associates a version number with each Serializable class called a SerialVersionUID, 
+> which is used during Deserialization to verify that sender and receiver of a serialized object have loaded classes 
+> for that object which are compatible with respect to serialization.
+
+>If the receiver has loaded a class for the object that has different UID than that of corresponding sender’s class,
+> the Deserialization will result in an **InvalidClassException**.
+
 #### This will answer a few frequent questions:
 
 - How not to serialize any field in the class.
@@ -1078,6 +1087,11 @@ to the server where the details are deserialized and used to perform operations.
 - Additionally:
 >Some system-level classes such as Thread, OutputStream, 
 > and its subclasses, and Socket are not serializable.
+
+>In case of static Variables:- A variable defined with static keyword is not serialized during 
+serialization process. 
+
+>This variable will be loaded with current value defined in the class during deserialization.
 
 [java-serialization](https://www.baeldung.com/java-serialization)
 
