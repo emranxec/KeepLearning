@@ -1046,7 +1046,8 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ## Q. how to configure techniques of JVM?
 >
 ----
-## Q. why serialize a object?
+## Q. why serialize a object? How to serialize and deserialize object? 
+##### Q. explain Serialisation, UUID and its concepts?
 
 - You can think of serialization as the process of converting an object instance into a sequence of bytes (which may be binary or not depending on the implementation).
 - It is very useful when you want to transmit one object data across the network, for instance from one JVM to another.
@@ -1079,6 +1080,8 @@ to the server where the details are deserialized and used to perform operations.
 > and its subclasses, and Socket are not serializable.
 
 [java-serialization](https://www.baeldung.com/java-serialization)
+
+[serialization-in-java](https://www.geeksforgeeks.org/serialization-in-java/)
 
 ----
 ## Q. what is default spring bean status?
@@ -1527,11 +1530,6 @@ entityManager.createQuery("select f from Foo f")
 ## Q. try with resources vs try with finally?
 
 [prefer-try-with-resources-to-try-catch-finally](https://recepinanc.medium.com/til-18-prefer-try-with-resources-to-try-catch-finally-afc8c0dc9c05)
-
-----
-## Q. How to serialize and deserialize object?
-
-[serialization-in-java](https://www.geeksforgeeks.org/serialization-in-java/)
 
 ----
 ## Q. Function vs bifunction?
@@ -2039,14 +2037,15 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 </beans>
 ```
 ----
-## Q.  what are Different library for hibernate,spring & SQI?
->
-----
-## Q. Function vs procedures?
->
-----
-## Q. explain Serialisation, UUID and its concepts?
->
+## Q.  what are Different library for hibernate?
+- hibernate3.jar (main jar)
+- antlr-2.7.6.jar 
+- common-collections-3.1.jar 
+- dom4j-1.6.1 
+- jta-1.1.jar 
+- slf4j-api-1.6.1.jar 
+- javassist-3.12.0.GA.jar 
+- hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
 ## Q. Hashtable vs concurrent hashmap?
 >
