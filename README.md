@@ -2062,7 +2062,9 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
 ## Q. Hashtable vs concurrent hashmap?
->
+
+[difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
+
 ----
 ## Q. how linkedHashmap internal work?
 >
