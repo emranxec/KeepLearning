@@ -1141,7 +1141,19 @@ public class TwitterMessageService implements MessageService {
 ----
 
 ## Q. what is weak hashmap?
->
+> WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap except in case 
+> of WeakHashMap, if object is specified as key doesn’t contain any references- **it is eligible for garbage collection** 
+> even though it is associated with WeakHashMap. i.e Garbage Collector dominates over WeakHashMap.
+
+##### there is no clone() method in the WeakHashMap class.
+
+#### Strong, Soft, and Weak References
+- Strong References (not eligible for GC)
+- Soft References (won't be garbage collected until the JVM absolutely needs memory)
+- Weak References (garbage collected eagerly)
+
+[Hashmap-vs-weakhashmap-java](https://www.geeksforgeeks.org/hashmap-vs-weakhashmap-java/)
+
 ----
 ## Q. how you validate the request param and path param Done in spring?
 ```xml
