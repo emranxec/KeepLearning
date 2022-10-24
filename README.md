@@ -469,14 +469,6 @@ public void addMoneyToAccount(long account) {
 - boolean wasCommited() checks if the transaction is commited successfully. 
 - boolean wasRolledBack() checks if the transaction is rolledback successfully.
 ----
-## Q.  LinkedHashmap internal works?
-
-| BEFORE | KEY | VALUE | AFTER |
-|--------|-----|-------|-------|
-
-[how-linkedhashmap-works-internally-in-java](https://medium.com/@greekykhs/how-linkedhashmap-works-internally-in-java-409846a4f08)
-
-----
 ## Q. what are RESTFUL annotations?
 #### JAX-RS Annotations
 - @Path(‘Path‘)
@@ -1139,6 +1131,15 @@ public class TwitterMessageService implements MessageService {
 [SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
 
 ----
+## Q.  LinkedHashmap internal works?
+
+| BEFORE | KEY | VALUE | AFTER |
+|--------|-----|-------|-------|
+
+[how-linkedhashmap-works-internally-in-java](https://medium.com/@greekykhs/how-linkedhashmap-works-internally-in-java-409846a4f08)
+
+----
+
 ## Q. what is weak hashmap?
 >
 ----
@@ -2066,9 +2067,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - slf4j-api-1.6.1.jar 
 - javassist-3.12.0.GA.jar 
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
-----
-## Q. how linkedHashmap internal work?
->
 ----
 ## Q. What function is java 8 filter backend?
 >
