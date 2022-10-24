@@ -2117,7 +2117,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 ## Q. load a big trnsactional file and fetch the trnasction records using best data structures?
 >
 ----
-
 ## Q. How to load balance in 60% ,40% weightage ?
 
 ----
