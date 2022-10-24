@@ -1429,13 +1429,20 @@ entityManager.createQuery("select f from Foo f")
 ----
 ## Q. MQS?
 >A message queue is mostly meant for asynchronous things where you dont have to wait for the response. 
-You could block the caller until a response is sought, but thats typically what an MQ is not meant for. 
-You would use it only in cases where a user is NOT waiting for an output. 
-> A webservice is the opposite. You get a request, process it and return it back in a 
-> finite time. The caller will mostly block until a response is received.
-You can send String, Objects , Maps, Byte Arrays to an MQ.
-There are no constraints regarding the placement of the MQs. 
-Just like webservices they can be anywhere and you can write and read from the Queue.
+
+>You could block the caller until a response is sought, but thats typically what an MQ is not meant for. 
+
+>You would use it only in cases where a user is NOT waiting for an output. A webservice is the opposite. 
+
+> You get a request, process it and return it back in a  finite time. 
+
+>The caller will mostly block until a response is received.
+
+>You can send String, Objects , Maps, Byte Arrays to an MQ.
+
+>There are no constraints regarding the placement of the MQs. 
+
+>Just like webservices they can be anywhere and you can write and read from the Queue.
 
 ##### Benefits of Message Queues
 - Better performance
@@ -1450,8 +1457,9 @@ Just like webservices they can be anywhere and you can write and read from the Q
 ![MQ](https://user-images.githubusercontent.com/16031518/197407771-da28b2e5-1d21-47ca-afdf-644443a27134.png)
 
 ###### Message Broker: 
->Software that allows applications, systems, and services to communicate and exchange data. 
-> A Message Broker can perform a range of operations on data like validation, transformation, aggregation, decomposition, rerouting, storage, and guaranteed delivery. Some prominent examples of Message Brokers include RabbitMQ, Apache Kafka, Redis, Amazon SQS, IBM MQ, and IronMQ.
+> Software that allows applications, systems, and services to communicate and exchange data. 
+
+>A Message Broker can perform a range of operations on data like validation, transformation, aggregation, decomposition, rerouting, storage, and guaranteed delivery. Some prominent examples of Message Brokers include RabbitMQ, Apache Kafka, Redis, Amazon SQS, IBM MQ, and IronMQ.
 
 ###### Message Queue: A Simple Use Case of Sending Emails
 
@@ -1479,6 +1487,7 @@ Just like webservices they can be anywhere and you can write and read from the Q
 
 #### What is Maven?
 >Maven is a powerful project management tool that is based on POM (project object model). 
+
 > It is used for projects build, dependency and documentation.
 
 ##### What maven does?
@@ -1502,8 +1511,9 @@ Just like webservices they can be anywhere and you can write and read from the Q
 3. Remote repository
 ##### Maven - POM
 > POM stands for Project Object Model. It is fundamental unit of work in Maven. It is an XML file that resides
-> in the base directory of the project as pom.xml.
-- It should be noted that there should be a single POM file for each project.
+> in the base directory of the project as pom.xml. 
+
+>It should be noted that there should be a single POM file for each project.
 
 ###### Super POM
 > The Super POM is Maven’s default POM. All POMs inherit from a parent or default
@@ -1525,31 +1535,336 @@ Just like webservices they can be anywhere and you can write and read from the Q
 
 ----
 ## Q. Function vs bifunction?
->
+
+##### Function
+
+It represents a function which takes in one argument and produces a result.The interface contains four methods:
+- The apply() method
+- The andThen() method
+- compose()
+- identity()
+
+This functional interface which takes in 2 parameters namely:-
+
+- T: denotes the type of the input argument 
+- R: denotes the return type of the function
+
+##### BiFunction 
+is a functional interface, which accepts two arguments and returns a result. The interface contains two methods:
+- The apply() method
+- The andThen() method
+
+This functional interface which takes in 3 parameters namely:-
+
+- T: denotes the type of the input argument
+- U: denotes the type of the second argument to the function
+- R: denotes the return type of the function
+
+
+```java
+Syntax
+@FunctionalInterface
+public interface Function<T, R> {
+}
+
+@FunctionalInterface
+public interface BiFunction<T, U, R>{
+}
+
+import java.util.function.BiFunction;
+        import java.util.function.Function;
+
+public class SampleFunctionBiFunctionTest {
+    public static void main(String[] args) {
+        Function<Integer, Integer> printNumber = a -> a*10;
+        System.out.println("The number is: "+ printNumber.apply(10));
+
+        BiFunction<Integer, Integer, Integer> add = (a, b) -> a+b;
+        System.out.println("The addition of two numbers are: "+ add.apply(3,2));
+    }
+}
+```
+
+[function-interface-in-java](https://www.geeksforgeeks.org/function-interface-in-java-with-examples/)
+[bifunction-interface-methods-apply-and-addthen](https://www.geeksforgeeks.org/java-bifunction-interface-methods-apply-and-addthen/)
+
 ----
 ## Q. Mapping vs flat mapping?
->
+##### map() 
+can be used where we have to map the elements of a particular collection to a certain function, and then we need to return the stream which contains the updated results.
+
+###### Example: 
+Multiplying All the elements of the list by 3 and returning the updated list.
+
+##### flatMap() 
+can be used where we have to flatten or transform out the string, as we cannot flatten our string using map().
+
+###### Example: 
+Getting the 1st Character of all the String present in a List of Strings and returning the result in form of a stream.
+```java 
+class GFG {
+
+    public static void main(String[] args)
+    {
+        ArrayList<String> fruit = new ArrayList<>();
+        fruit.add("Apple");
+        fruit.add("mango");
+        fruit.add("pineapple");
+        fruit.add("kiwi");
+
+        List<List<Integer> > number = new ArrayList<>();
+        // adding the elements to number arraylist
+        number.add(Arrays.asList(1, 2));
+        number.add(Arrays.asList(3, 4));
+        number.add(Arrays.asList(5, 6));
+        number.add(Arrays.asList(7, 8));
+ 
+        List list = fruit.stream()
+                        .map(s -> s.length())
+                        .collect(Collectors.toList());
+
+        // using flatmap() to flatten this list
+        List<Integer> flatList
+            = number.stream()
+                  .flatMap(list -> list.stream())
+                  .collect(Collectors.toList());
+    }
+}
+```
+
+[difference-between-map-and-flatmap-in-java](https://www.geeksforgeeks.org/difference-between-map-and-flatmap-in-java-stream/?ref=lbp)
+
 ----
 ## Q. what are Design principles?
->
+#### SOLID Design Principles
+> SOLID principles are class-level, object-oriented design concepts that, in conjunction with an extensive test suite, 
+> help you avoid code rot.
+
+##### SOLID design is an acronym for the following five principles:
+- Single Responsibility Principle 
+> Everything in the class should be related to that **single purpose.** 
+> It does not mean that your classes should only contain one method or property.
+
+>If you have multiple responsibilities combined into one class, it might be difficult to change one part without breaking others.
+
+- Open-Closed Principle 
+> This principle is described as follows: software entities (classes, modules, functions, etc.) 
+> should be **open for extension, but closed for modification.**
+ 
+>This means that the system must be flexible, able to work in changing conditions without changing the source code.
+
+- Liskov Substitution Principle 
+> Subclasses **must override the methods of the base class** so that 
+> the functionality is not broken from the point of view of the client.
+```java
+public class OrderStockAndPackValidator extends OrderStockValidator {
+ @Override
+    public boolean isValid(Order order) {
+}
+}
+```
+- Interface Segregation Principle 
+
+>client should **not be forced to implement methods** that they will not use.
+
+> Consider this example: Alex, a developer, has created a "report" interface and added two methods: 
+> generateExcel() and generatedPdf(). 
+> Now a client wants to use this interface, but only intends to use reports in PDF format, not in Excel. 
+> Will this functionality satisfy this client?
+
+- Dependency Inversion Principle
+> Higher-level modules do not depend on lower-level modules. Abstractions should not depend on details. **Details should depend on abstractions**. 
+> Software needs to be designed so that the various modules are self-contained 
+> and connected to each other through abstraction.
+```java
+public interface MailSender {
+void sendConfirmationEmail(Order order);
+}
+
+public interface OrderRepository {
+boolean save(Order order);
+}
+
+public class ConfirmationEmailSender implements MailSender {
+    @Override
+    public void sendConfirmationEmail(Order order) {
+    }
+}
+
+public class MySQLOrderRepository implements OrderRepository {
+    @Override
+    public boolean save(Order order) {
+    }
+}
+public class OrderProcessor {
+
+    private MailSender mailSender;
+    private OrderRepository repository;
+}
+```
+[Solid-five-basic-principles-of-class-design-in-java](https://codegym.cc/groups/posts/232-solid-five-basic-principles-of-class-design-in-java)
+
+#### Other Principles
+
+- DRY Principles
+> The DRY principle stands for the **Don't Repeat Yourself** principle.
+> Within a system, each piece of logic should have a single unambiguous representation.
+- KISS Principle
+> It is another designing principle that stands for **Keep It Simple and Stupid** Principle.
+> This principle is just a reminder to keep our code readable and simple for humans. 
+> If several use cases are handled by the method, we need to split them into smaller functions.
+- Composition Over Inheritance Principle
+> The principle states that we should have to **implement interfaces rather than extending the classes.** 
+> We implement the inheritance when
+The class need to implement all the functionalities
+The child class can be used as a substitute for our parent class.
 ----
-## Q. explain Classnotfound, NoClassDefError,StackOverFlow,OOM?
->
+## Q. explain StackOverFlow vs OOM?
+>Whenever you run a java program or java application, operating system allocates some memory to JVM. 
+> JVM divides this memory into two parts. One is Stack and another one is Heap. Stack is used for 
+> execution of methods and heap is used to store the objects. When the Stack becomes full, 
+> JVM throws java.lang.StackOverflowError and when the heap becomes full, JVM throws java.lang.OutOfMemoryError.
+
+##### StackOverflowError
+- A stack is used for the execution of methods. For every method call, one block is created in the stack memory
+- The data related to the method like parameters, local variables or references to objects are stored in this block.
+- When the method finishes its execution, this block is removed from the stack along with data stored in it.
+- Whenever we call a method, it must finish its execution and leave the stack memory.
+- If methods are staying in the stack then the stack will be full and JVM will throw java.lang.StackOverflowError.
+
+```java 
+    public class StackOverflowErrorExample
+    {
+    private static void addItself(int i)
+    {
+    addItself(i+i);   //calling itself with no terminating condition
+    }
+    
+        public static void main(String[] args) 
+        {
+            addItself(10);
+        }
+    }
+```
+##### OutOfMemoryError
+- The objects we created in Java are stored in the heap memory. When the objects are no more required, they must be removed from the memory.
+- The garbage collector removes the unwanted objects from the heap memory.
+- If our objects have live references, the garbage collector doesn’t remove them. It removes only those objects which don’t have live references.
+- Whenever we call a method, it must finish its execution and leave the stack memory.
+- If there is no space left for new objects in the heap memory then JVM will throw java.lang.OutOfMemoryError.
+
+```java 
+    public class OutOfMemoryErrorExample
+    {   
+    public static void main(String[] args)
+    {   
+    //Creating new objects in never ending loop
+    
+            for (int i = 1; i > 0; i++)
+            {
+                new Object();
+            }
+        }
+    }
+```
 ----
 ## Q. explain Microservice framework Netflix?
 >
 ----
 ## Q. difference between @Primary & @Qualifier?
->
+
+#### @Primary
+> When more than one bean qualifies for the dependency to be autowired, 
+> @Primary specifies which bean should be given preference.
+> Among the eligible beans, there should be exactly one primary bean.
+
+#### @Qualifier
+> When more than one bean meets the requirements for the dependency, we may use a qualifier annotation to explicitly 
+> define the bean name and let spring know which dependency should be really called for.
+```java
+@Service("Alpha")
+public class AlphaUniversity implements University {
+
+    @Override
+    public String display() {
+
+        return "This is a message from Alpha University";
+    }
+}
+@Service("Beta")
+@Primary
+public class BetaUniversity implements University {
+
+    @Override
+    public String display() {
+
+        return "This is a message from Beta University";
+    }
+}
+@RestController
+public class UniversityController {
+
+    @Autowired
+    @Qualifier("Alpha")
+    private University AlphaUniversity;
+
+    @GetMapping ("/university")
+    public String getUniversity() {
+
+        return AlphaUniversity.display();
+    }
+}
+```
+- Both annotations can be used together
+- @Qualifier has higher priority than @Primary annotation
+
 ----
 ## Q. Controller vs rest controlled?
->
+
+[difference-between-controller-and-restcontroller](https://www.geeksforgeeks.org/difference-between-controller-and-restcontroller-annotation-in-spring/?ref=lbp)
+
 ----
 ## Q. Spring actuators?
->
+> Actuator is mainly used to expose operational information about the running application 
+> — health, metrics, info, dump, env, etc.
+
+###### Advantages of Monitoring/Managing the Application
+- It increases customer satisfaction. 
+- It reduces downtime. 
+- It boosts productivity. 
+- It improves Cyber security Management. 
+- It increases the conversion rate.
+
+##### In Maven:
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+###### by default, all Actuator endpoints are now placed under the /actuator path.
+
+###### Enable All Endpoints
+- We need to add the following configuration to expose all endpoints:
+>management.endpoints.web.exposure.include=*
+
+- To explicitly enable a specific endpoint (e.g., /shutdown), we use:
+>management.endpoint.shutdown.enabled=true
+
+- To expose all enabled endpoints except one (e.g., /loggers), we use:
+>management.endpoints.web.exposure.include=*
+
+>management.endpoints.web.exposure.exclude=loggers
+
+[spring-boot-actuator](https://www.geeksforgeeks.org/spring-boot-actuator/)
+
 ----
 ## Q. explain Hibernate inheritance?
->
+> Entity inheritance means that we can use polymorphic queries for retrieving 
+all the subclass entities when querying for a superclass.
+
+
+
 ----
 ## Q. Why microservices?
 >
@@ -1557,7 +1872,7 @@ Just like webservices they can be anywhere and you can write and read from the Q
 ## Q. Sort hashmap on basis of value.?
 >
 ----
-90. how to manage two different session factory?
+## Q. how to manage two different session factory?
 >
 ----
 ## Q.  what are Different library for hibernate,spring & SQI?
