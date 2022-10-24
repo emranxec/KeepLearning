@@ -1143,7 +1143,7 @@ public class TwitterMessageService implements MessageService {
 ## Q. what is weak hashmap?
 > WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap except in case 
 > of WeakHashMap, if object is specified as key doesn’t contain any references- **it is eligible for garbage collection** 
-> even though it is associated with WeakHashMap. i.e Garbage Collector dominates over WeakHashMap.
+> even though it is associated with WeakHashMap. i.e **Garbage Collector dominates over WeakHashMap.**
 
 ##### there is no clone() method in the WeakHashMap class.
 
@@ -1376,7 +1376,7 @@ public class Branch implements Serializable {
 [difference-between-joincolumn-and-mappedby/](https://javabydeveloper.com/difference-between-joincolumn-and-mappedby/)
 
 ----
-## Q. explain hibernate caching?
+## Q. explain hibernate caching? how to Configure ehcache?
 > Hibernate is an ORM (Object-relational model) tool that is widely used by developers 
 > worldwide. It has many in-built features available that make the developer’s life simple.
 > One of them is a **caching mechanism**.
@@ -2081,23 +2081,42 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
 ## Q. What function is java 8 filter backend?
->
+
+##### Stream filter(Predicate predicate) 
+> returns a stream consisting of the elements of this stream that match the given **predicate**.
+`Stream<T> filter(Predicate<? super T> predicate)`
+>This is an intermediate operation. These operations are always lazy i.e, executing an intermediate operation 
+> such as filter() does not actually perform any filtering, but instead creates a new stream 
+> that, when traversed, contains the elements of the initial stream that match the given predicate.
+
 ----
 ## Q. Where vs having in sql?
->
+
+[having-vs-where-clause-in-sql](https://www.geeksforgeeks.org/having-vs-where-clause-in-sql/)
+
 ----
 ## Q. Why overloading? and Over loading concept?
->
+
+##### Advantages of Method Overloading
+- Method overloading improves the **Readability and reusability** of the program. 
+- Method overloading **reduces the complexity** of the program. 
+- Using method overloading, programmers can **perform a task efficiently and effectively**. 
+- Using method overloading, it is possible to access **methods performing related functions with slightly different arguments and types**. 
+- Objects of a class can also be initialized in different ways using the constructors.
+
 ----
 ## Q. is Synchronized block entire object?
->
+>A synchronized block in Java is synchronized on some object. All synchronized blocks synchronize on 
+> the same object can only have one thread executing inside them at a time. All other threads attempting to enter 
+> the synchronized block are blocked until the thread inside the synchronized block exits the block.
+
+[synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
+
 ----
 ## Q. explain Thread with caching?
 >
 ----
-## Q. how to Configure ehcache?
->
-----
+
 
 
 self:
