@@ -1940,9 +1940,36 @@ public class FourWheeler extends Vehicle{}
 >@DiscriminatorValue - This annotation is used to specify the DType column name. Here we have defined it as PERMANENT_EMP  
 > in case of PermanentEmployee.java and CONTRACT_EMPLOYEE in case of ContractEmployee.java
 
+[implementing-inheritance-in-hibernate](https://www.dineshonjava.com/hibernate/implementing-inheritance-in-hibernate/)
+
 ----
 ## Q. Why microservices?
->
+
+- Continuous delivery
+> Each application resides in a separate container along with the environment it needs to run. Because of this, 
+**each application can be edited in its container without the risk** of interfering with any other application.
+
+> This means zero downtime for users, simplified troubleshooting, and no disruption even if a problem is identified.
+
+- Maximize deployment velocity
+> Each application run in their own containerized environment, **applications can be moved anywhere without altering the environment.** 
+> If an application works in development, it will work for the customer. This speeds up time to market and increases product reliability.
+
+- Faster innovation to adapt to changing market conditions
+> Microservices can also **help you adapt more quickly to the changing market conditions**. Because microservices 
+> allow applications to be updated and tested quickly, you can follow market trends and adapt your products faster.
+
+- Enable developers
+> Developers, architects, and operations people are driven by performance. **They want to address the technical and 
+> business problems they see using the best tools available**. If you want to attract top talent – and keep the talent 
+> you have – it’s important to keep up-to-date on current ideas in IT. That means being ready to start working with 
+> a microservices architecture.
+
+- Reduce costs
+> **Change in one place affects other aspects**. This means a lot more work for developers and operations professionals
+> to sort out the side effects of updates before they can make them. The more updates, the bigger the monolith grows, 
+> and the more time and resources have to go into making future changes.
+
 ----
 ## Q. Sort hashmap on basis of value.?
 >
