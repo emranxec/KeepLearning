@@ -85,7 +85,7 @@
 84. [why-overloading-and-over-loading-concept](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-overloading-and-over-loading-concept)
 85. [is-synchronized-block-entire-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-is-synchronized-block-entire-object)
 
-### Self: [https://github.com/emranxec/KeepLearning/blob/main/README.md#self](https://github.com/emranxec/KeepLearning/blob/main/README.md#self)
+### Self: [self](https://github.com/emranxec/KeepLearning/blob/main/README.md#self)
 1. [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
 2. [test-your-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-test-your-application)
 3. [how-to-process-10000-request-handling-at-once--persist-in-db-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-process-10000-request-handling-at-once--persist-in-db-)
