@@ -469,7 +469,7 @@ public void addMoneyToAccount(long account) {
 - boolean wasCommited() checks if the transaction is commited successfully. 
 - boolean wasRolledBack() checks if the transaction is rolledback successfully.
 ----
-20. LinkedHashmap internal works?
+## Q.  LinkedHashmap internal works?
 
 | BEFORE | KEY | VALUE | AFTER |
 |--------|-----|-------|-------|
@@ -1122,13 +1122,25 @@ public class TwitterMessageService implements MessageService {
 #### detached 
 - Once we close the Hibernate Session, the persistent instance will become a detached instance.
 ----
-## Q. Why concurrent HashMap used?
-[concurrenthashmap-in-java](https://www.geeksforgeeks.org/concurrenthashmap-in-java/?ref=lbp)
-----
+## Q. Why concurrent HashMap used? 
+## Hashtable vs concurrent hashmap?
 ## Q. can two threads update in concurrent HashMap?
->	Yes, Thread safety is ensured by having separate locks for separate buckets, 
-> resulting in better performance. Performance is further improved by providing 
+
+>	Yes, Thread safety is ensured by having separate locks for separate buckets,
+> resulting in better performance. Performance is further improved by providing
 > read access concurrently without any blocking.
+
+[concurrenthashmap-in-java](https://www.geeksforgeeks.org/concurrenthashmap-in-java/?ref=lbp)
+
+[difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
+
+## Q. Sort hashmap on basis of value.?
+
+[SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
+
+----
+## Q. what is weak hashmap?
+>
 ----
 ## Q. how you validate the request param and path param Done in spring?
 ```xml
@@ -1981,12 +1993,6 @@ public class FourWheeler extends Vehicle{}
 > **Change in one place affects other aspects**. This means a lot more work for developers and operations professionals
 > to sort out the side effects of updates before they can make them. The more updates, the bigger the monolith grows, 
 > and the more time and resources have to go into making future changes.
-
-----
-## Q. Sort hashmap on basis of value.?
-
-[SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
-
 ----
 ## Q. how to manage two different session factory Transaction?
 
@@ -2061,18 +2067,10 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - javassist-3.12.0.GA.jar 
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
-## Q. Hashtable vs concurrent hashmap?
-
-[difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
-
-----
 ## Q. how linkedHashmap internal work?
 >
 ----
 ## Q. What function is java 8 filter backend?
->
-----
-## Q. what is weak hashmap?
 >
 ----
 ## Q. Where vs having in sql?
