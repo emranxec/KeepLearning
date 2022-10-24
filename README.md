@@ -1972,15 +1972,74 @@ public class FourWheeler extends Vehicle{}
 
 ----
 ## Q. Sort hashmap on basis of value.?
->
+
+[SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
+
 ----
-## Q. how to manage two different session factory?
->
+## Q. how to manage two different session factory Transaction?
+
+1. HibernateTransactionManager 
+> manages transactions on top of a single Hibernate SessionFactory. If your application uses only
+> a JDBC-compliant database to store data (that is, no ERP, JMS queue, file system, etc. is involved) 
+> that you access using Hibernate, you can use a HibernateTransactionManager in your application.
+
+```Xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <import resource="classpath:org/springbyexample/orm/hibernate3/shared-context.xml"/>
+
+    <bean id="transactionManager" 
+          class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+          p:sessionFactory-ref="sessionFactory" />
+
+    <tx:annotation-driven/>
+   
+    <bean id="personDao" 
+          class="org.springbyexample.orm.hibernate3.dao.PersonDaoImpl"
+          p:sessionFactory-ref="sessionFactory" />
+
+</beans>
+```
+
+2. JTA transaction Manager 
+> If however, you have business operations that can modify multiple data stores at the same time and you 
+need to ensure data consistency across all the stores, you will need to use JTA transactions. 
+JTA support is provided either by JavaEE containers like JBoss, WebLogic or WebSphere or third-party 
+JTA providers like Atomikos or Bitronix.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+```Xml
+    <bean name="simpleJtaTransactionManager" class="nl.futureedge.simple.jta.JtaTransactionManager">
+        <property name="uniqueName" value="test"/>
+        <property name="jtaTransactionStore">
+            <bean class="nl.futureedge.simple.jta.store.jdbc.JdbcTransactionStore">
+                <property name="create" value="true"/>
+                <property name="url" value="jdbc:hsqldb:hsql://localhost:${test.database.port}/trans"/>
+                <property name="user" value="sa"/>
+                <property name="password" value=""/>
+            </bean>
+        </property>
+    </bean>
+
+    <!-- Spring transaction manager -->
+    <bean name="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
+        <property name="transactionManager" ref="simpleJtaTransactionManager" />
+    </bean>
+</beans>
+```
 ----
 ## Q.  what are Different library for hibernate,spring & SQI?
->
-----
-## Q. What data structure does Executer service hold?
 >
 ----
 ## Q. Function vs procedures?
@@ -2005,9 +2064,6 @@ public class FourWheeler extends Vehicle{}
 >
 ----
 ## Q. Why overloading? and Over loading concept?
->
-----
-## Q. Create outgoing service call from application?
 >
 ----
 ## Q. is Synchronized block entire object?
