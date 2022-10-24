@@ -2120,9 +2120,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 ## Q. How to load balance in 60% ,40% weightage ?
 
 ----
-## Q. Load a file and do operations?
->
-----
 ## Q. explain Thread with caching?
 >
 ----
