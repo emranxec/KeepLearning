@@ -371,8 +371,6 @@ class test {
 - and in getter always return a new instance of mutable field?
 >
 ----
-## Q. how to process: 10000 request handling at once & persist in DB ?
-----
 ## Q. what is SAAS?
 > What is SaaS? Software as a service (or SaaS) is a way of delivering applications over the Internet—as a service. 
 > Instead of installing and maintaining software, you simply access it via the Internet, 
@@ -907,9 +905,6 @@ tx = session.beginTransaction();
 ```
  [hibernate-criteria-queries](https://www.geeksforgeeks.org/hibernate-criteria-queries/)
 ----
-## Q. load a big trnsactional file and fetch the trnasction records using best data structures?
-> 
-----
 ## Q. why jquery over javascript ?
 
 ##### JavaScript
@@ -1114,9 +1109,9 @@ public class TwitterMessageService implements MessageService {
 #### detached 
 - Once we close the Hibernate Session, the persistent instance will become a detached instance.
 ----
-## Q. Why concurrent HashMap used? 
-## Hashtable vs concurrent hashmap?
-## Q. can two threads update in concurrent HashMap?
+## Q. Why concurrent HashMap used?
+##### Hashtable vs concurrent hashmap?
+##### Can two threads update in concurrent HashMap?
 
 >	Yes, Thread safety is ensured by having separate locks for separate buckets,
 > resulting in better performance. Performance is further improved by providing
@@ -1265,12 +1260,6 @@ throw new RuntimeException();
 
 [8-steps-for-migrating-existing-applications-to-microservices](https://insights.sei.cmu.edu/blog/8-steps-for-migrating-existing-applications-to-microservices/)
 
-----
-## Q. How to load balance in 60% ,40% weightage ?
-
-----
-## Q. Load a file and do operations?
->
 ----
 ## Q. Garbage collectors? what are diff types of garbage collector? Different method of garbage collector?
 
@@ -2113,14 +2102,28 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 [synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
 
 ----
-## Q. explain Thread with caching?
->
-----
 
+# self:
 
-
-self:
 ## Q. how you identify which Asset type?
 >
 ----
 ## Q. test your application
+
+----
+## Q. how to process: 10000 request handling at once & persist in DB ?
+----
+
+## Q. load a big trnsactional file and fetch the trnasction records using best data structures?
+>
+----
+
+## Q. How to load balance in 60% ,40% weightage ?
+
+----
+## Q. Load a file and do operations?
+>
+----
+## Q. explain Thread with caching?
+>
+----
