@@ -155,7 +155,7 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ----
 ## Q. design patterns in spring?
 
-> [design patterns](https://github.com/emranxec/MyLearning/blob/master/designPattern/interviewQuestions.md)
+> [design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 
 > ### Singleton Pattern
     The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
