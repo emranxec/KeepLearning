@@ -96,10 +96,9 @@
 ## Q. how to create a immutable class?
  > Immutable class in java means that once an object is created, we cannot change its content. 
  > In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. 
- > We can create our own immutable class as well. 
- > Prior to going ahead do go through characteristics of immutability in order to have a good understanding while implementing the same. 
+ > We can create our own immutable class as well.
  
- > Following are the requirements:
+ ##### Following are the requirements:
   - The class must be declared as final so that child classes can’t be created.
     - Data members in the class must be declared private so that direct access is not allowed.
     - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
@@ -121,11 +120,9 @@ final class immmutableClass{
 ----
 ## Q. what is sequential & parallel streams?
 
-> A stream in Java is a sequence of objects which operates on a data source such as an array or a collection 
-> and supports various methods.  
-> It was introduced in Java 8’s java.util.stream package. 
-> Stream supports many aggregate operations like filter, map, limit, reduce, find, and match 
-> to customize the original data into a different form according to the need of the programmer. 
+- A stream in Java is a sequence of objects which operates on a data source such as an array or a collection and supports various methods.
+- It was introduced in Java 8’s java.util.stream package. 
+> Stream supports many aggregate operations like filter, map, limit, reduce, find, and match to customize the original data into a different form according to the need of the programmer. 
 > The operations performed on a stream do not modify its source hence a new stream is created according to the operation applied to it. 
 > The new data is a transformed copy of the original form.
 
@@ -144,8 +141,8 @@ list.parallelStream().forEach(System.out::print);
 ----
 ## Q. remove duplicate using streams?
 
-> You can use the Stream.distinct() method to remove duplicates from a Stream in Java 8 and beyond.
-> The distinct() method behaves like a distinct clause of SQL, which eliminates duplicate rows from the result set.
+- You can use the Stream.distinct() method to remove duplicates from a Stream in Java 8 and beyond.
+- The distinct() method behaves like a distinct clause of SQL, which eliminates duplicate rows from the result set.
 
 ```
 List<Integer> withDupes = Arrays.asList(10, 10, 20, 20, 30, 30, 40, 50); 
@@ -158,18 +155,23 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 > [design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 
 > ### Singleton Pattern
-    The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
-This pattern can be useful when managing shared resources or providing cross-cutting services, such as logging.
+>The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
+
+>This pattern can be useful when managing shared resources or providing cross-cutting services, such as logging.
 
 #### Singleton Beans
 > Generally, a singleton is globally unique for an application, but in Spring, this constraint is relaxed. Instead, Spring restricts
-> a singleton to one object per Spring IoC container. In practice, this means Spring will only create one bean for each type per application context.
+> a singleton to one object per Spring IoC container. 
+
+>In practice, this means Spring will only create one bean for each type per application context.
 
 #### Autowired Singletons
 > we can create two controllers within a single application context and inject a bean of the same type into each.
 > First, we create a BookRepository that manages our Book domain objects.
+
 > Next, we create LibraryController, which uses the BookRepository to return the number of books in the library
 > In the application output, we see that both BookRepository objects have the same object ID
+
 > NOTE: We can create separate instances of the BookRepository bean by changing the bean scope from singleton to prototype
 > using the @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) annotation.
 
@@ -200,6 +202,7 @@ public interface BeanFactory {
 #### Transactions
 > To create a proxy, we create an object that implements the same interface as our subject and contains a reference to the subject.
 > We can then use the proxy in place of the subject.
+
 > In Spring, beans are proxied to control access to the underlying bean. We see this approach when using transactions:
 ```java
 @Service
@@ -324,14 +327,19 @@ BlogRespository blogRespository;
 ----
 ## Q. what is spring actuators?
 >Actuator brings production-ready features to our application.
+
 >Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
+
 >The main benefit of this library is that we can get production-grade tools without having to actually implement these features ourselves.
+
 >Actuator is mainly used to expose operational information about the running application — health, metrics, info, dump, env, etc. 
+
 > It uses HTTP endpoints or JMX beans to enable us to interact with it.
 ----
 ## Q. Map vs flatMap?
 > map() can be used where we have to map the elements of a particular collection to a certain function, and then we need to return the stream which contains the updated results.
 > Example: Multiplying All the elements of the list by 3 and returning the updated list.
+
 > flatMap() can be used where we have to flatten or transform out the string, as we cannot flatten our string using map().
 > Example: Getting the 1st Character of all the String present in a List of Strings and returning the result in form of a stream.
  ```
@@ -399,7 +407,7 @@ public class ResourceController {
 ----
 ## Q. what is responsive UI in JS?
 
->Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly 
+> Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly 
 > to various screen sizes. Designers size elements in relative units (%) and apply media queries, 
 > so their designs can automatically adapt to the browser space to ensure content consistency across devices.
 
@@ -410,8 +418,10 @@ public class ResourceController {
 ----
 ## Q. what is java steams?
 > Introduced in Java 8, the Stream API is used to process collections of objects. 
+
 > A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
-> The features of Java stream are –
+
+##### The features of Java stream are –
 - A stream is not a data structure instead it takes input from the Collections, Arrays or I/O channels.
 - Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
 - Each intermediate operation is lazily executed and returns a stream as a result, 
@@ -420,7 +430,7 @@ public class ResourceController {
 ----
 ## Q. what factory class java having?
 
->This design pattern has been widely used in JDK, such as
+##### This design pattern has been widely used in JDK, such as
 - getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
 - All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using valueOf() method.
 - java.nio.charset.Charset.forName(), 
@@ -468,6 +478,7 @@ class test {
 > What is SaaS? Software as a service (or SaaS) is a way of delivering applications over the Internet—as a service. 
 > Instead of installing and maintaining software, you simply access it via the Internet, 
 > freeing yourself from complex software and hardware management.
+
 > eg. Netflix, Spotify, Dropbox and Slack are common SaaS products, in which the product 
 > is then delivered to users over the internet on a subscription basis, 
 > giving users the flexibility to not have to worry about upfront installation purchases or ongoing maintenance costs.
@@ -476,6 +487,7 @@ class test {
 > #### Using @Transactional power
 > As we defined before, in a transaction, if a single process fails then all transactions should fail. 
 > We can implement this behavior using @Transactional annotation.
+
  ```java
 @Service
 public class TransferService {
@@ -595,9 +607,10 @@ public class PostsClientService {
 }
 ```
 
->In any case, dealing with errors or any other case like using a custom encoder or decoder for the request or the response will end in :
+###### In any case, dealing with errors or any other case like using a custom encoder or decoder for the request or the response will end in :
 - more lines of code, probably repeated across many rest call methods.
 - harder to maintain in the future.
+
 > **Netflix had to deal with these problems, thus they chose to build their rest client leveraging 
 the Spring framework's capabilities: `Feign` was the name given to it.**
 
@@ -726,7 +739,7 @@ public @interface Init {
 > [design-patterns-for-microservices](https://dzone.com/articles/design-patterns-for-microservices)
 ----
 ## Q. SQL queries with Functions & stored procedures
-> #### Stored Procedures
+#### Stored Procedures
 > Stored Procedures are pre-compiled objects which are compiled for the first time and its compiled format is saved, which executes (compiled code) whenever it is called. For more about a stored procedure, please refer to the article Different types of Stored Procedure.
 #### Functions
 > A function is compiled and executed every time whenever it is called. A function must return a value and cannot modify the data received as parameters. For more about functions, please refer to the article Different types of Functions.
@@ -812,7 +825,7 @@ Dependencies can be classified into:
 >Spring Security 5.0 introduced new Password encoder **DelegatingPasswordEncoder** which is more modernize and solve all the problems of previous encoder **NoOpPasswordEncoder**.
 ----
 ## Q. explain Dirty - Hibernate?
->When an entity object is loaded, a copy of all properties of that entity object is created. 
+> When an entity object is loaded, a copy of all properties of that entity object is created. 
 > At the time of synchronization, which we call flush time, the properties of the entity object are matched 
 > with the properties of the loaded object and the difference is checked. 
 > This process is called “Hibernate Dirty Check”.
@@ -829,6 +842,7 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 > When an entity is loaded, the 'Hibernate dirty checking mechanism' compares the snapshot of the current entity
 > with the loaded entity, but we can also turn off this comparison when we are not going to update it.
 `@Transactional(readOnly = true)`
+
 > If we mark the method we are processing as readOnly = true, there will be no 'Hibernate dirty check' operation,
 > as there will be no update operation. This gives us performance.
 ----
@@ -889,8 +903,9 @@ return "Response!";
 ```
 ----
 ## Q. when to used native query & hibernate query?
->You do not need to create a native query unless you want to. 
-###### JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. Why would want to do that:
+###### You do not need to create a native query unless you want to. 
+
+> JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. Why would want to do that:
 - Low level access, which means that you can optimize and handle the mapping by yourself; with SQL you actually access the database table while with JPQL you access the entity objects; 
 - Maybe you do not want to learn JPQL if you already know SQL 
 - You already have the queries written in SQL, and do not have resources/time to port them to JPQL
@@ -1017,7 +1032,7 @@ tx = session.beginTransaction();
 >Angular is better than React if your application is enterprise-grade and you need to incorporate complex functionalities like progressive, single-page, and native web apps. However, React specializes in creating UI components and can be used in any application, including single-page apps
 ----
 ## Q. what is bootstrap?
->Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. 
+> Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. 
 > Designed to enable responsive development of mobile-first websites, 
 > Bootstrap provides a collection of syntax for template designs.
 ----
@@ -1040,7 +1055,7 @@ tx = session.beginTransaction();
 
 ----
 ## Q. Do we need DAO layer if we have Service layer?
->They way you put it, the alternative to having a DAO layer is not having a DAO layer. 
+> They way you put it, the alternative to having a DAO layer is not having a DAO layer. 
 > Not having a DAO layer means that the code on the next higher level is responsible 
 > for handling low level persistence aspects, which contradicts the principle of single responsibility.
 
@@ -1068,21 +1083,26 @@ tx = session.beginTransaction();
 ----
 ## Q. how to avoid sql injection?
 #### Option 1: Use of **Prepared Statements** (with Parameterized Queries)
->Prepared statements ensure that an attacker is not able to change the intent of a query, 
-> even if SQL commands are inserted by an attacker.
+>Prepared statements ensure that an attacker is not able to change the intent of a query,  even if SQL commands are inserted by an attacker.
+
 - Hibernate Query Language (HQL) Prepared Statement (Named Parameters) Examples:
 
 >First is an unsafe HQL Statement
+
 `Query unsafeHQLQuery = session.createQuery("from Inventory where productID='"+userSuppliedParameter+"'");`
->Here is a safe version of the same query using named parameters
+
+> Here is a safe version of the same query using named parameters
+
 `Query safeHQLQuery = session.createQuery("from Inventory where productID=:productid");
-safeHQLQuery.setParameter("productid", userSuppliedParameter);`
+ safeHQLQuery.setParameter("productid", userSuppliedParameter);`
 
 ####  Option 2: Use of Properly Constructed Stored Procedures 
 > The difference between prepared statements and stored procedures is that the SQL code for a stored procedure
-> is defined and stored in the database itself, and then called from the application. Both of these techniques have
-> the same effectiveness in preventing SQL injection so your organization should choose which approach makes 
-> the most sense for you.
+> is defined and stored in the database itself, and then called from the application. 
+
+> Both of these techniques have the same effectiveness in preventing SQL injection so your organization should 
+> choose which approach makes the most sense for you.
+
 ``` java
 // This should REALLY be validated
 String custname = request.getParameter("customerName");
@@ -1099,10 +1119,11 @@ ResultSet results = cs.executeQuery();
 [Input_Validation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 
 ####  Option 4: Escaping All User Supplied Input
->This technique works like this. Each DBMS supports one or more character escaping schemes specific
-> to certain kinds of queries. If you then escape all user supplied input using the proper
-> escaping scheme for the database you are using, the DBMS will not confuse that input with SQL code
-> written by the developer, thus avoiding any possible SQL injection vulnerabilities.
+> This technique works like this. Each DBMS supports one or more character escaping schemes specific
+> to certain kinds of queries. 
+
+>If you then escape all user supplied input using the proper escaping scheme for the database you are using, 
+> the DBMS will not confuse that input with SQL code written by the developer, thus avoiding any possible SQL injection vulnerabilities.
 
 ##### Escaping Dynamic Queries
 - To use an ESAPI database codec is pretty simple. An Oracle example looks something like:
@@ -1146,7 +1167,7 @@ to the server where the details are deserialized and used to perform operations.
 > which is used during Deserialization to verify that sender and receiver of a serialized object have loaded classes 
 > for that object which are compatible with respect to serialization.
 
->If the receiver has loaded a class for the object that has different UID than that of corresponding sender’s class,
+> If the receiver has loaded a class for the object that has different UID than that of corresponding sender’s class,
 > the Deserialization will result in an **InvalidClassException**.
 
 #### This will answer a few frequent questions:
