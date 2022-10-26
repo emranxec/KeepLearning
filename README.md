@@ -2203,11 +2203,14 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - sorted(comparator) ->customized order
 - min(comparator) ,get
 - max(comparator) ,get
+- average(),isPresent
 - foreach(consumer)
 - toArray(Integer[]::new) {this is consutructor reference}
 - distinct
-- skip
+- skip,range
 - reduce (other options - count,max,sum,min,summeryStatistics)
+- findFirst,ifPresent
+- 
 ----
 ## Q. Where vs having in sql?
 

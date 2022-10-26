@@ -1,5 +1,8 @@
 package com.xec.JavaEight.company;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collectors;
@@ -7,8 +10,18 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 class StreamsLearning {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
+
+        Stream<String> lines= Files.lines(Paths.get("README.md"));
+
+        lines.sorted()
+            .filter(i->i.length()>9)
+           .forEach(x-> System.out.println(x+ " "));
+        lines.close();
+
+        IntStream.range(0,10)
+                .skip(5)
+                .forEach(x-> System.out.println(x));
          int a = 12333445;
 
         System.out.println(countUniqueDigit(a));
