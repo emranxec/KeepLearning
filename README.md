@@ -2185,7 +2185,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
 ## Q. What function is java 8 filter backend?
-
+>java.util.function.*;
 ##### Stream filter(Predicate predicate) 
 > returns a stream consisting of the elements of this stream that match the given **predicate**.
 `Stream<T> filter(Predicate<? super T> predicate)`
@@ -2193,6 +2193,21 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 > such as filter() does not actually perform any filtering, but instead creates a new stream 
 > that, when traversed, contains the elements of the initial stream that match the given predicate.
 
+##### java 8 methods
+- Stream
+- filter(predicate)
+- map(Function)
+- count
+- collect
+- sorted -> natural order -> comparable interface -> compareTo
+- sorted(comparator) ->customized order
+- min(comparator) ,get
+- max(comparator) ,get
+- foreach(consumer)
+- toArray(Integer[]::new) {this is consutructor reference}
+- distinct
+- skip
+- reduce (other options - count,max,sum,min,summeryStatistics)
 ----
 ## Q. Where vs having in sql?
 

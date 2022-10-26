@@ -1,5 +1,3 @@
-package com.xec.JavaEight.company;
-
 import java.util.function.Consumer;
 
 public class Mailer{
@@ -29,5 +27,17 @@ public class Mailer{
         block.accept(mailer);
         System.out.println("sending");
 
+    }
+}
+
+class testMailer{
+    public static void main(String[] args) {
+        //composed pattern
+        Mailer.send(mailer ->
+                mailer.from("Imran")
+                        .to("salman")
+                        .subject("hello")
+                        .body("Hii")
+        );
     }
 }

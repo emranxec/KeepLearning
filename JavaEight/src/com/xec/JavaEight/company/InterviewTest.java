@@ -1,6 +1,6 @@
 package com.xec.JavaEight.company;
 
-public class test {
+public class InterviewTest {
 /*
 
     •	Can one use an Employee class as a key in a HashMap?
