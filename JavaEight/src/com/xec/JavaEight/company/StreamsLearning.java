@@ -12,12 +12,12 @@ import java.util.stream.Stream;
 class StreamsLearning {
     public static void main(String[] args) throws IOException {
 
-        Stream<String> lines= Files.lines(Paths.get("README.md"));
+      /*  Stream<String> lines= Files.lines(Paths.get("README.md"));
 
         lines.sorted()
             .filter(i->i.length()>9)
            .forEach(x-> System.out.println(x+ " "));
-        lines.close();
+        lines.close();*/
 
         IntStream.range(0,10)
                 .skip(5)
@@ -144,9 +144,9 @@ class StreamsLearning {
 
     private static void explanationToStreamMethod() {
         List<Integer> integers= Arrays.asList(6,15,2,30,7);
-
+        System.out.println("inside explanationToStreamMethod");
         System.out.println(integers.stream().map(i->i*2).reduce(0,(c,e)->c+e));
-        System.out.println(integers.stream().limit(1).map(i->i*2).reduce(0,Integer::sum));
+        System.out.println(integers.stream().limit(2).map(i->i*2).reduce(0,Integer::sum));
         System.out.println(integers.stream().filter(integer -> integer%5==0).map(integer -> integer*2).reduce(0,(c,e)->c+e));
         System.out.println(integers.stream().findAny().orElse(0));
 

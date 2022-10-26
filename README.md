@@ -2193,6 +2193,12 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 > such as filter() does not actually perform any filtering, but instead creates a new stream 
 > that, when traversed, contains the elements of the initial stream that match the given predicate.
 
+
+* //filter=predicate ->return boolean
+* //reduce=BinaryOperator->data(terminal)
+* //Map=function ->stream
+* //foreach=consumer->data(terminal)
+
 ##### java 8 methods
 - Stream
 - filter(predicate)
