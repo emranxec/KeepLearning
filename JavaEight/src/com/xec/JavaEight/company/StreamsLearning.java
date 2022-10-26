@@ -200,10 +200,6 @@ class StreamsLearning {
         Stream stream1=stream0.map(mappingFunction);
         Integer value= (Integer) stream1.reduce(0,reduceFunction);
 
-
-
-
-
         System.out.println(value);
 
         //System.out.println(integers.stream().filter(filterMe).map(integer -> integer*2).reduce(0,(c,e)->c+e));
