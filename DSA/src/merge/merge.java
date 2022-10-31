@@ -1,9 +1,8 @@
 package merge;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class merge {
 
@@ -14,8 +13,16 @@ public class merge {
 
             // Function call
             mergeArrays(a, b, size, size1);
+            mergeArraysUsingStream(a, b, size, size1);
         }
 
+    private static void mergeArraysUsingStream(int[] a, int[] b, int size, int size1) {
+        IntStream stream0= Arrays.stream(a);
+        IntStream stream1= Arrays.stream(b);
+
+        IntStream intStream= IntStream.concat(stream0,stream1);
+        intStream.sorted().forEach((s)-> System.out.print(" " + s));
+    }
 
 
     static void mergeArrays(int a[], int b[], int n, int m) {
@@ -37,6 +44,8 @@ public class merge {
         for (Integer i:mp) {
             System.out.print(" " + i);
         }
+        System.out.println("");
+
     }
 
 }
