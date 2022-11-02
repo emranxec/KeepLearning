@@ -84,6 +84,7 @@
 83. [where-vs-having-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-where-vs-having-in-sql)
 84. [why-overloading-and-over-loading-concept](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-overloading-and-over-loading-concept)
 85. [is-synchronized-block-entire-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-is-synchronized-block-entire-object)
+86. why spring boot?
 
 ### Self: [self](https://github.com/emranxec/KeepLearning/blob/main/README.md#self)
 1. [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
@@ -293,8 +294,11 @@ template.query("SELECT * FROM books", new BookRowMapper());
 ```
 - Step 3: Set Spring Boot MySQL Connection Configuration
 > spring.datasource.url=jdbc:mysql://localhost:3306/restapi
+
 > spring.datasource.username=root
+
 > spring.datasource.password=
+
 - Step 4: Build a Repository Class for Spring Boot
 ```
 - @Repository
@@ -2241,6 +2245,35 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 [synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
 
 ----
+## Q. why Spring boot
+1. manage frameworks and versions (All dependency management)
+###### pom.xml
+> REST API - Spring framework,spring MVC Framework, JSON binding framework
+
+> Unit Tests - SPring test,mockito,Junit
+
+2. web.xml
+###### web.xml
+> If we needed spring MVC we need to configure dispatcher servlet
+
+3. Define Spring configuration
+###### context.xml
+> Component scan
+> view resolver
+> Data resource
+
+4. Non functional requirement
+###### NFR's
+>Logging
+> Error Handling
+> monitoring
+
+
+
+[synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
+
+----
+
 
 # self:
 
