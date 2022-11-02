@@ -1214,7 +1214,93 @@ serialization process.
 ```java
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class TwitterMessageService implements MessageService {
+public class PrototypeBean{
+}
+```
+
+> As you can note here, even though we have declared bean as prototype,
+> still it is behaving like a singleton bean only.
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean
+    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    public PrototypeBean prototypeBean() {
+        return new PrototypeBean();
+    }
+
+    @Bean
+    public SingletonBean singletonBean() {
+        return new SingletonBean();
+    }
+}
+```
+1.  one way to solve this is: use @Lookup
+```java
+@Component
+public class SingletonLookupBean {
+
+    @Lookup
+    public PrototypeBean getPrototypeBean() {
+        return null;
+    }
+}
+```
+###### You can use method injection to solve this problem.Simply use @Lookup method, it will return new instance each time.
+
+2. ObjectFactory Interface
+> Spring provides the ObjectFactory<T> interface to produce on demand objects of the given type:
+```java
+public class SingletonObjectFactoryBean {
+
+    @Autowired
+    private ObjectFactory<PrototypeBean> prototypeBeanObjectFactory;
+
+    public PrototypeBean getPrototypeInstance() {
+        return prototypeBeanObjectFactory.getObject();
+    }
+}
+```
+
+3. Using java.util.Function
+>Another option is to create the prototype bean instances at runtime,
+> which also allows us to add parameters to the instances
+```java
+public class SingletonFunctionBean {
+
+    @Autowired
+    private Function<String, PrototypeBean> beanFactory;
+    
+    public PrototypeBean getPrototypeInstance(String name) {
+        PrototypeBean bean = beanFactory.apply(name);
+        return bean;
+    }
+
+}
+```
+
+##### Finally, we have to define the factory bean, prototype and singleton beans in our configuration:
+```java
+@Configuration
+    public class AppConfig {
+    @Bean
+    public Function<String, PrototypeBean> beanFactory() {
+    return name -> prototypeBeanWithParam(name);
+    }
+
+    @Bean
+    @Scope(value = "prototype")
+    public PrototypeBean prototypeBeanWithParam(String name) {
+       return new PrototypeBean(name);
+    }
+    
+    @Bean
+    public SingletonFunctionBean singletonFunctionBean() {
+        return new SingletonFunctionBean();
+    }
+    //...
 }
 ```
 ----
