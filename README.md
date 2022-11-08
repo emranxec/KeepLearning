@@ -2379,6 +2379,10 @@ It is easy to find mistakes and resolve them.
 
 - Disadvantages:
 > We cannot track, when and how the commits were merged on the target branch
+
+
+###### we do git merge when we want our team to understand logs in a way where they can identify where each commit is coming from. We use Git Rebase when the logs of the repository will not be referred by anyone else.
+
 ---- 
 
 # self:
