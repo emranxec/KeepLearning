@@ -2360,7 +2360,26 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 
 
 ---- 
+## Q. Git Rebase vs Git Merge: Which is Better?
+##### Git Merge
+> Git merge is one of the merging techniques in git, in which the logs of commits on branches are intact.
 
+- Advantages:
+>The logs are very exhaustive and can help in understanding the complete history of how and when each merge happened
+It is easy to find mistakes and resolve them.
+
+- Disadvantages:
+>Results in a clumsy log / history. Not very user-friendly
+
+##### Git-Rebase
+> Git Rebase is similar to git merge, but the logs are modified after merge in this technique.
+
+- Advantages:
+>The logs are linear. It’s easy to move through the project.
+
+- Disadvantages:
+> We cannot track, when and how the commits were merged on the target branch
+---- 
 
 # self:
 
