@@ -2355,9 +2355,39 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 > monitoring
 ----
 ## Q. How to configure profile in spring boot
-##### Use @Profile on a Bean
+#### Use @Profile on a Bean
 > We use the @Profile annotation — we are mapping the bean to that particular profile;
 
+##### Declare Profiles
+```java
+@Component
+@Profile("dev")
+public class DevDatasourceConfig{}
+```
+
+#####  Activating or Setting a Profile
+> spring.profiles.active=dev
+
+- To set profiles programmatically, we can also use the SpringApplication class:
+> SpringApplication.setAdditionalProfiles("dev");
+
+- Maven
+```xml
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <profiles>
+                <profile>dev</profile>
+            </profiles>
+        </configuration>
+    </plugin>
+    ...
+</plugins>
+```
+
+[spring-profiles](https://www.baeldung.com/spring-profiles)
 
 ---- 
 ## Q. Git Rebase vs Git Merge: Which is Better?
