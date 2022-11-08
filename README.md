@@ -579,10 +579,14 @@ public void addMoneyToAccount(long account) {
 ## Q. what are RESTFUL annotations?
 #### JAX-RS Annotations
 - @Path(‘Path‘)
-- @GET 
+- @GET
+> To retrieve a resource, you shall use HTTP GET. We should not modify the state of resources using HTTP GET method ever.
 - @POST 
+>To create a resource on the server, use HTTP POST. An example could be new user registration REST endpoint, it will create a new user in the system.
 - @PUT 
+> To change the state of a resource or to update it on the server, use PUT
 - @DELETE 
+> To remove or delete a resource on server, use DELETE
 - @Produces(MediaType.TEXT_PLAIN [, more-types])
 - @Consumes(type[, more-types])
 - @PathParam()
@@ -1303,6 +1307,8 @@ public class SingletonFunctionBean {
     //...
 }
 ```
+
+###### We should use the prototype scope for all beans that are stateful and the singleton scope should be used for stateless beans.
 ----
 ## Q. what is states of hibernate attribute?
 #### transient 
@@ -2565,7 +2571,7 @@ session.clear();
 tx.commit();
 session.close();
 ```
-- Another good way of doing the same thing is to use Hibernate's Stateless Session
+- Another good way of doing the same thing is to use Hibernate's Stateless Session (Best when dealing with millions of records)
 ```
 StatelessSession session = sessionFactory.openStatelessSession();
 Transaction tx = session.beginTransaction();
@@ -2579,6 +2585,59 @@ session.update(customer);
 tx.commit();
 session.close();
 ```
+----
+## Q. What are different types of Http Status Codes?
+
+- 1xx - Informational Status Code. 
+>It means request has been received and process is continuing. (Its rarely used in production)
+
+- 2xx - Success. 
+> Action was successfully received, understood and accepted.
+1. 200 Ok 
+2. 201 Created - new resource is created 
+3. 202 Accepted - The request has been accepted for processing, but the processing has not been completed
+
+- 3xx - Redirection. 
+> Further action must be taken in order to complete the request
+1. 302 - Temporarily Redirect (Found)
+2. 304 - Not Modified
+
+- 4xx - Client Error
+1. 400 - Bad Request (malformed request syntax, invalid request message, etc)
+2. 401 - Unauthorized (may ask for credentials). authenticating may make difference 
+3. 403 - Request was valid but server is refusing to respond to it, authenticating will make no difference 
+4. 404 - Not Found
+
+- 5xx - Server Error
+1. 500 - Internal Server Error, server encountered unexpected condition 
+2. 501 - Not Implemented 
+3. 503 - Service Unavailable (may be down for maintenance)
+
+----
+## Q. What is Inversion of Control (or Dependency Injection)?
+>The basic concept of IOC (Dependency of Injection) is that you do not create your objects but describe how
+they should be created.
+
+>You don’t directly connect your component and services together in code but describe which services are
+needed by which component in configuration file.
+
+>You just need to describe the dependency, the Spring container is then responsible for wiring it all up. It
+promotes Loose coupling with minimal effort and least intrusive mechanism. 
+
+>IoC container have configurable option for eager or lazy initialization of beans services.
+----
+## Q. What are new features added in Java 8?
+- Default methods enable new functionality to be added to the interfaces of libraries and ensure binary compatibility with code written for older versions of those interfaces.
+- Optimistic Locking in Code using Stamped Locks provides very lightweight synchronization
+- Concurrent Adders & Accumulators - DoubleAdder, DoubleAccumulator, LongAdder, LongAccumulator
+- Array Parallel Sorting API
+- Complete New Date API
+- Functional Interfaces
+- Stream API in Collections enables bulk operations, such as sequential and parallel map-reduce functions
+- Improvements in ConcurrentHashMap - added methods for atomic & bulk operations
+- New classes added to java.util.concurrent to support scalable updatable variables
+- PermGen Space removed, Metaspace added
+
 ----
 ----
 # self:
