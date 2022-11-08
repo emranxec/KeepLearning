@@ -1339,6 +1339,16 @@ public class SingletonFunctionBean {
 [how-linkedhashmap-works-internally-in-java](https://medium.com/@greekykhs/how-linkedhashmap-works-internally-in-java-409846a4f08)
 
 ----
+## Q.  What enhancements were made to ConcurrentHashMap in Java 8?
+
+1. putIfAbsent (The entire method invocation is performed atomically)
+2. compute (The entire method invocation is performed atomically)
+3. computeIfAbsent (The entire method invocation is performed atomically)
+4. computeIfPresent (The entire method invocation is performed atomically)
+5. search (key, value)
+6. reduce (key, value)
+7. forEach
+----
 
 ## Q. what is weak hashmap?
 > WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap except in case 
@@ -2414,7 +2424,163 @@ It is easy to find mistakes and resolve them.
 ###### we do git merge when we want our team to understand logs in a way where they can identify where each commit is coming from. We use Git Rebase when the logs of the repository will not be referred by anyone else.
 
 ---- 
+## Q. What is difference between Primary key and Unique Key?
 
+1. The main purpose of a Primary key is to uniquely identifies a given record in a Table, while the same is not true for Unique Key constraint.
+2. A table can have one and only one Primary Key, while there could be multiple unique keys inside a single
+   table.
+3. Primary Key can not have Null values while Unique key column can contain a Null value
+4. **Primary key creates the Clustered index**, but _unique key creates the Non clustered index_.
+
+----
+## Q. Why do we need indexing on database table columns?
+> Indexing is a way of sorting a number of records on multiple fields. 
+> Creating an index on a field in a table creates another data structure which holds the field value, 
+> and pointer to the physical record it relates to. This index structure is then sorted, 
+> allowing Binary Searches [Time Complexity O(log(n))] to be performed on it .
+
+- Creating Index on database table column improves table query performance.
+- It is a usual practice to create Index on Table Columns that are frequently used in where clause of query.
+- they require additional space on Disc.
+
+----
+## Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
+
+> SELECT *
+FROM Employee E1
+WHERE (N-1) = (SELECT COUNT(DISTINCT(E2.Age))
+FROM Employee E2
+WHERE E2.Age > E1.Age)
+- To find 2nd highest Age, the query would become
+>SELECT *
+FROM Employee E1
+WHERE (2-1) = (SELECT COUNT(DISTINCT(E2.Age))
+FROM Employee E2
+WHERE E2.Age > E1.Age)
+----
+## Q. What is difference between Drop, Truncate and Delete commands in SQL?
+
+- Delete is used to delete rows from a table with optional where clause, we need to commit or rollback after
+calling this operation. This operation will cause all DELETE triggers to be fired on the table.
+> DELETE FROM Employee WHERE age < 14;
+- Truncate removes all rows from table, this operation can not be rolled back and no triggers are fired, thus it is
+faster in performance as well.
+> Truncate Table Employee;
+- Drop command will remove a table from the schema, all data rows, indexes, privileges will be removed, no
+triggers will be fired and no rollback.
+> Drop Table Employee;
+----
+## Q. What are clustered and non-clustered indexes in database?
+
+- Clustered Index
+>Clustered index physically rearrange the data that users inserts in your tables. It is nothing but a dictionary
+type data where actual data remains. And thus the physical order of the rows is the same as the logical order
+(indexed order). This type of index is often build over the **Primary Key of a table**
+- Non-Clustered Index
+>Non-Clustered Index contains pointers to the data that is stored in the data page. It is a kind of index backside
+of the book where you see only the reference of a kind of data.
+
+> Clustered index usually provides faster data retrieval than the non-clustered index. Moreover clustered indexes
+provides faster access to the contiguous rows because those rows are present physically adjacent in the actual
+table
+
+----
+## Q. What are OneToOne, OneToMany and ManyToMany relationship mappings in database design?
+
+- OneToOne
+ > A Person has a PAN (Card) is a perfect example of One To One association.
+
+- OneToMany
+>  relationship between Employee and Department where an Department is associated with Collection of Employee(s)
+```java
+@Entity
+public class Employee {
+@Id private int id;
+@ManyToOne
+@JoinColumn(name="DEPT_ID")
+private Department department;
+// ...
+}
+@Entity
+public class Department {
+@Id private int id;
+@OneToMany(mappedBy="department")
+private Collection<Employee> employees;
+// ...
+}
+```
+- ManyToMany
+> . Each employee can work on multiple Project(s) and each Project can be worked upon by multiple Employee(s).
+
+> separate table created
+
+#####  implement ManyToMany mappings with the self entity in JPA?
+```
+@ManyToMany
+@JoinTable(name="table_friends", joinColumns=@JoinColumn(name="personId"),
+inverseJoinColumns=@JoinColumn(name="friendId"))
+private Set<User> friends;
+
+@ManyToMany
+@JoinTable(name="table_friends", joinColumns=@JoinColumn(name="friendId"),
+inverseJoinColumns=@JoinColumn(name="personId"))
+private Set<User> friendOf;
+```
+----
+
+## Q. How will you handle batch insert in hibernate for optimal usage of memory, network and CPU?
+>A naive approach to insert 1M rows in the database using Hibernate might look like this -
+```
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+for ( int i=0; i<1000000; i++ ) {
+Customer customer = new Customer(.....);
+session.save(customer);
+}
+tx.commit();
+session.close();
+```
+But when we try to run this code we may run into OutOfMemory exception and the performance of the method
+will also be low.
+
+###### Optimization Steps
+- You will need to enable the use of JDBC batching in hibernate config file, for example batch size can be set to 50
+> hibernate.jdbc.batch_size 50
+- You can disable hibernate second level caching in hibernate config
+> hibernate.cache.use_second_level_cache false
+
+```
+Session session = sessionFactory.openSession();
+session.setCacheMode(CacheMode.IGNORE);
+Transaction tx = session.beginTransaction();
+for ( int i=0; i<1000000; i++ ) {
+Customer customer = new Customer(.....);
+session.save(customer);
+if ( i % 50 == 0 ) { //50, same as the JDBC batch size
+//flush a batch of inserts and release memory:
+session.flush();
+session.clear();
+}
+}
+tx.commit();
+session.close();
+```
+- Another good way of doing the same thing is to use Hibernate's Stateless Session
+```
+StatelessSession session = sessionFactory.openStatelessSession();
+Transaction tx = session.beginTransaction();
+ScrollableResults customers = session.getNamedQuery("GetCustomers")
+.scroll(ScrollMode.FORWARD_ONLY);
+while (customers.next()) {
+Customer customer = (Customer) customers.get(0);
+customer.updateStuff(...);
+session.update(customer);
+}
+tx.commit();
+session.close();
+```
+----
+----
 # self:
 
 ## Q. how you identify which Asset type?
