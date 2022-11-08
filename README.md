@@ -2353,12 +2353,13 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 >Logging
 > Error Handling
 > monitoring
-
-
-
-[synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
-
 ----
+## Q. How to configure profile in spring boot
+##### Use @Profile on a Bean
+> We use the @Profile annotation — we are mapping the bean to that particular profile;
+
+
+---- 
 
 
 # self:
