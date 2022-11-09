@@ -2679,7 +2679,108 @@ object, but it find nothing over there and returns the null.
 >Never make changes to the hashmap's key, otherwise the associated object can not be fetched using get()
 method. Though it will be accessible using other methods which iterate over the entire collection.
 
- 
+----
+
+## Q. what is the the default security configuration and how we can disable or customize
+>In order to add security to our Spring Boot application, we need to add the security starter dependency:
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
+
+>If we don't configure the password using the predefined property spring.security.user.password and start the application, 
+a default password is randomly generated and printed in the console log:
+
+> Using default security password: c8be15de-4488-4490-9dc6-fab3f91435c6
+
+##### Disabling the Auto-Configuration
+> We can do this via a simple exclusion:
+```java
+@SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
+public class SpringBootSecurityApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootSecurityApplication.class, args);
+    }
+}
+```
+
+#### Configuring Spring Boot Security (Spring 4)
+- we can override the default password by adding our own:
+> spring.security.user.password=password
+
+- If we want a more flexible configuration, with multiple users and roles for example, 
+- we need to make use of a full @Configuration class:
+```java
+@Configuration
+public class InMemoryAuthWebSecurityConfigurer
+        extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth)
+            throws Exception {
+        auth.inMemoryAuthentication()
+                .withUser("spring")
+                .password("secret")
+                .roles("USER");
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                .csrf().disable()
+                //.authorizeRequests().antMatchers("/app/**").permitAll().and()
+
+                /*	.sessionManagement()
+                    .sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()*/
+                .authorizeRequests().antMatchers("/app/**").authenticated().and()
+                .authorizeRequests().antMatchers("/login").authenticated().and()
+                //.addFilter(new JwtUsernameAndPasswordAuthenticationFilter(authenticationManager(), jwtManualConfig, secretKey))
+                //.authorizeRequests().antMatchers("/app/**").permitAll().and()
+
+                //.addFilterAfter(new JwtTokenVerifier(secretKey, jwtManualConfig), JwtUsernameAndPasswordAuthenticationFilter.class)
+
+                .authorizeRequests()
+
+                .anyRequest()
+                .authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/login").permitAll()
+                .defaultSuccessUrl("/sucess")
+                .passwordParameter("password")
+                .usernameParameter("username")
+                .and()
+                .rememberMe()
+                .tokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(21))
+                .key("sha")
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .clearAuthentication(true)
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID", "remember-me")
+                .logoutSuccessUrl("/login")
+                .and()
+                .formLogin()
+                .failureHandler(authenticationFailureHandler())
+                .and()
+                .exceptionHandling()
+                .accessDeniedHandler(accessDeniedHandler());
+    }
+}
+```
+### NOTE :: The @EnableWebSecurity annotation is crucial if we disable the default security configuration.
+
+###### Generating JWT
+- The sequence flow for these operations will be as follows-
+
+[https://www.javainuse.com/62-2-min.JPG](https://www.javainuse.com/62-2-min.JPG)
+
+
+
 ----
 
 ----
