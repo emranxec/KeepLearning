@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-public class Collection {
+public class CollectionTest {
     //Sort hashmap on basis of value.\
     public static void main(String[] args) {
         //sortByValue();

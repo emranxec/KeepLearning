@@ -95,20 +95,27 @@
 6. [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
 ----
 ## Q. how to create a immutable class?
+ #### When the state of object can not be changed after its construction then the object is called Immutable.
+
+- Immutable objects are inherently thread-safe
+- Immutable classes are easy to understand, as they possess a single state, which is controlled by their constructor.
+- Immutable objects are good candidate for hash keys because their hashcode can be cached and reused for better performance. 
+
  > Immutable class in java means that once an object is created, we cannot change its content. 
  > In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. 
  > We can create our own immutable class as well.
  
  ##### Following are the requirements:
   - The class must be declared as final so that child classes can’t be created.
-    - Data members in the class must be declared private so that direct access is not allowed.
-    - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
-    - A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
-    - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
+  - Data members in the class must be declared private so that direct access is not allowed.
+  - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
+  - A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
+  - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
 
 ```java
 final class immmutableClass{
     final private String name;
+    final private List list;
 
     immmutableClass(String name){
         this.name=name;
@@ -116,8 +123,15 @@ final class immmutableClass{
     String getName(){
         return name;
     }
+    public List<String> getList() {
+        return Collections.unmodifiableList(list); // defensive copy of the mutable field before returning it to caller
+    }
 }
 ```
+##### Example of Immutable Classes in JDK
+> All primitive Wrapper classes (Number, Integer, Long, Float, Double, etc), String Class, Color Class, BigInteger
+& BigDecimal class, CopyOnWriteArrayList & CopyOnWriteArraySet
+
 ----
 ## Q. what is sequential & parallel streams?
 
@@ -2308,6 +2322,13 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 ##### java 8 methods
 - Stream
 - filter(predicate)
+```
+public void removeFromCollection() {
+List<Integer> collect1 = Stream.of(10, 20, 30, 40).collect(toList());
+collect1.removeIf(integer -> integer > 15);
+collect1.forEach(System.out::println);
+}
+```
 - map(Function)
 - count
 - collect
@@ -2639,6 +2660,28 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 - PermGen Space removed, Metaspace added
 
 ----
+## Q. Can the keys in Hashing data structure be made Mutable?
+
+> When we put the mutableKey to HashMap then
+hashcode() is calculated for the key, suppose
+it comes out to be 11. So the Object123 is
+successfully inserted into the HashMap at bucket
+Location 11.
+
+> Then we modify the key and try to get the object. 
+HashMap's get() method again calculates the
+hashcode of the Key, since the Key is changed
+in between, so suppose hashcode() comes out
+to be 33 this time. Now the get() method goes to
+the bucket at address 33 and tries to retrieve the
+object, but it find nothing over there and returns the null.
+
+>Never make changes to the hashmap's key, otherwise the associated object can not be fetched using get()
+method. Though it will be accessible using other methods which iterate over the entire collection.
+
+ 
+----
+
 ----
 # self:
 
