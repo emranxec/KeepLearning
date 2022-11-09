@@ -2866,6 +2866,15 @@ persons.add(new Person("Second", 26));
   This gives the **benefit of performance** when we use Immutable Key's in any hashing data structure.
 
 ----
+## Q. We have an Application and we want that only Single Instance should run for that Application. 
+## If Application is already running then second instance should never be started. How would you handle this in Java?
+>There are two main ways to handle such scenario in Java -
+1. Use a Socket networking in your application and start a server socket on a predefined port. When second
+instance try to start up then check if **the port os already occupied** or not and accordingly take the decision.
+2. Use a shared **file lock using FileChannel** and check if that temp file is already locked by some running
+process or not. If yes then terminate the startup process for second instance.
+
+----
 ----
 # self:
 
