@@ -2820,6 +2820,41 @@ persons.add(new Person("Second", 26));
 ```
 ----
 
+## Q. What is difference between sleep(), yield() and wait() method?
+1. wait() method releases the acquired lock when the thread is waiting till someone calls notify() while Thread.
+   sleep() method keeps the lock even if thread is waiting.
+
+    ```
+    synchronized(monitor) {
+    Thread.sleep(1000); // LOCK is held by the current thread
+    }
+    synchronized(monitor) {
+    monitor.wait(); // LOCK is released by current thread
+    }
+    ```
+2. wait() can only be called from synchronized context otherwise it will throw IllegalMonitorStateException,
+   while sleep can be called from any code block.
+3. wait() is called on an Object while sleep is called on a Thread
+4. waiting thread can be awaken by calling notify()/notifyAll() methods while sleeping thread can't be awaken1
+   (though can be interrupted)
+5. . Incase of sleep() Thread immediately goes to Runnable state after waking up while in case of wait(),
+   waiting thread first fights back for the lock and then go to Runnable state.
+6. Major difference between yield and sleep in Java is that yield() method pauses the currently executing
+   thread temporarily for giving a chance to the remaining waiting threads of the same priority to execute. If
+   there is no waiting thread or all the waiting threads have a lower priority then the same thread will continue
+   its execution.
+
+##### In Layman's Terms
+
+* sleep(n) - Thread is done with its time slot, and please don’t give it another one for at least n milliseconds. The
+  OS doesn’t even try to schedule the sleeping thread until requested time has passed.
+* yield() - Thread is done with its time slot, but it still has work to do. The OS is free to immediately give the 
+  thread another time slot, or to give some other thread or process the CPU the yielding thread just gave up.
+* wait() - Thread is done with its time slot, Don’t give it another time slot until someone calls notify(). As with
+  sleep(), the OS won’t even try to schedule your task unless someone calls notify() or one of a few other
+  wakeup scenarios occurs (spurious wakeup).
+
+----
 ----
 # self:
 
