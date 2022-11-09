@@ -2855,6 +2855,17 @@ persons.add(new Person("Second", 26));
   wakeup scenarios occurs (spurious wakeup).
 
 ----
+## Q. What do you think is the reason for String Class to be Immutable?
+
+* Immutability brings inherent **thread-safety** to the usage of String class in a concurrent program. So multiple 
+  threads can work on the same String object without any data corruption. There is **absolutely no need to
+  synchronize** the code because of String objects.
+* StringPooling is possible only because of immutability because the underlying contents of the String will
+  never change. This helps **reducing the overall memory footprint** of the application using lots of String objects.
+* Hash code for **Immutable objects** are calculated lazily on first usage and then **cached for future reference.** 
+  This gives the **benefit of performance** when we use Immutable Key's in any hashing data structure.
+
+----
 ----
 # self:
 
