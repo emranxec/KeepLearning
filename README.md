@@ -2786,6 +2786,27 @@ public class InMemoryAuthWebSecurityConfigurer
 
 
 ----
+## Q. Discuss Comparable and Comparator? Which one should be used in a given scenario?
+- Comparable and Comparator both are used for allowing sorting a collection of objects.
+- Comparable 
+> should be used to define the natural ordering behavior of an Object.
+
+>For example, java.lang.String implements Comparable interface to provide natural order to Strings
+
+- Comparator 
+>should be used to provide an external controllable ordering behavior which can override the
+default ordering behavior (natural ordering)
+
+>Comparator is implemented like an **Adaptor Design Pattern** where a separate class is
+dedicated for providing the comparison behavior.
+
+- Using Comparator in Java 8 is very easy with Lambda Expression
+```
+Arrays.sort(strings, (a, b) -> a.compareTo(b));
+Arrays.sort(strings, String::compareToIgnoreCase); // this case using method reference
+Arrays.sort(people, Comparator.comparing(Person::getLastName)); // sorts collection of people with lastname
+```
+----
 
 ----
 # self:
