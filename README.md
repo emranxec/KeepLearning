@@ -2874,6 +2874,7 @@ instance try to start up then check if **the port os already occupied** or not a
 2. Use a shared **file lock using FileChannel** and check if that temp file is already locked by some running
 process or not. If yes then terminate the startup process for second instance.
 
+[SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
 ----
 ----
 # self:
