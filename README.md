@@ -2774,10 +2774,11 @@ public class InMemoryAuthWebSecurityConfigurer
 ```
 ### NOTE :: The @EnableWebSecurity annotation is crucial if we disable the default security configuration.
 
+#### JWT
+> Any user will be able to consume this API only if it has a valid JSON Web Token(JWT)
 - Generating JWT
-- The sequence flow for these operations will be as follows-
   ![generate](https://user-images.githubusercontent.com/16031518/200845915-cc995375-9523-4884-8229-2c3c50fb608e.jpg)
--manager
+- manager
   ![manager](https://user-images.githubusercontent.com/16031518/200845988-52546ecf-de05-490a-87dc-4a66fcf5a040.jpg)
 - validate JWT
   ![validation](https://user-images.githubusercontent.com/16031518/200845953-e850dfcb-fa7a-410a-8d1c-a274d100dd76.jpg)
