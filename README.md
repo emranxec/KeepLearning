@@ -2875,6 +2875,7 @@ instance try to start up then check if **the port os already occupied** or not a
 process or not. If yes then terminate the startup process for second instance.
 
 [SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
+
 ----
 ----
 # self:
