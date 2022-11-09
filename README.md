@@ -2806,6 +2806,18 @@ Arrays.sort(strings, (a, b) -> a.compareTo(b));
 Arrays.sort(strings, String::compareToIgnoreCase); // this case using method reference
 Arrays.sort(people, Comparator.comparing(Person::getLastName)); // sorts collection of people with lastname
 ```
+
+##### sort a collection of data based on two properties
+```
+List<Person> persons = new ArrayList<>();
+persons.add(new Person("Second", 26));
+    persons.sort(
+        Comparator.comparing(Person::getLastName)
+            .thenComparing(Person::getFirstName)
+                .thenComparing(
+                    Person::getEmailAddress,
+                        Comparator.nullsLast(CASE_INSENSITIVE_ORDER)));
+```
 ----
 
 ----
