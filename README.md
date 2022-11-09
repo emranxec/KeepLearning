@@ -2774,10 +2774,13 @@ public class InMemoryAuthWebSecurityConfigurer
 ```
 ### NOTE :: The @EnableWebSecurity annotation is crucial if we disable the default security configuration.
 
-###### Generating JWT
+- Generating JWT
 - The sequence flow for these operations will be as follows-
-
-[https://www.javainuse.com/62-2-min.JPG](https://www.javainuse.com/62-2-min.JPG)
+  ![generate](https://user-images.githubusercontent.com/16031518/200845915-cc995375-9523-4884-8229-2c3c50fb608e.jpg)
+-manager
+  ![manager](https://user-images.githubusercontent.com/16031518/200845988-52546ecf-de05-490a-87dc-4a66fcf5a040.jpg)
+- validate JWT
+  ![validation](https://user-images.githubusercontent.com/16031518/200845953-e850dfcb-fa7a-410a-8d1c-a274d100dd76.jpg)
 
 
 
