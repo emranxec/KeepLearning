@@ -94,7 +94,7 @@
 5. [how-to-load-balance-in-60-40-weightage-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-load-balance-in-60-40-weightage-)
 6. [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
 ----
-## Q. how to create a immutable class?
+## Q. how to create an immutable class?
  #### When the state of object can not be changed after its construction then the object is called Immutable.
 
 - Immutable objects are inherently thread-safe
