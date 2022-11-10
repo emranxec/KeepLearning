@@ -799,7 +799,7 @@ Dependencies can be classified into:
 - Embedded Servlet Container - Tomcat 
 - Logging - logback, slf4j
 ----
-30. What inbuilt server spring uses?
+## Q. What inbuilt server spring uses?
 > With SpringBoot, the default embedded server is Tomcat. Other options available are Jetty and UnderTow.
 ----
 ## Q. explain Spring security?
@@ -1164,7 +1164,7 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 ----
-50. what is functional interface?
+## Q. what is functional interface?
 [functional-interfaces-java](https://www.geeksforgeeks.org/functional-interfaces-java/?ref=lbp)
 ----
 ## Q. how to configure techniques of JVM?
@@ -1255,7 +1255,7 @@ public class AppConfig {
     }
 }
 ```
-1.  one way to solve this is: use @Lookup
+-  one way to solve this is: use @Lookup
 ```java
 @Component
 public class SingletonLookupBean {
@@ -1268,7 +1268,7 @@ public class SingletonLookupBean {
 ```
 ###### You can use method injection to solve this problem.Simply use @Lookup method, it will return new instance each time.
 
-2. ObjectFactory Interface
+- ObjectFactory Interface
 > Spring provides the ObjectFactory<T> interface to produce on demand objects of the given type:
 ```java
 public class SingletonObjectFactoryBean {
@@ -1282,7 +1282,7 @@ public class SingletonObjectFactoryBean {
 }
 ```
 
-3. Using java.util.Function
+- Using java.util.Function
 >Another option is to create the prototype bean instances at runtime,
 > which also allows us to add parameters to the instances
 ```java
@@ -2233,7 +2233,7 @@ public class FourWheeler extends Vehicle{}
 ----
 ## Q. how to manage two different session factory Transaction?
 
-1. HibernateTransactionManager 
+- HibernateTransactionManager 
 > manages transactions on top of a single Hibernate SessionFactory. If your application uses only
 > a JDBC-compliant database to store data (that is, no ERP, JMS queue, file system, etc. is involved) 
 > that you access using Hibernate, you can use a HibernateTransactionManager in your application.
@@ -2264,7 +2264,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 </beans>
 ```
 
-2. JTA transaction Manager 
+- JTA transaction Manager 
 > If however, you have business operations that can modify multiple data stores at the same time and you 
 need to ensure data consistency across all the stores, you will need to use JTA transactions. 
 JTA support is provided either by JavaEE containers like JBoss, WebLogic or WebSphere or third-party 
@@ -2369,23 +2369,23 @@ collect1.forEach(System.out::println);
 
 ----
 ## Q. why Spring boot
-1. manage frameworks and versions (All dependency management)
+- manage frameworks and versions (All dependency management)
 ###### pom.xml
 > REST API - Spring framework,spring MVC Framework, JSON binding framework
 
 > Unit Tests - SPring test,mockito,Junit
 
-2. web.xml
+- web.xml
 ###### web.xml
 > If we needed spring MVC we need to configure dispatcher servlet
 
-3. Define Spring configuration
+- Define Spring configuration
 ###### context.xml
 > Component scan
 > view resolver
 > Data resource
 
-4. Non functional requirement
+- Non functional requirement
 ###### NFR's
 >Logging
 > Error Handling
@@ -2943,7 +2943,7 @@ private Singleton() {
 ```
 ----
 
-## Q. print second highest number from stream?
+## Q. print second-highest number from stream?
 
 ##### use IntStream
 ```
