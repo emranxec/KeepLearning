@@ -2875,6 +2875,86 @@ process or not. If yes then terminate the startup process for second instance.
 [SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
 
 ----
+## Q. Data structure and usages
+- PriorityQueue Usages
+> A network printer where multiple people submit print jobs at the same time, While one big print job is
+executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
+pages) execute on priority compared to big ones.
+
+>Emergency department in any hospital handles patients based on their severity, thus priority queue could
+used to implement such logic.
+
+- Binary Heap
+> Finding top 10 most frequently used words in a very large file in O(n)
+
+> Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
+
+
+
+----
+
+## Q. Prevent Breaking a Singleton Class Pattern
+
+```java
+public final class Singleton {
+
+    private static volatile Singleton instance = null;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+```
+
+##### Deserialization
+```
+protected Object readResolve() {
+return instance;
+}
+```
+
+##### Cloning
+```
+@Override
+    protected Object clone() throws CloneNotSupportedException  {
+        throw new CloneNotSupportedException();
+    }
+```
+
+##### Reflection
+```
+private Singleton() {
+        // Check if we already have an instance
+        if (instance != null) {
+           throw new IllegalStateException("Singleton" +
+             " instance already created.");
+        }
+    }
+```
+----
+
+## Q. print second highest number from stream?
+
+##### use IntStream
+```
+System.out.println( Arrays.stream(myInt) //IntStream
+.boxed() //Stream<Integer>
+.sorted(Comparator.reverseOrder())
+.skip(1)
+.findFirst() Optional<Integer>
+.get());
+```
+----
 
 ----
 # self:
