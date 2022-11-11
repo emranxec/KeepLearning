@@ -2637,7 +2637,6 @@ inverseJoinColumns = @JoinColumn(name = "project_id"))
 Set<Project> workingProjects;
 
 //Project.class
-
 @ManyToMany(mappedBy = "workingProject")
 Set<Employee> workingEmployees;
 ```
