@@ -359,7 +359,8 @@ template.query("SELECT * FROM books", new BookRowMapper());
 </dependency>
 </dependencies>
 ```
-- Step 3: Set Spring Boot MySQL Connection Configuration
+- Step 3: Set Spring Boot MySQL Connection Configuration (Application.properties)
+
 > spring.datasource.url=jdbc:mysql://localhost:3306/restapi
 
 > spring.datasource.username=root
@@ -367,16 +368,15 @@ template.query("SELECT * FROM books", new BookRowMapper());
 > spring.datasource.password=
 
 - Step 4: Build a Repository Class for Spring Boot
-```
-- @Repository
+- Step 5: Convert the Blog Class to Entity
+```java
+@Repository
 public interface BlogRespository extends JpaRepository<Blog, Integer> {
 
     // custom query to search to blog post by title or content
     List<Blog> findByTitleContainingOrContentContaining(String text, String textAgain);  
+    }
     
- ```
-- Step 5: Convert the Blog Class to Entity
- ```java
 @Entity
 public class Blog {
 @Id
