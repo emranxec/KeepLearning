@@ -160,7 +160,7 @@
  > In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. 
  > We can create our own immutable class as well.
  
-##### Following are the requirements:
+#### Following are the requirements:
   - The class must be declared as final so that child classes can’t be created.
   - Data members in the class must be declared private so that direct access is not allowed.
   - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
@@ -515,7 +515,7 @@ public class ResourceController {
 
 > A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
 
-##### The features of Java stream are –
+#### The features of Java stream are –
 - A stream is not a data structure instead it takes input from the Collections, Arrays or I/O channels.
 - Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
 - Each intermediate operation is lazily executed and returns a stream as a result, 
@@ -524,7 +524,7 @@ public class ResourceController {
 ----
 ### Q. what factory class java having?
 
-##### This design pattern has been widely used in JDK, such as
+#### This design pattern has been widely used in JDK, such as
 - getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
 - All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using valueOf() method.
 - java.nio.charset.Charset.forName(), 
@@ -1116,19 +1116,19 @@ tx = session.beginTransaction();
 ----
 ### Q. why jquery over javascript ?
 
-##### JavaScript
+#### JavaScript
 > JavaScript is a dynamic, multiparadigm programming language. It is interpreted and not compiled. Therefore, as the name suggests, it is a scripting language.
 
-##### jQuery
+#### jQuery
 > jQuery is a lightweight, feature-rich JavaScript library. It allows us to perform various tasks in a much simpler and quicker way. With jQuery, DOM manipulation, AJAX calls, event handling, and animations become a cinch.
 
-##### Angular JS
+#### Angular JS
 > Angular JS can do everything that JQuery does and even much more. It is easy to write and run unit tests in Angular JS applications. Dependency management is effortless and binding dynamic data is powerful. For building testable web applications, we can use Angular JS than JQuery.
 
-##### React
+#### React
 > React Is Faster Than jQuery. One of the biggest things that React has going for it is the use of the Virtual DOM (Document Object Model) instead of the traditional DOM. While jQuery works with the DOM directly, React uses the virtual DOM which is what makes React so much faster.
 
-##### Is Angular better than React? 
+#### Is Angular better than React? 
 >Angular is better than React if your application is enterprise-grade and you need to incorporate complex functionalities like progressive, single-page, and native web apps. However, React specializes in creating UI components and can be used in any application, including single-page apps
 ----
 ### Q. what is bootstrap?
@@ -1167,7 +1167,7 @@ tx = session.beginTransaction();
 ### Q. What is docker?
 >Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
 
-##### What can I use Docker for?
+#### What can I use Docker for?
 - Fast, consistent delivery of your applications
 - Responsive deployment and scaling
 - Running more workloads on the same hardware
@@ -1306,7 +1306,7 @@ serialization process.
 > creates only one instance of the bean, and cached in memory, 
 > and all the requests for that bean will return a shared reference to the same bean.
 
-##### we can change scope by
+#### we can change scope by
 ```java
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
@@ -1344,7 +1344,7 @@ public class SingletonLookupBean {
     }
 }
 ```
-###### You can use method injection to solve this problem.Simply use @Lookup method, it will return new instance each time.
+##### You can use method injection to solve this problem.Simply use @Lookup method, it will return new instance each time.
 
 - ObjectFactory Interface
 > Spring provides the ObjectFactory<T> interface to produce on demand objects of the given type:
@@ -1377,7 +1377,7 @@ public class SingletonFunctionBean {
 }
 ```
 
-##### Finally, we have to define the factory bean, prototype and singleton beans in our configuration:
+#### Finally, we have to define the factory bean, prototype and singleton beans in our configuration:
 ```java
 @Configuration
     public class AppConfig {
@@ -1400,7 +1400,7 @@ public class SingletonFunctionBean {
 }
 ```
 
-###### We should use the prototype scope for all beans that are stateful and the singleton scope should be used for stateless beans.
+##### We should use the prototype scope for all beans that are stateful and the singleton scope should be used for stateless beans.
 ----
 ### Q. what is states of hibernate attribute?
 #### transient 
@@ -1416,8 +1416,8 @@ public class SingletonFunctionBean {
 
 ----
 ### Q. Why concurrent HashMap used?
-##### Hashtable vs concurrent hashmap?
-##### Can two threads update in concurrent HashMap?
+#### Hashtable vs concurrent hashmap?
+#### Can two threads update in concurrent HashMap?
 
 >	Yes, Thread safety is ensured by having separate locks for separate buckets,
 > resulting in better performance. Performance is further improved by providing
@@ -1456,7 +1456,7 @@ public class SingletonFunctionBean {
 > of WeakHashMap, if object is specified as key doesn’t contain any references- **it is eligible for garbage collection** 
 > even though it is associated with WeakHashMap. i.e **Garbage Collector dominates over WeakHashMap.**
 
-##### there is no clone() method in the WeakHashMap class.
+#### there is no clone() method in the WeakHashMap class.
 
 #### Strong, Soft, and Weak References
 - Strong References (not eligible for GC)
@@ -1474,7 +1474,7 @@ public class SingletonFunctionBean {
     <version>6.0.10.Final</version>
 </dependency>
 ```
-##### @Validated
+#### @Validated
 
 ```java
 @RestController
@@ -1686,13 +1686,13 @@ public class Branch implements Serializable {
 > worldwide. It has many in-built features available that make the developer’s life simple.
 > One of them is a **caching mechanism**.
 
-###### There are mainly two types of caching:
+#### There are mainly two types of caching:
 - First level cache (default,can not disable,until Session is open)
->Long-lived sessions with several large objects consume more memory 
+> Long-lived sessions with several large objects consume more memory 
 > and may cause out of memory errors.
 - Second-level cache (default disabled,)
 
-######  Some useful methods:
+#####  Some useful methods:
 - Session.evict(): to remove the cached/stored entity. 
 - refresh(): method to refresh the cache. 
 - clear(): method to remove all the entities from the cache.
