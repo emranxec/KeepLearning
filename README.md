@@ -370,13 +370,19 @@ template.query("SELECT * FROM books", new BookRowMapper());
 - Step 4: Build a Repository Class for Spring Boot
 - Step 5: Convert the Blog Class to Entity
 ```java
+/**
+ * Build a Repository Class for Spring Boot
+ */
 @Repository
 public interface BlogRespository extends JpaRepository<Blog, Integer> {
 
     // custom query to search to blog post by title or content
     List<Blog> findByTitleContainingOrContentContaining(String text, String textAgain);  
     }
-    
+
+/**
+ * Convert the Blog Class to Entity
+ */
 @Entity
 public class Blog {
 @Id
