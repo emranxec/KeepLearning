@@ -1,6 +1,6 @@
-package com.xec.JavaEight.company;
+package com.xec;
 
-import com.xec.JavaEight.company.fruitShop.FruitBuilder;
+import com.xec.fruitShop.FruitBuilder;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package com.xec.JavaEight.company;
+package com.xec;
 
 import java.util.*;
 import java.util.function.Consumer;

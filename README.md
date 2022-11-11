@@ -2956,6 +2956,85 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ```
 ----
 
+## Q. What is optional, and what is it best used for?
+> Optional is a new container class defined in the java.util package, and used to 
+> represent optional values that either exist or do not exist. Optional’s chief 
+> benefit is avoiding null checks, and there are no longer any “NullPointerException”
+> results at run-time.
+----
+
+## Q. Difference Between Pessimistic Approach and Optimistic Approach in DBMS
+
+##### Definition
+- Pessimistic
+>It locks the database’s record for update access and other users can only access record as read-only or have to wait for a record to be ‘unlocked’.
+- Optimistic
+>  This approach does not need any locking or time-stamping method. In an optimistic approach, a transaction is executed without any problems of restriction until transaction is committed.
+
+##### Locking 
+- Pessimistic
+- >It locks records so that selected record for update will not be changed meantime by another user
+- Optimistic
+> It doesn’t lock the records as it ensures record wasn’t changed in time between SELECT & SUBMIT operations.
+
+##### conflicts
+- Pessimistic
+> The conflicts between transactions are very large in this approach
+- Optimistic
+> The conflicts between transactions are less than compared to pessimistic approach.
+
+##### synchronization of transactions
+- Pessimistic
+> The synchronization of transactions is conducted in start phase of life cycle of execution of a transaction
+- Optimistic
+> The synchronization of transactions is conducted in later phase or gets delayed in execution of a transaction.
+
+##### synchronization of transactions
+- Pessimistic
+> It is simple in designing and in programming.
+- Optimistic
+> It is more complex in designing and managing deadlocks’ risk.
+
+##### storage cost
+- Pessimistic
+> higher
+- Optimistic
+> It has a relatively lower storage cost.
+
+#####  concurrency
+- Pessimistic
+> It has a lower degree of concurrency
+- Optimistic
+> It has a high degree of concurrency
+
+
+#####  when to use?
+- Pessimistic
+> This approach is found to use where there are more transaction conflicts
+
+> It is suitable for a small database or a table which has less records
+- Optimistic
+> This approach is found to use where there are fewer transaction conflicts or very rare.
+
+>It is suitable for a large database or has more records
+
+#####  transaction phases
+- Pessimistic
+> Validate -> Read -> Compute -> Write
+- Optimistic
+> Read -> Compute -> Validate ->  Write
+
+#####  Advantage
+- Pessimistic
+> It helps in protecting the system from the concurrency conflict
+- Optimistic
+> It allows the conflict to happen
+
+
+[pessimistic-and-optimistic](https://www.geeksforgeeks.org/difference-between-pessimistic-approach-and-optimistic-approach-in-dbms/)
+
+----
+
 ----
 # self:
 

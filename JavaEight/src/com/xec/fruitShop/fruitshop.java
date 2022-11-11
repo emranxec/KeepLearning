@@ -1,7 +1,5 @@
-package com.xec.JavaEight.company.fruitShop;
+package com.xec.fruitShop;
 
-
-import static com.xec.JavaEight.company.testLazyProxy.proxyPatternJava8;
 
 public class fruitshop {
     public static void main(String[] args) throws InterruptedException {

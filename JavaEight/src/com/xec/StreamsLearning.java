@@ -1,4 +1,4 @@
-package com.xec.JavaEight.company;
+package com.xec;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,9 +19,14 @@ class StreamsLearning {
            .forEach(x-> System.out.println(x+ " "));
         lines.close();*/
 
-        IntStream.range(0,10)
+        System.out.println(  IntStream.range(0,10)
                 .skip(5)
-                .forEach(x-> System.out.println(x));
+                .skip(1)
+                .distinct()
+                .asDoubleStream()
+                .parallel()
+                .reduce(0, Double::max));
+           //     .forEach(x-> System.out.println("the value is : "+x));
          int a = 12333445;
 
         System.out.println(countUniqueDigit(a));

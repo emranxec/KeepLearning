@@ -1,4 +1,4 @@
-package com.xec.JavaEight.company.fruitShop;
+package com.xec.fruitShop;
 
 class FruitVendors {
     String vendorName;

@@ -1,4 +1,4 @@
-package com.xec.JavaEight.company.fruitShop;
+package com.xec.fruitShop;
 
 import java.util.*;
 import java.util.function.BiFunction;
@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import static com.xec.JavaEight.company.testLazyProxy.proxyPatternJava8;
+import static com.xec.testLazyProxy.proxyPatternJava8;
 import static java.util.stream.Collectors.*;
 
 public class FruitBuilder {

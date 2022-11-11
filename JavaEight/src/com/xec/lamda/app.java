@@ -1,4 +1,4 @@
-package com.xec.JavaEight.company.lamda;
+package com.xec.lamda;
 
 interface Lambda{
     public void demo();
