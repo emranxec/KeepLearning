@@ -106,6 +106,8 @@
 9. [explain-hibernate-inheritance](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-hibernate-inheritance)
 10. [what-are-different-library-for-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--what-are-different-library-for-hibernate)
 11. [hibernate-optimal-usage-of-memory-network-and-cpu](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-will-you-handle-batch-insert-in-hibernate-for-optimal-usage-of-memory-network-and-cpu)
+12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
+
 
 ### SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
@@ -115,8 +117,7 @@
 5. [why-do-we-need-indexing-on-database-table-columns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-do-we-need-indexing-on-database-table-columns)
 6. [what-is-difference-between-drop-truncate-and-delete-commands-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-drop-truncate-and-delete-commands-in-sql)
 7. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
-8. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
-9. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+8. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
 ### Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
