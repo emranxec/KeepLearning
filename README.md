@@ -657,7 +657,7 @@ public void addMoneyToAccount(long account) {
 
 #### The methods of Transaction interface are as follows:
 - _void begin()_ starts a new transaction. 
-- _void commit()_ ends the unit of work unless we are in FlushMode.NEVER. 
+- _void commit()_ ends the unit of work unless we are in **FlushMode.NEVER.** 
 - _void rollback()_ forces this transaction to rollback. 
 - _void setTimeout(int seconds)_ it sets a transaction timeout for any transaction started by a subsequent call 
 - to begin on this instance. 
