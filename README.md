@@ -242,7 +242,7 @@ public class BookController {
 > NOTE: We can create separate instances of the BookRepository bean by changing the bean scope from singleton to prototype
 > using the @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) annotation.
 
-[what-is-default-spring-bean-status](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-default-spring-bean-status)
+[we can change scope by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-default-spring-bean-status)
 
 ### Factory Method Pattern
 
