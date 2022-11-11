@@ -2672,7 +2672,7 @@ session.clear();
 tx.commit();
 session.close();
 ```
-- Another good way of doing the same thing is to use Hibernate's Stateless Session (Best when dealing with millions of records)
+- Another good way of doing the same thing is to **use Hibernate's Stateless Session** (Best when dealing with millions of records)
 ```
 StatelessSession session = sessionFactory.openStatelessSession();
 Transaction tx = session.beginTransaction();
