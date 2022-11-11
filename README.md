@@ -2651,7 +2651,7 @@ But when we try to run this code we may run into OutOfMemory exception and the p
 will also be low.
 
 ###### Optimization Steps
-- You will need to enable the use of JDBC batching in hibernate config file, for example batch size can be set to 50
+- You will need to enable the **use of JDBC batching in hibernate** config file, for example batch size can be set to 50
 > hibernate.jdbc.batch_size 50
 - You can disable hibernate second level caching in hibernate config
 > hibernate.cache.use_second_level_cache false
