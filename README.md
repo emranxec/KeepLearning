@@ -2277,8 +2277,8 @@ public class FourWheeler extends Vehicle{}
 
 > @Inheritance - It is used to define the type of inheritance used in hibernate and it is defined in the parent class.
 
->@DiscriminatorValue - This annotation is used to specify the DType column name. Here we have defined it as PERMANENT_EMP  
-> in case of PermanentEmployee.java and CONTRACT_EMPLOYEE in case of ContractEmployee.java
+>@DiscriminatorValue - This annotation is used to specify the DType column name. Here we have defined it as Bike  
+> in case of TwoWheeler.java and Car in case of FourWheeler.java
 
 [implementing-inheritance-in-hibernate](https://www.dineshonjava.com/hibernate/implementing-inheritance-in-hibernate/)
 
