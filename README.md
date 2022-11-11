@@ -148,6 +148,8 @@
   - A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
   - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
 
+[ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/ImmutableOne.java)
+
 ```java
 final class immmutableClass{
     final private String name;
@@ -168,7 +170,7 @@ final class immmutableClass{
 > All primitive Wrapper classes (Number, Integer, Long, Float, Double, etc), String Class, Color Class, BigInteger
 & BigDecimal class, CopyOnWriteArrayList & CopyOnWriteArraySet
 
-[ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/ImmutableOne.java)
+
 ----
 ## Q. what is sequential & parallel streams?
 
