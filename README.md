@@ -2205,7 +2205,7 @@ public class UniversityController {
 > Entity inheritance means that we can use polymorphic queries for retrieving 
 all the subclass entities when querying for a superclass.
 
-##### Hibernate Single Table Strategy
+#### Hibernate Single Table Strategy (strategy=InheritanceType.SINGLE_TABLE)
 
 - Simplest to implement.
 - Only one table to deal with.
@@ -2219,23 +2219,21 @@ all the subclass entities when querying for a superclass.
 public class Vehicle{}
 
 @Entity
-@Table(name="TWO_WHEELER")
-//@DiscriminatorValue("Bike")
+@DiscriminatorValue("Bike")
 public class TwoWheeler extends Vehicle{}
 
 
 @Entity
-@Table(name="FOUR_WHEELER")
-//@DiscriminatorValue("Car")
+@DiscriminatorValue("Car")
 public class FourWheeler extends Vehicle{}
 ```
-##### Hibernate Table Per Class Strategy
+#### Hibernate Table Per Class Strategy (strategy=InheritanceType.TABLE_PER_CLASS)
 - You can define NOT NULL constraints on the table.
 - Tables are not normalized.
-- Select statements require more time to execute as UNION operation is applied.
+- Select statements require more time to execute as **UNION operation** is applied.
 
 >In case of table per class strategy, there are no. of tables created equivalent to exact no.
-> of concrete entites defined in the inheritance hierachy.
+> of concrete entities defined in the inheritance hierarchy.
 
 ```java
 @Entity
@@ -2252,10 +2250,10 @@ public class TwoWheeler extends Vehicle{}
 public class FourWheeler extends Vehicle{}
 
 ```
-##### Hibernate Joined Table Strategy
+#### Hibernate Joined Table Strategy (strategy=InheritanceType.JOINED)
 - Tables are normalized.
 - You can define NOT NULL constraints.
-- Low performance as it runs OUTER JOIN as well as INNER JOIN in select stements.
+- Low performance as it runs OUTER JOIN as well as INNER JOIN in select statements.
 
 > All the entries in the DB will be created in one table that is corresponding table of parent entity and the tables 
 > corresponding to the child entities will have reference to it.
