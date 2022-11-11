@@ -1,6 +1,6 @@
-## Interview Questions
+# Interview Questions
 
-### Cloud
+## Cloud
 1. [what-is-azure-function](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--what-is-azure-function)
 2. [what-is-azure-kubernetes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-azure-kubernate)
 3. [what-is-serverless-computing](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-serverless-computing)
@@ -8,25 +8,25 @@
 5. [how-to-configure-ci/cd-process](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-cicd-process)
 6. [mqs](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-mqs)
 
-### UI
+## UI
 1. [what-is-responsive-ui-in-js](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-responsive-ui-in-js)
 2. [why-jquery-over-javascript-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-jquery-over-javascript-)
 3. [what-is-bootstrap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-bootstrap)
 
-### API
+## API
 1. [how-you-test-json-implementation](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-test-json-implementation)
 2. [what-are-restful-annotations](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-restful-annotations)
 3. [write-code-to-hit-new-api-request-from-your-code](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-code-to-hit-new-api-request-from-your-code)
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
 
-### DSA & design
+## DSA & design
 1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 2. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
 3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
 4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
 5. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-### JAVA
+## JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
 2. [can-mutable-object-is-instance-of-immutable-class-how-to-fix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--can-mutable-object-is-instance-of-immutable-class-how-to-fix)
 3. [explain-how-to-create-user-defined-annotations-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-how-to-create-user-defined-annotations-)
@@ -57,7 +57,7 @@
 28. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 29. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-### Java 8
+## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
 2. [map-vs-flatmap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-map-vs-flatmap)
 3. [what-is-java-steams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-java-steams)
@@ -68,7 +68,7 @@
 8. [what-is-optional-and-what-is-it-best-used-for](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
 
-### Spring
+## Spring
 1. [why-spring-boot](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-spring-boot)
 2. [how-to-configure-profile-in-spring-boot](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-profile-in-spring-boot)
 3. [how-to-connect-db-from-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-connect-db-from-spring)
@@ -95,7 +95,7 @@
 24. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
 25. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
-### Hibernate
+## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
 2. [explain-transactions-in-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-transactions-in-hibernate)
 3. [explain-dirty---hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-dirty---hibernate)
@@ -110,7 +110,7 @@
 12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
 13. How lazy loading works for collection of objects? and what is N+1 problem ?
 
-### SQL
+## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
 2. [how-to-avoid-sql-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-avoid-sql-injection)
 3. [where-vs-having-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-where-vs-having-in-sql)
@@ -120,27 +120,27 @@
 7. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
 8. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-### Maven & GIT
+## Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
 2. [git-rebase-vs-git-merge-which-is-better](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-git-rebase-vs-git-merge-which-is-better)
 
-### Docker and microservices
+## Docker and microservices
 1. [what-is-docker](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-docker)
 2. [why-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-microservices)
 3. [what-db-model-is-preferred-in-microservice-architecture](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-db-model-is-prefered-in-microservice-architecture)
 4. [how-to-convert-monolithic-application-to-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-monolithic-application-to-microservices)
 5. [explain-microservice-framework-netflix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
 
-### Programs
+## Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
 2. [remove-duplicate-using-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-remove-duplicate-using-streams)
 3. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 4. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-### SQL Queries
+## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
 
-### Self:
+## Self:
 1. [ ]  [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
 2. [ ]  [test-your-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-test-your-application)
 3. [ ]  [how-to-process-10000-request-handling-at-once--persist-in-db-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-process-10000-request-handling-at-once--persist-in-db-)
@@ -149,7 +149,7 @@
 6. [ ]  [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
 
 ----
-## Q. how to create an immutable class?
+### Q. how to create an immutable class?
  #### When the state of object can not be changed after its construction then the object is called Immutable.
 
 - Immutable objects are inherently thread-safe
@@ -160,7 +160,7 @@
  > In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. 
  > We can create our own immutable class as well.
  
- ##### Following are the requirements:
+##### Following are the requirements:
   - The class must be declared as final so that child classes can’t be created.
   - Data members in the class must be declared private so that direct access is not allowed.
   - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
@@ -191,7 +191,7 @@ final class immmutableClass{
 
 
 ----
-## Q. what is sequential & parallel streams?
+### Q. what is sequential & parallel streams?
 
 - A stream in Java is a sequence of objects which operates on a data source such as an array or a collection and supports various methods.
 - It was introduced in Java 8’s java.util.stream package. 
@@ -212,7 +212,7 @@ list.stream().forEach(System.out::print);
 list.parallelStream().forEach(System.out::print);
 ```
 ----
-## Q. remove duplicate using streams?
+### Q. remove duplicate using streams?
 
 - You can use the Stream.distinct() method to remove duplicates from a Stream in Java 8 and beyond.
 - The distinct() method behaves like a distinct clause of SQL, which eliminates duplicate rows from the result set.
@@ -223,7 +223,7 @@ System.out.println("List with duplicates: " + withDupes);
 List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.toList());
 ```
 ----
-## Q. design patterns in spring?
+### Q. design patterns in spring?
 
 > ### Singleton Pattern
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
@@ -351,7 +351,7 @@ template.query("SELECT * FROM books", new BookRowMapper());
 - Transactions
 
 ----
-## Q. how to connect DB from spring?
+### Q. how to connect DB from spring?
 
 - Step 1: Creating a MySQL Database
 ```roomsql
@@ -419,7 +419,7 @@ BlogRespository blogRespository;
  ```
 >This will allow you to use blogRepository anywhere in your controller without having to repeatedly instantiate it
 ----
-## Q. what is spring actuators?
+### Q. what is spring actuators?
 >Actuator brings production-ready features to our application.
 
 >Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
@@ -430,7 +430,7 @@ BlogRespository blogRespository;
 
 > It uses HTTP endpoints or JMX beans to enable us to interact with it.
 ----
-## Q. Map vs flatMap?
+### Q. Map vs flatMap?
 > map() can be used where we have to map the elements of a particular collection to a certain function, and then we need to return the stream which contains the updated results.
 > Example: Multiplying All the elements of the list by 3 and returning the updated list.
 
@@ -448,7 +448,7 @@ List<Integer> flatList
  ```
 > [difference-between-map-and-flatmap-in-java-stream](https://www.geeksforgeeks.org/difference-between-map-and-flatmap-in-java-stream/) 
 ----
-## Q. what is spring global exception?
+### Q. what is spring global exception?
 > Spring framework offers developers several options for handling exceptions in their applications. 
 One of which is global exception handler with @ControllerAdvice and @ExceptionHandler annotations
  ```java
@@ -486,31 +486,31 @@ public class ResourceController {
 [spring-boot-global-exception-handling](https://www.studytonight.com/spring-boot/spring-boot-global-exception-handling)
 
 ----
-## Q.  what is Azure function?
+### Q.  what is Azure function?
 
 > Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, 
 > and save on costs. Instead of worrying about deploying and maintaining servers, 
 > the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
 ----
 
-## Q. what is Azure kubernate?
+### Q. what is Azure kubernate?
 
 >Azure Kubernetes Service is a managed container orchestration service based on the open source 
 > Kubernetes system, which is available on the Microsoft Azure public cloud. An organization can 
 > use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.\
 ----
-## Q. what is responsive UI in JS?
+### Q. what is responsive UI in JS?
 
 > Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly 
 > to various screen sizes. Designers size elements in relative units (%) and apply media queries, 
 > so their designs can automatically adapt to the browser space to ensure content consistency across devices.
 
 ----
-## Q. what is Serverless computing?
+### Q. what is Serverless computing?
 > Serverless computing allows you to build and run applications and services without thinking about servers. 
 > With serverless computing, your application still runs on servers, but all the server management is done by AWS.
 ----
-## Q. what is java steams?
+### Q. what is java steams?
 > Introduced in Java 8, the Stream API is used to process collections of objects. 
 
 > A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
@@ -522,7 +522,7 @@ public class ResourceController {
 - hence various intermediate operations can be pipelined. 
 - Terminal operations mark the end of the stream and return the result.
 ----
-## Q. what factory class java having?
+### Q. what factory class java having?
 
 ##### This design pattern has been widely used in JDK, such as
 - getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
@@ -533,10 +533,10 @@ public class ResourceController {
 - java.lang.Class.newInstance(), 
 - java.lang.Class.forName() are some of their example where factory method design pattern has been used.
 ----
-## Q. flow of Spring MVC?
+### Q. flow of Spring MVC?
 > ![MVC](https://user-images.githubusercontent.com/16031518/196950237-c8c079a6-ebd3-448a-aab8-a35486abf2ec.png)
 ----
-## Q. How you test json implementation?
+### Q. How you test json implementation?
  ```java
 @Test
 class test {
@@ -558,7 +558,7 @@ class test {
 }
  ```
 ----
-## Q.  can mutable object is instance of immutable class? how to fix? 
+### Q.  can mutable object is instance of immutable class? how to fix? 
 
 - can private constructer of immutable class always create a new object of mutable instance? 
 - getter of immutable class always return a new object of mutable instance? 
@@ -568,7 +568,7 @@ class test {
 - and in getter always return a new instance of mutable field?
 >
 ----
-## Q. what is SAAS?
+### Q. what is SAAS?
 > What is SaaS? Software as a service (or SaaS) is a way of delivering applications over the Internet—as a service. 
 > Instead of installing and maintaining software, you simply access it via the Internet, 
 > freeing yourself from complex software and hardware management.
@@ -577,7 +577,7 @@ class test {
 > is then delivered to users over the internet on a subscription basis, 
 > giving users the flexibility to not have to worry about upfront installation purchases or ongoing maintenance costs.
 ----
-## Q. How to handle Transactions in Spring?
+### Q. How to handle Transactions in Spring?
 > #### Using @Transactional power
 > As we defined before, in a transaction, if a single process fails then all transactions should fail. 
 > We can implement this behavior using @Transactional annotation.
@@ -648,7 +648,7 @@ public void addMoneyToAccount(long account) {
 - [Transaction Management](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html)
 
 ----
-## Q. explain Transactions in hibernate?
+### Q. explain Transactions in hibernate?
 
 ### Transaction Interface in Hibernate
 > In hibernate framework, we have Transaction interface that defines the unit of work. 
@@ -665,7 +665,7 @@ public void addMoneyToAccount(long account) {
 - _boolean wasCommitted()_ checks if the transaction is committed successfully. 
 - _boolean wasRolledBack()_ checks if the transaction is rollback successfully.
 ----
-## Q. what are RESTFUL annotations?
+### Q. what are RESTFUL annotations?
 #### JAX-RS Annotations
 - @Path(‘Path‘)
 - @GET
@@ -684,7 +684,7 @@ public void addMoneyToAccount(long account) {
 - @FormParam()
 
 ----
-## Q. write code to hit new api request from your code?
+### Q. write code to hit new api request from your code?
 
 #### Spring RestTemplate
 ```java
@@ -731,13 +731,13 @@ List<PostDTO> getAllPosts();
 [consuming-rest-api-using-feign/](https://blog.nimbleways.com/consuming-rest-api-using-feign/)
 
 ----
-## Q. What DB model is prefered in microservice architecture?
+### Q. What DB model is prefered in microservice architecture?
 >Different services have different data storage requirements. For some services, a relational database 
 > is the best choice. Other services might need a NoSQL database such as MongoDB,
 > which is good at storing complex, unstructured data, or Neo4J, 
 > which is designed to efficiently store and query graph data.
 ----
-## Q. What is @autowire usage?
+### Q. What is @autowire usage?
 >The @Autowired annotation provides more fine-grained control over where and how 
 > autowiring should be accomplished. The @Autowired annotation can be used to 
 > autowire bean on the setter method just like @Required annotation, 
@@ -764,7 +764,7 @@ class someClass {
 }
 ```
 ----
-## Q. Explain how to create user defined annotations ?
+### Q. Explain how to create user defined annotations ?
 
 ### Create Custom Annotation
 
@@ -789,7 +789,7 @@ public @interface Init {
 }
 ```
 ----
-## Q. what data structure does executer service hold?
+### Q. what data structure does executer service hold?
 
 ![pool](https://user-images.githubusercontent.com/16031518/197357824-9175b364-59f2-4d9f-9ecb-04e6f63f0511.png)
 
@@ -821,7 +821,7 @@ public @interface Init {
 - Terminated:
 
 ----
-## Q. what are Microservices design patterns?
+### Q. what are Microservices design patterns?
 #### Microservices Design Patterns:
 - Aggregator
 - API Gateway 
@@ -835,7 +835,7 @@ public @interface Init {
 - Decomposition
 > [design-patterns-for-microservices](https://dzone.com/articles/design-patterns-for-microservices)
 ----
-## Q. SQL queries with Functions & stored procedures
+### Q. SQL queries with Functions & stored procedures
 #### Stored Procedures
 > Stored Procedures are pre-compiled objects which are compiled for the first time and its compiled format is saved, which executes (compiled code) whenever it is called. For more about a stored procedure, please refer to the article Different types of Stored Procedure.
 #### Functions
@@ -854,7 +854,7 @@ public @interface Init {
 - We can use Transactions in Procedure whereas we can't use Transactions in Function.
 
 ----
-## Q. Basic packages requires to create spring boot application
+### Q. Basic packages requires to create spring boot application
 #### For instance, we would like to develop a Spring WebApplication with Tomcat WebServer. Then we need to add the following minimal jar dependencies in your Maven’s pom.xml file or Gradle’s build.gradle file
 
 - Spring core Jar file(spring-core-xx.jar)
@@ -874,10 +874,10 @@ Dependencies can be classified into:
 - Embedded Servlet Container - Tomcat 
 - Logging - logback, slf4j
 ----
-## Q. What inbuilt server spring uses?
+### Q. What inbuilt server spring uses?
 > With SpringBoot, the default embedded server is Tomcat. Other options available are Jetty and UnderTow.
 ----
-## Q. explain Spring security?
+### Q. explain Spring security?
 > Spring Security is a framework which provides various security features like: authentication, authorization to create secure Java Enterprise Applications.
 ### Spring Security Features
 
@@ -921,7 +921,7 @@ Dependencies can be classified into:
 #### Modernized Password Encoding
 >Spring Security 5.0 introduced new Password encoder **DelegatingPasswordEncoder** which is more modernize and solve all the problems of previous encoder **NoOpPasswordEncoder**.
 ----
-## Q. explain Dirty - Hibernate?
+### Q. explain Dirty - Hibernate?
 > When an entity object is loaded, a copy of all properties of that entity object is created. 
 > At the time of synchronization, which we call flush time, the properties of the entity object are matched 
 > with the properties of the loaded object and the difference is checked. 
@@ -943,7 +943,7 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 > If we mark the method we are processing as readOnly = true, there will be no 'Hibernate dirty check' operation,
 > as there will be no update operation. **This gives us performance.**
 ----
-## Q. why String immutable ?
+### Q. why String immutable ?
 > In the String constant pool, a String object is likely to have one or many references. 
 > If several references point to the same String without even knowing it, 
 > it would be bad if one of the references modified that String value. That’s why String objects are immutable.
@@ -958,10 +958,10 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 pointed to by s, and the second one “knowledge base”, pointed to by str. But, technically, we have three String 
 objects, **the third one being the literal “base” in the concat statement.**
 ----
-## Q. how to configure Spring & hibernate?
+### Q. how to configure Spring & hibernate?
 > [spring-boot-with-hibernate](https://www.javadevjournal.com/spring-boot/spring-boot-with-hibernate/)
 ----
-## Q. what is Class not found and No class def error?
+### Q. what is Class not found and No class def error?
 > ClassNotFoundException is raised in the above program as class “GeeksForGeeks” is not found in the classpath.
     `try {Class.forName("GeeksForGeeks");
         }
@@ -972,16 +972,16 @@ objects, **the third one being the literal “base” in the concat statement.**
 
 - [classnotfoundexception-vs-noclassdeffounderror](https://www.geeksforgeeks.org/classnotfoundexception-vs-noclassdeffounderror-java/?ref=lbp)
 ----
-## Q. is static method override possible?
+### Q. is static method override possible?
 > We can declare static methods with the same signature in the subclass, 
 > but it is not considered overriding as there won't be any run-time polymorphism. Hence the answer is 'No
 ----
-## Q. explain save,update, save and persist methods?
+### Q. explain save,update, save and persist methods?
 
 - [hibernate-save-persist-update-merge-saveorupdate](https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate)
 
 ----
-## Q. how to convert data in rest response in spring?
+### Q. how to convert data in rest response in spring?
 > Either return text/plain as
 ```
 @RequestMapping(value="/controller", method=GET)
@@ -1001,7 +1001,7 @@ return "Response!";
 {  "response" : "your string value" }
 ```
 ----
-## Q. when to used native query & hibernate query?
+### Q. when to used native query & hibernate query?
 ###### You do not need to create a native query unless you want to. 
 
 > JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. 
@@ -1010,7 +1010,7 @@ return "Response!";
 - Maybe you do not want to learn JPQL if you already know SQL 
 - You already have the queries written in SQL, and do not have resources/time to port them to JPQL
 ----
-## Q. what is criteria in hibernate ?
+### Q. what is criteria in hibernate ?
 
 ```java
 class DBCOnnections{
@@ -1114,7 +1114,7 @@ tx = session.beginTransaction();
  [hibernate-criteria-queries](https://www.geeksforgeeks.org/hibernate-criteria-queries/)
 
 ----
-## Q. why jquery over javascript ?
+### Q. why jquery over javascript ?
 
 ##### JavaScript
 > JavaScript is a dynamic, multiparadigm programming language. It is interpreted and not compiled. Therefore, as the name suggests, it is a scripting language.
@@ -1131,12 +1131,12 @@ tx = session.beginTransaction();
 ##### Is Angular better than React? 
 >Angular is better than React if your application is enterprise-grade and you need to incorporate complex functionalities like progressive, single-page, and native web apps. However, React specializes in creating UI components and can be used in any application, including single-page apps
 ----
-## Q. what is bootstrap?
+### Q. what is bootstrap?
 > Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. 
 > Designed to enable responsive development of mobile-first websites, 
 > Bootstrap provides a collection of syntax for template designs.
 ----
-## Q. what is service layer in Spring? 
+### Q. what is service layer in Spring? 
 ### Reasons to use :
 
 - Provides separation of concern-
@@ -1154,17 +1154,17 @@ tx = session.beginTransaction();
 [why-to-use-service-layer-in-spring-mvc](https://blog1.westagilelabs.com/why-to-use-service-layer-in-spring-mvc-5f4fc52643c0)
 
 ----
-## Q. Do we need DAO layer if we have Service layer?
+### Q. Do we need DAO layer if we have Service layer?
 > They way you put it, the alternative to having a DAO layer is not having a DAO layer. 
 > Not having a DAO layer means that the code on the next higher level is responsible 
 > for handling low level persistence aspects, which contradicts the principle of single responsibility.
 
 ----
-## Q. String vs String builder?
+### Q. String vs String builder?
 - [string-vs-stringbuilder-vs-stringbuffer](https://www.geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-java/) 
 
 ----
-## Q. What is docker?
+### Q. What is docker?
 >Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
 
 ##### What can I use Docker for?
@@ -1176,12 +1176,12 @@ tx = session.beginTransaction();
 
 [docker-cheat-sheet](https://www.docker.com/wp-content/uploads/2022/03/docker-cheat-sheet.pdf)
 ----
-## Q. How to configure CI/CD process?
+### Q. How to configure CI/CD process?
 - [build-ci-cd-pipeline-in-azure-devops](https://www.lambdatest.com/blog/build-ci-cd-pipeline-in-azure-devops/)
 - [azure-devops-pipeline-tutorial](https://medium.com/abn-amro-developer/azure-devops-pipeline-tutorial-part-1-ci-pipeline-fundamentals-41e590ff1d80)
 
 ----
-## Q. how to avoid sql injection?
+### Q. how to avoid sql injection?
 #### Option 1: Use of **Prepared Statements** (with Parameterized Queries)
 >Prepared statements ensure that an attacker is not able to change the intent of a query,  even if SQL commands are inserted by an attacker.
 
@@ -1242,13 +1242,13 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 ----
-## Q. what is functional interface?
+### Q. what is functional interface?
 [functional-interfaces-java](https://www.geeksforgeeks.org/functional-interfaces-java/?ref=lbp)
 ----
-## Q. how to configure techniques of JVM?
+### Q. how to configure techniques of JVM?
 >
 ----
-## Q. why serialize a object? How to serialize and deserialize object? 
+### Q. why serialize a object? How to serialize and deserialize object? 
 ### Q. explain Serialisation, UUID and its concepts?
 
 - You can think of serialization as the process of converting an object instance into a sequence of bytes (which may be binary or not depending on the implementation).
@@ -1300,7 +1300,7 @@ serialization process.
 [serialization-in-java](https://www.geeksforgeeks.org/serialization-in-java/)
 
 ----
-## Q. what is default spring bean status?
+### Q. what is default spring bean status?
 >The default scope for the bean is a singleton, like the example below, 
 > in which we haven't explicitly given a scope. Singleton means that the Spring container 
 > creates only one instance of the bean, and cached in memory, 
@@ -1402,7 +1402,7 @@ public class SingletonFunctionBean {
 
 ###### We should use the prototype scope for all beans that are stateful and the singleton scope should be used for stateless beans.
 ----
-## Q. what is states of hibernate attribute?
+### Q. what is states of hibernate attribute?
 #### transient 
 − A new instance of a persistent class, which is not associated with a Session and has no representation in the database and no identifier value is considered transient by Hibernate.
 
@@ -1415,7 +1415,7 @@ public class SingletonFunctionBean {
   ![TPD](https://user-images.githubusercontent.com/16031518/201423185-48f430bc-68a1-4d60-8f7d-0fe5b585deeb.JPEG)
 
 ----
-## Q. Why concurrent HashMap used?
+### Q. Why concurrent HashMap used?
 ##### Hashtable vs concurrent hashmap?
 ##### Can two threads update in concurrent HashMap?
 
@@ -1427,12 +1427,12 @@ public class SingletonFunctionBean {
 
 [difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
 
-## Q. Sort hashmap on basis of value.?
+### Q. Sort hashmap on basis of value.?
 
 [SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
 
 ----
-## Q.  LinkedHashmap internal works?
+### Q.  LinkedHashmap internal works?
 
 | BEFORE | KEY | VALUE | AFTER |
 |--------|-----|-------|-------|
@@ -1440,7 +1440,7 @@ public class SingletonFunctionBean {
 [how-linkedhashmap-works-internally-in-java](https://medium.com/@greekykhs/how-linkedhashmap-works-internally-in-java-409846a4f08)
 
 ----
-## Q.  What enhancements were made to ConcurrentHashMap in Java 8?
+### Q.  What enhancements were made to ConcurrentHashMap in Java 8?
 
 1. putIfAbsent (The entire method invocation is performed atomically)
 2. compute (The entire method invocation is performed atomically)
@@ -1451,7 +1451,7 @@ public class SingletonFunctionBean {
 7. forEach
 ----
 
-## Q. what is weak hashmap?
+### Q. what is weak hashmap?
 > WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap except in case 
 > of WeakHashMap, if object is specified as key doesn’t contain any references- **it is eligible for garbage collection** 
 > even though it is associated with WeakHashMap. i.e **Garbage Collector dominates over WeakHashMap.**
@@ -1466,7 +1466,7 @@ public class SingletonFunctionBean {
 [Hashmap-vs-weakhashmap-java](https://www.geeksforgeeks.org/hashmap-vs-weakhashmap-java/)
 
 ----
-## Q. how you validate the request param and path param Done in spring?
+### Q. how you validate the request param and path param Done in spring?
 ```xml
 <dependency>
     <groupId>org.hibernate.validator</groupId>
@@ -1498,7 +1498,7 @@ public class Controller {
 
 [spring-validate-requestparam-pathvariable](https://www.baeldung.com/spring-validate-requestparam-pathvariable)
 ----
-## Q. what is reflaction API? (java.lang.reflect)
+### Q. what is reflaction API? (java.lang.reflect)
 
 > Reflection is an API that is used to examine or modify the behavior of methods, classes, 
 > and interfaces at runtime.
@@ -1522,7 +1522,7 @@ public class Controller {
 [reflection-in-java/](https://www.geeksforgeeks.org/reflection-in-java/)
 
 ----
-## Q. at what time/place rollback gets called?
+### Q. at what time/place rollback gets called?
 > In Spring Boot, when @Transactional annotation is used, Spring Boot implicitly creates a [proxy](https://github.com/emranxec/KeepLearning/blob/main/README.md#proxy-pattern)
 > that will be creating a connection to the database. A transaction will be started and commit 
 > after the code has been executed errorless. Otherwise, it will roll back the changes if an 
@@ -1548,7 +1548,7 @@ throw new RuntimeException();
 
 [spring-transactional-rollback-handling](https://medium.com/geekculture/spring-transactional-rollback-handling-741fcad043c6)
 ----
-## Q. what are different types of class loader?
+### Q. what are different types of class loader?
 - A Java Classloader is of three types:
 1. BootStrap ClassLoader
 2. Extension ClassLoader
@@ -1564,7 +1564,7 @@ throw new RuntimeException();
 - [classloader-in-java/](https://www.geeksforgeeks.org/classloader-in-java/)
 
 ----
-## Q. How to convert monolithic application to microservices?
+### Q. How to convert monolithic application to microservices?
 1. Identify logical components.
 2. Flatten and refactor components.
 3. Identify component dependencies.
@@ -1577,7 +1577,7 @@ throw new RuntimeException();
 [8-steps-for-migrating-existing-applications-to-microservices](https://insights.sei.cmu.edu/blog/8-steps-for-migrating-existing-applications-to-microservices/)
 
 ----
-## Q. Garbage collectors? what are diff types of garbage collector? Different method of garbage collector?
+### Q. Garbage collectors? what are diff types of garbage collector? Different method of garbage collector?
 
 > Garbage collection in Java is the process by which Java programs perform automatic memory management.
  The main objective of Garbage Collector is to free heap memory by destroying unreachable objects.
@@ -1629,11 +1629,11 @@ throw new RuntimeException();
 [garbage-collection-java](https://www.geeksforgeeks.org/garbage-collection-java/)
 
 ----
-## Q. jdbc versus hibernate?
+### Q. jdbc versus hibernate?
 [difference-between-jdbc-and-hibernate-in-java](https://www.geeksforgeeks.org/difference-between-jdbc-and-hibernate-in-java/)
 
 ----
-## Q. explain @mappedBy?
+### Q. explain @mappedBy?
 
 > In JPA or Hibernate, entity associations are directional, either unidirectional or 
 bidirectional. Always mappedBy attribute is used in bidirectional association to link 
@@ -1681,7 +1681,7 @@ public class Branch implements Serializable {
 [difference-between-joincolumn-and-mappedby/](https://javabydeveloper.com/difference-between-joincolumn-and-mappedby/)
 
 ----
-## Q. explain hibernate caching? how to Configure ehcache?
+### Q. explain hibernate caching? how to Configure ehcache?
 > Hibernate is an ORM (Object-relational model) tool that is widely used by developers 
 > worldwide. It has many in-built features available that make the developer’s life simple.
 > One of them is a **caching mechanism**.
@@ -1769,12 +1769,12 @@ entityManager.createQuery("select f from Foo f")
 [hibernate-second-level-cache](https://www.baeldung.com/hibernate-second-level-cache)
 
 ----
-## Q. explain Bean lifecycle?
+### Q. explain Bean lifecycle?
 
 [bean-scopes-and-lifecycle-spring](https://www.topcoder.com/thrive/articles/bean-scopes-and-lifecycle-spring)
 
 ----
-## Q. MQS?
+### Q. MQS?
 >A message queue is mostly meant for asynchronous things where you dont have to wait for the response. 
 
 >You could block the caller until a response is sought, but thats typically what an MQ is not meant for. 
@@ -1830,7 +1830,7 @@ entityManager.createQuery("select f from Foo f")
 [introduction-to-message-queuing](https://medium.com/tech-sauce/introduction-to-message-queuing-4a7ab8968b59)
 
 ----
-## Q. explain Maven in detail? explain Pom.xml in detail?
+### Q. explain Maven in detail? explain Pom.xml in detail?
 
 #### What is Maven?
 >Maven is a powerful project management tool that is based on POM (project object model). 
@@ -1865,18 +1865,18 @@ entityManager.createQuery("select f from Foo f")
 ###### Super POM
 > The Super POM is Maven’s default POM. All POMs inherit from a parent or default
 ----
-## Q. Why to overide run in springApplication?
+### Q. Why to overide run in springApplication?
 
 [run-method-on-application-startup-in-spring-boot
 ](https://medium.com/@cancerian0684/run-method-on-application-startup-in-spring-boot-37aa5e82c948)
 
 ----
-## Q. try with resources vs try with finally?
+### Q. try with resources vs try with finally?
 
 [prefer-try-with-resources-to-try-catch-finally](https://recepinanc.medium.com/til-18-prefer-try-with-resources-to-try-catch-finally-afc8c0dc9c05)
 
 ----
-## Q. Function vs bifunction?
+### Q. Function vs bifunction?
 
 ##### Function
 
@@ -1931,7 +1931,7 @@ public class SampleFunctionBiFunctionTest {
 [bifunction-interface-methods-apply-and-addthen](https://www.geeksforgeeks.org/java-bifunction-interface-methods-apply-and-addthen/)
 
 ----
-## Q. Mapping vs flat mapping?
+### Q. Mapping vs flat mapping?
 ##### map() 
 can be used where we have to map the elements of a particular collection to a certain function, and then we need to return the stream which contains the updated results.
 
@@ -1977,7 +1977,7 @@ class GFG {
 [difference-between-map-and-flatmap-in-java](https://www.geeksforgeeks.org/difference-between-map-and-flatmap-in-java-stream/?ref=lbp)
 
 ----
-## Q. what are Design principles?
+### Q. what are Design principles?
 #### SOLID Design Principles
 > SOLID principles are class-level, object-oriented design concepts that, in conjunction with an extensive test suite, 
 > help you avoid code rot.
@@ -2061,7 +2061,7 @@ public class OrderProcessor {
 The class need to implement all the functionalities
 The child class can be used as a substitute for our parent class.
 ----
-## Q. explain StackOverFlow vs OOM?
+### Q. explain StackOverFlow vs OOM?
 >Whenever you run a java program or java application, operating system allocates some memory to JVM. 
 > JVM divides this memory into two parts. One is Stack and another one is Heap. Stack is used for 
 > execution of methods and heap is used to store the objects. When the Stack becomes full, 
@@ -2110,10 +2110,10 @@ The child class can be used as a substitute for our parent class.
     }
 ```
 ----
-## Q. explain Microservice framework Netflix?
+### Q. explain Microservice framework Netflix?
 >
 ----
-## Q. difference between @Primary & @Qualifier?
+### Q. difference between @Primary & @Qualifier?
 
 #### @Primary
 > When more than one bean qualifies for the dependency to be autowired, 
@@ -2161,12 +2161,12 @@ public class UniversityController {
 - @Qualifier has higher priority than @Primary annotation
 
 ----
-## Q. Controller vs rest controlled?
+### Q. Controller vs rest controlled?
 
 [difference-between-controller-and-restcontroller](https://www.geeksforgeeks.org/difference-between-controller-and-restcontroller-annotation-in-spring/?ref=lbp)
 
 ----
-## Q. Spring actuators?
+### Q. Spring actuators?
 > Actuator is mainly used to expose operational information about the running application 
 > — health, metrics, info, dump, env, etc.
 
@@ -2201,7 +2201,7 @@ public class UniversityController {
 [spring-boot-actuator](https://www.geeksforgeeks.org/spring-boot-actuator/)
 
 ----
-## Q. explain Hibernate inheritance?
+### Q. explain Hibernate inheritance?
 > Entity inheritance means that we can use polymorphic queries for retrieving 
 all the subclass entities when querying for a superclass.
 
@@ -2285,7 +2285,7 @@ public class FourWheeler extends Vehicle{}
 [implementing-inheritance-in-hibernate](https://www.dineshonjava.com/hibernate/implementing-inheritance-in-hibernate/)
 
 ----
-## Q. Why microservices?
+### Q. Why microservices?
 
 - Continuous delivery
 > Each application resides in a separate container along with the environment it needs to run. Because of this, 
@@ -2312,7 +2312,7 @@ public class FourWheeler extends Vehicle{}
 > to sort out the side effects of updates before they can make them. The more updates, the bigger the monolith grows, 
 > and the more time and resources have to go into making future changes.
 ----
-## Q. how to manage two different session factory Transaction?
+### Q. how to manage two different session factory Transaction?
 
 - HibernateTransactionManager 
 > manages transactions on top of a single Hibernate SessionFactory. If your application uses only
@@ -2375,7 +2375,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 </beans>
 ```
 ----
-## Q.  what are Different library for hibernate?
+### Q.  what are Different library for hibernate?
 - hibernate3.jar (main jar)
 - antlr-2.7.6.jar 
 - common-collections-3.1.jar 
@@ -2385,7 +2385,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - javassist-3.12.0.GA.jar 
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
-## Q. What function is java 8 filter backend?
+### Q. What function is java 8 filter backend?
 >java.util.function.*;
 ##### Stream filter(Predicate predicate) 
 > returns a stream consisting of the elements of this stream that match the given **predicate**.
@@ -2426,12 +2426,12 @@ collect1.forEach(System.out::println);
 - findFirst,ifPresent
 - 
 ----
-## Q. Where vs having in sql?
+### Q. Where vs having in sql?
 
 [having-vs-where-clause-in-sql](https://www.geeksforgeeks.org/having-vs-where-clause-in-sql/)
 
 ----
-## Q. Why overloading? and Over loading concept?
+### Q. Why overloading? and Over loading concept?
 
 ##### Advantages of Method Overloading
 - Method overloading improves the **Readability and reusability** of the program. 
@@ -2441,7 +2441,7 @@ collect1.forEach(System.out::println);
 - Objects of a class can also be initialized in different ways using the constructors.
 
 ----
-## Q. is Synchronized block entire object?
+### Q. is Synchronized block entire object?
 >A synchronized block in Java is synchronized on some object. All synchronized blocks synchronize on 
 > the same object can only have one thread executing inside them at a time. All other threads attempting to enter 
 > the synchronized block are blocked until the thread inside the synchronized block exits the block.
@@ -2449,7 +2449,7 @@ collect1.forEach(System.out::println);
 [synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
 
 ----
-## Q. why Spring boot
+### Q. why Spring boot
 - manage frameworks and versions (All dependency management)
 ###### pom.xml
 > REST API - Spring framework,spring MVC Framework, JSON binding framework
@@ -2472,7 +2472,7 @@ collect1.forEach(System.out::println);
 > Error Handling
 > monitoring
 ----
-## Q. How to configure profile in spring boot
+### Q. How to configure profile in spring boot
 #### Use @Profile on a Bean
 > We use the @Profile annotation — we are mapping the bean to that particular profile;
 
@@ -2508,7 +2508,7 @@ public class DevDatasourceConfig{}
 [spring-profiles](https://www.baeldung.com/spring-profiles)
 
 ---- 
-## Q. Git Rebase vs Git Merge: Which is Better?
+### Q. Git Rebase vs Git Merge: Which is Better?
 ##### Git Merge
 > Git merge is one of the merging techniques in git, in which the logs of commits on branches are intact.
 
@@ -2532,7 +2532,7 @@ It is easy to find mistakes and resolve them.
 ###### we do git merge when we want our team to understand logs in a way where they can identify where each commit is coming from. We use Git Rebase when the logs of the repository will not be referred by anyone else.
 
 ---- 
-## Q. What is difference between Primary key and Unique Key?
+### Q. What is difference between Primary key and Unique Key?
 
 1. The main purpose of a Primary key is to uniquely identifies a given record in a Table, while the same is not true for Unique Key constraint.
 2. A table can have one and only one Primary Key, while there could be multiple unique keys inside a single
@@ -2541,7 +2541,7 @@ It is easy to find mistakes and resolve them.
 4. **Primary key creates the Clustered index**, but _unique key creates the Non clustered index_.
 
 ----
-## Q. Why do we need indexing on database table columns?
+### Q. Why do we need indexing on database table columns?
 > Indexing is a way of sorting a number of records on multiple fields. 
 > Creating an index on a field in a table creates another data structure which holds the field value, 
 > and pointer to the physical record it relates to. This index structure is then sorted, 
@@ -2552,7 +2552,7 @@ It is easy to find mistakes and resolve them.
 - they require additional space on Disc.
 
 ----
-## Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
+### Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
 ```roomsql
 SELECT *
 FROM Employee E1
@@ -2567,7 +2567,7 @@ FROM Employee E2
 WHERE E2.Age > E1.Age)
 ```
 ----
-## Q. What is difference between Drop, Truncate and Delete commands in SQL?
+### Q. What is difference between Drop, Truncate and Delete commands in SQL?
 
 - Delete is used to delete rows from a table with optional where clause, we need to commit or rollback after
 calling this operation. This operation will cause all DELETE triggers to be fired on the table.
@@ -2579,7 +2579,7 @@ faster in performance as well.
 triggers will be fired and no rollback.
 > Drop Table Employee;
 ----
-## Q. What are clustered and non-clustered indexes in database?
+### Q. What are clustered and non-clustered indexes in database?
 
 - Clustered Index
 >Clustered index physically rearrange the data that users inserts in your tables. It is nothing but a dictionary
@@ -2594,7 +2594,7 @@ provides faster access to the contiguous rows because those rows are present phy
 table
 
 ----
-## Q. What are OneToOne, OneToMany and ManyToMany relationship mappings in database design?
+### Q. What are OneToOne, OneToMany and ManyToMany relationship mappings in database design?
 
 - OneToOne
  > A Person has a PAN (Card) is a perfect example of One To One association.
@@ -2637,7 +2637,7 @@ private Set<User> friendOf;
 ```
 ----
 
-## Q. How will you handle batch insert in hibernate for optimal usage of memory, network and CPU?
+### Q. How will you handle batch insert in hibernate for optimal usage of memory, network and CPU?
 >A naive approach to insert 1M rows in the database using Hibernate might look like this -
 ```
 Session session = sessionFactory.openSession();
@@ -2689,7 +2689,7 @@ tx.commit();
 session.close();
 ```
 ----
-## Q. What are different types of Http Status Codes?
+### Q. What are different types of Http Status Codes?
 
 - 1xx - Informational Status Code. 
 >It means request has been received and process is continuing. (Its rarely used in production)
@@ -2717,7 +2717,7 @@ session.close();
 3. 503 - Service Unavailable (may be down for maintenance)
 
 ----
-## Q. What is Inversion of Control (or Dependency Injection)?
+### Q. What is Inversion of Control (or Dependency Injection)?
 >The basic concept of IOC (Dependency of Injection) is that you do not create your objects but describe how
 they should be created.
 
@@ -2729,7 +2729,7 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 
 >IoC container have configurable option for eager or lazy initialization of beans services.
 ----
-## Q. What are new features added in Java 8?
+### Q. What are new features added in Java 8?
 - Default methods enable new functionality to be added to the interfaces of libraries and ensure binary compatibility with code written for older versions of those interfaces.
 - Optimistic Locking in Code using Stamped Locks provides very lightweight synchronization
 - Concurrent Adders & Accumulators - DoubleAdder, DoubleAccumulator, LongAdder, LongAccumulator
@@ -2742,7 +2742,7 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 - PermGen Space removed, Metaspace added
 
 ----
-## Q. Can the keys in Hashing data structure be made Mutable?
+### Q. Can the keys in Hashing data structure be made Mutable?
 
 > When we put the mutableKey to HashMap then
 hashcode() is calculated for the key, suppose
@@ -2763,7 +2763,7 @@ method. Though it will be accessible using other methods which iterate over the 
 
 ----
 
-## Q. what is the the default security configuration and how we can disable or customize
+### Q. what is the the default security configuration and how we can disable or customize
 >In order to add security to our Spring Boot application, we need to add the security starter dependency:
 ```xml
 <dependency>
@@ -2868,7 +2868,7 @@ public class InMemoryAuthWebSecurityConfigurer
 
 
 ----
-## Q. Discuss Comparable and Comparator? Which one should be used in a given scenario?
+### Q. Discuss Comparable and Comparator? Which one should be used in a given scenario?
 - Comparable and Comparator both are used for allowing sorting a collection of objects.
 - Comparable 
 > should be used to define the natural ordering behavior of an Object.
@@ -2902,7 +2902,7 @@ persons.add(new Person("Second", 26));
 ```
 ----
 
-## Q. What is difference between sleep(), yield() and wait() method?
+### Q. What is difference between sleep(), yield() and wait() method?
 1. wait() method releases the acquired lock when the thread is waiting till someone calls notify() while Thread.
    sleep() method keeps the lock even if thread is waiting.
 
@@ -2937,7 +2937,7 @@ persons.add(new Person("Second", 26));
   wakeup scenarios occurs (spurious wakeup).
 
 ----
-## Q. What do you think is the reason for String Class to be Immutable?
+### Q. What do you think is the reason for String Class to be Immutable?
 
 * Immutability brings inherent **thread-safety** to the usage of String class in a concurrent program. So multiple 
   threads can work on the same String object without any data corruption. There is **absolutely no need to
@@ -2948,7 +2948,7 @@ persons.add(new Person("Second", 26));
   This gives the **benefit of performance** when we use Immutable Key's in any hashing data structure.
 
 ----
-## Q. We have an Application and we want that only Single Instance should run for that Application. If Application is already running then second instance should never be started. How would you handle this in Java?
+### Q. We have an Application and we want that only Single Instance should run for that Application. If Application is already running then second instance should never be started. How would you handle this in Java?
 >There are two main ways to handle such scenario in Java -
 1. Use a Socket networking in your application and start a server socket on a predefined port. When second
 instance try to start up then check if **the port os already occupied** or not and accordingly take the decision.
@@ -2957,7 +2957,7 @@ process or not. If yes then terminate the startup process for second instance.
 [SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
 
 ----
-## Q. Data structure and usages
+### Q. Data structure and usages
 - PriorityQueue Usages
 > A network printer where multiple people submit print jobs at the same time, While one big print job is
 executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
@@ -2975,7 +2975,7 @@ pages) execute on priority compared to big ones.
 
 ----
 
-## Q. Prevent Breaking a Singleton Class Pattern
+### Q. Prevent Breaking a Singleton Class Pattern
 
 ```java
 public final class Singleton {
@@ -3025,7 +3025,7 @@ private Singleton() {
 ```
 ----
 
-## Q. print second-highest number from stream?
+### Q. print second-highest number from stream?
 
 ##### use IntStream
 ```
@@ -3038,14 +3038,14 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ```
 ----
 
-## Q. What is optional, and what is it best used for?
+### Q. What is optional, and what is it best used for?
 > Optional is a new container class defined in the java.util package, and used to 
 > represent optional values that either exist or do not exist. Optional’s chief 
 > benefit is avoiding null checks, and there are no longer any “NullPointerException”
 > results at run-time.
 ----
 
-## Q. Difference Between Pessimistic Approach and Optimistic Approach in DBMS
+### Q. Difference Between Pessimistic Approach and Optimistic Approach in DBMS
 
 ##### Definition
 - Pessimistic
@@ -3116,18 +3116,18 @@ System.out.println( Arrays.stream(myInt) //IntStream
 [pessimistic-and-optimistic](https://www.geeksforgeeks.org/difference-between-pessimistic-approach-and-optimistic-approach-in-dbms/)
 
 ----
-## Q. What is the contract between equals() and hashCode() methods in Java?
+### Q. What is the contract between equals() and hashCode() methods in Java?
 
 [contract-between-equals-and-hashcode](https://www.tutorialspoint.com/what-is-the-contract-between-equals-and-hashcode-methods-in-java)
 
 ----
 
-## Q. if the equals() method is overridden without overriding hashCode(), or vice versa.?
+### Q. if the equals() method is overridden without overriding hashCode(), or vice versa.?
 
 [why-override-equals-and-hashcode-methods-java/](https://www.techiedelight.com/why-override-equals-and-hashcode-methods-java/)
 
 ----
-## Q. How lazy loading works for collection of objects? and what is N+1 problem ?
+### Q. How lazy loading works for collection of objects? and what is N+1 problem ?
 #####The proxy is created for field, it means employees will be a proxy over the collection. Now if you try to iterate over the elements of the collection, there are basically two possibilities:
 
 > If you're not in a transaction, LazyInitializationException will be thrown. This is good because you know, that you have to fetch them eagerly is this query.
@@ -3138,21 +3138,21 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ----
 # self:
 
-## Q. how you identify which Asset type?
+### Q. how you identify which Asset type?
 >
 ----
-## Q. test your application
+### Q. test your application
 
 ----
-## Q. how to process: 10000 request handling at once & persist in DB ?
+### Q. how to process: 10000 request handling at once & persist in DB ?
 ----
 
-## Q. load a big transactional file and fetch the transaction records using the best data structures?
+### Q. load a big transactional file and fetch the transaction records using the best data structures?
 >
 ----
-## Q. How to load balance in 60% ,40% weightage ?
+### Q. How to load balance in 60% ,40% weightage ?
 
 ----
-## Q. explain Thread with caching?
+### Q. explain Thread with caching?
 >
 ----
