@@ -2595,18 +2595,19 @@ table
 ### Q. What are OneToOne, OneToMany and ManyToMany relationship mappings in database design?
 
 - OneToOne
- > A Person has a PAN (Card) is a perfect example of One To One association.
+ > A Person has a PAN (Card) is a perfect example of One-To-One association.
 ```java
 //Employee
 @OneToOne(cascade = CascadeType.ALL)
-@JoinColumn(name = "address_id", referencedColumnName = "id")
-private Address address;
-//Address class
-@OneToOne(mappedBy = "address")
+@JoinColumn(name = "pan_id", referencedColumnName = "id")
+private Pancard pancard;
+
+//Pancard class
+@OneToOne(mappedBy = "pancard")
 private Employee employee;
 ```
 - OneToMany
->  relationship between Employee and Department where an Department is associated with Collection of Employee(s)
+>  relationship between Employee and Department where a Department is associated with Collection of Employee(s)
 ```java
 @Entity
 public class Employee {
@@ -2616,6 +2617,7 @@ public class Employee {
 private Department department;
 // ...
 }
+
 @Entity
 public class Department {
 @Id private int id;
@@ -2626,7 +2628,19 @@ private Collection<Employee> employees;
 ```
 - ManyToMany
 > . Each employee can work on multiple Project(s) and each Project can be worked upon by multiple Employee(s).
+```
+@ManyToMany
+@JoinTable(
+name = "employee_project",
+joinColumns = @JoinColumn(name = "employee_id"),
+inverseJoinColumns = @JoinColumn(name = "project_id"))
+Set<Project> workingProjects;
 
+//Project.class
+
+@ManyToMany(mappedBy = "workingProject")
+Set<Employee> workingEmployees;
+```
 > separate table created
 
 #####  implement ManyToMany mappings with the self entity in JPA?
