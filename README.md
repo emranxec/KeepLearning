@@ -3129,7 +3129,14 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ----
 ### Q. How lazy loading works for collection of objects? and what is N+1 problem ?
 ##### The proxy is created for field, it means employees will be a proxy over the collection. Now if you try to iterate over the elements of the collection, there are basically two possibilities:
+```java
+public class Company {
+private String name;
 
+    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+    private Set<Employee> employees;
+}
+```
 > If you're not in a transaction, LazyInitializationException will be thrown. This is good because you know, that you have to fetch them eagerly is this query.
 
 > If you're within a transaction, then hibernate will fetch every element that you're iterating over. That's a huge performance overhead, because you need to fire a query to fetch the parent entity and then one query for each child. If there are N children, you need to make N+1 calls to the database, this is also called N + 1 select problem.
