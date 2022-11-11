@@ -1544,7 +1544,7 @@ throw new RuntimeException();
 }
 ```
 
-**_Take note, Spring only rolled back on unchecked exceptions by default. To roll back checked exception, we need to specify the rollbackFor_**
+###### Take note, Spring only rolled back on unchecked exceptions by default. To roll back checked exception, we need to specify the rollbackFor
 
 [spring-transactional-rollback-handling](https://medium.com/geekculture/spring-transactional-rollback-handling-741fcad043c6)
 ----
