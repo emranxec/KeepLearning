@@ -139,12 +139,12 @@
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
 
 ### Self:
-[x] [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
-[x] [test-your-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-test-your-application)
-[x] [how-to-process-10000-request-handling-at-once--persist-in-db-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-process-10000-request-handling-at-once--persist-in-db-)
-[x] [load-a-big-transactional-file-and-fetch-the-trnasction-records-using-best-data-structures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-load-a-big-trnsactional-file-and-fetch-the-trnasction-records-using-best-data-structures)
-[x] [how-to-load-balance-in-60-40-weightage-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-load-balance-in-60-40-weightage-)
-[x] [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
+1. [ ]  [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
+2. [ ]  [test-your-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-test-your-application)
+3. [ ]  [how-to-process-10000-request-handling-at-once--persist-in-db-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-process-10000-request-handling-at-once--persist-in-db-)
+4. [ ]  [load-a-big-transactional-file-and-fetch-the-trnasction-records-using-best-data-structures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-load-a-big-trnsactional-file-and-fetch-the-trnasction-records-using-best-data-structures)
+5. [ ]  [how-to-load-balance-in-60-40-weightage-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-load-balance-in-60-40-weightage-)
+6. [ ]  [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
 
 ----
 ## Q. how to create an immutable class?
