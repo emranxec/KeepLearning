@@ -25,7 +25,7 @@ Builder pattern is usually used to hide the complexity of an object construction
 Builder pattern is defined as “Separates object construction from its representation”.
 
 Example : Consider a fast-food restaurant offering a Vegetarian Meal and a Non Vegetarian Meal. A typical meal is a burger and a cold drink. Depending on the type of the meal, the burger is a vegetarian burger or a chicken burger. The drink is either an orange juice or a pineapple juice. The below Builder class can be used to create meal objects.
-
+```
 public class MealBuilder {
 public Meal buildVegMeal (){
 Meal meal = new Meal();
@@ -41,7 +41,7 @@ meal.addItem(new PineappleJuice());
 return meal;
 }
 }
-
+```
 ### Singleton
 Singleton is defined as “A class of which only a single instance can exist (in a jvm). A good example of Singleton class in Java is java.lang.System.
 
