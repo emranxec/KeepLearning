@@ -206,7 +206,7 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ----
 ## Q. design patterns in spring?
 
-> [design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
+> [All design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 
 > ### Singleton Pattern
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
@@ -271,7 +271,7 @@ public interface BeanFactory {
 > To create a proxy, we create an object that implements the same interface as our subject and contains a reference to the subject.
 > We can then use the proxy in place of the subject.
 
-> In Spring, beans are proxied to control access to the underlying bean. We see this approach when using transactions:
+> In Spring, **beans are proxies to control access to the underlying bean**. We see this approach when using transactions:
 ```java
 @Service
 public class BookManager {
