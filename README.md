@@ -167,6 +167,7 @@ final class immmutableClass{
 > All primitive Wrapper classes (Number, Integer, Long, Float, Double, etc), String Class, Color Class, BigInteger
 & BigDecimal class, CopyOnWriteArrayList & CopyOnWriteArraySet
 
+[ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/ImmutableOne.java)
 ----
 ## Q. what is sequential & parallel streams?
 
