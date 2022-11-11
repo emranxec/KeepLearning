@@ -977,7 +977,11 @@ objects, **the third one being the literal “base” in the concat statement.**
 > but it is not considered overriding as there won't be any run-time polymorphism. Hence the answer is 'No
 ----
 ## Q. explain save,update, save and persist methods?
+
 - [hibernate-save-persist-update-merge-saveorupdate](https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate)
+
+  ![TPD](https://user-images.githubusercontent.com/16031518/201423185-48f430bc-68a1-4d60-8f7d-0fe5b585deeb.JPEG)
+
 ----
 ## Q. how to convert data in rest response in spring?
 > Either return text/plain as
