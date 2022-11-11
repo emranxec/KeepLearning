@@ -1523,7 +1523,7 @@ public class Controller {
 
 ----
 ## Q. at what time/place rollback gets called?
-> In Spring Boot, when @Transactional annotation is used, Spring Boot implicitly creates a proxy 
+> In Spring Boot, when @Transactional annotation is used, Spring Boot implicitly creates a [proxy](https://github.com/emranxec/KeepLearning/blob/main/README.md#proxy-pattern)
 > that will be creating a connection to the database. A transaction will be started and commit 
 > after the code has been executed errorless. Otherwise, it will roll back the changes if an 
 > exception occurred.
