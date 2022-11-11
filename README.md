@@ -25,7 +25,6 @@
 3. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
 4. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-
 ### JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
 2. [can-mutable-object-is-instance-of-immutable-class-how-to-fix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--can-mutable-object-is-instance-of-immutable-class-how-to-fix)
@@ -119,16 +118,16 @@
 8. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
 9. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
+### Maven & GIT
+1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
+2. [git-rebase-vs-git-merge-which-is-better](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-git-rebase-vs-git-merge-which-is-better)
+
 ### Docker and microservices
 1. [what-is-docker](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-docker)
 2. [why-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-microservices)
 3. [what-db-model-is-preferred-in-microservice-architecture](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-db-model-is-prefered-in-microservice-architecture)
 4. [how-to-convert-monolithic-application-to-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-monolithic-application-to-microservices)
 5. [explain-microservice-framework-netflix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
-
-### Maven & GIT
-1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
-2. [git-rebase-vs-git-merge-which-is-better](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-git-rebase-vs-git-merge-which-is-better)
 
 ### Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
@@ -137,15 +136,14 @@
 4. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 5. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
-
-
-### Self: [self](https://github.com/emranxec/KeepLearning/blob/main/README.md#self)
+### Self:
 1. [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
 2. [test-your-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-test-your-application)
 3. [how-to-process-10000-request-handling-at-once--persist-in-db-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-process-10000-request-handling-at-once--persist-in-db-)
 4. [load-a-big-transactional-file-and-fetch-the-trnasction-records-using-best-data-structures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-load-a-big-trnsactional-file-and-fetch-the-trnasction-records-using-best-data-structures)
 5. [how-to-load-balance-in-60-40-weightage-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-load-balance-in-60-40-weightage-)
 6. [explain-thread-with-caching](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-thread-with-caching)
+
 ----
 ## Q. how to create an immutable class?
  #### When the state of object can not be changed after its construction then the object is called Immutable.
