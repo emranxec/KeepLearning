@@ -2596,7 +2596,15 @@ table
 
 - OneToOne
  > A Person has a PAN (Card) is a perfect example of One To One association.
-
+```java
+//Employee
+@OneToOne(cascade = CascadeType.ALL)
+@JoinColumn(name = "address_id", referencedColumnName = "id")
+private Address address;
+//Address class
+@OneToOne(mappedBy = "address")
+private Employee employee;
+```
 - OneToMany
 >  relationship between Employee and Department where an Department is associated with Collection of Employee(s)
 ```java
