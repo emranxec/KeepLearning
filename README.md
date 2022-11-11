@@ -20,10 +20,11 @@
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
 
 ### DSA & design
-1. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
-2. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
-3. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
-4. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
+2. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
+3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
+4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
+5. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
 ### JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
@@ -95,13 +96,13 @@
 25. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
 ### Hibernate
-1. [explain-transactions-in-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-transactions-in-hibernate)
-2. [explain-dirty---hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-dirty---hibernate)
-3. [when-to-used-native-query--hibernate-query](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-when-to-used-native-query--hibernate-query)
-4. [what-is-criteria-in-hibernate-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-criteria-in-hibernate-)
-5. [what-is-states-of-hibernate-attribute](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-states-of-hibernate-attribute)
-6. [at-what-time-rollback-gets-called](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-at-what-timeplace-rollback-gets-called)
-7. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
+1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
+2. [explain-transactions-in-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-transactions-in-hibernate)
+3. [explain-dirty---hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-dirty---hibernate)
+4. [when-to-used-native-query--hibernate-query](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-when-to-used-native-query--hibernate-query)
+5. [what-is-criteria-in-hibernate-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-criteria-in-hibernate-)
+6. [what-is-states-of-hibernate-attribute](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-states-of-hibernate-attribute)
+7. [at-what-time-rollback-gets-called](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-at-what-timeplace-rollback-gets-called)
 8. [explain-hibernate-caching-how-to-configure-ehcache](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-hibernate-caching-how-to-configure-ehcache)
 9. [explain-hibernate-inheritance](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-hibernate-inheritance)
 10. [what-are-different-library-for-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--what-are-different-library-for-hibernate)
@@ -223,8 +224,6 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ```
 ----
 ## Q. design patterns in spring?
-
-> [All design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 
 > ### Singleton Pattern
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
