@@ -3128,7 +3128,7 @@ System.out.println( Arrays.stream(myInt) //IntStream
 
 ----
 ## Q. How lazy loading works for collection of objects? and what is N+1 problem ?
--The proxy is created for field, it means employees will be a proxy over the collection. Now if you try to iterate over the elements of the collection, there are basically two possibilities:
+#####The proxy is created for field, it means employees will be a proxy over the collection. Now if you try to iterate over the elements of the collection, there are basically two possibilities:
 
 > If you're not in a transaction, LazyInitializationException will be thrown. This is good because you know, that you have to fetch them eagerly is this query.
 
