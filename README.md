@@ -132,9 +132,8 @@
 ### Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
 2. [remove-duplicate-using-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-remove-duplicate-using-streams)
-3. [nth-highest-age](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
-4. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-5. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+3. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+4. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
 ### SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
