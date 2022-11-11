@@ -2552,6 +2552,13 @@ It is easy to find mistakes and resolve them.
 ----
 ### Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
 ```roomsql
+-- easy ways :
+SELECT name, MAX(salary) AS salary 
+FROM employee 
+WHERE salary IN
+(SELECT salary FROM employee MINUS SELECT MAX(salary) 
+FROM employee); 
+-- other ways :
 SELECT *
 FROM Employee E1
 WHERE (N-1) = (SELECT COUNT(DISTINCT(E2.Age))
@@ -2563,6 +2570,16 @@ FROM Employee E1
 WHERE (2-1) = (SELECT COUNT(DISTINCT(E2.Age))
 FROM Employee E2
 WHERE E2.Age > E1.Age)
+--with Dence Rank
+WITH T AS
+(
+SELECT *
+   DENSE_RANK() OVER (ORDER BY Salary Desc) AS Rnk
+FROM Employees
+)
+SELECT Name
+FROM T
+WHERE Rnk=2;
 ```
 ----
 ### Q. What is difference between Drop, Truncate and Delete commands in SQL?
