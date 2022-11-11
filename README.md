@@ -2550,13 +2550,13 @@ It is easy to find mistakes and resolve them.
 ----
 ## Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
 ```roomsql
-> SELECT *
+SELECT *
 FROM Employee E1
 WHERE (N-1) = (SELECT COUNT(DISTINCT(E2.Age))
 FROM Employee E2
 WHERE E2.Age > E1.Age)
 -- To find 2nd highest Age, the query would become
->SELECT *
+SELECT *
 FROM Employee E1
 WHERE (2-1) = (SELECT COUNT(DISTINCT(E2.Age))
 FROM Employee E2
