@@ -1,4 +1,3 @@
-# MyLearning interview
 1. [how-to-create-a-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-a-immutable-class)
 2. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
 3. [remove-duplicate-using-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-remove-duplicate-using-streams)
