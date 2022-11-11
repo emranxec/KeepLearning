@@ -662,8 +662,8 @@ public void addMoneyToAccount(long account) {
 - _void setTimeout(int seconds)_ it sets a transaction timeout for any transaction started by a subsequent call to begin on this instance. 
 - _boolean isAlive()_ checks if the transaction is still alive. 
 - _void registerSynchronization(Synchronization s)_ registers a user synchronization callback for this transaction. 
-- _boolean wasCommited()_ checks if the transaction is commited successfully. 
-- _boolean wasRolledBack()_ checks if the transaction is rolledback successfully.
+- _boolean wasCommitted()_ checks if the transaction is committed successfully. 
+- _boolean wasRolledBack()_ checks if the transaction is rollback successfully.
 ----
 ## Q. what are RESTFUL annotations?
 #### JAX-RS Annotations
@@ -941,7 +941,7 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 `@Transactional(readOnly = true)`
 
 > If we mark the method we are processing as readOnly = true, there will be no 'Hibernate dirty check' operation,
-> as there will be no update operation. This gives us performance.
+> as there will be no update operation. **This gives us performance.**
 ----
 ## Q. why String immutable ?
 > In the String constant pool, a String object is likely to have one or many references. 
@@ -1002,7 +1002,8 @@ return "Response!";
 ## Q. when to used native query & hibernate query?
 ###### You do not need to create a native query unless you want to. 
 
-> JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. Why would want to do that:
+> JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. 
+#### Why would want to do that?
 - Low level access, which means that you can optimize and handle the mapping by yourself; with SQL you actually access the database table while with JPQL you access the entity objects; 
 - Maybe you do not want to learn JPQL if you already know SQL 
 - You already have the queries written in SQL, and do not have resources/time to port them to JPQL
