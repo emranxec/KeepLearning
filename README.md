@@ -2627,7 +2627,7 @@ private Collection<Employee> employees;
 }
 ```
 - ManyToMany
-> . Each employee can work on multiple Project(s) and each Project can be worked upon by multiple Employee(s).
+> Each employee can work on multiple Project(s) and each Project can be worked upon by multiple Employee(s).
 ```
 @ManyToMany
 @JoinTable(
