@@ -2882,7 +2882,7 @@ executing, PriorityQueue could re-arrange other jobs so that the small print job
 pages) execute on priority compared to big ones.
 
 >Emergency department in any hospital handles patients based on their severity, thus priority queue could
-used to implement such logic.
+use to implement such logic.
 
 - Binary Heap
 > Finding top 10 most frequently used words in a very large file in O(n)
@@ -3034,7 +3034,17 @@ System.out.println( Arrays.stream(myInt) //IntStream
 [pessimistic-and-optimistic](https://www.geeksforgeeks.org/difference-between-pessimistic-approach-and-optimistic-approach-in-dbms/)
 
 ----
+## Q. What is the contract between equals() and hashCode() methods in Java?
 
+[contract-between-equals-and-hashcode](https://www.tutorialspoint.com/what-is-the-contract-between-equals-and-hashcode-methods-in-java)
+
+----
+
+## Q. if the equals() method is overridden without overriding hashCode(), or vice versa.?
+
+[why-override-equals-and-hashcode-methods-java/](https://www.techiedelight.com/why-override-equals-and-hashcode-methods-java/)
+
+----
 ----
 # self:
 
@@ -3047,7 +3057,7 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ## Q. how to process: 10000 request handling at once & persist in DB ?
 ----
 
-## Q. load a big trnsactional file and fetch the trnasction records using best data structures?
+## Q. load a big transactional file and fetch the transaction records using the best data structures?
 >
 ----
 ## Q. How to load balance in 60% ,40% weightage ?
