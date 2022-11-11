@@ -2549,18 +2549,19 @@ It is easy to find mistakes and resolve them.
 
 ----
 ## Q. How would you fetch Employee with nth highest Age from Employee Table using SQL?
-
+```roomsql
 > SELECT *
 FROM Employee E1
 WHERE (N-1) = (SELECT COUNT(DISTINCT(E2.Age))
 FROM Employee E2
 WHERE E2.Age > E1.Age)
-- To find 2nd highest Age, the query would become
+-- To find 2nd highest Age, the query would become
 >SELECT *
 FROM Employee E1
 WHERE (2-1) = (SELECT COUNT(DISTINCT(E2.Age))
 FROM Employee E2
 WHERE E2.Age > E1.Age)
+```
 ----
 ## Q. What is difference between Drop, Truncate and Delete commands in SQL?
 
