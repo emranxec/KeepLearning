@@ -108,7 +108,7 @@
 10. [what-are-different-library-for-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--what-are-different-library-for-hibernate)
 11. [hibernate-optimal-usage-of-memory-network-and-cpu](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-will-you-handle-batch-insert-in-hibernate-for-optimal-usage-of-memory-network-and-cpu)
 12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
-13. How lazy loading works for collection of objects? and what is N+1 problem ?
+13. [how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem-)
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
