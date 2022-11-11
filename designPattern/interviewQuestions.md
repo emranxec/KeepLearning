@@ -5,11 +5,10 @@ There are three different types of Design Patterns
 
 # Design Patterns interview questions
 
-Creational Patterns : Concerned with creation of Objects. Prototype, Singleton, Builder etc.
-Structural Patterns : Concerned with structure of Objects and the relationships between them. Decorator, Facade, Adapter etc.
-Behavioural Patterns : Concerned with interaction between objects. Strategy, Template Method etc.
-Creational Patterns
-Creational Patterns deal with creation of objects.
+- Creational Patterns : Concerned with creation of Objects. Prototype, Singleton, Builder etc.
+- Structural Patterns : Concerned with structure of Objects and the relationships between them. Decorator, Facade, Adapter etc.
+- Behavioural Patterns : Concerned with interaction between objects. Strategy, Template Method etc.
+
 
 ## “Creational"
 
