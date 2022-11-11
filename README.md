@@ -336,9 +336,8 @@ template.query("SELECT * FROM books", new BookRowMapper());
 ----
 ## Q. how to connect DB from spring?
 
->Now, since you have understood the benefits of connecting Spring Boot to MySQL, it’s time that you learn how to actually go through with it. The following steps will help you in setting up the Spring Boot MySQL Integration:
-
 - Step 1: Creating a MySQL Database
+```roomsql
 > CREATE DATABASE restapi;
 > USE restapi;
 > CREATE TABLE blog (
@@ -346,6 +345,7 @@ template.query("SELECT * FROM books", new BookRowMapper());
 > title VARCHAR(500) NOT NULL,
 > content VARCHAR(5000) NOT NULL
 );
+```
 - Step 2: Append MySQL Dependencies
 ```xml
 <dependencies>
