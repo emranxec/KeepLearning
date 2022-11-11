@@ -84,7 +84,42 @@
 83. [where-vs-having-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-where-vs-having-in-sql)
 84. [why-overloading-and-over-loading-concept](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-overloading-and-over-loading-concept)
 85. [is-synchronized-block-entire-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-is-synchronized-block-entire-object)
-86. why spring boot?
+86. [why-spring-boot](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-spring-boot)
+87. [how-to-configure-profile-in-spring-boot](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-profile-in-spring-boot)
+88. [git-rebase-vs-git-merge-which-is-better](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-git-rebase-vs-git-merge-which-is-better)
+89. [what-is-difference-between-primary-key-and-unique-key](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-primary-key-and-unique-key)
+90. [why-do-we-need-indexing-on-database-table-columns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-do-we-need-indexing-on-database-table-columns)
+91. [nth-highest-age](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
+92. [what-is-difference-between-drop-truncate-and-delete-commands-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-drop-truncate-and-delete-commands-in-sql)
+93. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
+94. [onetomany-and-manytomany](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
+95. [hibernate-optimal-usage-of-memory-network-and-cpu](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-will-you-handle-batch-insert-in-hibernate-for-optimal-usage-of-memory-network-and-cpu)
+96. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
+97. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
+98. [what-are-new-features-added-in-java-8](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-new-features-added-in-java-8)
+99. [can-the-keys-in-hashing-data-structure-be-made-mutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-can-the-keys-in-hashing-data-structure-be-made-mutable)
+100. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
+101. [discuss-comparable-and-comparator-which-one-should-be-used](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-discuss-comparable-and-comparator-which-one-should-be-used-in-a-given-scenario)
+102. [what-is-difference-between-sleep-yield-and-wait-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-sleep-yield-and-wait-method)
+103. [string-class-to-be-immutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+104. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+105. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+106. [prevent-breaking-a-singleton-class-pattern](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+107. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+108. [what-is-optional-and-what-is-it-best-used-for](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+109. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+110. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+111. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+
+
+
+
+
+
+
+
+
+
 
 ### Self: [self](https://github.com/emranxec/KeepLearning/blob/main/README.md#self)
 1. [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
