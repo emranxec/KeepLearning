@@ -2882,7 +2882,7 @@ executing, PriorityQueue could re-arrange other jobs so that the small print job
 pages) execute on priority compared to big ones.
 
 >Emergency department in any hospital handles patients based on their severity, thus priority queue could
-use to implement such logic.
+ use to implement such logic.
 
 - Binary Heap
 > Finding top 10 most frequently used words in a very large file in O(n)
