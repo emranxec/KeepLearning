@@ -138,24 +138,25 @@
 3. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 4. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 5. [java-code-to-segregate-0s-and-1s-in-an-array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--java-code-to-segregate-0s-and-1s-in-an-array)
-6. Given an array find which pattern it matches
-7. use linkedList and find middle element but don't use size
-8. create a singleton class and protect it from breaking
-9. create enum and print all enum elements and find is something is present
-10. Design a new implementation of the Map interface
-11. print some patterns in java
-12. print 4th highest salary
-13. print Fibonacci
-14. sum of the squares of all the odd numbers in the array.
-15. Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.
-16. Write a function to return the longest even length word in a sentence.
-17. Write a function to count the number of unique digits in a number
-18. god => print -> //god,ogd,dgo,gdo,odg,dog (permute)
-19. check if pivot or not
-20. check the output of employee and address class
-21. get only employee having dept = "IT" && Convert in map key--id, value--Employee
-22. Employee count based on depart
-23. merge the linked list of integer and contact as string
+6. [given-an-array-find-which-pattern-it-matches](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-find-which-pattern-it-matches)
+7. [use linkedList and find middle element but don't use size](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-use-linkedlist-and-find-middle-element-but-dont-use-size)
+8. [create a singleton class and protect it from breaking](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-create-a-singleton-class-and-protect-it-from-breaking)
+9. [create enum and print all enum elements and find is something is present](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-create-enum-and-print-all-enum-elements-and-find-is-something-is-present)
+10. [Design a new implementation of the Map interface](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-new-implementation-of-the-map-interface)
+11. [print some patterns in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-some-patterns-in-java)
+12. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
+13. [print Fibonacci](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-fibonacci)
+14. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
+15. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
+16. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+17. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+18. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
+19. [check if pivot or not](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
+20. [ check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
+21. [get only employee having dept = "IT" && Convert in map key--id, value--Employee](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
+22. [Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-employee-count-based-on-depart)
+23. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
+
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
 2. all the employee name from department ->AB && which department has maximum employees join which year
