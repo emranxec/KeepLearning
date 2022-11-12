@@ -137,7 +137,7 @@
 2. [remove-duplicate-using-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-remove-duplicate-using-streams)
 3. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 4. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-5. Given an array of 0's and 1's in random order . Separate 0's on left side and 1's on right side of the array
+5. [java-code-to-segregate-0s-and-1s-in-an-array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--java-code-to-segregate-0s-and-1s-in-an-array)
 6. Given an array find which pattern it matches
 7. use linkedList and find middle element but don't use size
 8. create a singleton class and protect it from breaking
