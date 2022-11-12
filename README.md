@@ -151,8 +151,8 @@
 16. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
 17. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
 18. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
-19. [check if pivot or not](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
-20. [ check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
+19. [Find an element in array such that sum of left array is equal to sum of right array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
+20. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
 21. [get only employee having dept = "IT" && Convert in map key--id, value--Employee](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
 22. [Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-employee-count-based-on-depart)
 23. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
@@ -3248,6 +3248,7 @@ private String name;
 >
 ----
 ### Q. check if pivot or not
+##### Find an element in array such that sum of left array is equal to sum of right array
 >
 ----
 ### Q. check the output of employee and address class
