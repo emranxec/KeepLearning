@@ -3206,6 +3206,61 @@ private String name;
 [Java code to Segregate 0s and 1s in an array](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Program5.java)
 
 ----
+### Q. Given an array find which pattern it matches
+
+----
+### Q. use linkedList and find middle element but don't use size?
+>
+----
+### Q. create a singleton class and protect it from breaking
+>
+----
+### Q. create enum and print all enum elements and find is something is present
+>
+----
+### Q. Design a new implementation of the Map interface
+>
+----
+### Q. print some patterns in java
+[Given an array find which pattern it matches](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
+
+----
+### Q. print 4th highest salary
+>
+----
+### Q. print Fibonacci
+>
+----
+### Q. sum of the squares of all the odd numbers in the array.
+>
+----
+### Q. Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.
+>
+----
+### Q. Write a function to return the longest even length word in a sentence.
+>
+----
+### Q. Write a function to count the number of unique digits in a number
+>
+----
+### Q. god => print -> //god,ogd,dgo,gdo,odg,dog (permute)
+>
+----
+### Q. check if pivot or not
+>
+----
+### Q. check the output of employee and address class
+>
+----
+### Q. get only employee having dept = "IT" && Convert in map key--id, value--Employee
+>
+----
+### Q. Employee count based on depart
+>
+----
+### Q. merge the linked list of integer and contact as string
+>
+----
 ----
 # self:
 
