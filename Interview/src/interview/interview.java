@@ -24,13 +24,13 @@ public class interview {
         String sentence = "my name amanulla is, imran khan-";
 
         //  System.out.println(findLongest(sentence));
-        //countNumberOfUniqueNumbers();
+        countNumberOfUniqueNumbers();
 
         System.out.println("------------");
 
-  /*      String str = "khan";
+        String str = "khan";
         int n = str.length();
-        permute(str, 0, n-1);*/
+        permute(str, 0, n-1);
 
         String s = new String("5");
         System.out.println(1 + 10 + s + 1 + 10); //115110

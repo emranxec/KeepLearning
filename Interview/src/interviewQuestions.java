@@ -12,7 +12,7 @@ public class interviewQuestions {
         //1. how to create a immutable class
         immmutableClass immmutableClass=new immmutableClass("imran");
 
-        //2. what is sequential & paralle streams
+        //2. what is sequential & parallel streams
         parralelvsSequencial();
 
         //3. remove duplicate using streams

@@ -2,9 +2,9 @@ public class Test {
 
     public static void main(String[] args) {
 	// write your code here
-      //  Given an array of 0's and 1's in random order . Sepearate 0's on left side and 1's on right side of the array
+      //  Given an array of 0's and 1's in random order . Separate 0's on left side and 1's on right side of the array
 
-       // ArrayList myNumbers= Arrays.asList(​​​0,1,1,0,0,1,1,1,1,0,0,0,1,0,0);
+       // ArrayList myNumbers= Arrays.asList(1,1,0,0,1,1,1,1,0,0,0,1,0,0);
         //no build-in methods
         //solution 1
         //move all 0 in diffrent list
@@ -14,12 +14,12 @@ public class Test {
 
        // Array can be of four patterns
         // Increasing,
-        // Decresing,
+        // Decreasing,
         // Increasing and Decreasing,
         // Decreasing and Increasing.
-        // Given an array find which pattern it maches
+        // Given an array find which pattern it matches
 
-        //{1,2,4,6,8,9} - ascendign
+        //{1,2,4,6,8,9} - ascending
         //{1,4,6,8,3,1} - ascending and descending
 
         //solution 1

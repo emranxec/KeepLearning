@@ -119,6 +119,7 @@
 6. [what-is-difference-between-drop-truncate-and-delete-commands-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-drop-truncate-and-delete-commands-in-sql)
 7. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
 8. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+9. What are Indexes and Its Types?
 
 ## Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
@@ -136,9 +137,30 @@
 2. [remove-duplicate-using-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-remove-duplicate-using-streams)
 3. [single-instance-should-run-for-that-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 4. [print-second-highest-number-from-stream](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-
+5. Given an array of 0's and 1's in random order . Separate 0's on left side and 1's on right side of the array
+6. Given an array find which pattern it matches
+7. use linkedList and find middle element but don't use size
+8. create a singleton class and protect it from breaking
+9. create enum and print all enum elements and find is something is present
+10. Design a new implementation of the Map interface
+11. print some patterns in java
+12. print 4th highest salary
+13. print Fibonacci
+14. sum of the squares of all the odd numbers in the array.
+15. Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.
+16. Write a function to return the longest even length word in a sentence.
+17. Write a function to count the number of unique digits in a number
+18. god => print -> //god,ogd,dgo,gdo,odg,dog (permute)
+19. check if pivot or not
+20. check the output of employee and address class
+21. get only employee having dept = "IT" && Convert in map key--id, value--Employee
+22. Employee count based on depart
+23. merge the linked list of integer and contact as string
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
+2. all the employee name from department ->AB && which department has maximum employees join which year
+3. print all children and all parents
+
 
 ## Self:
 1. [ ]  [how-you-identify-which-asset-type](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-identify-which-asset-type)
@@ -200,16 +222,17 @@ final class immmutableClass{
 > The new data is a transformed copy of the original form.
 
 [parallel-vs-sequential-stream-in-java](https://www.geeksforgeeks.org/parallel-vs-sequential-stream-in-java/) 
-```
-// we are using stream() method
-// for sequential stream
-// Iterate and print each element
-// of the stream
-list.stream().forEach(System.out::print);
+```java
+public class interviewQuestions {
+  private static void parralelvsSequencial() {
+        String[] strings = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 
-// using parallelStream()
-// method for parallel stream
-list.parallelStream().forEach(System.out::print);
+        System.out.println("-------\nRunning sequential\n-------");
+        run(Arrays.stream(strings).sequential());
+        System.out.println("-------\nRunning parallel\n-------");
+        run(Arrays.stream(strings).parallel());
+    }
+ }
 ```
 ----
 ### Q. remove duplicate using streams?
