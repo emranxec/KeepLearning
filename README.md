@@ -3201,6 +3201,11 @@ private String name;
 > If you're within a transaction, then hibernate will fetch every element that you're iterating over. That's a huge performance overhead, because you need to fire a query to fetch the parent entity and then one query for each child. If there are N children, you need to make N+1 calls to the database, this is also called N + 1 select problem.
 ----
 
+### Q.  Java code to Segregate 0s and 1s in an array
+
+[Java code to Segregate 0s and 1s in an array](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Program5.java)
+
+----
 ----
 # self:
 
