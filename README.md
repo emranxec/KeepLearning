@@ -2889,6 +2889,7 @@ public class SpringBootSecurityApplication {
 - we need to make use of a full @Configuration class:
 ```java
 @Configuration
+@EnableWebSecurity
 public class InMemoryAuthWebSecurityConfigurer
         extends WebSecurityConfigurerAdapter {
 
