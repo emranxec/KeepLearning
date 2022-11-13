@@ -1,4 +1,4 @@
-package programs.utilClasses.wissen;
+package programs.utilClasses;
 
 /**
  * Created by timbuchalka on 24/06/2016.

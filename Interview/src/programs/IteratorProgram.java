@@ -1,10 +1,10 @@
-package programs.utilClasses.wissen;
+package programs;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class Wissen {
+public class IteratorProgram {
 
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>(Arrays.asList(1,24,-1,8,-3,0));

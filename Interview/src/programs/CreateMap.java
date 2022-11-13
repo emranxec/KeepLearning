@@ -1,10 +1,7 @@
-package programs.utilClasses.wissen;
+package programs;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.function.Predicate;
 
 public class CreateMap {
 
@@ -21,40 +18,6 @@ public class CreateMap {
         userDefinedMap.putIfAbsent("salman", 0);
 
         System.out.println(userDefinedMap.getCounter());
-
-/*
-        new Thread(() -> System.out.println("New thread created")).start();
-
-        int a = 5;
-
-        // lambda expression to define the calculate method
-        Square s = (int x) -> x * x;
-        String firstN = "imran";
-        String secondN = "khan";
-        FindSomerandomName findSomerandomName = (String first, String concat) -> first = first.concat(concat);
-        FindSomerandomName.danceAgain();
-        findSomerandomName.dance();
-        String ans1 = findSomerandomName.find(firstN, secondN);
-        System.out.println(ans1);
-*/
-
-
-
-
-
-        List<String> names = Arrays.asList(
-                "Geek", "GeeksQuiz", "g1", "QA", "Geek2");
-
-        // declare the predicate type as string and use
-        // lambda expression to create object
-        Predicate<String> p = (s) -> s.startsWith("G");
-
-        // Iterate through the list
-        for (String st : names) {
-            // call the test method
-            if (p.test(st))
-                System.out.println(st);
-        }
 
 /*
     Design a new implementation of the Map interface which will also keep a count of all the calls
@@ -100,22 +63,5 @@ public class CreateMap {
         }
     }
 
-    @FunctionalInterface
-    interface Square {
-        int calculate(int x);
-    }
 
-    @FunctionalInterface
-    interface FindSomerandomName {
-        String find(String firstName, String concat);
-
-        static void danceAgain() {
-            System.out.println("dancing");
-        }
-
-        default void dance() {
-            FindSomerandomName.danceAgain();
-            System.out.println("dancing again");
-        }
-    }
 

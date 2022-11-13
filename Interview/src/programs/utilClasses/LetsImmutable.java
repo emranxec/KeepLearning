@@ -29,9 +29,7 @@ We will declare class as final and all the fields as private final.
  Disadvantages of immutable objects:
         The only real disadvantage of immutable classes is that they require a separate object for each distinct value.*/
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class LetsImmutable {
@@ -41,7 +39,9 @@ public class LetsImmutable {
         List<String> newDegrees= new ArrayList<String>();
         newDegrees.add("english");
         Address address=new Address("goa1","goa2");
-        Person p=new Person("imran",21,newDegrees,address);
+        List<Role> employeeRoles= new ArrayList<Role>();
+        employeeRoles.add(new Role("Admin"));
+        Person p=new Person("imran",21,newDegrees, employeeRoles, address);
         System.out.println(p.getName());
         System.out.println(p.getAge());
         System.out.println(p.getDegrees());
@@ -53,79 +53,4 @@ public class LetsImmutable {
     }
 }
 
-final class Person implements Serializable {
-    private final String name;
-    final private int age;
-    private final List<String> degrees;
-    private Address address;
 
-    Person(String name,int age, List<String> degrees,Address address){
-        super();
-        this.name=name;
-        this.age=age;
-        List<String> newDegrees= new ArrayList<String>();
-        for(String degree:degrees){
-            newDegrees.add(degree);
-        }
-        this.degrees=newDegrees;
-        this.address=address;
-        //this line prevent it form serialization and reflection
-      //  System.setSecurityManager(new SecurityManager());
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public List<String> getDegrees() {
-
-       /* List<String> newDegrees= new ArrayList<String>();
-        for(String degree:degrees){
-            newDegrees.add(degree);
-        }
-        return newDegrees;*/
-
-        return (ArrayList<String>) Collections.unmodifiableCollection(degrees);
-
-    }
-
-    public Address getAddress() throws CloneNotSupportedException {
-        return (Address) address.clone();
-/*        clone() method only works if Address has implemented Cloneable interface.
-        If it has not implemented it, then we have to manually deep copy all the fields of Address class.
-        But most of the user library has support for Cloneable and Serializable interfaces*/
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", degrees=" + degrees +
-                ", address=" + address +
-                '}';
-    }
-}
-
-
-class ChildAddress extends Address{
-/*    Is there any problem with this approach?
-
-    Well yes. what if some reference variables inside Address class is also Mutable Objects.
-    In that case we need to override their  setter methods as well.
-    This approch becomes more complex when there are many nested Mutable class references.*/
-
-    public ChildAddress(String address1, String address2) {
-        super(address1, address2);
-    }
-
-    public void setAddress1(String address1) {
-        throw new UnsupportedOperationException();    }
-
-    public void setAddress2(String address2) {
-        throw new UnsupportedOperationException();    }
-}
