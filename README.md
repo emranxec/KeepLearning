@@ -2477,24 +2477,22 @@ collect1.forEach(System.out::println);
 ----
 ### Q. why Spring boot
 - manage frameworks and versions (All dependency management)
-###### pom.xml
+#### pom.xml
 > REST API - Spring framework,spring MVC Framework, JSON binding framework
 
 > Unit Tests - SPring test,mockito,Junit
 
-- web.xml
-###### web.xml
+#### web.xml
 > If we needed spring MVC we need to configure dispatcher servlet
 
-- Define Spring configuration
-###### context.xml
+
+#### context.xml (Define Spring configuration)
 > Component scan
 > view resolver
 > Data resource
 
-- Non functional requirement
-###### NFR's
->Logging
+#### NFR's (Non functional requirement)
+> Logging
 > Error Handling
 > monitoring
 ----
