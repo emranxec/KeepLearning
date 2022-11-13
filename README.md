@@ -3221,6 +3221,8 @@ private String name;
 ----
 ### Q. create a singleton class and protect it from breaking
 
+[Singleton.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Singleton.java)
+
 ----
 ### Q. create enum and print all enum elements and find is something is present
 
