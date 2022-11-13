@@ -1402,7 +1402,7 @@ serialization process.
 
 ----
 ### Q. what is default spring bean status?
->The default scope for the bean is a singleton, like the example below, 
+>The default scope for the bean is a singleton(single object instance per Spring IoC container), like the example below, 
 > in which we haven't explicitly given a scope. programs.Singleton means that the Spring container 
 > creates only one instance of the bean, and cached in memory, 
 > and all the requests for that bean will return a shared reference to the same bean.
@@ -1437,7 +1437,7 @@ public class PrototypeBean{
 }
 ```
 
-> As you can note here, even though we have declared bean as prototype,
+> As you can note here, even though we have declared bean as prototype(single bean definition to any number of object instances),
 > still it is behaving like a singleton bean only.
 
 ```java
