@@ -1380,6 +1380,9 @@ tx = session.beginTransaction();
  - docker rmi <image-id> (delete an image from the local storage system)
  - docker build <path to docker file> ( build a Dockerfile)
  - docker system prune (to remove all the stopped containers)
+
+[docker-interview-questions/](https://www.edureka.co/blog/interview-questions/docker-interview-questions/)
+
 ----
 ### Q. How to configure CI/CD process?
 - [build-ci-cd-pipeline-in-azure-devops](https://www.lambdatest.com/blog/build-ci-cd-pipeline-in-azure-devops/)
