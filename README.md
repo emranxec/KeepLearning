@@ -802,7 +802,7 @@ List<PostDTO> getAllPosts();
 >The @SpringBootApplication  which is a combination of @Configuration, @EnableAutoConfiguration and @ComponentScan scans 
 > all the components or services and other configuration files included in the base and child packages. 
 
-> This will register them in Spring Context and inject the beans at runtime using @Autowired.
+> This will register them in **Spring Context** and inject the beans at runtime using @Autowired.
 
 #### Constructor based Autowiring
 >@Autowired annotation is optional for constructor based injection. Here, the Red object from the container is passed to the constructor while creating the Color object.
@@ -828,9 +828,8 @@ class someClass {
 }
 ```
 
-
 ####  Property-based Autowiring
-> The person object will be injected into the property person at run time using @Autowired annotation
+> The Red object will be injected into the property Color at run time using @Autowired annotation
 ```java
 @Component
 public class someClass {
