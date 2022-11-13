@@ -84,14 +84,13 @@
 13. [do-we-need-dao-layer-if-we-have-service-layer](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-we-need-dao-layer-if-we-have-service-layer)
 14. [what-is-default-spring-bean-status](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-default-spring-bean-status)
 15. [how-you-validate-the-request-param-and-path-param-done-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-validate-the-request-param-and-path-param-done-in-spring)
-16. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
-17. [explain-bean-lifecycle](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-bean-lifecycle)
-18. [why-to-override-run-in-spring-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-to-overide-run-in-springapplication)
-19. [difference-between-primary-qualifier](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-primary--qualifier)
-20. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
-21. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
-22. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
-23. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
+16. [explain-bean-lifecycle](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-bean-lifecycle)
+17. [why-to-override-run-in-spring-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-to-overide-run-in-springapplication)
+18. [difference-between-primary-qualifier](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-primary--qualifier)
+19. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
+20. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
+21. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
+22. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
@@ -107,6 +106,7 @@
 11. [hibernate-optimal-usage-of-memory-network-and-cpu](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-will-you-handle-batch-insert-in-hibernate-for-optimal-usage-of-memory-network-and-cpu)
 12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
 13. [how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem-)
+14. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
