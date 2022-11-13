@@ -1406,7 +1406,29 @@ serialization process.
 > in which we haven't explicitly given a scope. programs.Singleton means that the Spring container 
 > creates only one instance of the bean, and cached in memory, 
 > and all the requests for that bean will return a shared reference to the same bean.
+```java
+// Java program to illustrate a bean
+// created in the spring framework
+package bean;
 
+public class HelloWorld {
+public String name;
+
+	// Create a setter method to
+	// set the value passed by user
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	// Create a getter method so that
+	// the user can get the set value
+	public String getName()
+	{
+		return name;
+	}
+}
+```
 #### we can change scope by
 ```java
 @Component
