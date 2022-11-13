@@ -425,6 +425,10 @@ template.query("SELECT * FROM books", new BookRowMapper());
 
 >#logging.level.org.hibernate.stat=debug
 
+> logging.level.org.springframework=DEBUG
+
+> logging.level.com.acme.your.code=INFO
+
 logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} - %msg%n
 
 - Step 4: Build a Repository Class for Spring Boot
@@ -827,8 +831,9 @@ List<PostDTO> getAllPosts();
 
 > This will register them in **Spring Context** and inject the beans at runtime using @Autowired.
 
-#### Constructor based Autowiring
+#### Setter based Autowiring
 >@Autowired annotation is optional for constructor based injection. Here, the Red object from the container is passed to the constructor while creating the Color object.
+
 
 ```java
 @Qualifier("redBean")
@@ -862,6 +867,19 @@ public class someClass {
     @Autowired
     @Qualifier("redBean")
     private Color color;
+}
+```
+####  Constructor-based Autowiring
+>  use @Autowired on a constructor, constructor injection happens at the time of object creation.
+```java
+@Component
+public class Customer {
+private Color color;
+@Autowired
+@Qualifier("redBean")
+public Customer (Color color) {
+this.color=color;
+}
 }
 ```
 ----
@@ -2554,6 +2572,12 @@ collect1.forEach(System.out::println);
 - Allows admin support
 - Adds many plugins that developers can use to work
 -  Spring allows you to easily connect with database and queue services like Oracle, PostgreSQL, MySQL, MongoDB, Redis, Solr.
+
+> Suppose your application want to interact with
+DB, if there are Spring Data libraries on class
+path then it automatically sets up connection to
+DB along with the Data Source class.
+
 
 #### pom.xml
 > REST API - Spring framework,spring MVC Framework, JSON binding framework
