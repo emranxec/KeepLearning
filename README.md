@@ -1620,6 +1620,7 @@ public class Controller {
 `@Max(value = 1, message = “day number has to be less than or equal to 7”)`
 
 [spring-validate-requestparam-pathvariable](https://www.baeldung.com/spring-validate-requestparam-pathvariable)
+
 ----
 ### Q. what is reflaction API? (java.lang.reflect)
 
