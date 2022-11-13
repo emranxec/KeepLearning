@@ -147,14 +147,14 @@
 12. [print Fibonacci](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-fibonacci)
 13. [do-iterator-operations-on-employee-list](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-itertor-operations-on-employee-list)
 14. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
-14. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
-15. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
-16. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
-17. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
-18. [Find an element in array such that sum of left array is equal to sum of right array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
-19. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
-20. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
-21. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
+15. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
+16. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+17. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+18. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
+19. [Find an element in array such that sum of left array is equal to sum of right array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
+20. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
+21. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
+22. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
 
 
 ## SQL Queries
