@@ -998,6 +998,8 @@ Dependencies can be classified into:
 
 #### Modernized Password Encoding
 >Spring Security 5.0 introduced new Password encoder **DelegatingPasswordEncoder** which is more modernize and solve all the problems of previous encoder **NoOpPasswordEncoder**.
+
+[default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
 ----
 ### Q. explain Dirty - Hibernate?
 > When an entity object is loaded, a copy of all properties of that entity object is created. 
@@ -2852,7 +2854,7 @@ method. Though it will be accessible using other methods which iterate over the 
 
 ----
 
-### Q. what is the the default security configuration and how we can disable or customize
+### Q. what is the default security configuration and how we can disable or customize
 >In order to add security to our Spring Boot application, we need to add the security starter dependency:
 ```xml
 <dependency>
