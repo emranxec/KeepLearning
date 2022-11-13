@@ -3233,12 +3233,13 @@ private String name;
 
 ----
 ### Q. Design a new implementation of the Map interface
->
+
+[CreateMap.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/CreateMap.java)
+
 ----
 ### Q. print some patterns in java
 
 [patterns](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
-
 
 ----
 ### Q. print 4th highest salary
@@ -3316,23 +3317,9 @@ id, name, mgid
 ----
 ### Q. do itertor operations on employee list
 > 
-```
-/* ArrayList
 
-    get -- O(1)
-    add -- O(1)
-    remove -- O(n)
-    contain --O(n)
+[IteratorProgram.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/IteratorProgram.java)
 
-    Employee --id, name, dept, salary
-    List<Employee> emplist = new ArrayList<>();//100
-
-    // Iterator
-    Iterator<Employee> it = emplist.iterator();//hasNext, next, remove
-    dept = "IT" modifying the salary increase 5%
-            1. there is no issue in this operation--
-            2. there is exception in this operation--
-```
 ----
 ### Q. print all children and all parents
 
@@ -3343,15 +3330,18 @@ id, name, mgid
 
 ### Q. print all words start with G using streams?
 
+[program23.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program23.java)
+
 ----
 
 ### Q. Find some random name in java
 
-----
-### Q. write logic to iterate the list
+[program24.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program24.java)
 
 ----
 ### Q. design a class to throw exception on 2nd constructor
+
+[designClass.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/designClass.java)
 
 ----
 ----
