@@ -132,7 +132,7 @@
 2. [why-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-microservices)
 3. [what-db-model-is-preferred-in-microservice-architecture](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-db-model-is-prefered-in-microservice-architecture)
 4. [how-to-convert-monolithic-application-to-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-monolithic-application-to-microservices)
-5. [explain-microservice-framework-netflix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
+5. [explain-microservice-framework-netflix PENDING](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
 
 ## Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
@@ -2742,7 +2742,7 @@ It is easy to find mistakes and resolve them.
 > We cannot track, when and how the commits were merged on the target branch
 
 
-###### we do git merge when we want our team to understand logs in a way where they can identify where each commit is coming from. We use Git Rebase when the logs of the repository will not be referred by anyone else.
+##### we do git merge when we want our team to understand logs in a way where they can identify where each commit is coming from. We use Git Rebase when the logs of the repository will not be referred by anyone else.
 
 ---- 
 ### Q. What is difference between Primary key and Unique Key?
