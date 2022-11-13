@@ -154,13 +154,15 @@
 19. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
 20. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
 21. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
+22. [do-itertor-operations-on-employee-list](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-itertor-operations-on-employee-list)
+
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
 2. all the employee name from department ->AB && which department has maximum employees join which year
 3. print all children and all parents
 4. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
-5. write a query for self join
+5. [write a query for self join](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-query-for-self-join)
 
 
 ## Self:
@@ -3298,6 +3300,12 @@ id, name, mgid
             1. there is no issue in this operation--
             2. there is exception in this operation--
 ```
+----
+### Q. print all children and all parents
+
+----
+### Q. all the employee name from department ->AB && which department has maximum employees join which year
+
 ----
 ----
 # self:
