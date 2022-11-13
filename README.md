@@ -457,8 +457,6 @@ BlogRespository blogRespository;
 
 > It uses HTTP endpoints or JMX beans to enable us to interact with it.
 
-> Actuator is mainly used to expose operational information about the running application
-> — health, metrics, info, dump, env, etc.
 
 ###### Advantages of Monitoring/Managing the Application
 - It increases customer satisfaction.
@@ -799,10 +797,9 @@ List<PostDTO> getAllPosts();
 > which is designed to efficiently store and query graph data.
 ----
 ### Q. What is @autowire usage?
->The @Autowired annotation provides more fine-grained control over where and how 
-> autowiring should be accomplished. The @Autowired annotation can be used to 
-> autowire bean on the setter method just like @Required annotation, 
-> constructor, a property or methods with arbitrary names and/or multiple arguments.
+>The @Autowired annotation provides more fine-grained control over where and how autowiring should be accomplished. 
+>The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, 
+constructor, a property or methods with arbitrary names and/or multiple arguments.
 
 >class Red
 ```java
@@ -812,6 +809,7 @@ class Red implements Color {
 }
 
 @Qualifier("blueBean")
+@primary
 class Blue implements Color {
 // Class code here
 }
