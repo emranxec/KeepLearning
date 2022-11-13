@@ -1,4 +1,4 @@
 package programs.utilClasses;
 
-class SomeSuperClass implements Cloneable {
+public class SomeSuperClass implements Cloneable {
 }
