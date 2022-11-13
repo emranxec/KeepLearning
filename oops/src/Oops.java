@@ -1,5 +1,3 @@
-package com.xec.java;
-
 public class Oops {
     public static void main(String[] args) {
         Base base = new Child();

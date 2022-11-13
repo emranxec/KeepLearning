@@ -1,4 +1,6 @@
-package com.xec.java;
+package programs;
+
+import programs.utilClasses.EmployeeHashcodeTest;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,11 +10,11 @@ import java.util.List;
 public class comparableVsCOmparator {
 
     public static void main(String[] args) {
-        List<Employee> employeeList=new ArrayList<>();
-        employeeList.add(new Employee(1,"imran",21));
-        employeeList.add(new Employee(2,"salman",11));
-        employeeList.add(new Employee(3,"ibrahim",41));
-        employeeList.add(new Employee(4,"imtiaz",31));
+        List<EmployeeHashcodeTest> employeeList=new ArrayList<>();
+        employeeList.add(new EmployeeHashcodeTest(1,"imran",21));
+        employeeList.add(new EmployeeHashcodeTest(2,"salman",11));
+        employeeList.add(new EmployeeHashcodeTest(3,"ibrahim",41));
+        employeeList.add(new EmployeeHashcodeTest(4,"imtiaz",31));
         System.out.println(employeeList);
         Collections.sort(employeeList);
         System.out.println(employeeList);
@@ -25,18 +27,18 @@ public class comparableVsCOmparator {
     }
 }
 
-class CompareByName implements Comparator<Employee>{
+class CompareByName implements Comparator<EmployeeHashcodeTest>{
 
     @Override
-    public int compare(Employee e1, Employee e2) {
+    public int compare(EmployeeHashcodeTest e1, EmployeeHashcodeTest e2) {
        return e1.getName().compareTo(e2.getName());
     }
 }
 
-class CompareByAge implements Comparator<Employee>{
+class CompareByAge implements Comparator<EmployeeHashcodeTest>{
 
     @Override
-    public int compare(Employee e1, Employee e2) {
+    public int compare(EmployeeHashcodeTest e1, EmployeeHashcodeTest e2) {
         if(e1.getAge()>e2.getAge()){
             return 1;
         }

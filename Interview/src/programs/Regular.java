@@ -1,4 +1,4 @@
-package com.xec.java.regular;
+package programs;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

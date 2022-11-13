@@ -6,7 +6,7 @@ public class IteratorTest {
 
     public static void main(String[] args) {
 
-      /*  List<Integer> myCollection= Arrays.asList(1,2,3,4,6);
+       /*List<Integer> myCollection= Arrays.asList(1,2,3,4,6);
         Collection c = Collections.synchronizedCollection(myCollection);
 
         synchronized (c) {

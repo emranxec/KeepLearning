@@ -1,9 +1,9 @@
-package com.xec.lamda;
+package programs;
 
 interface Lambda{
     public void demo();
 }
-public class app {
+public class FunctionalInterfaceExample {
 
     public static void main(String[] args) {
         int x=10;
@@ -20,5 +20,10 @@ public class app {
         };
 
         System.out.println(computerNumber.compute(5));
+    }
+
+    public static interface NumberWorker<T> {
+
+        T compute(T t);
     }
 }

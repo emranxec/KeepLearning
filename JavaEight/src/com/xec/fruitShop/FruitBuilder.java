@@ -430,7 +430,3 @@ public class FruitBuilder {
 }
 
 
-@FunctionalInterface
-interface FruitCondition<T>{
-    public boolean test(T t);
-}

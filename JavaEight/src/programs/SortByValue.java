@@ -1,4 +1,4 @@
-package com.xec.java.collections;
+package programs;
 
 import java.util.*;
 import java.util.stream.Collectors;

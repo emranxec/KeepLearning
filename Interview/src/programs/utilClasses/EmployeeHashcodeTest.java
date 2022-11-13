@@ -1,8 +1,8 @@
-package com.xec.java;
+package programs.utilClasses;
 
 import java.util.Objects;
 
-class Employee implements Comparable<Employee> {
+public class EmployeeHashcodeTest implements Comparable<EmployeeHashcodeTest> {
     int id;
     String name;
     int age;
@@ -10,7 +10,7 @@ class Employee implements Comparable<Employee> {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Employee employee)) return false;
+        if (!(o instanceof EmployeeHashcodeTest employee)) return false;
         return id == employee.id && age == employee.age && name.equals(employee.name);
     }
 
@@ -19,7 +19,7 @@ class Employee implements Comparable<Employee> {
         return Objects.hash(id, name, age);
     }
 
-    public Employee(int id, String name, int age) {
+    public EmployeeHashcodeTest(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -50,7 +50,7 @@ class Employee implements Comparable<Employee> {
     }
 
     @Override
-    public int compareTo(Employee e) {
+    public int compareTo(EmployeeHashcodeTest e) {
         return this.age - e.age;
     }
 
