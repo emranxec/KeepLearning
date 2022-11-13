@@ -424,6 +424,10 @@ public interface BlogRespository extends JpaRepository<Blog, Integer> {
     List<Blog> findByTitleContainingOrContentContaining(String text, String textAgain);  
     }
 
+    /*save(S entity)
+    findById(ID id)
+    findOne()
+    findAll()*/
 /**
  * Convert the Blog Class to Entity
  */
