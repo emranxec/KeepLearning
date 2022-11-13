@@ -3491,12 +3491,124 @@ session.flush();
 }
 ```
 ----
+### Q. Define all Spring Annotations ?
+
+#### Spring Framework Stereotype Annotations
+
+- @Component (on class level)
+>The @Component annotation marks the Java class as a bean or say component so that the component scanning mechanism 
+> of Spring can add into the application context.
+
+- @Controller (on class level)
+>  This annotation can be used to identify controllers for Spring MVC or Spring WebFlux.
+
+- @Service (on class level) (form of @Component)
+>  The @Service marks a Java class that performs some service, such as execute business logic, 
+
+>perform calculations and call external APIs.
+
+- @Repository (on class level) (form of @Component)
+>  The @Repository annotation works as marker for any class that fulfills the role of repository or Data Access Object.
+
+> This annotation has a automatic translation feature. 
+
+> For
+example, when an exception occurs in
+the@Repository there is a handler for that exception and
+there is no need to add a try catch block.
+
+- @Bean (on method level)
+>  @Bean annotation works with @Configuration to create Spring beans.
+
+- @ComponentScan
+> This annotation is used with @Configuration annotation
+to allow Spring to know the packages to scan for
+annotated components.
+
+- @Lazy (on method level)
+> This annotation is used on component classes.
+By default, all autowired dependencies are created and
+configured at startup.
+
+- @Value (on field, constructor parameter,method parameter)
+> The @Value annotation indicates a default value expression for the field or
+parameter to initialize the property with
+
+#### Spring Boot Annotations
+- @Configuration
+> It is used on classes which define beans.
+@Configuration is an analog for XML configuration file
+– it is configuration using Java class. J
+ava class annotated with @Configuration is a
+configuration by itself and will have methods to
+instantiate and configure the dependencies.
+
+- @EnableAutoConfiguration (on e main application class)
+>  The @EnableAutoConfiguration annotation implicitly defines a base “search package”.
+
+> This annotation tells Spring Boot to start adding beans based on classpath
+settings, other beans, and various property settings
+
+- @SpringBootApplication (on e main application class)
+>  The class that is annotated with the @SpringBootApplication must be kept in the base package.
+
+> The one thing that the @SpringBootApplication does is a component scan. But it will scan only its sub-packages.
+
+>The @SpringBootApplication is a convenient annotation that adds all the following:
+
+- @Configuration 
+- @EnableAutoConfiguration 
+- @ComponentScan
+
+#### Spring MVC and REST Annotations
+
+- @Controller (on class level)
+> The @Controller annotation allows auto-detection of component classes in the classpath
+and auto-registering bean definitions for them.
+
+- @RequestMapping (on class & method level)
+> The @RequestMapping annotation is used to map web requests onto specific handler classes and handler methods.
+
+> When @RequestMapping is used **on class level** it creates a base URI for which the controller will be used.
+
+> When this annotation is used **on methods** it will give you the URI on which the handler methods will be executed.
+```java
+@Controller
+@RequestMapping("/welcome")
+public class WelcomeController{
+@RequestMapping(method = RequestMethod.GET)
+public String welcomeAll(){
+return "welcome all";
+}
+```
+> The Spring MVC @RequestMapping annotation is capable of handling HTTP request methods, such as
+GET, PUT, POST, DELETE, and PATCH.
+
+- @RequestParam
+>The @RequestParam annotation is used with @RequestMapping to bind a web request parameter to
+  the parameter of the handler method.
+
+
+----
+### Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
+1. You must have a default no-argument constructor for your persistent classes and there should be getXXX() (i.e accessor/getter) and setXXX( i.e. mutator/setter)
+methods for all your persistable instance variables.
+2. You should implement the equals() and hashCode() methods based on your business key and it is important not to use the id field in your equals() and hashCode()
+definition if the id field is a surrogate key (i.e. Hibernate managed identifier). This is because the Hibernate only generates and sets the field when saving the object.
+3. It is recommended to implement the Serializable interface. This is potentially useful if you want to migrate around a multi-processor cluster. 
+4. The persistent class should not be final because if it is final then lazy loading cannot be used by creating proxy objects. 
+5. Use XDoclet tags for generating your *.hbm.xml files or Annotations (JDK 1.5 onwards), which are less verbose than *.hbm.xml files.
+
+----
+### Q. What is the difference between the session.get() method and the session.load() method?
+>Both the session.get(..) and session.load() methods create a persistent object by loading the required object from the database. 
+
+>But if there was not such object in the database then the method session.load(..) throws an exception whereas session.get(&) returns null.
 ----
 
 # self:
 
-### Q. how you identify which Asset type?
->
+
 ----
 ### Q. test your application
 
