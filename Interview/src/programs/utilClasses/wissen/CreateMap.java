@@ -1,4 +1,4 @@
-package wissen;
+package programs.utilClasses.wissen;
 
 import java.util.Arrays;
 import java.util.HashMap;

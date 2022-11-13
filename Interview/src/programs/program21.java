@@ -27,5 +27,12 @@ public class program21 {
         Map<String, List<Employee>> employeeMap=emplist.stream().collect(Collectors.groupingBy(Employee::getName,Collectors.toList()));
         System.out.println(employeeMap);
 
+
+      /*  3. Employee count based on depart
+        "IT", 25
+        "Civil", 39*/
+
+        emplist.stream().collect(mapping(e->e.department).groupingby(e->e.department),count()).collect(Collectors.toMap());
+
     }
 }

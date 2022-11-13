@@ -1,11 +1,11 @@
 package programs;
 
+import programs.utilClasses.week;
+
 import java.util.EnumSet;
 import java.util.Set;
 
-enum week{
-    MONDAY, TUESDAY, WEDNESDAY
-};
+;
 
 public class program9 {
 

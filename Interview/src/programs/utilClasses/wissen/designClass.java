@@ -1,4 +1,4 @@
-package wissen;
+package programs.utilClasses.wissen;
 
 public class designClass {
 

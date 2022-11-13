@@ -1,4 +1,4 @@
-package wissen;// Java program for the above approach
+package programs.utilClasses.wissen;// Java program for the above approach
 
 public class Threads {
 

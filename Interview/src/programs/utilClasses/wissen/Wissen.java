@@ -1,4 +1,4 @@
-package wissen;
+package programs.utilClasses.wissen;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,7 +22,7 @@ public class Wissen {
         }
         System.out.println(copyOnWriteArrayList);
 
-       /* Iterator iterator=copyOnWriteArrayList.iterator();
+       /* Iterator=copyOnWriteArrayList.iterator();
         while(iterator.hasNext()){
             if((int) iterator.next()<2){
                 iterator.remove();

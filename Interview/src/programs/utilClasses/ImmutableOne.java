@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package programs.utilClasses;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -62,9 +63,9 @@ public final class ImmutableOne {
         this.EmployeeRoles = employeeRoles;
 
         //Initialize all the fields through a constructor doing the deep copy.
-       /* List<Role> newRoles=new ArrayList<>();
-        for(Role role:employeeRoles){
-            Role role1=new Role(role.getName());
+       /* List<programs.utilClasses.Role> newRoles=new ArrayList<>();
+        for(programs.utilClasses.Role role:employeeRoles){
+            programs.utilClasses.Role role1=new programs.utilClasses.Role(role.getName());
             newRoles.add(role1);
         }*/
 

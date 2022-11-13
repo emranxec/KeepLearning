@@ -1,4 +1,4 @@
-package interview.online;
+package com.xec;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class onlinetest {
     }
 }
 
-class Result {
+class  Result {
 
     /*
      * Complete the 'rollingString' function below.

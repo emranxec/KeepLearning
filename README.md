@@ -20,7 +20,7 @@
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
 
 ## DSA & design
-1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
+1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/programs.utilClasses.interviewQuestions.md)
 2. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
 3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
 4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
@@ -160,7 +160,7 @@
 2. all the employee name from department ->AB && which department has maximum employees join which year
 3. print all children and all parents
 4. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
-
+5. write a query for self join
 
 
 ## Self:
@@ -190,14 +190,14 @@
   - A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
   - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
 
-[ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/ImmutableOne.java)
+[programs.utilClasses.ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs.utilClasses.ImmutableOne.java)
 
 ```java
-final class immmutableClass{
+final class programs.utilClasses.immmutableClass{
     final private String name;
     final private List list;
 
-    immmutableClass(String name){
+    programs.utilClasses.immmutableClass(String name){
         this.name=name;
     }
     String getName(){
@@ -224,7 +224,7 @@ final class immmutableClass{
 
 [parallel-vs-sequential-stream-in-java](https://www.geeksforgeeks.org/parallel-vs-sequential-stream-in-java/) 
 ```java
-public class interviewQuestions {
+public class programs.utilClasses.interviewQuestions {
   private static void parralelvsSequencial() {
         String[] strings = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 
@@ -3259,6 +3259,45 @@ private String name;
 ----
 ### Q. merge the linked list of integer and contact as string
 >
+----
+### Q. write a query for self join
+```
+Database
+Employee-- id, name, mgid
+id, name, mgid
+1.  Alok  3
+2   Niraj 3
+3   Saurya 4
+4   Siva   5
+
+    name , mgname
+    Alok  Saurya
+    Niraj Saurya,
+    Saurya Siva
+
+    select emp.name,man.name from Employee emp
+    join Employee man on emp.madid=man.id;
+```
+----
+### Q. do itertor operations on employee list
+> 
+```
+/* ArrayList
+
+    get -- O(1)
+    add -- O(1)
+    remove -- O(n)
+    contain --O(n)
+
+    Employee --id, name, dept, salary
+    List<Employee> emplist = new ArrayList<>();//100
+
+    // Iterator
+    Iterator<Employee> it = emplist.iterator();//hasNext, next, remove
+    dept = "IT" modifying the salary increase 5%
+            1. there is no issue in this operation--
+            2. there is exception in this operation--
+```
 ----
 ----
 # self:
