@@ -155,10 +155,9 @@
 20. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
 21. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
 22. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
-23. print all words start with G using streams?
-24. Find some random name in java
-25. write logic to iterate the list
-26. design a class to throw exception on 2nd constructor
+23. [print all words start with G using streams?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-all-words-start-with-g-using-streams)
+24. [Find some random name in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-find-some-random-name-in-java)
+25. [design a class to throw exception on 2nd constructor](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-class-to-throw-exception-on-2nd-constructor)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
