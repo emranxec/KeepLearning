@@ -92,7 +92,7 @@
 21. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
 22. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
 23. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
-24. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
+24. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
