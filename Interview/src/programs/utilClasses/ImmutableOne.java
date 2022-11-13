@@ -20,29 +20,6 @@ class Role{
 
 }
 
- class Address implements Cloneable{
-
-    String city;
-
-    public Address(String city) {
-        super();
-        this.city = city;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-     @Override
-     public Object clone() throws CloneNotSupportedException {
-         return super.clone();
-     }
-
-}
 //Declare the class as final so it can’t be extended.
 //Don’t provide methods that modify the mutable objects.
 //Don’t share references to the mutable objects.

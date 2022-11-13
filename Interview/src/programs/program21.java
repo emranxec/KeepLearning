@@ -32,7 +32,7 @@ public class program21 {
         "IT", 25
         "Civil", 39*/
 
-        emplist.stream().collect(mapping(e->e.department).groupingby(e->e.department),count()).collect(Collectors.toMap());
+        //emplist.stream().collect(mapping(e->e.department).groupingby(e->e.department),count()).collect(Collectors.toMap());
 
     }
 }

@@ -70,7 +70,7 @@ final class Person implements Serializable {
         this.degrees=newDegrees;
         this.address=address;
         //this line prevent it form serialization and reflection
-        System.setSecurityManager(new SecurityManager());
+      //  System.setSecurityManager(new SecurityManager());
     }
 
     public String getName() {
@@ -111,41 +111,11 @@ final class Person implements Serializable {
     }
 }
 
-class Address implements Cloneable{
-    private String address1;
-    private String address2;
-
-    public String getAddress1() {
-        return address1;
-    }
-
-    public void setAddress1(String address1) {
-        this.address1 = address1;
-    }
-
-    public String getAddress2() {
-        return address2;
-    }
-
-    public void setAddress2(String address2) {
-        this.address2 = address2;
-    }
-
-    public Address(String address1, String address2) {
-        this.address1 = address1;
-        this.address2 = address2;
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-}
 
 class ChildAddress extends Address{
 /*    Is there any problem with this approach?
 
-    Well yes. what if some of the reference variables inside Address class is also Mutable Objects.
+    Well yes. what if some reference variables inside Address class is also Mutable Objects.
     In that case we need to override their  setter methods as well.
     This approch becomes more complex when there are many nested Mutable class references.*/
 
