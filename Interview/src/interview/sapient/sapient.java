@@ -68,7 +68,7 @@ class MyCode {
         }
     }
 
-enum enumType{
+enum     enumType{
     Monday,Tuesday,Wednesday
 };
 
@@ -126,9 +126,9 @@ enum enumType{
 
             hashMap.put(new Employee("A"),
                     Arrays.asList(new Address("St3"), new Address("St4")));
-            System.out.println(hashMap.size());//1(kopal),2(sridharan)
+            System.out.println("total hashmap elements :" + hashMap.size());//1(kopal),2(sridharan)
             List<Address> address = hashMap.get(new Employee("A"));
-            System.out.println(address);// //st3,st4(kopal), empty(sriharan)
+            System.out.println("get address details "+ address);// //st3,st4(kopal), empty(sriharan)
 
             List<Employee> emplist = new ArrayList<>();//100
             emplist.add(new Employee("imran"));

@@ -8,7 +8,7 @@ public class interview {
         List<Integer> l2 = new LinkedList<>(Arrays.asList(1, 2, 1));
         //expected output =123+121=244= 4 4 2
         List<Integer> l3 = initThirdLL(l1, l2);
-        // System.out.println(l3);
+         System.out.println(l3);
         // findSquareOfOddNumber();
 
         // Given an array of n integers and a number k, find the pairs of numbers in the array such
@@ -23,7 +23,7 @@ public class interview {
 
         String sentence = "my name amanulla is, imran khan-";
 
-        //  System.out.println(findLongest(sentence));
+          System.out.println(findLongest(sentence));
         countNumberOfUniqueNumbers();
 
         System.out.println("------------");

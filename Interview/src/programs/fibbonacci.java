@@ -1,4 +1,4 @@
-package interview;
+package programs;
 
 public class fibbonacci {
     static int counter=0;

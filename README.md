@@ -144,23 +144,23 @@
 9. [create enum and print all enum elements and find is something is present](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-create-enum-and-print-all-enum-elements-and-find-is-something-is-present)
 10. [Design a new implementation of the Map interface](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-new-implementation-of-the-map-interface)
 11. [print some patterns in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-some-patterns-in-java)
-12. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
-13. [print Fibonacci](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-fibonacci)
-14. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
-15. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
-16. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
-17. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
-18. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
-19. [Find an element in array such that sum of left array is equal to sum of right array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
-20. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
-21. [get only employee having dept = "IT" && Convert in map key--id, value--Employee](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
-22. [Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-employee-count-based-on-depart)
-23. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
+12. [print Fibonacci](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-fibonacci)
+13. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
+14. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
+15. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+16. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
+17. [god => print -> //god,ogd,dgo,gdo,odg,dog (permute)](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-god--print---godogddgogdoodgdog-permute)
+18. [Find an element in array such that sum of left array is equal to sum of right array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-if-pivot-or-not)
+19. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
+20. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
+22. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
 2. all the employee name from department ->AB && which department has maximum employees join which year
 3. print all children and all parents
+4. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
+
 
 
 ## Self:
@@ -249,12 +249,12 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ----
 ### Q. design patterns in spring?
 
-> ### Singleton Pattern
+> ### programs.Singleton Pattern
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
 
 >This pattern can be useful when managing shared resources or providing cross-cutting services, such as logging.
 
-#### Singleton Beans
+#### programs.Singleton Beans
 > Generally, a singleton is globally unique for an application, but in Spring, this constraint is relaxed. Instead, Spring restricts
 > a singleton to one object per Spring IoC container. 
 
@@ -1326,7 +1326,7 @@ serialization process.
 ----
 ### Q. what is default spring bean status?
 >The default scope for the bean is a singleton, like the example below, 
-> in which we haven't explicitly given a scope. Singleton means that the Spring container 
+> in which we haven't explicitly given a scope. programs.Singleton means that the Spring container 
 > creates only one instance of the bean, and cached in memory, 
 > and all the requests for that bean will return a shared reference to the same bean.
 
@@ -3035,21 +3035,21 @@ pages) execute on priority compared to big ones.
 
 ----
 
-### Q. Prevent Breaking a Singleton Class Pattern
+### Q. Prevent Breaking a programs.Singleton Class Pattern
 
 ```java
-public final class Singleton {
+public final class programs.Singleton {
 
-    private static volatile Singleton instance = null;
+    private static volatile programs.Singleton instance = null;
 
-    private Singleton() {
+    private programs.Singleton() {
     }
 
-    public static Singleton getInstance() {
+    public static programs.Singleton getInstance() {
         if (instance == null) {
-            synchronized (Singleton.class) {
+            synchronized (programs.Singleton.class) {
                 if (instance == null) {
-                    instance = new Singleton();
+                    instance = new programs.Singleton();
                 }
             }
         }
@@ -3075,10 +3075,10 @@ return instance;
 
 ##### Reflection
 ```
-private Singleton() {
+private programs.Singleton() {
         // Check if we already have an instance
         if (instance != null) {
-           throw new IllegalStateException("Singleton" +
+           throw new IllegalStateException("programs.Singleton" +
              " instance already created.");
         }
     }
@@ -3255,9 +3255,6 @@ private String name;
 >
 ----
 ### Q. get only employee having dept = "IT" && Convert in map key--id, value--Employee
->
-----
-### Q. Employee count based on depart
 >
 ----
 ### Q. merge the linked list of integer and contact as string

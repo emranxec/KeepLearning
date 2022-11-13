@@ -1,3 +1,5 @@
+package programs;
+
 import java.io.Serializable;
 
 class SomeSuperClass implements Cloneable{}
@@ -6,7 +8,7 @@ public class Singleton extends SomeSuperClass implements Serializable {
 
     private Singleton() throws IllegalAccessException {
         if(INSTANCE!=null){
-            throw new IllegalAccessException("Do not try to break the Singleton class");
+            throw new IllegalAccessException("Do not try to break the programs.Singleton class");
         }
     }
 

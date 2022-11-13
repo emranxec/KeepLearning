@@ -100,9 +100,9 @@ Jackson’s@JsonViewissupporteddirectlyon@ResponseBodyandResponseEntitycontrolle
 9. What would happen in Spring Container finds multiple bean definitions matching the property to be auto wired?
 > Spring framework does not resolve this kind of ambiguity. It would throw and exception. The programmer has the choice to remove one of the bean or explicitly wire in a dependency.
 
-10. How is Spring’s Singleton bean different from Gang of Four Singleton Pattern?
+10. How is Spring’s programs.Singleton bean different from Gang of Four programs.Singleton Pattern?
 > The singleton scope is the default scope in Spring. 
-> The Gang of Four defines Singleton as having one and only one instance per ClassLoader. However, Spring singleton is defined as one instance of bean definition per container.
+> The Gang of Four defines programs.Singleton as having one and only one instance per ClassLoader. However, Spring singleton is defined as one instance of bean definition per container.
 
 11.How do you represent Stateful bean in Spring?
 > Stateful beans are represented in Spring with a prototype scope. A new instance is created every time a request for bean is made. Example below.
