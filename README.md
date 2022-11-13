@@ -107,6 +107,7 @@
 12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
 13. [how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem-)
 14. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
+15. What is Cascade ?
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
@@ -1804,53 +1805,6 @@ public class Branch implements Serializable {
 
 [difference-between-joincolumn-and-mappedby/](https://javabydeveloper.com/difference-between-joincolumn-and-mappedby/)
 
-#### What is Cascade ?
-> Cascade is the feature provided by hibernate to automatically manage the state of mapped entity whenever the state of its relationship owner entity is affected.
-
-#### JPA Cascade Type
-- ALL  (propagates all operations)
-- PERSIST (propagates the persist operation from a parent to a child entity)
-```
-  public void whenParentSavedThenChildSaved() {
-  Person person = new Person();
-  Address address = new Address();
-  address.setPerson(person);
-  person.setAddresses(Arrays.asList(address));
-  session.persist(person); //address also persist
-  session.flush();
-  session.clear();
-  }
-```  
-- MERGE (propagates the merge operation from a parent to a child entity)
-```
-Address savedAddressEntity = session.find(Address.class, addressId);
-Person savedPersonEntity = savedAddressEntity.getPerson();
-savedPersonEntity.setName("devender kumar");
-savedAddressEntity.setHouseNumber(24);
-session.merge(savedPersonEntity); //address also merge
-session.flush();
-```
-- REMOVE  
->  propagates the remove operation from parent to child entity. Similar to JPA's CascadeType.REMOVE, 
-> we have CascadeType.DELETE, which is specific to Hibernate
-```
-Person savedPersonEntity = session.find(Person.class, personId);
-session.remove(savedPersonEntity);
-session.flush();
-```
-- REFRESH ( the child entity also gets reloaded from the database whenever the parent entity is refreshed)
-- DETACH (child entity will also get removed from the persistent context)
-- SAVE_UPDATE (Hibernate-specific operations like save, update and saveOrUpdate)
-```
-@Test
-public void whenParentSavedThenChildSaved() {
-Person person = buildPerson("devender");
-Address address = buildAddress(person);
-person.setAddresses(Arrays.asList(address));
-session.saveOrUpdate(person); //address also save / update
-session.flush();
-}
-```
 
 ----
 ### Q. explain hibernate caching? how to Configure ehcache?
@@ -3462,6 +3416,54 @@ id, name, mgid
 
 [designClass.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/designClass.java)
 
+----
+### Q. what is cascade in hibernate
+> Cascade is the feature provided by hibernate to automatically manage the state of mapped entity whenever the state of its relationship owner entity is affected.
+
+#### JPA Cascade Type
+- ALL  (propagates all operations)
+- PERSIST (propagates the persist operation from a parent to a child entity)
+```
+  public void whenParentSavedThenChildSaved() {
+  Person person = new Person();
+  Address address = new Address();
+  address.setPerson(person);
+  person.setAddresses(Arrays.asList(address));
+  session.persist(person); //address also persist
+  session.flush();
+  session.clear();
+  }
+```  
+- MERGE (propagates the merge operation from a parent to a child entity)
+```
+Address savedAddressEntity = session.find(Address.class, addressId);
+Person savedPersonEntity = savedAddressEntity.getPerson();
+savedPersonEntity.setName("devender kumar");
+savedAddressEntity.setHouseNumber(24);
+session.merge(savedPersonEntity); //address also merge
+session.flush();
+```
+- REMOVE
+>  propagates the remove operation from parent to child entity. Similar to JPA's CascadeType.REMOVE,
+> we have CascadeType.DELETE, which is specific to Hibernate
+```
+Person savedPersonEntity = session.find(Person.class, personId);
+session.remove(savedPersonEntity);
+session.flush();
+```
+- REFRESH ( the child entity also gets reloaded from the database whenever the parent entity is refreshed)
+- DETACH (child entity will also get removed from the persistent context)
+- SAVE_UPDATE (Hibernate-specific operations like save, update and saveOrUpdate)
+```
+@Test
+public void whenParentSavedThenChildSaved() {
+Person person = buildPerson("devender");
+Address address = buildAddress(person);
+person.setAddresses(Arrays.asList(address));
+session.saveOrUpdate(person); //address also save / update
+session.flush();
+}
+```
 ----
 ----
 
