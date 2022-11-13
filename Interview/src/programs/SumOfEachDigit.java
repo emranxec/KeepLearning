@@ -1,11 +1,9 @@
-package com.xec;
+package programs;
 
-import java.util.Arrays;
-
-public class interviewQuestion {
+public class SumOfEachDigit {
 
     public static void main(String[] args) {
-        String myNumber="12345678";
+        String myNumber="123";
         int n=Integer.valueOf(myNumber);
         int sum=0;
         int reminder=0;

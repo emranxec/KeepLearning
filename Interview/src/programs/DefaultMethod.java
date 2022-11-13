@@ -1,10 +1,10 @@
-package eight;
+package programs;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class eight implements I,J{
+public class DefaultMethod implements I,J{
     @Override
     public void show() {
         System.out.println("eight");
@@ -27,7 +27,7 @@ interface J{
     }
 }
 
-class newOne extends eight implements J{
+class newOne extends DefaultMethod implements J{
     @Override
     public void show() {
         super.show();
