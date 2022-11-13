@@ -802,7 +802,6 @@ List<PostDTO> getAllPosts();
 >The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, 
 constructor, a property or methods with arbitrary names and/or multiple arguments.
 
->class Red
 ```java
 @Qualifier("redBean")
 class Red implements Color {
