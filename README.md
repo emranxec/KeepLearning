@@ -802,6 +802,9 @@ List<PostDTO> getAllPosts();
 >The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, 
 constructor, a property or methods with arbitrary names and/or multiple arguments.
 
+### Constructor based Autowiring
+>@Autowired annotation is optional for constructor based injection. Here, the Red object from the container is passed to the constructor while creating the Color object.
+
 ```java
 @Qualifier("redBean")
 class Red implements Color {
@@ -820,6 +823,21 @@ class someClass {
     public void setColor(Color color) {
         this.color = color;
     }
+}
+```
+
+
+###  Property-based Autowiring
+> The person object will be injected into the property person at run time using @Autowired annotation
+```java
+@Component
+public class someClass {
+
+    private int type;
+
+    @Autowired
+    @Qualifier("redBean")
+    private Color color;
 }
 ```
 ----
