@@ -1093,12 +1093,11 @@ return "Response!";
 
 >or Set your response type to MediaType.APPLICATION_JSON_VALUE (= "application/json")
 ```
-@RequestMapping(value = "/getString", method = RequestMethod.GET,
-                produces = MediaType.APPLICATION_JSON_VALUE)
-                
-//and you'll have a JSON that looks like
-
-{  "response" : "your string value" }
+@GetMapping(produces=MediaType.APPLICATION_JSON_VALUE)
+public ResponseEntity<Object> getOneParameterMap() {
+    return ResponseEntity.status(HttpStatus.CREATED).body(
+            "Response!");
+}
 ```
 ----
 ### Q. when to used native query & hibernate query?
