@@ -3210,57 +3210,85 @@ private String name;
 
 ----
 ### Q. Given an array find which pattern it matches
+
 [program6.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program6.java)
 
 ----
 ### Q. use linkedList and find middle element but don't use size?
+
 [program7.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program7.java)
+
 ----
 ### Q. create a singleton class and protect it from breaking
 
 ----
 ### Q. create enum and print all enum elements and find is something is present
-[program9.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program9.java)----
+
+[program9.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program9.java)
+
+----
 ### Q. Design a new implementation of the Map interface
 >
 ----
 ### Q. print some patterns in java
+
 [patterns](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
+
 
 ----
 ### Q. print 4th highest salary
 >
 ----
 ### Q. print Fibonacci
+
 [fibbonacci.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/fibbonacci.java)
+
 ----
 ### Q. sum of the squares of all the odd numbers in the array.
->
+
+[program14.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program14.java)
+
 ----
 ### Q. Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.
->
+
+[program15.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program15.java)
+
 ----
 ### Q. Write a function to return the longest even length word in a sentence.
->
+
+[program16.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program16.java)
+
 ----
 ### Q. Write a function to count the number of unique digits in a number
->
+
+[program17.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program17.java)
+
 ----
 ### Q. god => print -> //god,ogd,dgo,gdo,odg,dog (permute)
->
+
+[program18.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program18.java)
+
 ----
 ### Q. check if pivot or not
 ##### Find an element in array such that sum of left array is equal to sum of right array
->
+
+[program19.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program19.java)
+
 ----
 ### Q. check the output of employee and address class
->
+
+[program20.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program20.java)
+
 ----
 ### Q. get only employee having dept = "IT" && Convert in map key--id, value--Employee
->
+
+[program21.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program21.java)
+
 ----
 ### Q. merge the linked list of integer and contact as string
->
+
+[program22.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program22.java)
+
 ----
 ### Q. write a query for self join
 ```
