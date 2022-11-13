@@ -1827,7 +1827,7 @@ Address savedAddressEntity = session.find(Address.class, addressId);
 Person savedPersonEntity = savedAddressEntity.getPerson();
 savedPersonEntity.setName("devender kumar");
 savedAddressEntity.setHouseNumber(24);
-session.merge(savedPersonEntity);
+session.merge(savedPersonEntity); //address also merge
 session.flush();
 ```
 - REMOVE  
@@ -1847,7 +1847,7 @@ public void whenParentSavedThenChildSaved() {
 Person person = buildPerson("devender");
 Address address = buildAddress(person);
 person.setAddresses(Arrays.asList(address));
-session.saveOrUpdate(person);
+session.saveOrUpdate(person); //address also save / update
 session.flush();
 }
 ```
