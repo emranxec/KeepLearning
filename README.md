@@ -1238,6 +1238,8 @@ tx = session.beginTransaction();
 ### Q. what is service layer in Spring? 
 ### Reasons to use :
 
+![service](https://user-images.githubusercontent.com/16031518/201525551-b621274f-425e-4580-86b4-8bdf57a40cd4.jpeg)
+
 - Provides separation of concern-
 
 >Service layer provides code modularity,the business logic and rules are specified in the service layer which in turn calls DAO layer ,the DAO layer is then only responsible for interacting with DB.
