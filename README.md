@@ -2476,7 +2476,20 @@ collect1.forEach(System.out::println);
 
 ----
 ### Q. why Spring boot
-- manage frameworks and versions (All dependency management)
+> The Spring framework has been made significantly more user-friendly with the development of Spring Boot.
+
+> manage frameworks and versions (All dependency management)
+
+#### benefits include:
+- **Reduces development time** and **increases the overall productivity** of the development team.
+- Helps you **autoconfigure all components** for a production-grade Spring application.
+- Makes it **easier for developers to create and test Java-based applications**
+- **Avoids writing lots of boilerplate code**, annotations, and XML configuration.
+- **Comes with embedded HTTP servers like Tomcat** or Jetty to test web applications.
+- Allows admin support
+- Adds many plugins that developers can use to work
+-  Spring allows you to easily connect with database and queue services like Oracle, PostgreSQL, MySQL, MongoDB, Redis, Solr.
+
 #### pom.xml
 > REST API - Spring framework,spring MVC Framework, JSON binding framework
 
