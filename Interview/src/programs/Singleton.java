@@ -1,8 +1,9 @@
 package programs;
 
+import programs.utilClasses.SomeSuperClass;
+
 import java.io.Serializable;
 
-class SomeSuperClass implements Cloneable{}
 public class Singleton extends SomeSuperClass implements Serializable {
     private static Singleton INSTANCE=null;
 
@@ -40,10 +41,3 @@ public class Singleton extends SomeSuperClass implements Serializable {
 }
 
 
-/**
- * To overcome above issue we can use enum also, as this guarantees singleton-ness of the object and return the same instance always.
- */
-enum SingletonEnum
-{
-    INSTANCE;
-}
