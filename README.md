@@ -1298,6 +1298,88 @@ tx = session.beginTransaction();
 `docker run -i -t ubuntu /bin/bash`
 
 [docker-cheat-sheet](https://www.docker.com/wp-content/uploads/2022/03/docker-cheat-sheet.pdf)
+
+#### What is Hypervisor?
+- A hypervisor is a software that makes virtualization possible. 
+- It is also called Virtual Machine Monitor. 
+- It divides the host system and allocates the resources to each divided virtual environment.
+
+#### What is virtualization?
+- Virtualization is the process of creating a software-based, virtual version of something(compute storage, servers, application, etc.). 
+- These virtual versions or environments are created from a single physical hardware system. 
+- Virtualization lets you split one system into many sections which act like separate, distinct individual systems.
+
+
+#### What is containerization?
+- code developed on one machine might not work perfectly fine on any other machine because of the dependencies. 
+- This problem was solved by the containerization concept. 
+- So basically, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. 
+- This bundle is called a container.
+
+####  What is a Docker Container?
+- Docker containers include the application and all of its dependencies. 
+- It shares the kernel with other containers, running as isolated processes in user space on the host operating system. 
+- Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud. 
+- Docker containers are basically runtime instances of Docker images.
+
+####   What are Docker Images?
+- Docker image is the source of Docker container. 
+- In other words, Docker images are used to create containers. 
+- When a user runs a Docker image, an instance of a container is created. 
+- These docker images can be deployed to any Docker environment.
+
+####   What is Docker Hub?
+- Docker images create docker containers. 
+- There has to be a registry where these docker images live. 
+- This registry is Docker Hub. 
+- Users can pick up images from Docker Hub and use them to create customized images and containers. 
+- Currently, the Docker Hub is the world’s largest public repository of image containers.
+
+####   What is a Dockerfile?
+- Docker can build images automatically by reading the instructions from a file called Dockerfile. 
+- A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. 
+- Using docker build, users can create an automated build that executes several command-line instructions in succession.
+
+####   Tell us something about Docker Compose.
+- Docker Compose is a YAML file which contains details about the services, networks, and volumes for setting up the Docker application. 
+- So, you can use Docker Compose to create separate containers, host them and get them to communicate with each other. 
+- Each container will expose a port for communicating with other containers.
+
+####    What is Docker Machine?
+- Docker machine is a tool that lets you install Docker Engine on virtual hosts. 
+- These hosts can now be managed using the docker-machine commands. 
+- Docker machine also lets you provision Docker Swarm Clusters.
+
+####   What is Docker Swarm?
+- Docker Swarm is native clustering for Docker. 
+- It turns a pool of Docker hosts into a single, virtual Docker host. 
+- Docker Swarm serves the standard Docker API, any tool that already communicates with a Docker daemon can use Swarm to transparently scale to multiple hosts.
+
+####   Docker commands
+ - $ docker version
+> check for Docker Client and Docker Server version
+ - docker info
+> get the number of containers running, paused and stopped
+ - docker --help
+ - docker <command> --help
+ - docker login (login into docker repository)
+ - docker pull <image_name> (pull an image from docker hub)
+> to use a base image and make modifications or personalize it
+ - docker run -it -d <image_name> (create a docker container from an image)
+> Pull an image from docker repository with the above command and run it to create a container.
+ - docker ps (lists down all the running containers)
+ - docker exec -it <container id> bash 
+> Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container
+ - docker start <container_id> (start a docker container)
+ - docker stop <container_id> ( stopping a running container)
+ - docker kill <container_id> (kill a container with the following command)
+ - docker commit <conatainer id> <username/imagename>
+> you can use a container, edit it and update it. This sounds complicated but its actually just one command.
+ - docker push <username/image name> (push it to docker hub)
+ - docker rm <container id> (delete a stopped container)
+ - docker rmi <image-id> (delete an image from the local storage system)
+ - docker build <path to docker file> ( build a Dockerfile)
+ - docker system prune (to remove all the stopped containers)
 ----
 ### Q. How to configure CI/CD process?
 - [build-ci-cd-pipeline-in-azure-devops](https://www.lambdatest.com/blog/build-ci-cd-pipeline-in-azure-devops/)
