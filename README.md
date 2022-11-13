@@ -2498,7 +2498,6 @@ collect1.forEach(System.out::println);
 #### web.xml
 > If we needed spring MVC we need to configure dispatcher servlet
 
-
 #### context.xml (Define Spring configuration)
 > Component scan
 > view resolver
