@@ -90,10 +90,9 @@
 19. [why-to-override-run-in-spring-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-to-overide-run-in-springapplication)
 20. [difference-between-primary-qualifier](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-primary--qualifier)
 21. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
-22. [spring-actuators](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-spring-actuators)
-23. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
-24. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
-25. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
+22. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
+23. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
+24. [what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
@@ -457,6 +456,40 @@ BlogRespository blogRespository;
 >Actuator is mainly used to expose operational information about the running application — health, metrics, info, dump, env, etc. 
 
 > It uses HTTP endpoints or JMX beans to enable us to interact with it.
+
+> Actuator is mainly used to expose operational information about the running application
+> — health, metrics, info, dump, env, etc.
+
+###### Advantages of Monitoring/Managing the Application
+- It increases customer satisfaction.
+- It reduces downtime.
+- It boosts productivity.
+- It improves Cyber security Management.
+- It increases the conversion rate.
+
+##### In Maven:
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+###### by default, all Actuator endpoints are now placed under the /actuator path.
+
+###### Enable All Endpoints
+- We need to add the following configuration to expose all endpoints:
+>management.endpoints.web.exposure.include=*
+
+- To explicitly enable a specific endpoint (e.g., /shutdown), we use:
+>management.endpoint.shutdown.enabled=true
+
+- To expose all enabled endpoints except one (e.g., /loggers), we use:
+>management.endpoints.web.exposure.include=*
+
+>management.endpoints.web.exposure.exclude=loggers
+
+[spring-boot-actuator](https://www.geeksforgeeks.org/spring-boot-actuator/)
+
 ----
 ### Q. Map vs flatMap?
 > map() can be used where we have to map the elements of a particular collection to a certain function, and then we need to return the stream which contains the updated results.
@@ -2192,41 +2225,6 @@ public class UniversityController {
 ### Q. Controller vs rest controlled?
 
 [difference-between-controller-and-restcontroller](https://www.geeksforgeeks.org/difference-between-controller-and-restcontroller-annotation-in-spring/?ref=lbp)
-
-----
-### Q. Spring actuators?
-> Actuator is mainly used to expose operational information about the running application 
-> — health, metrics, info, dump, env, etc.
-
-###### Advantages of Monitoring/Managing the Application
-- It increases customer satisfaction. 
-- It reduces downtime. 
-- It boosts productivity. 
-- It improves Cyber security Management. 
-- It increases the conversion rate.
-
-##### In Maven:
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-actuator</artifactId>
-</dependency>
-```
-###### by default, all Actuator endpoints are now placed under the /actuator path.
-
-###### Enable All Endpoints
-- We need to add the following configuration to expose all endpoints:
->management.endpoints.web.exposure.include=*
-
-- To explicitly enable a specific endpoint (e.g., /shutdown), we use:
->management.endpoint.shutdown.enabled=true
-
-- To expose all enabled endpoints except one (e.g., /loggers), we use:
->management.endpoints.web.exposure.include=*
-
->management.endpoints.web.exposure.exclude=loggers
-
-[spring-boot-actuator](https://www.geeksforgeeks.org/spring-boot-actuator/)
 
 ----
 ### Q. explain Hibernate inheritance?
