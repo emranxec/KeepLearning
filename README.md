@@ -91,6 +91,7 @@
 20. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
 21. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
 22. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
+23. [define-all-spring-annotations-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-define-all-spring-annotations-)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
@@ -108,6 +109,8 @@
 13. [how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem-)
 14. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
 15. [What is Cascade in hibernate?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-cascade-in-hibernate)
+16. [difference-between-the-sessionget-method-and-the-sessionload-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-difference-between-the-sessionget-method-and-the-sessionload-method)
+17. [general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-the-general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes)
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
