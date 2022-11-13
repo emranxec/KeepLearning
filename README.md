@@ -107,7 +107,7 @@
 12. [one-to-many-and-many-to-many](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-onetoone-onetomany-and-manytomany-relationship-mappings-in-database-design)
 13. [how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-lazy-loading-works-for-collection-of-objects-and-what-is-n1-problem-)
 14. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
-15. What is Cascade ?
+15. [What is Cascade in hibernate?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-cascade-in-hibernate)
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
@@ -1798,6 +1798,8 @@ public class Branch implements Serializable {
 }
 
 ```
+#### [What is Cascade in hibernate?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-cascade-in-hibernate)
+
 >mappedBy attribute indicates that which entity owns the relationship
 > (in this example, Student) and what reference is used for non-owning entity
 > within owner entity (in this example, branch is the reference name used in 
