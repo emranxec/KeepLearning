@@ -1760,7 +1760,7 @@ throw new RuntimeException();
 ### Q. explain @mappedBy?
 
 > In JPA or Hibernate, entity associations are directional, either unidirectional or 
-bidirectional. Always mappedBy attribute is used in bidirectional association to link 
+bidirectional. Always mappedBy attribute is used in **bidirectional association** to link 
 with other side of entity.
 
 
@@ -1803,6 +1803,54 @@ public class Branch implements Serializable {
 > Student entity to map Branch entity).
 
 [difference-between-joincolumn-and-mappedby/](https://javabydeveloper.com/difference-between-joincolumn-and-mappedby/)
+
+#### What is Cascade ?
+> Cascade is the feature provided by hibernate to automatically manage the state of mapped entity whenever the state of its relationship owner entity is affected.
+
+#### JPA Cascade Type
+- ALL  (propagates all operations)
+- PERSIST (propagates the persist operation from a parent to a child entity)
+```
+  public void whenParentSavedThenChildSaved() {
+  Person person = new Person();
+  Address address = new Address();
+  address.setPerson(person);
+  person.setAddresses(Arrays.asList(address));
+  session.persist(person); //address also persist
+  session.flush();
+  session.clear();
+  }
+```  
+- MERGE (propagates the merge operation from a parent to a child entity)
+```
+Address savedAddressEntity = session.find(Address.class, addressId);
+Person savedPersonEntity = savedAddressEntity.getPerson();
+savedPersonEntity.setName("devender kumar");
+savedAddressEntity.setHouseNumber(24);
+session.merge(savedPersonEntity);
+session.flush();
+```
+- REMOVE  
+>  propagates the remove operation from parent to child entity. Similar to JPA's CascadeType.REMOVE, 
+> we have CascadeType.DELETE, which is specific to Hibernate
+```
+Person savedPersonEntity = session.find(Person.class, personId);
+session.remove(savedPersonEntity);
+session.flush();
+```
+- REFRESH ( the child entity also gets reloaded from the database whenever the parent entity is refreshed)
+- DETACH (child entity will also get removed from the persistent context)
+- SAVE_UPDATE (Hibernate-specific operations like save, update and saveOrUpdate)
+```
+@Test
+public void whenParentSavedThenChildSaved() {
+Person person = buildPerson("devender");
+Address address = buildAddress(person);
+person.setAddresses(Arrays.asList(address));
+session.saveOrUpdate(person);
+session.flush();
+}
+```
 
 ----
 ### Q. explain hibernate caching? how to Configure ehcache?
