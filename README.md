@@ -145,7 +145,8 @@
 10. [Design a new implementation of the Map interface](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-new-implementation-of-the-map-interface)
 11. [print some patterns in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-some-patterns-in-java)
 12. [print Fibonacci](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-fibonacci)
-13. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
+13. [do-iterator-operations-on-employee-list](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-itertor-operations-on-employee-list)
+14. [sum of the squares of all the odd numbers in the array.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sum-of-the-squares-of-all-the-odd-numbers-in-the-array)
 14. [Given an array of n integers and a number k, find the pairs of numbers in the array such that the difference between the pair is k.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-given-an-array-of-n-integers-and-a-number-k-find-the-pairs-of-numbers-in-the-array-such-that-the-difference-between-the-pair-is-k)
 15. [Write a function to return the longest even length word in a sentence.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
 16. [Write a function to count the number of unique digits in a number](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-function-to-return-the-longest-even-length-word-in-a-sentence)
@@ -154,7 +155,6 @@
 19. [check the output of employee and address class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-check-the-output-of-employee-and-address-class)
 20. [get only employee having dept = "IT" && Convert in map key--id, value--Employee,Employee count based on depart](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-get-only-employee-having-dept--it--convert-in-map-key--id-value--employee)
 21. [merge the linked list of integer and contact as string](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-merge-the-linked-list-of-integer-and-contact-as-string)
-22. [do-iterator-operations-on-employee-list](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-itertor-operations-on-employee-list)
 
 
 ## SQL Queries
@@ -3210,29 +3210,29 @@ private String name;
 
 ----
 ### Q. Given an array find which pattern it matches
+[program6.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program6.java)
 
 ----
 ### Q. use linkedList and find middle element but don't use size?
->
+[program7.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program7.java)
 ----
 ### Q. create a singleton class and protect it from breaking
->
+
 ----
 ### Q. create enum and print all enum elements and find is something is present
->
-----
+[program9.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program9.java)----
 ### Q. Design a new implementation of the Map interface
 >
 ----
 ### Q. print some patterns in java
-[Given an array find which pattern it matches](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
+[patterns](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
 
 ----
 ### Q. print 4th highest salary
 >
 ----
 ### Q. print Fibonacci
->
+[fibbonacci.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/fibbonacci.java)
 ----
 ### Q. sum of the squares of all the odd numbers in the array.
 >
