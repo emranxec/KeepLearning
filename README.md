@@ -79,20 +79,19 @@
 8. [what-is-auto-wire-usage](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-autowire-usage)
 9. [basic-packages-requires-to-create-spring-boot-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-basic-packages-requires-to-create-spring-boot-application)
 10. [explain-spring-security](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-spring-security)
-11. [how-to-configure-spring--hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-spring--hibernate)
-12. [how-to-convert-data-in-rest-response-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-data-in-rest-response-in-spring)
-13. [what-is-service-layer-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-service-layer-in-spring)
-14. [do-we-need-dao-layer-if-we-have-service-layer](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-we-need-dao-layer-if-we-have-service-layer)
-15. [what-is-default-spring-bean-status](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-default-spring-bean-status)
-16. [how-you-validate-the-request-param-and-path-param-done-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-validate-the-request-param-and-path-param-done-in-spring)
-17. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
-18. [explain-bean-lifecycle](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-bean-lifecycle)
-19. [why-to-override-run-in-spring-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-to-overide-run-in-springapplication)
-20. [difference-between-primary-qualifier](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-primary--qualifier)
-21. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
-22. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
-23. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
-24. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
+11. [how-to-convert-data-in-rest-response-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-data-in-rest-response-in-spring)
+12. [what-is-service-layer-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-service-layer-in-spring)
+13. [do-we-need-dao-layer-if-we-have-service-layer](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-do-we-need-dao-layer-if-we-have-service-layer)
+14. [what-is-default-spring-bean-status](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-default-spring-bean-status)
+15. [how-you-validate-the-request-param-and-path-param-done-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-you-validate-the-request-param-and-path-param-done-in-spring)
+16. [explain-mapped-by](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-mappedby)
+17. [explain-bean-lifecycle](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-bean-lifecycle)
+18. [why-to-override-run-in-spring-application](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-to-overide-run-in-springapplication)
+19. [difference-between-primary-qualifier](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-primary--qualifier)
+20. [controller-vs-rest-controlled](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-controller-vs-rest-controlled)
+21. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
+22. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
+23. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
@@ -411,6 +410,22 @@ template.query("SELECT * FROM books", new BookRowMapper());
 
 > spring.datasource.password=
 
+>#Statitcs and SQL logs
+
+>spring.jpa.show-sql=true
+
+>spring.jpa.properties.hibernate.format_sql=true
+
+>spring.jpa.properties.hibernate.generate_statistics=true
+
+>#Enable this section based on your preferences
+
+>#logging.level.org.hibernate.type=trace
+
+>#logging.level.org.hibernate.stat=debug
+
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+
 - Step 4: Build a Repository Class for Spring Boot
 - Step 5: Convert the Blog Class to Entity
 ```java
@@ -449,6 +464,9 @@ private int id;
 BlogRespository blogRespository;
  ```
 >This will allow you to use blogRepository anywhere in your controller without having to repeatedly instantiate it
+
+ [spring-boot-with-hibernate](https://www.javadevjournal.com/spring-boot/spring-boot-with-hibernate/)
+
 ----
 ### Q. what is spring actuators?
 >Actuator brings production-ready features to our application.
@@ -1042,9 +1060,6 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 >At this point in the example above, we have two String objects: the first one we created with value “knowledge”, 
 pointed to by s, and the second one “knowledge base”, pointed to by str. But, technically, we have three String 
 objects, **the third one being the literal “base” in the concat statement.**
-----
-### Q. how to configure Spring & hibernate?
-> [spring-boot-with-hibernate](https://www.javadevjournal.com/spring-boot/spring-boot-with-hibernate/)
 ----
 ### Q. what is Class not found and No class def error?
 > ClassNotFoundException is raised in the above program as class “GeeksForGeeks” is not found in the classpath.
