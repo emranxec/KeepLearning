@@ -1180,7 +1180,85 @@ try {Class.forName("MyFirstJavaClass");
 ----
 ### Q. explain save,update, save and persist methods?
 
-- [hibernate-save-persist-update-merge-saveorupdate](https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate)
+#### Persist (void return type)
+-  The persist method is intended to add a new entity instance to the persistence context ( transient to persistent )
+
+>if an instance is already persistent, then this call has no effect for this particular instance (but it still cascades to its relations with cascade=PERSIST or cascade=ALL).
+
+> if an instance is detached, we'll get an exception, either upon calling this method, or upon committing or flushing the session.
+
+```
+Person person = new Person();
+person.setName("John");
+session.persist(person); // not yet saved to the database
+// The generation of INSERT statements will occur only upon committing the transaction, or flushing or closing the session.
+
+//The second call to session.persist() causes an exception, so the following code won't work.
+
+session.evict(person); //goes to detached
+
+session.persist(person); // PersistenceException!
+```
+
+#### save (return Serializable value) (Hibernate API)
+-  Its purpose is basically the same as persist, but it has different implementation details. ( transient to persistent )
+
+```
+Person person = new Person();
+person.setName("John");
+Long id = (Long) session.save(person);
+
+session.evict(person); //goes to detached
+Long id2 = (Long) session.save(person); //no exception but assigns it a new identifier
+```
+
+#### Merge (returns an object)
+-  The main intention of the merge method is to update a persistent entity instance with new field values from a detached entity instance. ( detached to persistent )
+
+> if the entity is detached, it copies upon an existing persistent entity.
+
+> if the entity is transient, it copies upon a newly created persistent entity.
+
+> this operation cascades for all relations with cascade=MERGE or cascade=ALL mapping.
+
+> if the entity is persistent, then this method call doesn't have an effect on it (but the cascading still takes place).
+
+```
+Person person = new Person(); 
+person.setName("John"); 
+session.save(person);
+
+session.evict(person);
+person.setName("Mary");
+
+Person mergedPerson = (Person) session.merge(person);
+```
+
+#### Update (its return type is void) (Hibernate API)
+-   As with persist and save, the update method is an “original” Hibernate method. ( detached to persistent )
+
+```
+Person person = new Person();
+person.setName("John");
+// session.update(person); // PersistenceException!
+session.save(person);
+session.evict(person);
+
+person.setName("Mary");
+session.update(person);
+```
+#### SaveOrUpdate (its return type is void) ( Hibernate API)
+-  Similar to update, we can also use it for reattaching instances. ( detached to persistent )
+>The main difference of the saveOrUpdate method is that 
+> it doesn't throw an exception when applied to a transient instance, 
+> instead it makes this transient instance persistent.
+
+```
+Person person = new Person();
+person.setName("John");
+session.saveOrUpdate(person);
+```
+[hibernate-save-persist-update-merge-saveorupdate](https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate)
 
 ----
 ### Q. how to convert data in rest response in spring?
