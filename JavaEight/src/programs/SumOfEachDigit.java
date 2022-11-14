@@ -3,8 +3,8 @@ package programs;
 public class SumOfEachDigit {
 
     public static void main(String[] args) {
-        String myNumber="123";
-        int n=Integer.valueOf(myNumber);
+        String myNumber="123333333";
+        int n=Integer.parseInt(myNumber);
         int sum=0;
         int reminder=0;
         while (n>0){

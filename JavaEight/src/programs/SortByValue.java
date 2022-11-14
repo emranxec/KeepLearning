@@ -37,7 +37,9 @@ public class SortByValue {
         hm.put("Java", 95);
         hm.put("Operating System", 79);
         hm.put("Networking", 80);
-
+        System.out.println("-----------original------------");
+        System.out.println(hm);
+        System.out.println("-----------original ends ------------");
         Map<String, Integer> hm1 = sortByValue1(hm);
 
         Map<String, Integer> hm2 = sortByValue2(hm);
@@ -45,6 +47,17 @@ public class SortByValue {
         printMapEntries(hm1);
         System.out.println("-----------sortByValue2------------");
         printMapEntries(hm2);
+        System.out.println("-----------sortByValue3------------");
+        Map<String, Integer> hm3 = sortByValue3(hm);
+        printMapEntries(hm3);
+    }
+
+    private static Map<String, Integer> sortByValue3(HashMap<String, Integer> hm) {
+       return hm.entrySet()
+               .stream()
+               .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey, Map.Entry::getValue,(e1, e2)->e1,LinkedHashMap::new));
     }
 
     private static void printMapEntries(Map<String, Integer> hm1) {
@@ -54,6 +67,4 @@ public class SortByValue {
                     ", Value = " + en.getValue());
         }
     }
-
-
 }

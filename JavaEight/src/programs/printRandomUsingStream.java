@@ -10,6 +10,8 @@ public class printRandomUsingStream {
                 .ints()
                 .limit(10)
                 .forEach(System.out::println);
+        System.out.println("---doubles----");
+        random.doubles().boxed().limit(10).forEach(System.out::println);
 
     }
 }

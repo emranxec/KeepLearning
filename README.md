@@ -6,7 +6,7 @@
 3. [what-is-serverless-computing](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-serverless-computing)
 4. [what-is-saas](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-saas)
 5. [how-to-configure-ci/cd-process](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-cicd-process)
-6. [mqs](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-mqs)
+
 
 ## UI
 1. [what-is-responsive-ui-in-js](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-responsive-ui-in-js)
@@ -133,6 +133,7 @@
 3. [what-db-model-is-preferred-in-microservice-architecture](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-db-model-is-prefered-in-microservice-architecture)
 4. [how-to-convert-monolithic-application-to-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-monolithic-application-to-microservices)
 5. [explain-microservice-framework-netflix PENDING](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
+6. [mqs](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-mqs)
 
 ## Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
@@ -618,13 +619,13 @@ public class ResourceController {
 ### Q. what factory class java having?
 
 #### This design pattern has been widely used in JDK, such as
-- getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
-- All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using valueOf() method.
-- java.nio.charset.Charset.forName(), 
-- java.sql.DriverManager#getConnection(), 
-- java.net.URL.openConnection(), 
-- java.lang.Class.newInstance(), 
-- java.lang.Class.forName() are some of their example where factory method design pattern has been used.
+- **getInstance()** method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
+- All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using **valueOf()** method.
+- java.nio.charset.**Charset.forName()**, 
+- java.sql.**DriverManager#getConnection()**, 
+- java.net.**URL.openConnection()**, 
+- java.lang.**Class.newInstance()**, 
+- java.lang.**Class.forName()** are some of their example where factory method design pattern has been used.
 ----
 ### Q. flow of Spring MVC?
 > ![MVC](https://user-images.githubusercontent.com/16031518/196950237-c8c079a6-ebd3-448a-aab8-a35486abf2ec.png)

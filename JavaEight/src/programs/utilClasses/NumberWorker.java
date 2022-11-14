@@ -1,4 +1,4 @@
-package programs;
+package programs.utilClasses;
 
 @FunctionalInterface
 public interface NumberWorker<T> {

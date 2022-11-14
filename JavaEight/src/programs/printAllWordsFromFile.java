@@ -11,7 +11,7 @@ public class printAllWordsFromFile {
         Stream<String> lines= Files.lines(Paths.get("README.md"));
 
         lines.sorted()
-                .filter(i->i.length()>9)
+                .filter(i->i.length()<2)
                 .forEach(x-> System.out.println(x+ " "));
         lines.close();
     }

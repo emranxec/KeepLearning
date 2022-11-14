@@ -1,6 +1,7 @@
 package programs;
 
 import programs.utilClasses.Lambda;
+import programs.utilClasses.NumberWorker;
 
 public class FunctionalInterfaceExample {
 
