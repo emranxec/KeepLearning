@@ -1611,7 +1611,7 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ### Q. what is functional interface?
 [functional-interfaces-java](https://www.geeksforgeeks.org/functional-interfaces-java/?ref=lbp)
 ----
-### Q. how to configure techniques of JVM?
+### Q. how to configure techniques of JVM?  NOT RESOLVED
 >
 ----
 ### Q. why serialize a object? How to serialize and deserialize object? 
