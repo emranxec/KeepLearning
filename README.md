@@ -1163,11 +1163,13 @@ objects, **the third one being the literal “base” in the concat statement.**
 ----
 ### Q. what is Class not found and No class def error?
 > ClassNotFoundException is raised in the above program as class “GeeksForGeeks” is not found in the classpath.
-    `try {Class.forName("GeeksForGeeks");
+```
+try {Class.forName("GeeksForGeeks");
         }
  catch (ClassNotFoundException ex) {
   ex.printStackTrace();
-        }`
+        }
+```
 > remove any .class file and run that .class when we saw that at Java runtime NoClassDefFoundError will be thrown.
 
 - [classnotfoundexception-vs-noclassdeffounderror](https://www.geeksforgeeks.org/classnotfoundexception-vs-noclassdeffounderror-java/?ref=lbp)
