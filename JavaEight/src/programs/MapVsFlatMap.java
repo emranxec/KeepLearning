@@ -40,8 +40,10 @@ public class MapVsFlatMap {
 
         // using flatmap() to flatten this list
         List<Integer> flatList
-                = number.stream()
-                .flatMap(Collection::stream).filter(a4 -> a4 % 2 == 0).toList();
+                = number
+                .stream()
+                .flatMap(Collection::stream)
+                .filter(a4 -> a4 % 2 == 0).toList();
 
         // printing the list
         System.out.println("List generate by flatMap :"
