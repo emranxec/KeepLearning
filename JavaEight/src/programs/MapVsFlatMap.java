@@ -44,7 +44,7 @@ public class MapVsFlatMap {
                 .flatMap(Collection::stream).filter(a4 -> a4 % 2 == 0).toList();
 
         // printing the list
-        System.out.println("List generate by flatMap-"
+        System.out.println("List generate by flatMap :"
                 + flatList);
 
     }
