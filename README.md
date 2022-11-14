@@ -935,30 +935,15 @@ public class User {
 
     @DBField(name = "name", type = String.class)
     private String name;
-
-    @DBField(name = "email", type = String.class)
-    private String email;
-
-    @DBField(name = "created", type = Date.class)
-    private Date created;
-
-    public long getId() {
-        return id;
-    }
 }
 
 //Diffrent class
 public class AnnotationExample {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Java Custom Annotation Example");
-        System.out.println();
-
         User usr = new User();
-        usr.setEmail("john.doe@example.com");
         usr.setName("John Doe");
         usr.setId(112);
-        usr.setCreated(new Date());
 
         for (Field field : usr.getClass().getDeclaredFields()) {
             DBField dbField = field.getAnnotation(DBField.class);
