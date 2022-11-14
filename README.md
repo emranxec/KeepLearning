@@ -1137,7 +1137,21 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 > If several references point to the same String without even knowing it, 
 > it would be bad if one of the references modified that String value. That’s why String objects are immutable.
 
-[java-string-is-immutable](http://geeksforgeeks.org/java-string-is-immutable-what-exactly-is-the-meaning/?ref=lbp)
+#### Why Strings are immutable in nature?
+- The String pool cannot be possible if String is not immutable in Java
+- A lot of heap space is saved by JRE.
+- If we don’t make the String immutable, it will pose a serious security threat to the application.
+>  database usernames, passwords are passed as strings to receive database connections.
+
+> The socket programming host and port descriptions are also passed as strings.
+
+> If the String doesn’t remain immutable, any hacker can cause a security issue in the application by changing the reference value.
+
+- The String is safe for multithreading because of its immutableness.
+- Immutability gives the security of loading the correct class by Classloader.
+> we have an instance where we try to load java.sql.Connection class but the changes in the referenced value to the myHacked.Connection class does unwanted things to our database.
+
+  [java-string-is-immutable](http://geeksforgeeks.org/java-string-is-immutable-what-exactly-is-the-meaning/?ref=lbp)
 
 `String str = "knowledge"`
 >
