@@ -28,7 +28,7 @@
 
 ## JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
-2. [can-mutable-object-is-instance-of-immutable-class-how-to-fix](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--can-mutable-object-is-instance-of-immutable-class-how-to-fix)
+2. [can-mutable-object-is-instance-of-immutable-class-how-to-fix_NOT_RESOLVED](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--can-mutable-object-is-instance-of-immutable-class-how-to-fix)
 3. [explain-how-to-create-user-defined-annotations-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-how-to-create-user-defined-annotations-)
 4. [what-data-structure-does-executer-service-hold](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-data-structure-does-executer-service-hold)
 5. [why-string-immutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-string-immutable-)
@@ -914,6 +914,68 @@ public String key() default "";
 @Target(ElementType.METHOD)
 public @interface Init {
 }
+
+//example
+@Documented
+@Target(ElementType.FIELD)
+@Inherited
+@Retention(RetentionPolicy.RUNTIME)
+public @interface DBField {
+    String name();
+
+    Class< ?> type();
+
+    boolean isPrimaryKey() default false;
+}
+
+public class User {
+
+    @DBField(name = "id", isPrimaryKey = true, type = Long.class)
+    private long id;
+
+    @DBField(name = "name", type = String.class)
+    private String name;
+
+    @DBField(name = "email", type = String.class)
+    private String email;
+
+    @DBField(name = "created", type = Date.class)
+    private Date created;
+
+    public long getId() {
+        return id;
+    }
+}
+
+//Diffrent class
+public class AnnotationExample {
+
+    public static void main(String[] args) throws Exception {
+        System.out.println("Java Custom Annotation Example");
+        System.out.println();
+
+        User usr = new User();
+        usr.setEmail("john.doe@example.com");
+        usr.setName("John Doe");
+        usr.setId(112);
+        usr.setCreated(new Date());
+
+        for (Field field : usr.getClass().getDeclaredFields()) {
+            DBField dbField = field.getAnnotation(DBField.class);
+            System.out.println("field name: " + dbField.name());
+
+            // changed the access to public
+            field.setAccessible(true);
+            Object value = field.get(usr);
+            System.out.println("field value: " + value);
+
+            System.out.println("field type: " + dbField.type());
+            System.out.println("is primary: " + dbField.isPrimaryKey());
+            System.out.println();
+        }
+    }
+}
+
 ```
 ----
 ### Q. what data structure does executer service hold?
