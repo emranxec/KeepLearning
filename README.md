@@ -976,6 +976,18 @@ public class AnnotationExample {
     }
 }
 
+//output
+/*
+        field name: id
+        field value: 112
+        field type: class java.lang.Long
+        is primary: true
+
+        field name: name
+        field value: John Doe
+        field type: class java.lang.String
+        is primary: false*/
+
 ```
 ----
 ### Q. what data structure does executer service hold?
