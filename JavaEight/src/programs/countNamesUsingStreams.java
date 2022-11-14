@@ -8,13 +8,14 @@ import java.util.stream.Collectors;
 
 public class countNamesUsingStreams {
     public static void main(String[] args) {
-        countTheNames();
-    }
-    private static void countTheNames() {
         List<String> myList= Arrays.asList("imran","salman","ayesha","salman","ayesha","ayesha");
+        countTheNames( myList);
+    }
+    private static void countTheNames(List<String> myList) {
+
         myList.stream()
                 .collect(Collectors.groupingBy(Function.identity(), HashMap::new,Collectors.counting()))
-                .entrySet().stream()
+                .entrySet()
                 .forEach(System.out::println);
     }
 }

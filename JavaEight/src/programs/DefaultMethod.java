@@ -4,13 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class DefaultMethod implements I,J{
-    @Override
-    public void show() {
-        System.out.println("eight");
-    }
-}
-
 interface I{
     default void show(){
         System.out.println("I");
@@ -24,6 +17,13 @@ interface J{
 
     static void hello(){
         System.out.println("hello");
+    }
+}
+
+public class DefaultMethod implements I,J{
+    @Override
+    public void show() {
+        System.out.println("eight");
     }
 }
 
@@ -41,9 +41,9 @@ class newOne extends DefaultMethod implements J{
         List<String> mylist= new ArrayList<>();
         mylist.add("imran");
         mylist.add("salman");
-        Stream s= mylist.stream();
-        s.forEach(a-> System.out.println(a));
-        s.forEach(a-> System.out.println(a));
+        Stream<String> s= mylist.stream();
+        s.forEach(System.out::println);
+        s.forEach(System.out::println);//throw exception as stream execute only once;
     }
 }
 

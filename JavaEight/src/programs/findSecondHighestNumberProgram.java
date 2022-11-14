@@ -6,6 +6,7 @@ import java.util.Comparator;
 public class findSecondHighestNumberProgram {
     public static void main(String[] args) {
         int[] myInt={2,3,4,1,5,6,7};
+
         findSecondHighestNumber(myInt);
         findSecondHighestNumber1(myInt);
     }

@@ -16,17 +16,5 @@ public class countUniqueDigitProgram {
             num/=10;
         }
         return digits.size();
-
-        /*     // iterate to each digit
-            while (num > 0) {
-                // find last digit
-                // add it to collection
-                digits.add(num % 10);
-                // remove last digit
-                num /= 10;
-            }
-
-            // return size
-            return digits.size();*/
     }
 }

@@ -1,8 +1,7 @@
 package programs;
 
-interface Lambda{
-    public void demo();
-}
+import programs.utilClasses.Lambda;
+
 public class FunctionalInterfaceExample {
 
     public static void main(String[] args) {
@@ -22,8 +21,5 @@ public class FunctionalInterfaceExample {
         System.out.println(computerNumber.compute(5));
     }
 
-    public static interface NumberWorker<T> {
 
-        T compute(T t);
-    }
 }
