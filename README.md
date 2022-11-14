@@ -526,7 +526,8 @@ BlogRespository blogRespository;
 > flatMap() can be used where we have to flatten or transform out the string, as we cannot flatten our string using map().
 > Example: Getting the 1st Character of all the String present in a List of Strings and returning the result in form of a stream.
  ```
- // Stream<List<Integer>>  ==> Stream<Integer>
+ // todo : its works like  = Stream<List<Integer>>  ==> Stream<Integer>
+ 
 List list = fruit.stream()
 .map(s -> s.length())
 .collect(Collectors.toList());
