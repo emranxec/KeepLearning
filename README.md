@@ -2864,9 +2864,9 @@ collect1.forEach(System.out::println);
 
 ----
 ### Q. is Synchronized block entire object?
->A synchronized block in Java is synchronized on some object. All synchronized blocks synchronize on 
-> the same object can only have one thread executing inside them at a time. All other threads attempting to enter 
-> the synchronized block are blocked until the thread inside the synchronized block exits the block.
+> A synchronized block in Java is synchronized on some object. 
+> All synchronized blocks synchronize on the same object can only have one thread executing inside them at a time. 
+> All other threads attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block.
 
 [synchronization-in-java](https://www.geeksforgeeks.org/synchronization-in-java/?ref=lbp)
 
