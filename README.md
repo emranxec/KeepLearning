@@ -1810,9 +1810,11 @@ public class SingletonFunctionBean {
 > resulting in better performance. Performance is further improved by providing
 > read access concurrently without any blocking.
 
-[concurrenthashmap-in-java](https://www.geeksforgeeks.org/concurrenthashmap-in-java/?ref=lbp)
+[concurrent-hashmap-in-java](https://www.geeksforgeeks.org/concurrenthashmap-in-java/?ref=lbp)
 
-[difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
+[difference-between-concurrent-hashmap-hashtable-and-synchronized-map-in-java/](https://www.geeksforgeeks.org/difference-between-concurrenthashmap-hashtable-and-synchronized-map-in-java/)
+
+[why-concurrent-hashmap-does-not-allow.html](http://javainterviewquestionswithanswer.blogspot.com/2016/12/why-concurrenthashmap-does-not-allow.html)
 
 ### Q. Sort hashmap on basis of value.?
 
