@@ -1913,8 +1913,8 @@ public class Controller {
 ----
 ### Q. what is reflaction API? (java.lang.reflect)
 
-> Reflection is an API that is used to examine or modify the behavior of methods, classes, 
-> and interfaces at runtime.
+> Reflection is an API that is used to **examine or modify the behavior** of methods, classes, 
+> and interfaces at **runtime**.
 
 ![javalang](https://user-images.githubusercontent.com/16031518/197360863-da2c22f9-8b23-4077-bbc3-5936df723405.jpg)
 
@@ -1963,9 +1963,9 @@ throw new RuntimeException();
 ----
 ### Q. what are different types of class loader?
 - A Java Classloader is of three types:
-1. BootStrap ClassLoader
-2. Extension ClassLoader
-3. System ClassLoader
+1. BootStrap ClassLoader (JDK/JRE/LIB)
+2. Extension ClassLoader (JDK/JRE/LIB/EXT)
+3. System ClassLoader (Application Classpath)
 
 - Methods of Java.lang.ClassLoader
 1. loadClass(String name, boolean resolve):
