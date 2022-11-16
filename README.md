@@ -2517,10 +2517,15 @@ The class need to implement all the functionalities
 The child class can be used as a substitute for our parent class.
 ----
 ### Q. explain StackOverFlow vs OOM?
->Whenever you run a java program or java application, operating system allocates some memory to JVM. 
-> JVM divides this memory into two parts. One is Stack and another one is Heap. Stack is used for 
-> execution of methods and heap is used to store the objects. When the Stack becomes full, 
-> JVM throws java.lang.StackOverflowError and when the heap becomes full, JVM throws java.lang.OutOfMemoryError.
+> Whenever you run a java program or java application, operating system allocates some memory to JVM. 
+
+> JVM divides this memory into two parts. One is Stack and another one is Heap. 
+
+> Stack is used for execution of methods and heap is used to store the objects. 
+
+> When the Stack becomes full, JVM throws java.lang.StackOverflowError.(check for thread dumps)
+
+> when the heap becomes full, JVM throws java.lang.OutOfMemoryError. (check for heap dumps)
 
 ##### StackOverflowError
 - A stack is used for the execution of methods. For every method call, one block is created in the stack memory
