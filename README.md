@@ -1617,10 +1617,10 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ### Q. why serialize a object? How to serialize and deserialize object? 
 ### Q. explain Serialisation, UUID and its concepts?
 
-- You can think of serialization as the process of converting an object instance into a sequence of bytes (which may be binary or not depending on the implementation).
-- It is very useful when you want to transmit one object data across the network, for instance from one JVM to another.
-- In Java, the serialization mechanism is built into the platform, but you need to implement the Serializable interface to make an object serializable.
-- You can also prevent some data in your object from being serialized by marking the attribute as transient.
+- You can think of serialization as the process of converting an **object instance into a sequence of bytes** (which may be binary or not depending on the implementation).
+- It is very useful when you want to transmit one object data across the network, for instance **from one JVM to another.**
+- In Java, the serialization mechanism is built into the platform, but you need to **implement the Serializable interface** to make an object serializable.
+- You can also prevent some data in your object from being serialized by marking the attribute as **transient**.
 
 #### Real World Example:
 >ATM: When the account holder tries to withdraw money from the server through ATM, 
@@ -1652,12 +1652,11 @@ to the server where the details are deserialized and used to perform operations.
 > a. Override writeObject and readObject method and throw NotSerializableException. 
 > b. also you can mark all fields transient in child class.
 
-- Additionally:
->Some system-level classes such as Thread, OutputStream, 
-> and its subclasses, and Socket are not serializable.
+- What are the class or class members will not be deserialized?
 
->In case of static Variables:- A variable defined with static keyword is not serialized during 
-serialization process. 
+> Some system-level classes such as Thread, OutputStream, and its subclasses, and Socket are not serializable.
+
+>In case of static Variables:- A variable defined with static keyword is not serialized during serialization process. 
 
 >This variable will be loaded with current value defined in the class during deserialization.
 
