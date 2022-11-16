@@ -2007,11 +2007,11 @@ throw new RuntimeException();
 - Serial Garbage Collector 
 > freezes all application threads when it runs.
 - Parallel Garbage Collector
-> it uses multiple threads for managing heap space
+> it uses multiple threads for managing heap space, but it also freezes other application threads while performing GC.
 - ~~CMS Garbage Collector~~ (deprecated)
 > The Concurrent Mark Sweep (CMS) implementation uses multiple garbage collector threads for garbage collection
 - G1 Garbage Collector 
-> designed for applications running on multi-processor machines with large memory space
+> designed for applications running on multiprocessor machines with large memory space
 - Z Garbage Collector
 > ZGC (Z Garbage Collector) is a scalable low-latency garbage collector 
 > that debuted in Java 11 as an experimental option for Linux.
