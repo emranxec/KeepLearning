@@ -2552,7 +2552,6 @@ The child class can be used as a substitute for our parent class.
 - The objects we created in Java are stored in the heap memory. When the objects are no more required, they must be removed from the memory.
 - The garbage collector removes the unwanted objects from the heap memory.
 - If our objects have live references, the garbage collector doesn’t remove them. It removes only those objects which don’t have live references.
-- Whenever we call a method, it must finish its execution and leave the stack memory.
 - If there is no space left for new objects in the heap memory then JVM will throw java.lang.OutOfMemoryError.
 
 ```java 
