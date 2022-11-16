@@ -3376,7 +3376,7 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
         Comparator.comparing(Person::getLastName)
             .thenComparing(Person::getFirstName)
                 .thenComparing(
-                    Person::getEmailAddress,
+                    Person::age,
                         Comparator.nullsLast(CASE_INSENSITIVE_ORDER)));
 ```
 ----
