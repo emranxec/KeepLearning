@@ -51,7 +51,7 @@
 22. [can-the-keys-in-hashing-data-structure-be-made-mutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-can-the-keys-in-hashing-data-structure-be-made-mutable)
 23. [discuss-comparable-and-comparator-which-one-should-be-used](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-discuss-comparable-and-comparator-which-one-should-be-used-in-a-given-scenario)
 24. [what-is-difference-between-sleep-yield-and-wait-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-sleep-yield-and-wait-method)
-25. [string-class-to-be-immutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+25. [string-class-to-be-immutable](https://github.com/emranxec/KeepLearning#q-why-string-immutable-)
 26. [prevent-breaking-a-singleton-class-pattern](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-prevent-breaking-a-programssingleton-class-pattern)
 27. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-contract-between-equals-and-hashcode-methods-in-java)
 28. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
