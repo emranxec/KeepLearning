@@ -1992,18 +1992,18 @@ throw new RuntimeException();
 ----
 ### Q. Garbage collectors? what are diff types of garbage collector? Different method of garbage collector?
 
-> Garbage collection in Java is the process by which Java programs perform automatic memory management.
- The main objective of Garbage Collector is to free heap memory by destroying unreachable objects.
-> The garbage collector is the best example of the Daemon thread as it is always running in the background.
+> Garbage collection in Java is the process by which Java programs perform **automatic memory management.**
+ The main objective of Garbage Collector is to **free heap memory** by destroying unreachable objects.
+> The garbage collector is the best example of the **Daemon thread** as it is always running in the background.
 
 ###### NOTE: GC works in two simple steps, known as Mark and Sweep.
 
-###### Advantages:
+#### Advantages:
 1. No manual memory allocation/deallocation handling because unused memory space is automatically handled by GC 
 2. No overhead of handling Dangling Pointer 
 3. Automatic Memory Leak management
 
-###### JVM has five types of GC implementations:
+#### JVM has five types of GC implementations:
 - Serial Garbage Collector 
 > freezes all application threads when it runs.
 - Parallel Garbage Collector
@@ -2021,21 +2021,21 @@ throw new RuntimeException();
 
 [jvm-garbage-collectors](https://www.baeldung.com/jvm-garbage-collectors)
 
-###### Types of Activities in Java Garbage Collection
+#### Types of Activities in Java Garbage Collection
 1. Minor or incremental Garbage Collection
 2. Major or Full Garbage Collection
 
-###### There are generally four ways to make an object eligible for garbage collection.
+#### There are generally four ways to make an object eligible for garbage collection.
 1. Nullifying the reference variable 
 2. Re-assigning the reference variable 
 3. An object created inside the method 
 4. Island of Isolation
 
-###### Ways for requesting JVM to run Garbage Collector
+#### Ways for requesting JVM to run Garbage Collector
 1. Using System.gc() 
 2. Using Runtime.getRuntime().gc()
 
-###### Finalization
+#### Finalization
 - Just before destroying an object, Garbage Collector calls finalize() method on the object to perform cleanup activities.
 - The finalize() method is never invoked more than once for any object.
 
