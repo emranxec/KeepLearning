@@ -221,7 +221,7 @@ final class programs.utilClasses.immmutableClass{
 
 
 ----
-### Q. what is sequential & parallel streams?
+### Q. what is sequential & parallel streams? (java.util.stream)
 
 - A stream in Java is a sequence of objects which operates on a data source such as an array or a collection and supports various methods.
 - It was introduced in Java 8’s java.util.stream package. 
@@ -532,6 +532,12 @@ List list = fruit.stream()
 .map(s -> s.length())
 .collect(Collectors.toList());
 
+ List<List<Integer> > number = new ArrayList<>();
+       
+// adding the elements to number arraylist
+number.add(Arrays.asList(1, 2));
+number.add(Arrays.asList(3, 4));
+        
 List<Integer> flatList
 = number.stream()
 .flatMap(list -> list.stream())
