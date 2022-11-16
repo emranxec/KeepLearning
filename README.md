@@ -3942,9 +3942,42 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 > @component/ @Service / @Controller / @RestController
 
 ----
+### Q. what if we have created a new Object with new Keyword which is singleton in spring?
+
+----
+### Q. Other options than @Autowired?
+
+----
+### Q. what problem we face in request body if all structure is good?
+
+----
+### Q. We have to use qualifier for all 1000 implementations? any other way?
+
+----
+### Q. When to use path param or when to use Query param? as per design perspective?
+
+----
+### Q. difference between application.properties vs application.yml ? which one to use when?
+
+----
+### Q. is singleton is lazy or eager loading?
+
+----
+### Q. spring framework vs spring boot
+
+----
+### Q. can we use @Component on final class?
+
+----
+### Q. if we don't define @Primary / @Qualifier then what will happen?
+
+----
+### Q. if we want to load only 75% of bean classes in spring? how to achive it?
+
+----
+
 ----
 # self:
-
 
 ----
 ### Q. test your application
