@@ -3531,11 +3531,10 @@ System.out.println( Arrays.stream(myInt) //IntStream
 ```
 ----
 
-### Q. What is optional, and what is it best used for?
-> Optional is a new container class defined in the java.util package, and used to 
-> represent optional values that either exist or do not exist. Optional’s chief 
-> benefit is avoiding null checks, and there are no longer any “NullPointerException”
-> results at run-time.
+### Q. What is optional, and what is it best used for? (java.util)
+> Optional is a new container class which used to represent optional values that either exist or do not exist. 
+
+> Optional’s chief  benefit is avoiding null checks, and there are no longer any “NullPointerException” results at run-time.
 ----
 
 ### Q. Difference Between Pessimistic Approach and Optimistic Approach in DBMS
