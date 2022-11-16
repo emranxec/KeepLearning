@@ -1825,7 +1825,30 @@ public class SingletonFunctionBean {
 
 | BEFORE | KEY | VALUE | AFTER |
 |--------|-----|-------|-------|
+```java
+public class LinkedHashMap<K,V> extends
+HashMap<K,V> implements Map<K,V>{
 
+static class Entry<K,V>
+extends HashMap.Node<K,V> {
+Entry<K,V> before, after;
+Entry(int hash, K key, V value, Node<K,V> next) {
+super(hash, key, value, next);
+}
+}
+
+/**
+* The head (eldest) of the doubly linked list.
+  */
+  transient LinkedHashMap.Entry<K,V> head;
+
+/**
+* The tail (youngest) of the doubly linked list.
+  */
+  transient LinkedHashMap.Entry<K,V> tail;
+  .....
+  }
+```
 [how-linkedhashmap-works-internally-in-java](https://medium.com/@greekykhs/how-linkedhashmap-works-internally-in-java-409846a4f08)
 
 ----
