@@ -3228,9 +3228,7 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 
 > Then we modify the key and try to get the object. 
 
->HashMap's get() method again calculates the hashcode of the Key, since the Key is changed in between, 
-
->so suppose hashcode() comes out to be 33 this time. 
+>HashMap's get() method again calculates the hashcode of the Key, since the Key is changed in between, so suppose hashcode() comes out to be 33 this time. 
 
 >Now the get() method goes to the bucket at address 33 and tries to retrieve the object, but it finds nothing over there and returns the null.
 
