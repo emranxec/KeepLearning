@@ -3367,10 +3367,11 @@ Arrays.sort(strings, String::compareToIgnoreCase); // this case using method ref
 Arrays.sort(people, Comparator.comparing(Person::getLastName)); // sorts collection of people with lastname
 ```
 
-#### sort a collection of data based on two properties
+#### sort a collection of data based on two properties?
 ```
 List<Person> persons = new ArrayList<>();
-persons.add(new Person("Second", 26));
+persons.add(new Person("imran","khan", 26));
+persons.add(new Person("Ayesha","Siddiqua", 22));
     persons.sort(
         Comparator.comparing(Person::getLastName)
             .thenComparing(Person::getFirstName)
