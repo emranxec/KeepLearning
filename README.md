@@ -64,7 +64,7 @@
 5. [mapping-vs-flat-mapping](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-mapping-vs-flat-mapping)
 6. [what-function-is-java-8-filter-backend](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-function-is-java-8-filter-backend)
 7. [what-are-new-features-added-in-java-8](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-new-features-added-in-java-8)
-8. [what-is-optional-and-what-is-it-best-used-for](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+8. [what-is-optional-and-what-is-it-best-used-for](https://github.com/emranxec/KeepLearning#q-what-is-optional-and-what-is-it-best-used-for)
 
 
 ## Spring
