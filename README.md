@@ -3413,11 +3413,13 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
 
 ##### In Layman's Terms
 
-* sleep(n) - Thread is done with its time slot, and please don’t give it another one for at least n milliseconds. The
+* **sleep(n)** - Thread is done with its time slot, and please don’t give it another one for at least n milliseconds. The
   OS doesn’t even try to schedule the sleeping thread until requested time has passed.
-* yield() - Thread is done with its time slot, but it still has work to do. The OS is free to immediately give the 
+
+* **yield()** - Thread is done with its time slot, but it still has work to do. The OS is free to immediately give the 
   thread another time slot, or to give some other thread or process the CPU the yielding thread just gave up.
-* wait() - Thread is done with its time slot, Don’t give it another time slot until someone calls notify(). As with
+
+* **wait()** - Thread is done with its time slot, Don’t give it another time slot until someone calls notify(). As with
   sleep(), the OS won’t even try to schedule your task unless someone calls notify() or one of a few other
   wakeup scenarios occurs (spurious wakeup).
 
