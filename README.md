@@ -3382,8 +3382,8 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
 ----
 
 ### Q. What is difference between sleep(), yield() and wait() method?
-1. wait() method releases the acquired lock when the thread is waiting till someone calls notify() while Thread.
-   sleep() method keeps the lock even if thread is waiting.
+1. wait() method releases the acquired lock when the thread is waiting till someone calls notify() **while Thread.
+   sleep() method keeps the lock even if thread is waiting.**
 
     ```
     synchronized(monitor) {
@@ -3394,15 +3394,21 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
     }
     ```
 2. wait() can only be called from synchronized context otherwise it will throw IllegalMonitorStateException,
-   while sleep can be called from any code block.
-3. wait() is called on an Object while sleep is called on a Thread
-4. waiting thread can be awaken by calling notify()/notifyAll() methods while sleeping thread can't be awaken1
-   (though can be interrupted)
-5. . Incase of sleep() Thread immediately goes to Runnable state after waking up while in case of wait(),
-   waiting thread first fights back for the lock and then go to Runnable state.
-6. Major difference between yield and sleep in Java is that yield() method pauses the currently executing
-   thread temporarily for giving a chance to the remaining waiting threads of the same priority to execute. If
-   there is no waiting thread or all the waiting threads have a lower priority then the same thread will continue
+   **while sleep can be called from any code block.**
+
+3. wait() is called on an Object **while sleep is called on a Thread.**
+
+4. waiting thread can be awakened by calling notify()/notifyAll() methods **while sleeping thread can't be awakened.
+   (though can be interrupted)**
+
+5. . In case of sleep() Thread immediately goes to Runnable state after waking up **while in case of wait(),
+   waiting thread first fights back for the lock and then go to Runnable state.**
+
+#### yield Vs sleep
+>  Major difference between yield and sleep in Java is that yield() method pauses the currently executing thread temporarily 
+   for giving a chance to the remaining waiting threads of the same priority to execute. 
+
+> If there is no waiting thread or all the waiting threads have a lower priority then the same thread will continue
    its execution.
 
 ##### In Layman's Terms
