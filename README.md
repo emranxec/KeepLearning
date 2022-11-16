@@ -3345,7 +3345,9 @@ public class InMemoryAuthWebSecurityConfigurer
 
 ----
 ### Q. Discuss Comparable and Comparator? Which one should be used in a given scenario?
-- Comparable and Comparator both are used for allowing sorting a collection of objects.
+
+> Comparable and Comparator both are used for allowing sorting a collection of objects.
+
 - Comparable 
 > should be used to define the natural ordering behavior of an Object.
 
