@@ -3851,7 +3851,16 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 
 >But if there was not such object in the database then the method session.load(..) throws an exception whereas session.get(&) returns null.
 ----
+### Q. How to create Bean
 
+- if class is predefined use
+> @Bean
+
+-if it is user defined use
+> @component/ @Service / @Controller / @RestController
+
+----
+----
 # self:
 
 
