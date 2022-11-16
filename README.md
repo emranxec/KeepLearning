@@ -3222,22 +3222,21 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 ----
 ### Q. Can the keys in Hashing data structure be made Mutable?
 
-> When we put the mutableKey to HashMap then
-hashcode() is calculated for the key, suppose
-it comes out to be 11. So the Object123 is
-successfully inserted into the HashMap at bucket
-Location 11.
+> When we put the mutableKey to HashMap then hashcode() is calculated for the key.
+
+>suppose it comes out to be 11. So the Object123 is successfully inserted into the HashMap at bucket Location 11.
 
 > Then we modify the key and try to get the object. 
-HashMap's get() method again calculates the
-hashcode of the Key, since the Key is changed
-in between, so suppose hashcode() comes out
-to be 33 this time. Now the get() method goes to
-the bucket at address 33 and tries to retrieve the
-object, but it find nothing over there and returns the null.
 
->Never make changes to the hashmap's key, otherwise the associated object can not be fetched using get()
-method. Though it will be accessible using other methods which iterate over the entire collection.
+>HashMap's get() method again calculates the hashcode of the Key, since the Key is changed in between, 
+
+>so suppose hashcode() comes out to be 33 this time. 
+
+>Now the get() method goes to the bucket at address 33 and tries to retrieve the object, but it finds nothing over there and returns the null.
+
+>Never make changes to the hashmap's key, otherwise the associated object can not be fetched using get() method. 
+
+> Though it will be accessible using other methods which iterate over the entire collection.
 
 ----
 
