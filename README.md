@@ -39,23 +39,22 @@
 10. [how-to-configure-techniques-of-jvm](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-configure-techniques-of-jvm)
 11. [why-serialize-a-object-how-to-serialize-and-deserialize-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-serialize-a-object-how-to-serialize-and-deserialize-object)
 12. [why-concurrent-hashmap-used](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-concurrent-hashmap-used)
-13. [sort-hashmap-on-basis-of-value](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sort-hashmap-on-basis-of-value)
-14. [linked-hashmap-internal-works](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--linkedhashmap-internal-works)
-15. [what-is-weak-hashmap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-weak-hashmap)
-16. [what-is-reflection-api](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-reflaction-api-javalangreflect)
-17. [what-are-different-types-of-class-loader](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-class-loader)
-18. [garbage-collectors-what-are-diff-types-of-garbage-collector-different-method-of-garbage-collector](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-garbage-collectors-what-are-diff-types-of-garbage-collector-different-method-of-garbage-collector)
-19. [try-with-resources-vs-try-with-finally](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-try-with-resources-vs-try-with-finally)
-20. [explain-stackoverflow-vs-oom](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-stackoverflow-vs-oom)
-21. [why-overloading-and-over-loading-concept](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-overloading-and-over-loading-concept)
-22. [is-synchronized-block-entire-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-is-synchronized-block-entire-object)
-23. [can-the-keys-in-hashing-data-structure-be-made-mutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-can-the-keys-in-hashing-data-structure-be-made-mutable)
-24. [discuss-comparable-and-comparator-which-one-should-be-used](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-discuss-comparable-and-comparator-which-one-should-be-used-in-a-given-scenario)
-25. [what-is-difference-between-sleep-yield-and-wait-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-sleep-yield-and-wait-method)
-26. [string-class-to-be-immutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-27. [prevent-breaking-a-singleton-class-pattern](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-28. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-29. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+13. [linked-hashmap-internal-works](https://github.com/emranxec/KeepLearning/blob/main/README.md#q--linkedhashmap-internal-works)
+14. [what-is-weak-hashmap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-weak-hashmap)
+15. [what-is-reflection-api](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-reflaction-api-javalangreflect)
+16. [what-are-different-types-of-class-loader](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-class-loader)
+17. [garbage-collectors-what-are-diff-types-of-garbage-collector-different-method-of-garbage-collector](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-garbage-collectors-what-are-diff-types-of-garbage-collector-different-method-of-garbage-collector)
+18. [try-with-resources-vs-try-with-finally](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-try-with-resources-vs-try-with-finally)
+19. [explain-stackoverflow-vs-oom](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-stackoverflow-vs-oom)
+20. [why-overloading-and-over-loading-concept](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-overloading-and-over-loading-concept)
+21. [is-synchronized-block-entire-object](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-is-synchronized-block-entire-object)
+22. [can-the-keys-in-hashing-data-structure-be-made-mutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-can-the-keys-in-hashing-data-structure-be-made-mutable)
+23. [discuss-comparable-and-comparator-which-one-should-be-used](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-discuss-comparable-and-comparator-which-one-should-be-used-in-a-given-scenario)
+24. [what-is-difference-between-sleep-yield-and-wait-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-sleep-yield-and-wait-method)
+25. [string-class-to-be-immutable](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+26. [prevent-breaking-a-singleton-class-pattern](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+27. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+28. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -161,6 +160,7 @@
 23. [print all words start with G using streams?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-all-words-start-with-g-using-streams)
 24. [Find some random name in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-find-some-random-name-in-java)
 25. [design a class to throw exception on 2nd constructor](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-class-to-throw-exception-on-2nd-constructor)
+26. [sort-hashmap-on-basis-of-value](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sort-hashmap-on-basis-of-value)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -1818,7 +1818,7 @@ public class SingletonFunctionBean {
 
 ### Q. Sort hashmap on basis of value.?
 
-[SortByValue](https://github.com/emranxec/KeepLearning/blob/main/Java/src/com/xec/java/collections/SortByValue.java)
+[SortByValue](https://github.com/emranxec/KeepLearning/blob/main/JavaEight/src/programs/SortByValue.java)
 
 ----
 ### Q.  LinkedHashmap internal works?
