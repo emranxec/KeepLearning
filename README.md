@@ -2294,6 +2294,40 @@ entityManager.createQuery("select f from Foo f")
 ----
 ### Q. try with resources vs try with finally?
 
+>The main problem with this approach(try with finally) is that if you get an error while in the try part of your open InputStream,
+> and you get an error rather than opening the stream like you get an error because you tried to run .readLines(), 
+> and because of the same reason the code in your finally part, .close(), fails and throws an Exception, 
+> you will not be able to view the first exception.
+
+- Solution
+> When Java 7 introduced try(withResources) that solves this problem. Your resource needs to implement an AutoClosable interface, 
+> and then the latter exceptions are suppressed and the first one is thrown.
+
+```
+// try-catch-finally
+Scanner scanner = null;
+try {
+    scanner = new Scanner(new File("test.txt"));
+    while (scanner.hasNext()) {
+        System.out.println(scanner.nextLine());
+    }
+} catch (FileNotFoundException e) {
+    e.printStackTrace();
+} finally {
+    if (scanner != null) {
+        scanner.close();
+    }
+}
+
+// try-with-resources - try(Resources)
+try (Scanner scanner = new Scanner(new File("test.txt"))) {
+    while (scanner.hasNext()) {
+        System.out.println(scanner.nextLine());
+    }
+} catch (FileNotFoundException e) {
+    e.printStackTrace();
+}
+```
 [prefer-try-with-resources-to-try-catch-finally](https://recepinanc.medium.com/til-18-prefer-try-with-resources-to-try-catch-finally-afc8c0dc9c05)
 
 ----
