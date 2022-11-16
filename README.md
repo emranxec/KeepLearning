@@ -2813,8 +2813,8 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 - javassist-3.12.0.GA.jar 
 - hibernate-jpa-2.0-api-1.0.0.Final.jar (for jpa)
 ----
-### Q. What function is java 8 filter backend?
->java.util.function.*;
+### Q. What function is java 8 filter backend? (java.util.function.*)
+
 ##### Stream filter(Predicate predicate) 
 > returns a stream consisting of the elements of this stream that match the given **predicate**.
 `Stream<T> filter(Predicate<? super T> predicate)`
