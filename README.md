@@ -2011,12 +2011,17 @@ throw new RuntimeException();
 - ~~CMS Garbage Collector~~ (deprecated)
 > The Concurrent Mark Sweep (CMS) implementation uses multiple garbage collector threads for garbage collection
 - G1 Garbage Collector 
-> designed for applications running on multiprocessor machines with large memory space
+> designed for applications running on multiprocessor machines with large memory space.
+
+> G1 collector will replace the CMS collector, since it's more performance efficient.
+
 - Z Garbage Collector
-> ZGC (Z Garbage Collector) is a scalable low-latency garbage collector 
+> ZGC (Z Garbage Collector) is a scalable low-latency garbage collector.
+
 > that debuted in Java 11 as an experimental option for Linux.
-> ZGC performs all expensive work concurrently, without stopping the execution
-> of application threads for more than 10 ms,
+
+> ZGC performs all expensive work concurrently, without stopping the execution of application threads for more than 10 ms,
+
 > It also handles heaps ranging from 8MB to 16TB in size.
 
 [jvm-garbage-collectors](https://www.baeldung.com/jvm-garbage-collectors)
