@@ -3938,7 +3938,7 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 - if class is predefined use
 > @Bean
 
--if it is user defined use
+- if it is user defined use
 > @component/ @Service / @Controller / @RestController
 
 ----
