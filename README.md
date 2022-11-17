@@ -3524,6 +3524,8 @@ private programs.Singleton() {
         }
     }
 ```
+[java-singleton-design-pattern-best-practices-examples](https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples)
+
 ----
 
 ### Q. print second-highest number from stream?
@@ -4112,8 +4114,12 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 ### Q. spring framework vs spring boot
 
 ----
-### Q. can we use @Component on final class?
+### Q. can we use @Component/@Configuration classes be final?
+> Don't make them final. If you use any AOP (including transaction support) on concrete classes, spring will use CGLIB to dynamically extend your class in order to make a proxy. 
 
+> And the requirement for CGLIB to work is to have your classes non-final. Otherwise, an exception will be thrown.
+
+> If @Configuration class will be final or will have a final method, Spring will throw BeanDefinitionParsingException.
 ----
 ### Q. if we don't define @Primary / @Qualifier then what will happen?
 
