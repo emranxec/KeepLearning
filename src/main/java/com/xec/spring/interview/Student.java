@@ -1,4 +1,4 @@
-package com.xec.spring.BeanLifeCycle;
+package com.xec.spring.interview;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

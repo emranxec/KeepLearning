@@ -2625,6 +2625,12 @@ public class UniversityController {
 - Both annotations can be used together
 - @Qualifier has higher priority than @Primary annotation
 
+##### if we dont use both primary and qualifier and have multiple beans instances?
+> When we run the integration test, an org.springframework.beans.factory.NoUniqueBeanDefinitionException will be thrown.
+
+> This will happen because the application context will find two bean definitions of type University, 
+> and won't know which bean should resolve the dependency.
+
 ----
 ### Q. Controller vs rest controlled?
 
@@ -3986,12 +3992,106 @@ public class SingletonScopeTest {
 - Spring bean definition work as a key-value pair, the key is mapped to bean id and value mapped to the bean instance.
 - Each key reference returns the same bean instance (refer to “bean1” always return bean instance associated with id “bean1”).
 
-----
-### Q. what if we have created a new Object with new Keyword which is singleton in spring?
+[SingletonConfig.java](https://github.com/emranxec/KeepLearning/blob/main/src/main/java/com/xec/spring/interview/SingletonConfig.java)
 
 ----
 ### Q. Other options than @Autowired?
-###### resource
+
+#### @resource (field injection,setter injection) (javax.annotation.Resource)
+- Match by Name 
+- Match by Type 
+- Match by Qualifier (NoUniqueBeanDefinitionException )
+
+```
+@Resource(name="namedFile")
+private File namedFile; //Match by Name 
+    
+@Resource
+private File defaultFile; //Match by Type 
+
+@Resource
+@Qualifier("defaultFile")
+private File dependency1; //Match by Qualifier
+
+----Setter Injection------
+ @Resource(name="namedFile")
+    protected void setDefaultFile(File defaultFile) {
+        this.defaultFile = defaultFile; ////Match by Name 
+    }
+    
+ @Resource
+    protected void setDefaultFile(File defaultFile) {
+        this.defaultFile = defaultFile; ////Match by Type 
+    }
+
+ @Resource
+    @Qualifier("namedFile")
+    public void setArbDependency(File arbDependency) {
+        this.arbDependency = arbDependency; ////Match by Qualifier
+    }
+```
+#### The @Inject Annotation (javax.inject.Inject)
+- Match by Type 
+- Match by Qualifier  (NoUniqueBeanDefinitionException )
+- Match by Name
+
+```xml
+<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
+```
+
+```
+ @Inject
+private ArbitraryDependency namedDependency; //Match by Type
+    
+@Inject
+@Qualifier("defaultFile")
+private ArbitraryDependency defaultDependency; //Match by Qualifier
+
+@Inject
+@Named("yetAnotherFieldInjectDependency")
+private ArbitraryDependency yetAnotherFieldInjectDependency; //Match by Name
+```
+
+#### The @Autowired Annotation (org.springframework.beans.factory.annotation)
+> The behaviour of the @Autowired annotation is similar to the @Inject annotation. The only difference is that the @Autowired annotation is part of the Spring framework.
+
+- Match by Type
+- Match by Qualifier  (NoUniqueBeanDefinitionException )
+- Match by Name
+
+
+```
+@Autowired
+    private ArbitraryDependency fieldDependency; //Match by Type
+    
+@Autowired
+@Qualifier("autowiredFieldDependency")
+private FieldDependency fieldDependency1;  //Match by Qualifier
+
+//Match by Name = autowiredFieldDependency
+
+@Component(value="autowiredFieldDependency")
+public class ArbitraryDependency {
+
+    private final String label = "Arbitrary Dependency";
+
+    public String toString() {
+        return label;
+    }
+}
+ 
+ @Autowired
+private ArbitraryDependency autowiredFieldDependency; // Match by Name
+
+```
+#### when to use what?
+
+![image](https://user-images.githubusercontent.com/16031518/202534980-169d4858-90ae-4253-8a5c-df0e3f70aa6c.png)
+
 ----
 ### Q. what problem we face in request body if all structure is good?
 
@@ -3999,6 +4099,7 @@ public class SingletonScopeTest {
 ### Q. We have to use qualifier for all 1000 implementations? any other way?
 
 ----
+
 ### Q. When to use path param or when to use Query param? as per design perspective?
 
 ----
