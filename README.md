@@ -4142,11 +4142,10 @@ public class DBConfiguration {
 
 > If @Configuration class will be final or will have a final method, Spring will throw BeanDefinitionParsingException.
 ----
-### Q. if we don't define @Primary / @Qualifier then what will happen?
+### Q. if we want to load only 75% of bean classes in spring? how to achieve it?
+> You can add @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) to the component or the bean, in order to not create it on boot time (unless another bean autowired it). But with this solution your bean will not be a singleton which mean that every place you are autowire the component, a new instance will be created.
 
-----
-### Q. if we want to load only 75% of bean classes in spring? how to achive it?
-
+> Add @Lazy in your bean definition or add @Lazy at class level to load all beans lazily.
 ----
 
 ----
