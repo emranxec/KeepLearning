@@ -4120,6 +4120,14 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 .yml you can create a section for each specific profile inside a single .yml file.**
 
 - **In Spring projects, @PropertySource annotation can only be used with .properties.**
+```java
+@PropertySources({
+@PropertySource("classpath:db.properties"),
+@PropertySource("classpath:root.properties")})
+public class DBConfiguration {
+}
+```
+
 ----
 ### Q. is singleton is lazy or eager loading?
 
