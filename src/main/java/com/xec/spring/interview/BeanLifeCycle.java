@@ -1,4 +1,4 @@
-package com.xec.spring.BeanLifeCycle;
+package com.xec.spring.interview;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

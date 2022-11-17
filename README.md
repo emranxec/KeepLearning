@@ -3945,14 +3945,53 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 
 ----
 ### Q. Singleton scope in spring VS singleton class in java?
+> Singleton scope in Spring is not same as singleton pattern. Some of the main differences between these 2 are
 
-----
+- Singleton pattern ensures one instance of a particular class of per class loader.
+- Spring Singleton is  “per container per bean”.
+> When a bean is a singleton, only one shared instance of the bean will be managed, and all requests for beans with an id or ids matching that bean definition will result in that one specific bean instance being returned by the Spring container.
+
+
+#### Singleton Scope Example
+> Singleton instance in Spring will be stored in a cache of such singleton beans, and all subsequent requests 
+> and references for that named bean will result in the cached object being returned.
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SingletonScopeTest {
+
+    private static Logger log = LoggerFactory.getLogger(SingletonScopeTest.class);
+
+    @Resource(name = "bean1")
+    CustomerAccount account1;
+
+    @Resource(name = "bean1")
+    CustomerAccount duplicateAccount;
+
+    @Resource(name = "bean2")
+    CustomerAccount account2;
+
+    @Test
+    public  void testSingletonScope(){
+        log.info(account1.getName());
+        log.info(account2.getName());
+
+        log.info("account are equal:: {}", account1 == account2);
+        log.info("Duplicate Account :: {}", account1 == duplicateAccount);
+    }
+}
+```
+##### how it works
+- Spring Ioc container created 2 instances of the same class based on bean definition and binds them with ids.
+- Spring bean definition work as a key-value pair, the key is mapped to bean id and value mapped to the bean instance.
+- Each key reference returns the same bean instance (refer to “bean1” always return bean instance associated with id “bean1”).
+
 ----
 ### Q. what if we have created a new Object with new Keyword which is singleton in spring?
 
 ----
 ### Q. Other options than @Autowired?
-
+###### resource
 ----
 ### Q. what problem we face in request body if all structure is good?
 
