@@ -4106,7 +4106,20 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 
 ----
 ### Q. difference between application.properties vs application.yml ? which one to use when?
+- .properties stores data in sequential format, whereas
+  **.yml stores data in hierarchical format.**
 
+- .properties supports only key-value pairs (basically string values), whereas 
+  **.yml supports key-value pair, as well as map, list & scalar type values.**
+
+- .properties is specifically used by Java, whereas
+  **.yml can be used by other languages (eg Java, Python, ROR, etc).**
+
+- When managing multiple configuration profiles, then:
+.properties requires you to create .properties file per every profile, **whereas in
+.yml you can create a section for each specific profile inside a single .yml file.**
+
+- **In Spring projects, @PropertySource annotation can only be used with .properties.**
 ----
 ### Q. is singleton is lazy or eager loading?
 
