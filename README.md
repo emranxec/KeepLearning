@@ -3276,7 +3276,9 @@ public class SpringBootSecurityApplication {
 
 - If we want a more flexible configuration, with multiple users and roles for example, 
 - we need to make use of a full @Configuration class:
+
 ```java
+
 @Configuration
 @EnableWebSecurity
 public class InMemoryAuthWebSecurityConfigurer
@@ -3286,7 +3288,7 @@ public class InMemoryAuthWebSecurityConfigurer
     protected void configure(AuthenticationManagerBuilder auth)
             throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("spring")
+                .withUser("com/xec/spring")
                 .password("secret")
                 .roles("USER");
     }
@@ -3941,6 +3943,10 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 - if it is user defined use
 > @component/ @Service / @Controller / @RestController
 
+----
+### Q. Singleton scope in spring VS singleton class in java?
+
+----
 ----
 ### Q. what if we have created a new Object with new Keyword which is singleton in spring?
 
