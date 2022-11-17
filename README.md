@@ -4146,6 +4146,8 @@ public class DBConfiguration {
 > You can add @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) to the component or the bean, in order to not create it on boot time (unless another bean autowired it). But with this solution your bean will not be a singleton which mean that every place you are autowire the component, a new instance will be created.
 
 > Add @Lazy in your bean definition or add @Lazy at class level to load all beans lazily.
+
+> In your application , the main class is present in the package com.test.companydomain.core and by default springboot scans all classes and packages under the current package of the main application for autowiring beans. So , you have provided the annotation @ComponentScan to explicitly tell spring to scan other packages as well.But your util class is in the package com.test.domain.assetManager.server.common.utils , which is not included in the @ComponentScan annotation, so it is not taken up for component scanning.
 ----
 
 ----
