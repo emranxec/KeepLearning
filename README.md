@@ -4103,6 +4103,28 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 ----
 
 ### Q. When to use path param or when to use Query param? as per design perspective?
+> Request URI parameters are added to end of URL that refer/point to specific REST API
+resource.
+There are two types of parameters: 
+- Path Parameters 
+- Query Parameters.
+
+#### PATH PARAMETER
+> Path Parameters are a part of URI. It takes you to the specific endpoint/resource. They are added to URI after ‘/’
+in curly braces {}. Path parameters point to specific REST API resource within a collection.
+
+>– GET /students/{grade}
+
+#### QUERY PARAMETE
+> Query Parameter in NOT part of URI. They are added to URI after a question mark symbol (‘?’) with
+name=value pairs separated by ampersands symbol (&). They define sort, pagination and filter operations.
+
+> GET /students?offset=50&limit=20
+
+#### COMPARISON - PATH PARAMETER AND QUERY PARAMETER
+
+![image](https://user-images.githubusercontent.com/16031518/202660484-cfdcdc84-ebec-42fc-baa1-e50bf729c1ff.png)
+
 
 ----
 ### Q. difference between application.properties vs application.yml ? which one to use when?
