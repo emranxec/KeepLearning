@@ -1115,6 +1115,7 @@ Dependencies can be classified into:
 
 [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
 
+[spring-security-interview-questions](https://www.interviewbit.com/spring-security-interview-questions/)
 ----
 ### Q. explain Dirty - Hibernate?
 > When an entity object is loaded, a copy of all properties of that entity object is created. 
@@ -2959,6 +2960,7 @@ public class DevDatasourceConfig{}
 
 [spring-profiles](https://www.baeldung.com/spring-profiles)
 
+[spring-vs-spring-boot](https://www.interviewbit.com/blog/spring-vs-spring-boot/)
 ---- 
 ### Q. Git Rebase vs Git Merge: Which is Better?
 ##### Git Merge
