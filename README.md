@@ -4185,7 +4185,59 @@ public class DBConfiguration {
 >
 ----
 ### Q. how to remove special characters from json body parameters?
->
+```
+BufferedReader reader = new BufferedReader(new FileReader(new File("resources/json29.txt")));
+
+class MyJSONObject {
+private String color;
+private String imageUrl;
+private String styleId;
+private double originalPrice;
+private double price;
+private String productUrl;
+private double percentOff;
+// getter & setter
+}
+
+class MyJSONObjectDeserializer implements JsonDeserializer<MyJSONObject> {
+
+    @Override
+    public MyJSONObject deserialize(final JsonElement json, final Type typeOfT,
+            final JsonDeserializationContext context) throws JsonParseException {
+
+        JsonObject jsonObject = json.getAsJsonObject();
+
+        MyJSONObject myJSONObject = new MyJSONObject();
+        myJSONObject.setColor(jsonObject.get("color").getAsString());
+        myJSONObject.setImageUrl(jsonObject.get("imageUrl").getAsString());
+        myJSONObject.setStyleId(jsonObject.get("styleId").getAsString());
+        myJSONObject.setProductUrl(jsonObject.get("productUrl").getAsString());
+
+        try {
+            String price = jsonObject.get("price").getAsString();
+            String originalPrice = jsonObject.get("originalPrice").getAsString();
+            String percentOff = jsonObject.get("percentOff").getAsString();
+
+            myJSONObject.setPrice(Double.valueOf(price.substring(1)));
+            myJSONObject.setOriginalPrice(Double.valueOf(originalPrice.substring(1)));
+            myJSONObject.setPercentOff(Double.valueOf(percentOff.substring(0,
+                    percentOff.length() - 1)));
+
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+
+        return myJSONObject;
+    }
+}
+
+MyJSONObject data = new GsonBuilder()
+.registerTypeAdapter(MyJSONObject.class, new MyJSONObjectDeserializer()).create()
+.fromJson(reader, MyJSONObject.class);
+
+System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(data));
+```
+
 ----
 ### Q. how to manage transactions in hibernate vs transactions in Spring
 >
