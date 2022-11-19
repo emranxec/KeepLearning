@@ -4248,7 +4248,61 @@ public class DBConfiguration {
 > Asynchronous method invocation is a pattern where the calling thread is not blocked while waiting results of tasks.
 
 > Asynchronous method invocation starts task processing and returns immediately before the task is ready. The results of the task processing are returned to the caller later.
+```java
+public class ThreadAsyncExecutor implements AsyncExecutor {
+@Override
+public <T> AsyncResult<T> startProcess(Callable<T> task, AsyncCallback<T> callback) {
+var result = new CompletableResult<>(callback);
+new Thread(
+() -> {
+try {
+result.setValue(task.call());
+} catch (Exception ex) {
+result.setException(ex);
+}
+},
+"executor-" + idx.incrementAndGet())
+.start();
+return result;
+}
+@Override
+public <T> T endProcess(AsyncResult<T> asyncResult)
+throws ExecutionException, InterruptedException {
+if (!asyncResult.isCompleted()) {
+asyncResult.await();
+}
+return asyncResult.getValue();
+}
+//other methods
 
+public static void main(String[] args) throws Exception {
+// construct a new executor that will run async tasks
+var executor = new ThreadAsyncExecutor();
+// start few async tasks with varying processing times, two last with callback handlers
+final var asyncResult1 = executor.startProcess(lazyval(10, 500));
+final var asyncResult2 = executor.startProcess(lazyval("test", 300));
+final var asyncResult3 = executor.startProcess(lazyval(50L, 700));
+final var asyncResult4 = executor.startProcess(lazyval(20, 400), callback("Deploying lunar rover"));
+final var asyncResult5 =
+executor.startProcess(lazyval("callback", 600), callback("Deploying lunar rover"));
+// emulate processing in the current thread while async tasks are running in their own threads
+Thread.sleep(350); // Oh boy, we are working hard here
+log("Mission command is sipping coffee");
+
+// wait for completion of the tasks
+final var result1 = executor.endProcess(asyncResult1);
+final var result2 = executor.endProcess(asyncResult2);
+final var result3 = executor.endProcess(asyncResult3);
+asyncResult4.await();
+asyncResult5.await();
+
+// log the results of the tasks, callbacks log immediately when complete
+log("Space rocket <" + result1 + "> launch complete");
+log("Space rocket <" + result2 + "> launch complete");
+log("Space rocket <" + result3 + "> launch complete");
+}
+}
+```
 ##### example
 > Launching space rockets is an exciting business. The mission command gives an order to launch and after some undetermined time, the rocket either launches successfully or fails miserably.
 
@@ -4256,7 +4310,17 @@ public class DBConfiguration {
 > Callback is a piece of executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at some convenient time.
 
 > Callback is a method passed to the executor which will be called at defined moment.
+```java
+public abstract class Task {
 
+final void executeWith(Callback callback) {
+execute();
+Optional.ofNullable(callback).ifPresent(Callback::call);
+}
+
+public abstract void execute();
+}
+```
 ##### example
 > We need to be notified after executing task has finished. We pass a callback method for the executor and wait for it to call back on us.
 
