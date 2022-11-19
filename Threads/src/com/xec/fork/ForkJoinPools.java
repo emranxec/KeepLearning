@@ -1,4 +1,4 @@
-package com.xec.thread.fork;
+package com.xec.fork;
 
 import java.util.ArrayList;
 import java.util.List;

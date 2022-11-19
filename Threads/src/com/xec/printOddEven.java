@@ -1,4 +1,4 @@
-package com.xec.thread;
+package com.xec;
 
 
 public class printOddEven {

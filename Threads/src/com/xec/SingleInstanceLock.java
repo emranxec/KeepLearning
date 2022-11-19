@@ -1,4 +1,4 @@
-package com.xec.thread;
+package com.xec;
 
 import java.io.File;
 import java.io.RandomAccessFile;

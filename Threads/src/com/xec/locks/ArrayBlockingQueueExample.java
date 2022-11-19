@@ -1,11 +1,8 @@
-package com.xec.thread.locks;
+package com.xec.locks;
 
-import com.xec.thread.ThreadColor;
+import com.xec.ThreadColor;
 
-import java.util.Random;
 import java.util.concurrent.*;
-
-import static com.xec.thread.locks.ArrayBlockingQueueExample.EOF;
 
 public class ArrayBlockingQueueExample {
     public static final String EOF = "EOF";

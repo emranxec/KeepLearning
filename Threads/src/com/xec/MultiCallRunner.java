@@ -1,4 +1,4 @@
-package com.xec.thread;
+package com.xec;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;

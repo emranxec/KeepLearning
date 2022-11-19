@@ -1,4 +1,4 @@
-package com.xec.thread.locks;
+package com.xec.locks;
 
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;

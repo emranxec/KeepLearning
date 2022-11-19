@@ -1,4 +1,4 @@
-package com.xec.thread;
+package com.xec;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,10 +1,10 @@
-package com.xec.thread.locks;
+package com.xec.locks;
 
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static com.xec.thread.locks.rentrant.EOF;
+import static com.xec.locks.rentrant.EOF;
 
 class ReentrantConsumer implements Runnable {
     private List<String> buffer;

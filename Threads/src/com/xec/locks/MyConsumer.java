@@ -1,8 +1,8 @@
-package com.xec.thread.locks;
+package com.xec.locks;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
-import static com.xec.thread.locks.ArrayBlockingQueueExample.EOF;
+import static com.xec.locks.ArrayBlockingQueueExample.EOF;
 
 class MyConsumer implements Runnable {
     private ArrayBlockingQueue<String> buffer;

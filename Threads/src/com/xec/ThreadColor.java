@@ -1,4 +1,4 @@
-package com.xec.thread;
+package com.xec;
 
 /**
  * Created by timbuchalka on 24/06/2016.

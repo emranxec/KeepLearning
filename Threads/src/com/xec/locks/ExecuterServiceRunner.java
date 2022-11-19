@@ -1,6 +1,6 @@
-package com.xec.thread.locks;
+package com.xec.locks;
 
-import com.xec.thread.ThreadColor;
+import com.xec.ThreadColor;
 
 import java.util.ArrayList;
 import java.util.List;
