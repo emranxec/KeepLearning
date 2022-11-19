@@ -4220,8 +4220,46 @@ public class DBConfiguration {
 ### Q. implement two threads running one after another
 >
 ----
-### Q. what is the alternative of promise in javascript in Java?
->
+### Q. what is java promise? 
+> functional style of programming
+
+> Promise is a placeholder for an asynchronous operation that is ongoing.
+
+> The Promise object is used for asynchronous computations. A Promise represents an operation that hasn't completed yet, but is expected in the future.
+
+>Promises provide a few advantages over callback objects:
+
+- Functional composition and error handling.
+- Prevents callback hell and provides callback aggregation.
+
+#### Real world examples
+- java.util.concurrent.CompletableFuture
+
+- Guava ListenableFuture
+
+##### example
+> We are developing a software solution that downloads files and calculates the number of lines and character frequencies in those files. 
+
+> Promise is an ideal solution to make the code concise and easy to understand.
+
+#### Other approach
+
+- Async Method Invocation
+> Asynchronous method invocation is a pattern where the calling thread is not blocked while waiting results of tasks.
+
+> Asynchronous method invocation starts task processing and returns immediately before the task is ready. The results of the task processing are returned to the caller later.
+
+##### example
+> Launching space rockets is an exciting business. The mission command gives an order to launch and after some undetermined time, the rocket either launches successfully or fails miserably.
+
+- Callback
+> Callback is a piece of executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at some convenient time.
+
+> Callback is a method passed to the executor which will be called at defined moment.
+
+##### example
+> We need to be notified after executing task has finished. We pass a callback method for the executor and wait for it to call back on us.
+
 ----
 ### Q. How to check all API status and save if all success else fail all
 >
