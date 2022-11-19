@@ -4191,22 +4191,52 @@ public class DBConfiguration {
 >
 ----
 ### Q. session.commit vs session.flush
->
+ - flush(): 
+> Flushing is the process of synchronizing the underlying persistent store with persistable state held in memory.
+
+> it will update or insert into your tables in the running transaction, **but it may not commit those changes.**
+
+- Commit(): 
+> Commit will make the database commit.When you have a persisted object and you change a value on it, 
+
+> it becomes dirty and hibernate needs to flush these changes to your persistence layer.
+
+> So You should commit but it also **ends the unit of work.**
+
 ----
 ### Q. send image object of 20mb in json request
 >
 ----
 ### Q. How ArrayList internally works?
->
+- ArrayList is a resizable array implementation in java. 
+- The backing data structure of ArrayList is an array of Object class. 
+- When creating an ArrayList you can provide initial capacity then the array is declared with the given capacity. 
+- The default capacity value is 10. 
+- If the initial capacity is not specified by the user then the default capacity is used to create an array of objects. 
+- When an element is added to an ArrayList it first checks whether the new element has room to fill or it needs to grow the size of the internal array, 
+- If capacity has to be increased then the new capacity is calculated which is 50% more than the old capacity and the array is increased by that capacity.
+
 ----
 ### Q. [4,5,3,2,1,9,5,4,3,34,35,36] child=3 , find minimum difference of 1st-3rd child.
 >
 ----
 ### Q. how to disable first level cache in hibernate
->
-----
-### Q. flow of static keywords
->
+> First level cache is enabled by default, and you can not disable it.
+
+> Though we can not disable the first-level cache in hibernate, we can certainly remove some objects from it when needed. 
+
+>This is done using two methods :
+
+- evict(): removes a particular object from cache associated with the session
+- clear(): remove all cached objects associated with the session
+```
+//fetch the department entity again
+department = (DepartmentEntity) session.load(DepartmentEntity.class, new Integer(1));
+System.out.println(department.getName());
+
+	session.evict(department);
+	//session.clear(); 
+```
 ----
 ### Q. what is PermGen n MetaSpace
 > When we create a static variable or method it is stored in the special area on heap: PermGen(Permanent Generation), 
@@ -4223,6 +4253,23 @@ public class DBConfiguration {
 
 ----
 ### Q. where variables ,static variable , block and method saves data?
+
+
+#### Heap Memory
+> Heap memory is the runtime data area shared among all JVM threads to allocate memory for all class instances and arrays.
+
+> Java classifies heap memory into two categories – Young Generation and Old Generation.
+
+#### Non-Heap Memory
+> Non-heap memory consists primarily of a method area that stores class structures, fields, method data, and the code for methods/constructors.
+
+> Similar to the Heap memory, all JVM threads have access to the method area.
+
+- Java 8 removes the PermGen space and introduces a new native memory space named Metaspace.
+
+> Before Java 8, PermGen stores static members like static methods and static variables. Additionally, PermGen also stores interned strings.
+
+> Since Java 8, Metaspace only stores the class metadata, and heap memory keeps the static members.
 
 #### Classes (loaded by the classloaders)
 > go in a special area on heap : Permanent Generation until java 8
@@ -4259,7 +4306,7 @@ M (like java/lang/Object) and optimization information goes into the Permanent G
 ####  local variables of a static method
 >  They are stored on the stack, just like local variables in non-static methods.
 
-####  return type of a method
+####  return type of method
 >  value returned by a (non-void) method call, then it is either returned on the stack or in a machine register. If it is returned on the stack, this takes 1 or two words, depending on the return type.
 
 ----
