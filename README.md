@@ -92,7 +92,7 @@
 20. [how-to-manage-two-different-session-factory-transaction](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-manage-two-different-session-factory-transaction)
 21. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
 22. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
-23. [define-all-spring-annotations-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-define-all-spring-annotations-)
+23. [define-all-spring-annotations](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-define-all-spring-annotations-)
 24. [load-only-75-of-bean-classes-in-spring-how-to-achieve-it](https://github.com/emranxec/KeepLearning#q-if-we-want-to-load-only-75-of-bean-classes-in-spring-how-to-achieve-it)
 25. [can-we-use-component-configuration-classes-be-final](https://github.com/emranxec/KeepLearning#q-can-we-use-componentconfiguration-classes-be-final)
 26. [difference-between-application-properties-vs-application-yml--which-one-to-use-when](https://github.com/emranxec/KeepLearning#q-difference-between-applicationproperties-vs-applicationyml--which-one-to-use-when)
@@ -4007,7 +4007,7 @@ public class SingletonScopeTest {
 [SingletonConfig.java](https://github.com/emranxec/KeepLearning/blob/main/src/main/java/com/xec/spring/interview/SingletonConfig.java)
 
 ----
-### Q. Other options than @Autowired?
+### Q. The difference between @Inject vs. @Autowire vs. @Resource?
 
 #### @resource (field injection,setter injection) (javax.annotation.Resource)
 - Match by Name 
@@ -4168,7 +4168,9 @@ public class DBConfiguration {
 > In your application , the main class is present in the package com.test.companydomain.core and by default springboot scans all classes and packages under the current package of the main application for autowiring beans. So , you have provided the annotation @ComponentScan to explicitly tell spring to scan other packages as well.But your util class is in the package com.test.domain.assetManager.server.common.utils , which is not included in the @ComponentScan annotation, so it is not taken up for component scanning.
 ----
 ### Q. How to make sure the JSON structure is same from client to server?
-> 
+
+[jersey-client-to-use-the-same-json-format-that-the-server](https://stackoverflow.com/questions/31622055/how-do-i-configure-the-jersey-client-to-use-the-same-json-format-that-the-server)
+
 ----
 ### Q. what problem we face in request body if all structure is good?
 
