@@ -4212,7 +4212,32 @@ public class DBConfiguration {
 >
 ----
 ### Q. how to skip some jars in spring boot
->
+- Mention your dependency in pom.xml which you need to exclude in exclusion tag. Then excluded dependency will not be downloaded:
+```xml
+<dependency>
+      <groupId>sample.ProjectA</groupId>
+      <artifactId>Project-A</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion> 
+ <!-- declare the exclusion here -->
+          <groupId>sample.ProjectB</groupId>
+          <artifactId>Project-B</artifactId>
+        </exclusion>
+      </exclusions> 
+    </dependency>
+```
+#### other approach
+- Instead of messing around with <excludes> and then try to figure out what you need to include again (after figuring out what you excluded). Just override the version as explained here in the Spring Boot Reference Guide.
+
+- Assuming you are using the spring-boot-starter-parent as the parent you can just add a <selenium.version> to your <properties> section to specify which version you want.
+```xml
+<properties>
+  <selenium.version>2.53.0</selenium.version>
+</properties>
+```
+- This will make Spring Boot use the version you want.
 ----
 ### Q. how to remove the tomcat server from spring boot
 
@@ -4245,7 +4270,9 @@ WebApplicationContext. This should go to the application.properties.
 
 ----
 ### Q. implement two threads running one after another
->
+
+[JoinDemo.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/JoinDemo.java)
+
 ----
 ### Q. what is java promise? 
 > functional style of programming
