@@ -4012,7 +4012,7 @@ public class SingletonScopeTest {
 #### @resource (field injection,setter injection) (javax.annotation.Resource)
 - Match by Name 
 - Match by Type 
-- Match by Qualifier (NoUniqueBeanDefinitionException )
+- Match by Qualifier (NoUniqueBeanDefinitionException)
 
 ```
 @Resource(name="namedFile")
