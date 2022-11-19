@@ -4215,7 +4215,34 @@ public class DBConfiguration {
 >
 ----
 ### Q. how to remove the tomcat server from spring boot
->
+
+#### Maven Pom.xml 
+> To exclude Tomcat from Spring Boot just add an exclusion block to the Spring Boot Starter Web dependency 
+> and at the build time Maven will exclude Tomcat from Spring Boot.
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
+#### Annotation
+> When declaring the @SpringBootApplication annotation, there is a way to exclude all servers and do consider the spring boot application like the web.
+
+> @SpringBootApplication(exclude = {EmbeddedServletContainerAutoConfiguration.class, WebMvcAutoConfiguration.class})
+
+> And need to add the below property to non-rest applications so that spring boot does not try to start the
+WebApplicationContext. This should go to the application.properties.
+
+> spring.main.web-environment=false
+
+
 ----
 ### Q. implement two threads running one after another
 >
