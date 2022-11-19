@@ -4208,8 +4208,60 @@ public class DBConfiguration {
 ### Q. flow of static keywords
 >
 ----
-### Q. where static variable , block and method saves data.
->
+### Q. what is PermGen n MetaSpace
+> When we create a static variable or method it is stored in the special area on heap: PermGen(Permanent Generation), 
+> where it lays down with all the data applying to classes(non-instance data). Starting from Java 8 the PermGen became - Metaspace.
+
+>The difference is that Metaspace is auto-growing space, 
+> while PermGen has a fixed Max size, and this space is shared among all of the instances.
+
+> Static methods are stored in Metaspace space of native heap as they are associated to the class 
+> in which they reside not to the objects of that class. But their local variables and the passed 
+> arguments are stored in the stack.
+
+[static-variables-methods-java-where-jvm-stores-them](https://www.linkedin.com/pulse/static-variables-methods-java-where-jvm-stores-them-kotlin-malisciuc/)
+
+----
+### Q. where variables ,static variable , block and method saves data?
+
+#### Classes (loaded by the classloaders)
+> go in a special area on heap : Permanent Generation until java 8
+
+> As of Java 8, the PermGen space has been replaced with Metaspace. 
+> Loaded and JIT-compiled classes now go there. PermGen no longer exists.
+
+####  information related to a class
+> All the information related to a class like name of the class, Object arrays associated with the class, 
+> internal objects used
+> b
+> y J
+> 
+V
+M (like java/lang/Object) and optimization information goes into the Permanent Generation area.
+
+#### static member variables
+> All the static member variables are kept on the Permanent Generation area again ?
+
+- The variables themselves yes.
+- the static member variables are in a frame that is allocated in the permgen heap
+- the objects/arrays referred to by those variables may be allocated in any heap.
+
+#### Objects
+> Objects go on a different heap : Young generation ?
+
+-Not necessarily. Large objects may be allocated directly into the tenured generation
+
+#### non-static methods
+>  all the parameters and local variables go onto the stack
+
+> whenever there is a concrete invocation of that method, we get a new stack-frame associated with it.
+
+####  local variables of a static method
+>  They are stored on the stack, just like local variables in non-static methods.
+
+####  return type of a method
+>  value returned by a (non-void) method call, then it is either returned on the stack or in a machine register. If it is returned on the stack, this takes 1 or two words, depending on the return type.
+
 ----
 ### Q. how to skip some jars in spring boot
 - Mention your dependency in pom.xml which you need to exclude in exclusion tag. Then excluded dependency will not be downloaded:
