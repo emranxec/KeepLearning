@@ -4097,13 +4097,6 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 ![image](https://user-images.githubusercontent.com/16031518/202534980-169d4858-90ae-4253-8a5c-df0e3f70aa6c.png)
 
 ----
-### Q. what problem we face in request body if all structure is good?
-
-----
-### Q. We have to use qualifier for all 1000 implementations? any other way?
-
-----
-
 ### Q. When to use path param or when to use Query param? as per design perspective?
 > Request URI parameters are added to end of URL that refer/point to specific REST API
 resource.
@@ -4151,13 +4144,6 @@ name=value pairs separated by ampersands symbol (&). They define sort, paginatio
 public class DBConfiguration {
 }
 ```
-
-----
-### Q. is singleton is lazy or eager loading?
-
-----
-### Q. spring framework vs spring boot
-
 ----
 ### Q. can we use @Component/@Configuration classes be final?
 > Don't make them final. If you use any AOP (including transaction support) on concrete classes, spring will use CGLIB to dynamically extend your class in order to make a proxy. 
@@ -4173,7 +4159,70 @@ public class DBConfiguration {
 
 > In your application , the main class is present in the package com.test.companydomain.core and by default springboot scans all classes and packages under the current package of the main application for autowiring beans. So , you have provided the annotation @ComponentScan to explicitly tell spring to scan other packages as well.But your util class is in the package com.test.domain.assetManager.server.common.utils , which is not included in the @ComponentScan annotation, so it is not taken up for component scanning.
 ----
+### Q. How to make sure the JSON structure is same from client to server?
+> 
+----
+### Q. what problem we face in request body if all structure is good?
 
+----
+### Q. We have to use qualifier for all 1000 implementations? any other way?
+
+----
+### Q. is singleton is lazy or eager loading?
+
+----
+### Q. if two API request hits at same time how to manage them?
+>
+----
+### Q. how to remove special characters from json body parameters?
+>
+----
+### Q. how to manage transactions in hibernate vs transactions in Spring
+>
+----
+### Q. session.commit vs session.flush
+>
+----
+### Q. send image object of 20mb in json request
+>
+----
+### Q. How ArrayList internally works?
+>
+----
+### Q. [4,5,3,2,1,9,5,4,3,34,35,36] child=3 , find minimum difference of 1st-3rd child.
+>
+----
+### Q. how to disable first level cache in hibernate
+>
+----
+### Q. flow of static keywords
+>
+----
+### Q. where static variable , block and method saves data.
+>
+----
+### Q. how to skip some jars in spring boot
+>
+----
+### Q. how to remove the tomcat server from spring boot
+>
+----
+### Q. implement two threads running one after another
+>
+----
+### Q. what is the alternative of promise in javascript in Java?
+>
+----
+### Q. How to check all API status and save if all success else fail all
+>
+----
+### Q. hashset vs treeset
+>
+----
+### Q. 
+>
+----
+----
 ----
 # self:
 
