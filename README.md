@@ -96,9 +96,9 @@
 24. [load-only-75-of-bean-classes-in-spring-how-to-achieve-it](https://github.com/emranxec/KeepLearning#q-if-we-want-to-load-only-75-of-bean-classes-in-spring-how-to-achieve-it)
 25. [can-we-use-component-configuration-classes-be-final](https://github.com/emranxec/KeepLearning#q-can-we-use-componentconfiguration-classes-be-final)
 26. [difference-between-application-properties-vs-application-yml--which-one-to-use-when](https://github.com/emranxec/KeepLearning#q-difference-between-applicationproperties-vs-applicationyml--which-one-to-use-when)
-27. [other-options-than-autowired](https://github.com/emranxec/KeepLearning#q-other-options-than-autowired)
-28. [singleton-scope-in-spring-vs-singleton-class-in-java](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
-29. [how-to-create-bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
+27. [singleton-scope-in-spring-vs-singleton-class-in-java](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
+28. [how-to-create-bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
+29. [difference-between-inject-vs-autowire-vs-resource](https://github.com/emranxec/KeepLearning#q-the-difference-between-inject-vs-autowire-vs-resource)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
