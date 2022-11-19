@@ -18,6 +18,8 @@
 2. [what-are-restful-annotations](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-restful-annotations)
 3. [write-code-to-hit-new-api-request-from-your-code](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-code-to-hit-new-api-request-from-your-code)
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
+5. [when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective](https://github.com/emranxec/KeepLearning#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
+
 
 ## DSA & design
 1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/programs.utilClasses.interviewQuestions.md)
@@ -91,6 +93,12 @@
 21. [what-is-inversion-of-control-or-dependency-injection](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-inversion-of-control-or-dependency-injection)
 22. [default-security-configuration-and-how-we-can-disable-or-customize](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-default-security-configuration-and-how-we-can-disable-or-customize)
 23. [define-all-spring-annotations-](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-define-all-spring-annotations-)
+24. [load-only-75-of-bean-classes-in-spring-how-to-achieve-it](https://github.com/emranxec/KeepLearning#q-if-we-want-to-load-only-75-of-bean-classes-in-spring-how-to-achieve-it)
+25. [can-we-use-component-configuration-classes-be-final](https://github.com/emranxec/KeepLearning#q-can-we-use-componentconfiguration-classes-be-final)
+26. [difference-between-application-properties-vs-application-yml--which-one-to-use-when](https://github.com/emranxec/KeepLearning#q-difference-between-applicationproperties-vs-applicationyml--which-one-to-use-when)
+27. [other-options-than-autowired](https://github.com/emranxec/KeepLearning#q-other-options-than-autowired)
+28. [singleton-scope-in-spring-vs-singleton-class-in-java](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
+29. [how-to-create-bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
