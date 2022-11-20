@@ -17,14 +17,14 @@ public class SingletonConfig {
     @Autowired
     private Student s2;
 
-    @Autowired
+ /*   @Autowired
     @Qualifier("s7")
     private Student s7;
 
     @Bean(name = "s7")
     public Student s7(){
         return new Student();
-    }
+    }*/
     @Bean("s3")
     public Student s3(){
         return new Student();
@@ -50,7 +50,9 @@ public class SingletonConfig {
         s5.setName("ibrahim");
         Student s6 = new Student();
         s6.setName("aman");
+/*
         s7.setName("heena");
+*/
         System.out.println("are s5 & s6 is equal? " + (s5==s6));
         System.out.println("s1 name " + s1.getName());
         System.out.println("s2 name " + s2.getName());
@@ -58,6 +60,8 @@ public class SingletonConfig {
         System.out.println("s4 name " + s4.getName());
         System.out.println("s5 name " + s5.getName());
         System.out.println("s6 name " + s6.getName());
+/*
         System.out.println("s7 name " + s7.getName());
+*/
     }
 }
