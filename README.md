@@ -4554,24 +4554,10 @@ SELECT ename,sal from Employee e1 where
   GROUP by
     d.department_name;
 ```
-----
-----
-----
-# self:
-----
-### Q. how to configure techniques of JVM?
->
-----
-### Q. print all children and all parents of a treemap
-----
-### Q. what problem we face in request body if all structure is good?
-
-----
-### Q. We have to use qualifier for all 1000 implementations? any other way?
 
 ----
 ### Q. is singleton is lazy or eager loading?
-> The Spring framework, **by default, initializes all singleton beans eagerly at the application startup** and put them in application context. 
+> The Spring framework, **by default, initializes all singleton beans eagerly at the application startup** and put them in application context.
 
 > However, in some cases we need to create beans whenever they required, but not at the application startup or bootstrapping application context time.
 
@@ -4675,6 +4661,21 @@ public class Student {
     }
 }
 ```
+----
+----
+----
+# self:
+----
+### Q. how to configure techniques of JVM?
+>
+----
+### Q. print all children and all parents of a treemap
+----
+### Q. what problem we face in request body if all structure is good?
+
+----
+### Q. We have to use qualifier for all 1000 implementations? any other way?
+
 ----
 ### Q. if two API request hits at same time how to manage them?
 >
