@@ -772,6 +772,29 @@ public void addMoneyToAccount(long account) {
 - _void registerSynchronization(Synchronization s)_ registers a user synchronization callback for this transaction. 
 - _boolean wasCommitted()_ checks if the transaction is committed successfully. 
 - _boolean wasRolledBack()_ checks if the transaction is rollback successfully.
+
+```java
+public void insertStudent() {
+Transaction transaction = null;
+try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+// start a transaction
+transaction = session.beginTransaction();
+
+            String hql = "INSERT INTO Student (firstName, lastName, email) " +
+                "SELECT firstName, lastName, email FROM Student";
+            Query query = session.createQuery(hql);
+            int result = query.executeUpdate();
+            System.out.println("Rows affected: " + result);
+
+            // commit transaction
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+        }
+    }
+```
 ----
 ### Q. what are RESTFUL annotations?
 #### JAX-RS Annotations
@@ -4678,9 +4701,6 @@ public class Student {
 
 ----
 ### Q. if two API request hits at same time how to manage them?
->
-----
-### Q. how to manage transactions in hibernate vs transactions in Spring
 >
 ----
 ### Q. send image object of 20mb in json request
