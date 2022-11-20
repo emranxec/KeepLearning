@@ -4530,6 +4530,31 @@ SELECT ename,sal from Employee e1 where
         N-1 = (SELECT COUNT(DISTINCT sal)from Employee e2 where e2.sal > e1.sal) 
 ```
 ----
+### Q. total number of employee name from department where department has maximum employees join which year
+```roomsql
+  with EmployeeStartFinYear(FinYear, totalEmployee) as (
+    select
+      top 1 e.join_year,
+      COUNT(*)
+    from
+      employees e
+      join departments d on e.department_id = d.department_id
+    GROUP by
+      e.join_year
+    ORDER BY
+      e.join_year
+  )
+  select
+    COUNT(e.employee_name),
+    d.department_name
+  from
+    EmployeeStartFinYear
+    join employees e on e.join_year = FinYear
+    join departments d on e.department_id = d.department_id
+  GROUP by
+    d.department_name;
+```
+----
 ----
 ----
 # self:
@@ -4538,10 +4563,6 @@ SELECT ename,sal from Employee e1 where
 >
 ----
 ### Q. print all children and all parents of a treemap
-
-----
-### Q. all the employee name from department where department has maximum employees join which year
-
 ----
 ### Q. what problem we face in request body if all structure is good?
 
@@ -4550,6 +4571,110 @@ SELECT ename,sal from Employee e1 where
 
 ----
 ### Q. is singleton is lazy or eager loading?
+> The Spring framework, **by default, initializes all singleton beans eagerly at the application startup** and put them in application context. 
+
+> However, in some cases we need to create beans whenever they required, but not at the application startup or bootstrapping application context time.
+
+> In Spring, we can achieve this by using @Lazy annotation.
+
+#### Spring Lazy Initialization
+1. Using @Lazy on @Bean method
+> note that  the results in console, customerBean not initialized on startup.
+```java
+    @Configuration
+    @ComponentScan("com.javabydeveloper.spring.lazy")
+    public class AppConfigForLazy {
+    @Bean
+    public Company companyBean(){
+    return new Company();
+    }
+    @Bean
+    public Employee employeeBean(){
+    return new Employee();
+    }
+    
+        @Lazy
+        @Bean
+        public Customer customerBean(){
+            return new Customer();
+        }
+    }
+```
+- Using @Lazy on @Bean method
+> If Lazy is present on a @Configuration class, this indicates that all @Bean methods within that @Configuration should be lazily initialized.
+```java
+   @Lazy
+   @Configuration
+   @ComponentScan("com.javabydeveloper.spring.lazy")
+   public class AppConfigForLazy {
+   @Bean
+   public Company companyBean(){
+   return new Company();
+   }
+   @Bean
+   public Employee employeeBean(){
+   return new Employee();
+   }
+
+   @Bean
+   public Customer customerBean(){
+   return new Customer();
+   }
+   }
+
+```
+- Eager Initialization using @Lazy(value = false)
+> If we place @Lazy at @Configuration class, all the @Bean methods within that class should be initialized lazy.
+```java
+    @Lazy
+    @Configuration
+    @ComponentScan("com.javabydeveloper.spring.lazy")
+    public class AppConfigForLazy {
+    @Bean
+    public Company companyBean(){
+    return new Company();
+    }
+    @Bean
+    public Employee employeeBean(){
+    return new Employee();
+    }
+    
+        @Lazy(value = false)
+        @Bean
+        public Customer customerBean(){
+            return new Customer();
+        }
+    }
+```
+- @Lazy with @Autowired
+> student instance will be created when ever it access using user.getStudent().
+```java
+@Component
+public class User {
+
+@Lazy
+@Autowired
+private Student student;
+public User() {
+System.out.println("User Instance Created");
+}
+public Student getStudent() {
+return student;
+}
+}
+@Lazy
+@Component
+public class Student {
+    public Student() {
+        System.out.println("Student Instance Created");
+    }
+
+    private String name;
+    public String getName() {
+        return name;
+    }
+}
+```
 ----
 ### Q. if two API request hits at same time how to manage them?
 >
