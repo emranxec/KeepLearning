@@ -4685,6 +4685,11 @@ public class Student {
 }
 ```
 ----
+### Q. Chocolate Distribution Problem
+
+[ChocolateDistributionProgram.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/ChocolateDistributionProgram.java)
+
+----
 ----
 ----
 # self:
@@ -4704,9 +4709,6 @@ public class Student {
 >
 ----
 ### Q. send image object of 20mb in json request
->
-----
-### Q. [4,5,3,2,1,9,5,4,3,34,35,36] child=3 , find minimum difference of 1st-3rd child.
 >
 ----
 ### Q. How to check all API status and save if all success else fail all
