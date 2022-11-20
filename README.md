@@ -4272,7 +4272,6 @@ System.out.println(department.getName());
 ----
 ### Q. where variables ,static variable , block and method saves data?
 
-
 #### Heap Memory
 > Heap memory is the runtime data area shared among all JVM threads to allocate memory for all class instances and arrays.
 
@@ -4288,6 +4287,18 @@ System.out.println(department.getName());
 > Before Java 8, PermGen stores static members like static methods and static variables. Additionally, PermGen also stores interned strings.
 
 > Since Java 8, Metaspace only stores the class metadata, and heap memory keeps the static members.
+
+> Method area: In the method area, all class level information like class name, immediate parent class name, methods and variables information etc. are stored, including static variables. There is only one method area per JVM, and it is a shared resource. 
+
+> From java 8, static variables are now stored in Heap area.
+
+> Heap area: Information of all objects is stored in the heap area. There is also one Heap Area per JVM. It is also a shared resource.
+
+> Stack area: For every thread, JVM creates one run-time stack which is stored here. Every block of this stack is called activation record/stack frame which stores methods calls. All local variables of that method are stored in their corresponding frame. After a thread terminates, its run-time stack will be destroyed by JVM. It is not a shared resource.
+
+> PC Registers: Store address of current execution instruction of a thread. Obviously, each thread has separate PC Registers.
+
+> Native method stacks: For every thread, a separate native stack is created. It stores native method information.
 
 #### Classes (loaded by the classloaders)
 > go in a special area on heap : Permanent Generation until java 8
@@ -4505,7 +4516,7 @@ public abstract void execute();
 ----
 # self:
 ----
-### Q. how to configure techniques of JVM?  NOT RESOLVED
+### Q. how to configure techniques of JVM?
 >
 ----
 ### Q. print 4th highest salary
