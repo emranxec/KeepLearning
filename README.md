@@ -4512,6 +4512,24 @@ public abstract void execute();
 ![image](https://user-images.githubusercontent.com/16031518/202841356-6f371f60-af30-43fa-8558-9bb2ea37d11a.png "hashset vs Treeset")
 
 ----
+### Q. print 4th highest salary
+```roomsql
+SELECT * FROM Employee WHERE sal =
+(
+    SELECT MIN(sal) FROM Employee
+        WHERE  sal IN (
+            SELECT DISTINCT TOP N
+            sal FROM Employee
+            ORDER BY sal DESC
+        )
+)
+
+--2nd approach
+
+SELECT ename,sal from Employee e1 where 
+        N-1 = (SELECT COUNT(DISTINCT sal)from Employee e2 where e2.sal > e1.sal) 
+```
+----
 ----
 ----
 # self:
@@ -4519,13 +4537,10 @@ public abstract void execute();
 ### Q. how to configure techniques of JVM?
 >
 ----
-### Q. print 4th highest salary
->
-----
-### Q. print all children and all parents
+### Q. print all children and all parents of a treemap
 
 ----
-### Q. all the employee name from department ->AB && which department has maximum employees join which year
+### Q. all the employee name from department where department has maximum employees join which year
 
 ----
 ### Q. what problem we face in request body if all structure is good?
