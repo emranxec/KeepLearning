@@ -1626,9 +1626,6 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ### Q. what is functional interface?
 [functional-interfaces-java](https://www.geeksforgeeks.org/functional-interfaces-java/?ref=lbp)
 ----
-### Q. how to configure techniques of JVM?  NOT RESOLVED
->
-----
 ### Q. why serialize a object? How to serialize and deserialize object? 
 ### Q. explain Serialisation, UUID and its concepts?
 
@@ -3689,9 +3686,6 @@ private String name;
 [patterns](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/Patterns.java)
 
 ----
-### Q. print 4th highest salary
->
-----
 ### Q. print Fibonacci
 
 [fibbonacci.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/fibbonacci.java)
@@ -3768,13 +3762,6 @@ id, name, mgid
 [IteratorProgram.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/IteratorProgram.java)
 
 ----
-### Q. print all children and all parents
-
-----
-### Q. all the employee name from department ->AB && which department has maximum employees join which year
-
-----
-
 ### Q. print all words start with G using streams?
 
 [program23.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program23.java)
@@ -4172,18 +4159,6 @@ public class DBConfiguration {
 [jersey-client-to-use-the-same-json-format-that-the-server](https://stackoverflow.com/questions/31622055/how-do-i-configure-the-jersey-client-to-use-the-same-json-format-that-the-server)
 
 ----
-### Q. what problem we face in request body if all structure is good?
-
-----
-### Q. We have to use qualifier for all 1000 implementations? any other way?
-
-----
-### Q. is singleton is lazy or eager loading?
-
-----
-### Q. if two API request hits at same time how to manage them?
->
-----
 ### Q. how to remove special characters from json body parameters?
 ```
 BufferedReader reader = new BufferedReader(new FileReader(new File("resources/json29.txt")));
@@ -4239,9 +4214,6 @@ System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(data));
 ```
 
 ----
-### Q. how to manage transactions in hibernate vs transactions in Spring
->
-----
 ### Q. session.commit vs session.flush
  - flush(): 
 > Flushing is the process of synchronizing the underlying persistent store with persistable state held in memory.
@@ -4256,9 +4228,6 @@ System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(data));
 > So You should commit but it also **ends the unit of work.**
 
 ----
-### Q. send image object of 20mb in json request
->
-----
 ### Q. How ArrayList internally works?
 - ArrayList is a resizable array implementation in java. 
 - The backing data structure of ArrayList is an array of Object class. 
@@ -4268,9 +4237,6 @@ System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(data));
 - When an element is added to an ArrayList it first checks whether the new element has room to fill or it needs to grow the size of the internal array, 
 - If capacity has to be increased then the new capacity is calculated which is 50% more than the old capacity and the array is increased by that capacity.
 
-----
-### Q. [4,5,3,2,1,9,5,4,3,34,35,36] child=3 , find minimum difference of 1st-3rd child.
->
 ----
 ### Q. how to disable first level cache in hibernate
 > First level cache is enabled by default, and you can not disable it.
@@ -4530,22 +4496,49 @@ public abstract void execute();
 > We need to be notified after executing task has finished. We pass a callback method for the executor and wait for it to call back on us.
 
 ----
-### Q. How to check all API status and save if all success else fail all
->
-----
 ### Q. hashset vs treeset
 
 ![image](https://user-images.githubusercontent.com/16031518/202841356-6f371f60-af30-43fa-8558-9bb2ea37d11a.png "hashset vs Treeset")
 
-
-----
-### Q. 
->
 ----
 ----
 ----
 # self:
+----
+### Q. how to configure techniques of JVM?  NOT RESOLVED
+>
+----
+### Q. print 4th highest salary
+>
+----
+### Q. print all children and all parents
 
+----
+### Q. all the employee name from department ->AB && which department has maximum employees join which year
+
+----
+### Q. what problem we face in request body if all structure is good?
+
+----
+### Q. We have to use qualifier for all 1000 implementations? any other way?
+
+----
+### Q. is singleton is lazy or eager loading?
+----
+### Q. if two API request hits at same time how to manage them?
+>
+----
+### Q. how to manage transactions in hibernate vs transactions in Spring
+>
+----
+### Q. send image object of 20mb in json request
+>
+----
+### Q. [4,5,3,2,1,9,5,4,3,34,35,36] child=3 , find minimum difference of 1st-3rd child.
+>
+----
+### Q. How to check all API status and save if all success else fail all
+>
 ----
 ### Q. test your application
 
