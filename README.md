@@ -3488,24 +3488,6 @@ process or not. If yes then terminate the startup process for second instance.
 [SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
 
 ----
-### Q. Data structure and usages
-- PriorityQueue Usages
-> A network printer where multiple people submit print jobs at the same time, While one big print job is
-executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
-pages) execute on priority compared to big ones.
-
->Emergency department in any hospital handles patients based on their severity, thus priority queue could
- use to implement such logic.
-
-- Binary Heap
-> Finding top 10 most frequently used words in a very large file in O(n)
-
-> Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
-
-
-
-----
-
 ### Q. Prevent Breaking a programs.Singleton Class Pattern
 
 ```java
@@ -3918,6 +3900,7 @@ settings, other beans, and various property settings
 - @EnableAutoConfiguration 
 - @ComponentScan
 
+
 #### Spring MVC and REST Annotations
 
 - @Controller (on class level)
@@ -3946,6 +3929,10 @@ GET, PUT, POST, DELETE, and PATCH.
 >The @RequestParam annotation is used with @RequestMapping to bind a web request parameter to
   the parameter of the handler method.
 
+- @EnableWebMvc
+> The @EnableWebMvc annotation provides the Spring Web MVC configuration such as setting
+up the dispatcher servlet, enabling the @Controller and the @RequestMapping annotations
+and setting up other defaults.
 
 ----
 ### Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
@@ -4694,6 +4681,35 @@ public class Student {
 ----
 # self:
 
+----
+### Q. when to use what collection?
+#### HashSet 
+- it will offer Big O(1) time complexity
+
+- we must override equals() and hashcode()
+- scenarios:
+> Given 1 million trades objects, you need to write a method that searches if
+the specified trade is contained in the collection or not.
+
+#### PriorityQueue 
+- elements are stored in a sorted order according to some priority associated with them
+- the element with the higher priority is served before the element with lower priority.
+
+> A network printer where multiple people submit print jobs at the same time, While one big print job is
+executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
+pages) execute on priority compared to big ones.
+
+>Emergency department in any hospital handles patients based on their severity, thus priority queue could
+use to implement such logic.
+
+- Binary Heap
+> Finding top 10 most frequently used words in a very large file in O(n)
+
+> Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
+
+----
+### Q. handle pagination using webservice?
+>
 ----
 ### Q. how to configure techniques of JVM?
 >
