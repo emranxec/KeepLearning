@@ -225,7 +225,7 @@ final class programs.utilClasses.immmutableClass{
 ```
 ##### Example of Immutable Classes in JDK
 > All primitive Wrapper classes (Number, Integer, Long, Float, Double, etc), String Class, Color Class, BigInteger
-& BigDecimal class, CopyOnWriteArrayList & CopyOnWriteArraySet
+> & BigDecimal class, CopyOnWriteArrayList & CopyOnWriteArraySet
 
 
 ----
@@ -557,8 +557,8 @@ List<Integer> flatList
 > [difference-between-map-and-flatmap-in-java-stream](https://www.geeksforgeeks.org/difference-between-map-and-flatmap-in-java-stream/) 
 ----
 ### Q. what is spring global exception?
-> Spring framework offers developers several options for handling exceptions in their applications. 
-One of which is global exception handler with @ControllerAdvice and @ExceptionHandler annotations
+> Spring framework offers developers several options for handling exceptions in their applications.
+> One of which is global exception handler with @ControllerAdvice and @ExceptionHandler annotations
  ```java
 @ControllerAdvice
 public class GlobalExceptionHandler {
@@ -1195,9 +1195,9 @@ as owner3_1_0_ from comment commententity0_ where commententity0_.id=?`
 >
 `str = str.concat(" base");`
 
->At this point in the example above, we have two String objects: the first one we created with value “knowledge”, 
-pointed to by s, and the second one “knowledge base”, pointed to by str. But, technically, we have three String 
-objects, **the third one being the literal “base” in the concat statement.**
+> At this point in the example above, we have two String objects: the first one we created with value “knowledge”,
+> pointed to by s, and the second one “knowledge base”, pointed to by str. But, technically, we have three String
+> objects, **the third one being the literal “base” in the concat statement.**
 ----
 ### Q. what is Class not found and No class def error?
 > **ClassNotFoundException** is raised in the below program as class “MyFirstJavaClass” is not found in the classpath.
@@ -1658,9 +1658,9 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 - You can also prevent some data in your object from being serialized by marking the attribute as **transient**.
 
 #### Real World Example:
->ATM: When the account holder tries to withdraw money from the server through ATM, 
-the account holder information like withdrawal details will be serialized and sent 
-to the server where the details are deserialized and used to perform operations.
+> ATM: When the account holder tries to withdraw money from the server through ATM,
+> the account holder information like withdrawal details will be serialized and sent
+> to the server where the details are deserialized and used to perform operations.
 
 
 #### SerialVersionUID
@@ -2088,9 +2088,9 @@ throw new RuntimeException();
 ----
 ### Q. explain @mappedBy?
 
-> In JPA or Hibernate, entity associations are directional, either unidirectional or 
-bidirectional. Always mappedBy attribute is used in **bidirectional association** to link 
-with other side of entity.
+> In JPA or Hibernate, entity associations are directional, either unidirectional or
+> bidirectional. Always mappedBy attribute is used in **bidirectional association** to link
+> with other side of entity.
 
 
 ```java
@@ -2548,8 +2548,8 @@ public class OrderProcessor {
 - Composition Over Inheritance Principle
 > The principle states that we should have to **implement interfaces rather than extending the classes.** 
 > We implement the inheritance when
-The class need to implement all the functionalities
-The child class can be used as a substitute for our parent class.
+> The class need to implement all the functionalities
+> The child class can be used as a substitute for our parent class.
 ----
 ### Q. explain StackOverFlow vs OOM?
 > Whenever you run a java program or java application, operating system allocates some memory to JVM. 
@@ -2667,8 +2667,8 @@ public class UniversityController {
 
 ----
 ### Q. explain Hibernate inheritance?
-> Entity inheritance means that we can use polymorphic queries for retrieving 
-all the subclass entities when querying for a superclass.
+> Entity inheritance means that we can use polymorphic queries for retrieving
+> all the subclass entities when querying for a superclass.
 
 #### Hibernate Single Table Strategy (strategy=InheritanceType.SINGLE_TABLE)
 
@@ -2809,10 +2809,10 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 ```
 
 - JTA transaction Manager 
-> If however, you have business operations that can modify multiple data stores at the same time and you 
-need to ensure data consistency across all the stores, you will need to use JTA transactions. 
-JTA support is provided either by JavaEE containers like JBoss, WebLogic or WebSphere or third-party 
-JTA providers like Atomikos or Bitronix.
+> If however, you have business operations that can modify multiple data stores at the same time and you
+> need to ensure data consistency across all the stores, you will need to use JTA transactions.
+> JTA support is provided either by JavaEE containers like JBoss, WebLogic or WebSphere or third-party
+> JTA providers like Atomikos or Bitronix.
 
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -2930,9 +2930,9 @@ collect1.forEach(System.out::println);
 -  Spring allows you to easily connect with database and queue services like Oracle, PostgreSQL, MySQL, MongoDB, Redis, Solr.
 
 > Suppose your application want to interact with
-DB, if there are Spring Data libraries on class
-path then it automatically sets up connection to
-DB along with the Data Source class.
+> DB, if there are Spring Data libraries on class
+> path then it automatically sets up connection to
+> DB along with the Data Source class.
 
 
 #### pom.xml
@@ -2995,8 +2995,8 @@ public class DevDatasourceConfig{}
 > Git merge is one of the merging techniques in git, in which the logs of commits on branches are intact.
 
 - Advantages:
->The logs are very exhaustive and can help in understanding the complete history of how and when each merge happened
-It is easy to find mistakes and resolve them.
+> The logs are very exhaustive and can help in understanding the complete history of how and when each merge happened
+> It is easy to find mistakes and resolve them.
 
 - Disadvantages:
 >Results in a clumsy log / history. Not very user-friendly
@@ -3081,16 +3081,16 @@ triggers will be fired and no rollback.
 ### Q. What are clustered and non-clustered indexes in database?
 
 - Clustered Index
->Clustered index physically rearrange the data that users inserts in your tables. It is nothing but a dictionary
-type data where actual data remains. And thus the physical order of the rows is the same as the logical order
+> Clustered index physically rearrange the data that users inserts in your tables. It is nothing but a dictionary
+> type data where actual data remains. And thus the physical order of the rows is the same as the logical order
 (indexed order). This type of index is often build over the **Primary Key of a table**
 - Non-Clustered Index
->Non-Clustered Index contains pointers to the data that is stored in the data page. It is a kind of index backside
-of the book where you see only the reference of a kind of data.
+> Non-Clustered Index contains pointers to the data that is stored in the data page. It is a kind of index backside
+> of the book where you see only the reference of a kind of data.
 
 > Clustered index usually provides faster data retrieval than the non-clustered index. Moreover clustered indexes
-provides faster access to the contiguous rows because those rows are present physically adjacent in the actual
-table
+> provides faster access to the contiguous rows because those rows are present physically adjacent in the actual
+> table
 
 ----
 ### Q. What are OneToOne, OneToMany and ManyToMany relationship mappings in database design?
@@ -3238,14 +3238,14 @@ session.close();
 
 ----
 ### Q. What is Inversion of Control (or Dependency Injection)?
->The basic concept of IOC (Dependency of Injection) is that you do not create your objects but describe how
-they should be created.
+> The basic concept of IOC (Dependency of Injection) is that you do not create your objects but describe how
+> they should be created.
 
->You don’t directly connect your component and services together in code but describe which services are
-needed by which component in configuration file.
+> You don’t directly connect your component and services together in code but describe which services are
+> needed by which component in configuration file.
 
->You just need to describe the dependency, the Spring container is then responsible for wiring it all up. It
-promotes Loose coupling with minimal effort and least intrusive mechanism. 
+> You just need to describe the dependency, the Spring container is then responsible for wiring it all up. It
+> promotes Loose coupling with minimal effort and least intrusive mechanism. 
 
 >IoC container have configurable option for eager or lazy initialization of beans services.
 ----
@@ -3289,8 +3289,8 @@ promotes Loose coupling with minimal effort and least intrusive mechanism.
 </dependency>
 ```
 
->If we don't configure the password using the predefined property spring.security.user.password and start the application, 
-a default password is randomly generated and printed in the console log:
+> If we don't configure the password using the predefined property spring.security.user.password and start the application,
+> a default password is randomly generated and printed in the console log:
 
 > Using default security password: c8be15de-4488-4490-9dc6-fab3f91435c6
 
@@ -3402,7 +3402,7 @@ public class InMemoryAuthWebSecurityConfigurer
  default ordering behavior (natural ordering)
 
 > Comparator is implemented like an **Adaptor Design Pattern** where a separate class is
-dedicated for providing the comparison behavior.
+> dedicated for providing the comparison behavior.
 
 - Using Comparator in Java 8 is very easy with Lambda Expression
 ```
@@ -3853,41 +3853,41 @@ session.flush();
 > This annotation has a automatic translation feature. 
 
 > For
-example, when an exception occurs in
-the@Repository there is a handler for that exception and
-there is no need to add a try catch block.
+> example, when an exception occurs in
+> the@Repository there is a handler for that exception and
+> there is no need to add a try catch block.
 
 - @Bean (on method level)
 >  @Bean annotation works with @Configuration to create Spring beans.
 
 - @ComponentScan
 > This annotation is used with @Configuration annotation
-to allow Spring to know the packages to scan for
-annotated components.
+> to allow Spring to know the packages to scan for
+> annotated components.
 
 - @Lazy (on method level)
 > This annotation is used on component classes.
-By default, all autowired dependencies are created and
-configured at startup.
+> By default, all autowired dependencies are created and
+> configured at startup.
 
 - @Value (on field, constructor parameter,method parameter)
 > The @Value annotation indicates a default value expression for the field or
-parameter to initialize the property with
+> parameter to initialize the property with
 
 #### Spring Boot Annotations
 - @Configuration
 > It is used on classes which define beans.
-@Configuration is an analog for XML configuration file
-– it is configuration using Java class. J
-ava class annotated with @Configuration is a
-configuration by itself and will have methods to
-instantiate and configure the dependencies.
+> @Configuration is an analog for XML configuration file
+> – it is configuration using Java class. J
+> ava class annotated with @Configuration is a
+> configuration by itself and will have methods to
+> instantiate and configure the dependencies.
 
 - @EnableAutoConfiguration (on e main application class)
 >  The @EnableAutoConfiguration annotation implicitly defines a base “search package”.
 
 > This annotation tells Spring Boot to start adding beans based on classpath
-settings, other beans, and various property settings
+> settings, other beans, and various property settings
 
 - @SpringBootApplication (on e main application class)
 >  The class that is annotated with the @SpringBootApplication must be kept in the base package.
@@ -3905,7 +3905,7 @@ settings, other beans, and various property settings
 
 - @Controller (on class level)
 > The @Controller annotation allows auto-detection of component classes in the classpath
-and auto-registering bean definitions for them.
+> and auto-registering bean definitions for them.
 
 - @RequestMapping (on class & method level)
 > The @RequestMapping annotation is used to map web requests onto specific handler classes and handler methods.
@@ -3923,7 +3923,7 @@ return "welcome all";
 }
 ```
 > The Spring MVC @RequestMapping annotation is capable of handling HTTP request methods, such as
-GET, PUT, POST, DELETE, and PATCH.
+> GET, PUT, POST, DELETE, and PATCH.
 
 - @RequestParam
 >The @RequestParam annotation is used with @RequestMapping to bind a web request parameter to
@@ -3931,8 +3931,8 @@ GET, PUT, POST, DELETE, and PATCH.
 
 - @EnableWebMvc
 > The @EnableWebMvc annotation provides the Spring Web MVC configuration such as setting
-up the dispatcher servlet, enabling the @Controller and the @RequestMapping annotations
-and setting up other defaults.
+> up the dispatcher servlet, enabling the @Controller and the @RequestMapping annotations
+> and setting up other defaults.
 
 ----
 ### Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
@@ -4104,20 +4104,20 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 ----
 ### Q. When to use path param or when to use Query param? as per design perspective?
 > Request URI parameters are added to end of URL that refer/point to specific REST API
-resource.
-There are two types of parameters: 
+> resource.
+> There are two types of parameters: 
 - Path Parameters 
 - Query Parameters.
 
 #### PATH PARAMETER
 > Path Parameters are a part of URI. It takes you to the specific endpoint/resource. They are added to URI after ‘/’
-in curly braces {}. Path parameters point to specific REST API resource within a collection.
+> in curly braces {}. Path parameters point to specific REST API resource within a collection.
 
 >– GET /students/{grade}
 
 #### QUERY PARAMETE
 > Query Parameter in NOT part of URI. They are added to URI after a question mark symbol (‘?’) with
-name=value pairs separated by ampersands symbol (&). They define sort, pagination and filter operations.
+> name=value pairs separated by ampersands symbol (&). They define sort, pagination and filter operations.
 
 > GET /students?offset=50&limit=20
 
@@ -4401,7 +4401,7 @@ M (like java/lang/Object) and optimization information goes into the Permanent G
 > @SpringBootApplication(exclude = {EmbeddedServletContainerAutoConfiguration.class, WebMvcAutoConfiguration.class})
 
 > And need to add the below property to non-rest applications so that spring boot does not try to start the
-WebApplicationContext. This should go to the application.properties.
+> WebApplicationContext. This should go to the application.properties.
 
 > spring.main.web-environment=false
 
@@ -4689,18 +4689,18 @@ public class Student {
 - we must override equals() and hashcode()
 - scenarios:
 > Given 1 million trades objects, you need to write a method that searches if
-the specified trade is contained in the collection or not.
+> the specified trade is contained in the collection or not.
 
 #### PriorityQueue 
 - elements are stored in a sorted order according to some priority associated with them
 - the element with the higher priority is served before the element with lower priority.
 
 > A network printer where multiple people submit print jobs at the same time, While one big print job is
-executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
-pages) execute on priority compared to big ones.
+> executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
+> pages) execute on priority compared to big ones.
 
->Emergency department in any hospital handles patients based on their severity, thus priority queue could
-use to implement such logic.
+> Emergency department in any hospital handles patients based on their severity, thus priority queue could
+> use to implement such logic.
 
 - Binary Heap
 > Finding top 10 most frequently used words in a very large file in O(n)
@@ -4742,6 +4742,12 @@ for(
 
 [lazy_initialization_exception](https://thorben-janssen.com/lazyinitializationexception)
 
+----
+### Q. {2,-3,4,-5,6,-7,0,8,-8}
+>
+----
+### Q. Qualifier replacement
+>
 ----
 ### Q. handle pagination using webservice?
 >
