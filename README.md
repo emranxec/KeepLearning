@@ -730,10 +730,10 @@ accountService.addMoneyToAccount(accountTo);
 > Spring allows managing the isolation level. The default strategy for most databases is READ_COMMITTED,
 > but we have other ones such as: READ_UNCOMMITTED, REPEATABLE_READ and SERIALIZABLE.
 
-- READ_COMMITTED will only read committed operations to the database and maintain us safe from dirty reads.
-- READ_UNCOMMITTED allows the current transaction to read the uncommitted changes from another transaction. The lowest isolation level.
-- REPEATABLE_READ prevent dirty reads and if one row is read more than one time in a single transaction, the read result will always be the same.
-- SERIALIZABLE prevents non-repeatable reads, dirty reads, and phantom reads. Has impact on performance.
+- **READ_COMMITTED** will only read committed operations to the database and maintain us safe from dirty reads.
+- **READ_UNCOMMITTED** allows the current transaction to read the uncommitted changes from another transaction. The lowest isolation level.
+- **REPEATABLE_READ** prevent dirty reads and if one row is read more than one time in a single transaction, the read result will always be the same.
+- **SERIALIZABLE** prevents non-repeatable reads, dirty reads, and phantom reads. Has impact on performance.
 
 #### Propagation
 >Below are propagation levels:
