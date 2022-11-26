@@ -4749,6 +4749,97 @@ for(
 ### Q. Qualifier replacement
 >
 ----
+### Q. can we create final class inside abstract class?
+-  class - abstract (cannot create object)
+-  class - static  (new MyOuterClass.MyInnerClass())
+-  class - final  (new MyOuterClass().new MyInnerClass();)
+-  class - static abstract (cannot create object)
+-  class - static final (new MyOuterClass.MyInnerClass())
+-  abstract - static (new MyOuterClass.MyInnerClass();)
+-  abstract - static final (new MyOuterClass.MyInnerClass();)
+-  abstract - class (cannot create object)
+-  abstract - final (cannot create object)
+-  final - static ( new MyOuterClass.MyInnerClass();)
+-  final - abstract (cannot create object)
+-  final - class( new MyOuterClass().new MyInnerClass2();)
+       
+----
+### Q.what is aggregation vs combination & is-A vs Has-A?
+
+#### IS-A relationship [inheritance]
+ ```java
+class Apple extends Fruit {
+}
+ ```
+#### HAS-A relationship
+> Association is a relation between two separate classes which establishes through their Objects. Association can be one-to-one, one-to-many, many-to-one, many-to-many.
+
+> Composition and Aggregation are the two forms of association.
+
+- Aggregation [Has-A] [unidirectional association] [weak Association]
+> Student Has-A name. Student Has-A ID. Student Has-A Dept
+
+> Department Has-A Students
+
+> Institute Has-A Departments
+ ```java
+class Student {
+
+    // Attributes of student
+    String name;
+    int id;
+    String dept;
+}
+class Department {
+    // Attributes of Department class
+    String name;
+    private List<Student> students;
+}
+class Institute {
+
+    // Attributes of Institute
+    String instituteName;
+    private List<Department> departments;
+}
+```
+
+- Composition [part-of] [part-of relationship] [dependent on each other] [strong Association]
+> Composition is a restricted form of Aggregation in which two entities are highly dependent on each other.
+
+```java
+public class House
+{
+private Room room;
+public House()
+{
+room = new Room();
+}
+}
+```
+----
+### Q. How HashSet checks for duplicates in Java?
+> When you put an object into a HashSet, it uses hashcode value to determine where to put the object in the set. 
+
+> It also compares the objects hashcode value to other object's hashcode in the hashset. 
+ 
+> But two objects having same hashcode might not be equal. 
+
+>If the hashcode of two objects are equal then hashset uses equal() to see if the hashcode matched objects are really equal. 
+
+>And if they are equal the hashset knows that the new object is duplicate of something exist in the HashSet. 
+And the add does not happen. The add() of hashcode returns false.
+
+----
+### Q. create a user defined functinal interface?
+```java
+@FunctionalInterface
+public interface Lambda {
+public String demo();
+}
+Lambda lambda = ()-> "new lambda";
+System.out.println(lambda.demo());
+```
+----
 ### Q. handle pagination using webservice?
 >
 ----

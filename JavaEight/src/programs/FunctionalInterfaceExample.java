@@ -7,8 +7,9 @@ public class FunctionalInterfaceExample {
 
     public static void main(String[] args) {
         int x=10;
-        Lambda lambda= ()-> System.out.println("new lambda");
-        lambda.demo();
+        Lambda lambda = ()-> "new lambda";
+        System.out.println(lambda.demo());
+
         new Thread(()-> System.out.println("The value of x is "+x)).start();
 
         NumberWorker<Integer> computerNumber= (n)-> {

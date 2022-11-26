@@ -23,6 +23,7 @@ public class fruitshop {
         fruitBuilder.displayCheaperFruit();
         fruitBuilder.displayCostlyFruit();
         fruitBuilder.displayMaxPriceOfEachFruit();
+        fruitBuilder.displayTotalNumberOfFruitsByName();
 
 
         fruitBuilder.displayFruitsByPriceCategory(3);
@@ -50,6 +51,8 @@ public class fruitshop {
 
         fruitBuilder.printFruits(fruitBuilder.getFruits(),f->f.getPrice()>100);
         //
+
+        fruitBuilder.displayTotalNumberOfFruitsByName();
 
     }
 

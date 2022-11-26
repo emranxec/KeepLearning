@@ -427,6 +427,18 @@ public class FruitBuilder {
         System.out.println("printFruits---ends");
 
     }
+
+    public void displayTotalNumberOfFruitsByName() {
+        System.out.println("-----------------------");
+        System.out.println("displayTotalNumberOfFruitsByName---start");
+        System.out.println("groupingBy,counting");
+
+        System.out.println(fruits.stream().collect((
+                groupingBy((Fruit::getName),
+                                counting()))));
+        System.out.println("displayTotalNumberOfFruitsByName---end");
+    }
+
 }
 
 
