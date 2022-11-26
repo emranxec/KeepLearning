@@ -4886,8 +4886,8 @@ room = new Room();
 
 >If the hashcode of two objects are equal then hashset uses equal() to see if the hashcode matched objects are really equal. 
 
->And if they are equal the hashset knows that the new object is duplicate of something exist in the HashSet. 
-And the add does not happen. The add() of hashcode returns false.
+> And if they are equal the hashset knows that the new object is duplicate of something exist in the HashSet.
+> And the add does not happen. The add() of hashcode returns false.
 
 ----
 ### Q. create a user defined functional interface?
@@ -4898,6 +4898,38 @@ public String demo();
 }
 Lambda lambda = ()-> "new lambda";
 System.out.println(lambda.demo());
+```
+----
+### Q. what is class level lock vs object level lock?
+```java
+class Geek implements Runnable {
+    public void run() {
+        Lock();
+    }
+
+    public void Lock() {
+        System.out.println(
+                Thread.currentThread().getName());
+        synchronized (this) { //object level lock
+            System.out.println(
+                    "in block "
+                            + Thread.currentThread().getName());
+            System.out.println(
+                    "in block "
+                            + Thread.currentThread().getName()
+                            + " end");
+        }
+        synchronized (Geek.class) { //class level lock
+            System.out.println(
+                    "in block "
+                            + Thread.currentThread().getName());
+            System.out.println(
+                    "in block "
+                            + Thread.currentThread().getName()
+                            + " end");
+        }
+    }
+}
 ```
 ----
 ### Q. handle pagination using webservice?
