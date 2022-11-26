@@ -5018,6 +5018,11 @@ public class TestApplication {
 [spring-boot-exclude-auto-configuration-test](https://www.baeldung.com/spring-boot-exclude-auto-configuration-test)
 
 ----
+### Q. what is dependency management vs dependency?
+
+[dependency_management-vs-dependencies-tags](https://www.baeldung.com/maven-dependencymanagement-vs-dependencies-tags)
+
+----
 ### Q. handle pagination using webservice?
 >
 ----
