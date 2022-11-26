@@ -4109,23 +4109,83 @@ private ArbitraryDependency autowiredFieldDependency; // Match by Name
 - Path Parameters 
 - Query Parameters.
 
-#### PATH PARAMETER
+#### PATH PARAMETER 
 > Path Parameters are a part of URI. It takes you to the specific endpoint/resource. They are added to URI after ‘/’
 > in curly braces {}. Path parameters point to specific REST API resource within a collection.
 
 >– GET /students/{grade}
+```java
+//JSON
+@Path("/users")
+public class UserRestService {
 
-#### QUERY PARAMETE
+	@GET
+	@Path("{id}")
+	public Response getUserById(@PathParam("id") String id) {
+
+	   return Response.status(200).entity("getUserById is called, id : " + id).build();
+
+	}
+
+}
+//Spring
+
+    @GetMapping("/api/employees/{id}")
+    @ResponseBody
+    public String getEmployeesById(@PathVariable String id) {
+        return "ID: " + id;
+    }
+```
+#### QUERY PARAMETER
 > Query Parameter in NOT part of URI. They are added to URI after a question mark symbol (‘?’) with
 > name=value pairs separated by ampersands symbol (&). They define sort, pagination and filter operations.
 
+> we can use @RequestParam to extract query parameters, form parameters, and even files from the request.
+```java
+//Json
+@Path("/users")
+public class UserService {
+
+    @GET
+    @Path("/query")
+    public Response getUsers(
+            @QueryParam("from") int from,
+            @QueryParam("to") int to,
+            @QueryParam("orderBy") List<String> orderBy) {
+
+        return Response
+                .status(200)
+                .entity("getUsers is called, from : " + from + ", to : " + to
+                        + ", orderBy" + orderBy.toString()).build();
+
+    }
+
+}
+//spring
+class someClass{
+@PostMapping("/api/foos")
+@ResponseBody
+public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam String name) {
+return "ID: " + fooId + " Name: " + name;
+}
+    }
+```
 > GET /students?offset=50&limit=20
 
 #### COMPARISON - PATH PARAMETER AND QUERY PARAMETER
 
 ![image](https://user-images.githubusercontent.com/16031518/202660484-cfdcdc84-ebec-42fc-baa1-e50bf729c1ff.png)
 
+| Framework       | Path segment            | http query parameter        | 
+|-----------------|-------------------------|-----------------------------|
+| Jersey (JAX-RS) | @PathParam              | @QueryParam                 |
+| Spring RESTFul  | @PathVariable           | @RequestParam               |
+| example         | http://xyz.ir/{segment} | http://xyz.ir/?param{param} | 
 
+ramework	Path segment	http query parameter
+Jersey (JAX-RS)	@PathParam	@QueryParam
+Spring RESTFul	@PathVariable	@RequestParam
+example	http://xyz.ir/{segment}	http://xyz.ir/?param{param}
 ----
 ### Q. difference between application.properties vs application.yml ? which one to use when?
 - .properties stores data in sequential format, whereas
@@ -4830,7 +4890,7 @@ room = new Room();
 And the add does not happen. The add() of hashcode returns false.
 
 ----
-### Q. create a user defined functinal interface?
+### Q. create a user defined functional interface?
 ```java
 @FunctionalInterface
 public interface Lambda {
