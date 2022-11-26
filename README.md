@@ -4932,6 +4932,20 @@ class Geek implements Runnable {
 }
 ```
 ----
+### Q. When is a Full GC triggered?
+>A Full GC where in both the young and old generations are collected occurs when there's change in region size.
+
+-For example, if we mention
+
+>-Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m
+
+> JVM initially starts with 1GB of heap but reserves space for 2GB from OS.
+
+> So as the usage of these regions increases, based on VM ergonomics,
+> Young and old generations are resized until they reach the max reserved size of 2GB.
+
+- Same thing applies for PermSize as well, every time PermGen resizes, a full GC will occur.
+----
 ### Q. handle pagination using webservice?
 >
 ----
