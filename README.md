@@ -4935,7 +4935,7 @@ class Geek implements Runnable {
 ### Q. When is a Full GC triggered?
 >A Full GC where in both the young and old generations are collected occurs when there's change in region size.
 
--For example, if we mention
+- For example, if we mention
 
 >-Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m
 
@@ -4944,7 +4944,76 @@ class Geek implements Runnable {
 > So as the usage of these regions increases, based on VM ergonomics,
 > Young and old generations are resized until they reach the max reserved size of 2GB.
 
-- Same thing applies for PermSize as well, every time PermGen resizes, a full GC will occur.
+> Same thing applies for PermSize as well, every time PermGen resizes, a full GC will occur.
+----
+### Q. Best practices to invalidate JWT while changing passwords and logout ?
+> When No Refresh token needed and no expiry of access tokens:
+
+> when user login, create a login token in his user database with no expiry time.
+
+> Hence, while invalidating a JWT, follow the below steps,
+
+>retrieve the user info and Check whether the token is in his User database. If so allow.
+
+>When user logs out, remove only this token from his user database.
+
+>When user changes his password, remove all tokens from his user database and ask him to login again.
+
+> So with this approach, you don't need to store neither logout tokens in database until their expiry 
+> nor storing token creation time while changing password which was needed in the above cases. 
+
+>However, I believe this approach only valids if your app has requirements with no refresh token needed and no expiry of the tokens.
+
+----
+### Q. Exclude Auto-Configuration Classes in Spring Boot?
+
+#### @EnableAutoConfiguration
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@EnableAutoConfiguration(exclude=SecurityAutoConfiguration.class)
+public class ExcludeAutoConfigIntegrationTest {
+}
+```
+#### @TestPropertySource
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@TestPropertySource(properties =
+"spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration")
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
+```
+#### Using Profiles
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@ActiveProfiles("test")
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
+```
+- in  application-test.properties:
+
+> spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+#### Using a Custom Test Configuration
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = TestApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
+
+@SpringBootApplication(exclude=SecurityAutoConfiguration.class)
+public class TestApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(TestApplication.class, args);
+    }
+}
+```
 ----
 ### Q. handle pagination using webservice?
 >
