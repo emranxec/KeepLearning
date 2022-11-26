@@ -4965,7 +4965,7 @@ class Geek implements Runnable {
 >However, I believe this approach only valids if your app has requirements with no refresh token needed and no expiry of the tokens.
 
 ----
-### Q. Exclude Auto-Configuration Classes in Spring Boot?
+### Q. Exclude SecurityAutoConfiguration from Auto-Configuration Classes in Spring Boot Junit Test?
 
 #### @EnableAutoConfiguration
 ```java
@@ -5014,6 +5014,9 @@ public class TestApplication {
     }
 }
 ```
+
+[spring-boot-exclude-auto-configuration-test](https://www.baeldung.com/spring-boot-exclude-auto-configuration-test)
+
 ----
 ### Q. handle pagination using webservice?
 >
