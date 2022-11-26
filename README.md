@@ -4708,6 +4708,41 @@ use to implement such logic.
 > Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
 
 ----
+### Q. when do we get lazy initialization exception in hibernate?
+> Hibernate throws the LazyInitializationException when it needs to initialize a lazily fetched association 
+> to another entity without an active session context. That’s usually the case if you try to use an uninitialized 
+> association in your client application or web layer.
+
+```java
+class someClass {
+    EntityManager em = emf.createEntityManager();
+em.getTransaction().
+
+    begin();
+
+    TypedQuery<Author> q = em.createQuery(
+            "SELECT a FROM Author a",
+            Author.class);
+    List<Author> authors = q.getResultList();
+em.getTransaction().
+
+    commit();
+em.close();
+
+for(
+    Author author :authors)
+
+    {
+        List<Book> books = author.getBooks();
+        log.info("... the next line will throw LazyInitializationException ...");
+        books.size();
+    }
+}
+```
+
+[lazy_initialization_exception](https://thorben-janssen.com/lazyinitializationexception)
+
+----
 ### Q. handle pagination using webservice?
 >
 ----
