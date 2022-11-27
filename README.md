@@ -878,11 +878,12 @@ public class PostsClientService {
 - more lines of code, probably repeated across many rest call methods.
 - harder to maintain in the future.
 
+[spring-restful-client-resttemplate-example](https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/)
+
 > **Netflix had to deal with these problems, thus they chose to build their rest client leveraging 
 the Spring framework's capabilities: `Feign` was the name given to it.**
 
 
-[spring-restful-client-resttemplate-example](https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/)
 
 #### OpenFeign
 ```java
@@ -3250,27 +3251,27 @@ session.close();
 ----
 ### Q. What are different types of Http Status Codes?
 
-- 1xx - Informational Status Code. 
+- 1xx - **Informational** Status Code. 
 >It means request has been received and process is continuing. (Its rarely used in production)
 
-- 2xx - Success. 
+- 2xx - **Success**. 
 > Action was successfully received, understood and accepted.
 1. 200 Ok 
 2. 201 Created - new resource is created 
 3. 202 Accepted - The request has been accepted for processing, but the processing has not been completed
 
-- 3xx - Redirection. 
+- 3xx - **Redirection**. 
 > Further action must be taken in order to complete the request
 1. 302 - Temporarily Redirect (Found)
 2. 304 - Not Modified
 
-- 4xx - Client Error
+- 4xx - **Client Error**
 1. 400 - Bad Request (malformed request syntax, invalid request message, etc)
 2. 401 - Unauthorized (may ask for credentials). authenticating may make difference 
 3. 403 - Request was valid but server is refusing to respond to it, authenticating will make no difference 
 4. 404 - Not Found
 
-- 5xx - Server Error
+- 5xx - **Server Error**
 1. 500 - Internal Server Error, server encountered unexpected condition 
 2. 501 - Not Implemented 
 3. 503 - Service Unavailable (may be down for maintenance)
