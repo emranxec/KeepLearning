@@ -1,6 +1,6 @@
 package programs;
 
-public class SeparateValues {
+public class reArrangeArray {
 
     public static void main(String[] args) {
         int[] mynumbers = {2, 12, -3, 4, -5, 6, -7, 0, 8, -8}; //2,4,6,0,8,-3,-5,-7,-8

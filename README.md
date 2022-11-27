@@ -5006,6 +5006,12 @@ for(
 [lazy_initialization_exception](https://thorben-janssen.com/lazyinitializationexception)
 
 ----
+### Q. reArrangeArray
+
+[SeparateValues.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/SeparateValues.java)
+
+----
+----
 ----
 # self:
 
@@ -5055,9 +5061,7 @@ id, name, mgid
     join Employee man on emp.madid=man.id;
 ```
 ----
-### Q. {2,-3,4,-5,6,-7,0,8,-8}
->
-----
+
 ### Q. Qualifier replacement
 >
 ----
