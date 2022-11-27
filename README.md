@@ -26,7 +26,7 @@
 2. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
 3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
 4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
-5. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+5. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-when-to-use-what-collection)
 
 ## JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
