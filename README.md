@@ -4737,77 +4737,63 @@ public class Student {
 [ChocolateDistributionProgram.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/ChocolateDistributionProgram.java)
 
 ----
-----
-----
-# self:
+### Q. what is dependency management vs dependency?
+
+[dependency_management-vs-dependencies-tags](https://www.baeldung.com/maven-dependencymanagement-vs-dependencies-tags)
 
 ----
-### Q. when to use what collection?
-#### HashSet 
-- it will offer Big O(1) time complexity
+### Q. Exclude SecurityAutoConfiguration from Auto-Configuration Classes in Spring Boot Junit Test?
 
-- we must override equals() and hashcode()
-- scenarios:
-> Given 1 million trades objects, you need to write a method that searches if
-> the specified trade is contained in the collection or not.
-
-#### PriorityQueue 
-- elements are stored in a sorted order according to some priority associated with them
-- the element with the higher priority is served before the element with lower priority.
-
-> A network printer where multiple people submit print jobs at the same time, While one big print job is
-> executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
-> pages) execute on priority compared to big ones.
-
-> Emergency department in any hospital handles patients based on their severity, thus priority queue could
-> use to implement such logic.
-
-- Binary Heap
-> Finding top 10 most frequently used words in a very large file in O(n)
-
-> Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
-
-----
-### Q. when do we get lazy initialization exception in hibernate?
-> Hibernate throws the LazyInitializationException when it needs to initialize a lazily fetched association 
-> to another entity without an active session context. That’s usually the case if you try to use an uninitialized 
-> association in your client application or web layer.
-
+#### @EnableAutoConfiguration
 ```java
-class someClass {
-    EntityManager em = emf.createEntityManager();
-em.getTransaction().
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@EnableAutoConfiguration(exclude=SecurityAutoConfiguration.class)
+public class ExcludeAutoConfigIntegrationTest {
+}
+```
+#### @TestPropertySource
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@TestPropertySource(properties =
+"spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration")
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
+```
+#### Using Profiles
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+@ActiveProfiles("test")
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
+```
+- in  application-test.properties:
 
-    begin();
+> spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 
-    TypedQuery<Author> q = em.createQuery(
-            "SELECT a FROM Author a",
-            Author.class);
-    List<Author> authors = q.getResultList();
-em.getTransaction().
+#### Using a Custom Test Configuration
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = TestApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+public class ExcludeAutoConfigIntegrationTest {
+// ...
+}
 
-    commit();
-em.close();
+@SpringBootApplication(exclude=SecurityAutoConfiguration.class)
+public class TestApplication {
 
-for(
-    Author author :authors)
-
-    {
-        List<Book> books = author.getBooks();
-        log.info("... the next line will throw LazyInitializationException ...");
-        books.size();
+    public static void main(String[] args) {
+        SpringApplication.run(TestApplication.class, args);
     }
 }
 ```
 
-[lazy_initialization_exception](https://thorben-janssen.com/lazyinitializationexception)
+[spring-boot-exclude-auto-configuration-test](https://www.baeldung.com/spring-boot-exclude-auto-configuration-test)
 
-----
-### Q. {2,-3,4,-5,6,-7,0,8,-8}
->
-----
-### Q. Qualifier replacement
->
 ----
 ### Q. can we create final class inside abstract class?
 -  class - abstract (cannot create object)
@@ -4822,7 +4808,7 @@ for(
 -  final - static ( new MyOuterClass.MyInnerClass();)
 -  final - abstract (cannot create object)
 -  final - class( new MyOuterClass().new MyInnerClass2();)
-       
+
 ----
 ### Q.what is aggregation vs combination & is-A vs Has-A?
 
@@ -4878,13 +4864,13 @@ room = new Room();
 ```
 ----
 ### Q. How HashSet checks for duplicates in Java?
-> When you put an object into a HashSet, it uses hashcode value to determine where to put the object in the set. 
+> When you put an object into a HashSet, it uses hashcode value to determine where to put the object in the set.
 
-> It also compares the objects hashcode value to other object's hashcode in the hashset. 
- 
-> But two objects having same hashcode might not be equal. 
+> It also compares the objects hashcode value to other object's hashcode in the hashset.
 
->If the hashcode of two objects are equal then hashset uses equal() to see if the hashcode matched objects are really equal. 
+> But two objects having same hashcode might not be equal.
+
+>If the hashcode of two objects are equal then hashset uses equal() to see if the hashcode matched objects are really equal.
 
 > And if they are equal the hashset knows that the new object is duplicate of something exist in the HashSet.
 > And the add does not happen. The add() of hashcode returns false.
@@ -4959,70 +4945,86 @@ class Geek implements Runnable {
 
 >When user changes his password, remove all tokens from his user database and ask him to login again.
 
-> So with this approach, you don't need to store neither logout tokens in database until their expiry 
-> nor storing token creation time while changing password which was needed in the above cases. 
+> So with this approach, you don't need to store neither logout tokens in database until their expiry
+> nor storing token creation time while changing password which was needed in the above cases.
 
 >However, I believe this approach only valids if your app has requirements with no refresh token needed and no expiry of the tokens.
 
 ----
-### Q. Exclude SecurityAutoConfiguration from Auto-Configuration Classes in Spring Boot Junit Test?
+### Q. when do we get lazy initialization exception in hibernate?
+> Hibernate throws the LazyInitializationException when it needs to initialize a lazily fetched association
+> to another entity without an active session context. That’s usually the case if you try to use an uninitialized
+> association in your client application or web layer.
 
-#### @EnableAutoConfiguration
 ```java
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
-@EnableAutoConfiguration(exclude=SecurityAutoConfiguration.class)
-public class ExcludeAutoConfigIntegrationTest {
-}
-```
-#### @TestPropertySource
-```java
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
-@TestPropertySource(properties =
-"spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration")
-public class ExcludeAutoConfigIntegrationTest {
-// ...
-}
-```
-#### Using Profiles
-```java
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.DEFINED_PORT)
-@ActiveProfiles("test")
-public class ExcludeAutoConfigIntegrationTest {
-// ...
-}
-```
-- in  application-test.properties:
+class someClass {
+    EntityManager em = emf.createEntityManager();
+em.getTransaction().
 
-> spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    begin();
 
-#### Using a Custom Test Configuration
-```java
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = TestApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
-public class ExcludeAutoConfigIntegrationTest {
-// ...
-}
+    TypedQuery<Author> q = em.createQuery(
+            "SELECT a FROM Author a",
+            Author.class);
+    List<Author> authors = q.getResultList();
+em.getTransaction().
 
-@SpringBootApplication(exclude=SecurityAutoConfiguration.class)
-public class TestApplication {
+    commit();
+em.close();
 
-    public static void main(String[] args) {
-        SpringApplication.run(TestApplication.class, args);
+for(
+    Author author :authors)
+
+    {
+        List<Book> books = author.getBooks();
+        log.info("... the next line will throw LazyInitializationException ...");
+        books.size();
     }
 }
 ```
 
-[spring-boot-exclude-auto-configuration-test](https://www.baeldung.com/spring-boot-exclude-auto-configuration-test)
+[lazy_initialization_exception](https://thorben-janssen.com/lazyinitializationexception)
 
 ----
-### Q. what is dependency management vs dependency?
-
-[dependency_management-vs-dependencies-tags](https://www.baeldung.com/maven-dependencymanagement-vs-dependencies-tags)
+----
+# self:
 
 ----
+### Q. when to use what collection?
+#### HashSet 
+- it will offer Big O(1) time complexity
+
+- we must override equals() and hashcode()
+- scenarios:
+> Given 1 million trades objects, you need to write a method that searches if
+> the specified trade is contained in the collection or not.
+
+#### PriorityQueue 
+- elements are stored in a sorted order according to some priority associated with them
+- the element with the higher priority is served before the element with lower priority.
+
+> A network printer where multiple people submit print jobs at the same time, While one big print job is
+> executing, PriorityQueue could re-arrange other jobs so that the small print jobs (with very less number of
+> pages) execute on priority compared to big ones.
+
+> Emergency department in any hospital handles patients based on their severity, thus priority queue could
+> use to implement such logic.
+
+- Binary Heap
+> Finding top 10 most frequently used words in a very large file in O(n)
+
+> Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
+
+----
+
+----
+### Q. {2,-3,4,-5,6,-7,0,8,-8}
+>
+----
+### Q. Qualifier replacement
+>
+----
+
 ### Q. handle pagination using webservice?
 >
 ----
