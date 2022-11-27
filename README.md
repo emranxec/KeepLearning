@@ -5008,7 +5008,7 @@ for(
 ----
 ### Q. reArrangeArray
 
-[SeparateValues.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/SeparateValues.java)
+[reArrangeArray.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/reArrangeArray.java)
 
 ----
 ----
