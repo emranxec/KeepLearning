@@ -5032,7 +5032,7 @@ for(
 > Emergency department in any hospital handles patients based on their severity, thus priority queue could
 > use to implement such logic.
 
-- Binary Heap
+#### Binary Heap
 > Finding top 10 most frequently used words in a very large file in O(n)
 
 > Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
