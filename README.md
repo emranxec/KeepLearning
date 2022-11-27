@@ -19,7 +19,7 @@
 3. [write-code-to-hit-new-api-request-from-your-code](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-code-to-hit-new-api-request-from-your-code)
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
 5. [when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective](https://github.com/emranxec/KeepLearning#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
-
+6. [How to make sure the JSON structure is same from client to server?](https://github.com/emranxec/KeepLearning#q-how-to-make-sure-the-json-structure-is-same-from-client-to-server)
 
 ## DSA & design
 1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/programs.utilClasses.interviewQuestions.md)
@@ -57,6 +57,17 @@
 26. [prevent-breaking-a-singleton-class-pattern](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-prevent-breaking-a-programssingleton-class-pattern)
 27. [the-contract-between-equals-and-hashcode-methods-in-java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-contract-between-equals-and-hashcode-methods-in-java)
 28. [equals-method-is-overridden-without-overriding-hashcode-or-vice-versa](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
+29. [when-to-use-what-collection](https://github.com/emranxec/KeepLearning#q-when-to-use-what-collection)
+30. [when-is-a-full-gc-triggered](https://github.com/emranxec/KeepLearning#q-when-is-a-full-gc-triggered)
+31. [what-is-class-level-lock-vs-object-level-lock](https://github.com/emranxec/KeepLearning#q-what-is-class-level-lock-vs-object-level-lock)
+32. [hashset-checks-for-duplicates-in-java](https://github.com/emranxec/KeepLearning#q-how-hashset-checks-for-duplicates-in-java)
+33. [aggregation-vs-combination--is-a-vs-has-a](https://github.com/emranxec/KeepLearning#qwhat-is-aggregation-vs-combination--is-a-vs-has-a)
+34. [can-we-create-final-class-inside-abstract-class](https://github.com/emranxec/KeepLearning#q-can-we-create-final-class-inside-abstract-class)
+35. [hashset-vs-treeset](https://github.com/emranxec/KeepLearning#q-hashset-vs-treeset)
+36. [java-promise](https://github.com/emranxec/KeepLearning#q-what-is-java-promise)
+37. [variables-static-variable--block-and-method-saves-data](https://github.com/emranxec/KeepLearning#q-where-variables-static-variable--block-and-method-saves-data)
+38. [what-is-permgen-n-metaspace](https://github.com/emranxec/KeepLearning#q-what-is-permgen-n-metaspace)
+39. [How ArrayList internally works?](https://github.com/emranxec/KeepLearning#q-how-arraylist-internally-works)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -67,7 +78,7 @@
 6. [what-function-is-java-8-filter-backend](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-function-is-java-8-filter-backend)
 7. [what-are-new-features-added-in-java-8](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-new-features-added-in-java-8)
 8. [what-is-optional-and-what-is-it-best-used-for](https://github.com/emranxec/KeepLearning#q-what-is-optional-and-what-is-it-best-used-for)
-
+9. [user-defined-functional-interface](https://github.com/emranxec/KeepLearning#q-create-a-user-defined-functional-interface)
 
 ## Spring
 1. [why-spring-boot](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-spring-boot)
@@ -99,6 +110,20 @@
 27. [singleton-scope-in-spring-vs-singleton-class-in-java](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
 28. [how-to-create-bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
 29. [difference-between-inject-vs-autowire-vs-resource](https://github.com/emranxec/KeepLearning#q-the-difference-between-inject-vs-autowire-vs-resource)
+30. [invalidate-jwt-while-changing-passwords-and-logout](https://github.com/emranxec/KeepLearning#q-best-practices-to-invalidate-jwt-while-changing-passwords-and-logout-)
+31. [exclude-configuration-from-auto-configuration-classes-in-spring-boot-junit-test](https://github.com/emranxec/KeepLearning#q-exclude-securityautoconfiguration-from-auto-configuration-classes-in-spring-boot-junit-test)
+32. [singleton-is-lazy-or-eager-loading](https://github.com/emranxec/KeepLearning#q-is-singleton-is-lazy-or-eager-loading)
+33. [tomcat-server-from-spring-boot](https://github.com/emranxec/KeepLearning#q-how-to-remove-the-tomcat-server-from-spring-boot)
+34. [skip-some-jars-in-spring-boot](https://github.com/emranxec/KeepLearning#q-how-to-skip-some-jars-in-spring-boot)
+35. [if we want to load only 75% of bean classes in spring? how to achieve it?](https://github.com/emranxec/KeepLearning#q-if-we-want-to-load-only-75-of-bean-classes-in-spring-how-to-achieve-it)
+36. [can we use @Component/@Configuration classes be final?](https://github.com/emranxec/KeepLearning#q-can-we-use-componentconfiguration-classes-be-final)
+37. [difference between application.properties vs application.yml ? which one to use when?](https://github.com/emranxec/KeepLearning#q-difference-between-applicationproperties-vs-applicationyml--which-one-to-use-when)
+38. [The difference between @Inject vs. @Autowired vs. @Resource?](https://github.com/emranxec/KeepLearning#q-the-difference-between-inject-vs-autowire-vs-resource)
+39. [Singleton scope in spring VS singleton class in java?](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
+40. [How to create Bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
+41. [Define all Spring Annotations ?](https://github.com/emranxec/KeepLearning#q-define-all-spring-annotations-)
+
+
 
 ## Hibernate
 1. [jdbc-versus-hibernate](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-jdbc-versus-hibernate)
@@ -118,6 +143,15 @@
 15. [What is Cascade in hibernate?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-cascade-in-hibernate)
 16. [difference-between-the-sessionget-method-and-the-sessionload-method](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-the-difference-between-the-sessionget-method-and-the-sessionload-method)
 17. [general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-the-general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes)
+18. [when-do-we-get-lazy-initialization-exception-in-hibernate](https://github.com/emranxec/KeepLearning#q-when-do-we-get-lazy-initialization-exception-in-hibernate)
+19. [how to disable first level cache in hibernate](https://github.com/emranxec/KeepLearning#q-how-to-disable-first-level-cache-in-hibernate)
+20. [session.commit vs session.flush](https://github.com/emranxec/KeepLearning#q-sessioncommit-vs-sessionflush)
+21. [When to use path param or when to use Query param? as per design perspective?](https://github.com/emranxec/KeepLearning#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
+22. [What is the difference between the session.get() method and the session.load() method?](https://github.com/emranxec/KeepLearning#q-what-is-the-difference-between-the-sessionget-method-and-the-sessionload-method)
+23. [best practices for defining your Hibernate persistent classes](https://github.com/emranxec/KeepLearning#q-what-are-the-general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes)
+24. [what is cascade in hibernate](https://github.com/emranxec/KeepLearning#q-what-is-cascade-in-hibernate)
+
+
 
 ## SQL
 1. [sql-queries-with-functions--stored-procedures](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-queries-with-functions--stored-procedures)
@@ -129,10 +163,13 @@
 7. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
 8. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
 9. What are Indexes and Its Types?
+10. [department-has-maximum-employees-join-which-year](https://github.com/emranxec/KeepLearning#q-total-number-of-employee-name-from-department-where-department-has-maximum-employees-join-which-year)
+11. [print-4th-highest-salary](https://github.com/emranxec/KeepLearning#q-print-4th-highest-salary)
 
 ## Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
 2. [git-rebase-vs-git-merge-which-is-better](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-git-rebase-vs-git-merge-which-is-better)
+3. [dependency-management-vs-dependency](https://github.com/emranxec/KeepLearning#q-what-is-dependency-management-vs-dependency)
 
 ## Docker and microservices
 1. [what-is-docker](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-docker)
@@ -169,6 +206,8 @@
 24. [Find some random name in java](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-find-some-random-name-in-java)
 25. [design a class to throw exception on 2nd constructor](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-a-class-to-throw-exception-on-2nd-constructor)
 26. [sort-hashmap-on-basis-of-value](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sort-hashmap-on-basis-of-value)
+27. [chocolate-distribution-problem](https://github.com/emranxec/KeepLearning#q-chocolate-distribution-problem)
+28. [two-threads-running-one-after-another](https://github.com/emranxec/KeepLearning#q-implement-two-threads-running-one-after-another)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -3742,27 +3781,7 @@ private String name;
 [program22.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/program22.java)
 
 ----
-### Q. write a query for self join
-```
-Database
-Employee-- id, name, mgid
-id, name, mgid
-1.  Alok  3
-2   Niraj 3
-3   Saurya 4
-4   Siva   5
-
-    name , mgname
-    Alok  Saurya
-    Niraj Saurya,
-    Saurya Siva
-
-    select emp.name,man.name from Employee emp
-    join Employee man on emp.madid=man.id;
-```
-----
 ### Q. do itertor operations on employee list
-> 
 
 [IteratorProgram.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/IteratorProgram.java)
 
@@ -4186,6 +4205,7 @@ ramework	Path segment	http query parameter
 Jersey (JAX-RS)	@PathParam	@QueryParam
 Spring RESTFul	@PathVariable	@RequestParam
 example	http://xyz.ir/{segment}	http://xyz.ir/?param{param}
+
 ----
 ### Q. difference between application.properties vs application.yml ? which one to use when?
 - .properties stores data in sequential format, whereas
@@ -5016,7 +5036,24 @@ for(
 > Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
 
 ----
+### Q. write a query for self join
+```
+Database
+Employee-- id, name, mgid
+id, name, mgid
+1.  Alok  3
+2   Niraj 3
+3   Saurya 4
+4   Siva   5
 
+    name , mgname
+    Alok  Saurya
+    Niraj Saurya,
+    Saurya Siva
+
+    select emp.name,man.name from Employee emp
+    join Employee man on emp.madid=man.id;
+```
 ----
 ### Q. {2,-3,4,-5,6,-7,0,8,-8}
 >
