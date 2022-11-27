@@ -645,7 +645,7 @@ public class ResourceController {
 
 >Azure Kubernetes Service is a managed container orchestration service based on the open source 
 > Kubernetes system, which is available on the Microsoft Azure public cloud. An organization can 
-> use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.\
+> use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.
 ----
 ### Q. what is responsive UI in JS?
 
@@ -849,8 +849,7 @@ transaction = session.beginTransaction();
 > To remove or delete a resource on server, use DELETE
 - @Produces(MediaType.TEXT_PLAIN [, more-types])
 - @Consumes(type[, more-types])
-- @PathParam()
-- @QueryParam()
+- [@PathParam() && @QueryParam()](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
 - @MatrixParam()
 - @FormParam()
 
