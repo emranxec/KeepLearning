@@ -208,6 +208,7 @@
 26. [sort-hashmap-on-basis-of-value](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sort-hashmap-on-basis-of-value)
 27. [chocolate-distribution-problem](https://github.com/emranxec/KeepLearning#q-chocolate-distribution-problem)
 28. [two-threads-running-one-after-another](https://github.com/emranxec/KeepLearning#q-implement-two-threads-running-one-after-another)
+29. [Rearrange array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-rearrangearray)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
