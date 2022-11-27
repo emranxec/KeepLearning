@@ -4157,7 +4157,7 @@ public class UserRestService {
 ```
 #### QUERY PARAMETER
 > Query Parameter in NOT part of URI. They are added to URI after a question mark symbol (‘?’) with
-> name=value pairs separated by ampersands symbol (&). They define sort, pagination and filter operations.
+> name=value pairs separated by ampersands symbol (&). **They define sort, pagination and filter operations.**
 
 > we can use @RequestParam to extract query parameters, form parameters, and even files from the request.
 ```java
@@ -4200,11 +4200,6 @@ return "ID: " + fooId + " Name: " + name;
 | Jersey (JAX-RS) | @PathParam              | @QueryParam                 |
 | Spring RESTFul  | @PathVariable           | @RequestParam               |
 | example         | http://xyz.ir/{segment} | http://xyz.ir/?param{param} | 
-
-ramework	Path segment	http query parameter
-Jersey (JAX-RS)	@PathParam	@QueryParam
-Spring RESTFul	@PathVariable	@RequestParam
-example	http://xyz.ir/{segment}	http://xyz.ir/?param{param}
 
 ----
 ### Q. difference between application.properties vs application.yml ? which one to use when?
