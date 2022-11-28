@@ -3969,6 +3969,46 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 >Both the session.get(..) and session.load() methods create a persistent object by loading the required object from the database. 
 
 >But if there was not such object in the database then the method session.load(..) throws an exception whereas session.get(&) returns null.
+
+#### get
+> It object not found for the given identifier then it will return null object
+
+> It returns fully initialized object so this method eager load the object
+
+> It is slower than load() because it return fully initialized object which impact the performance of the application
+
+> If you are not sure that object exist then use get() method
+
+#### load
+> It will throw object not found exception
+
+> It always returns proxy object so this method is lazy load the object
+
+> It is slightly faster.
+
+> If you are sure that object exist then use load() method.
+```java
+public class LoadGetExample {
+public static void main(String[] args) {
+//get session factory to start transcation
+SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+//Get Example
+User user = (User) session.get(User.class, new Integer(2));
+System.out.println("User ID= "+user.getId());
+System.out.println("User Name= "+user.getName());
+//Load Example
+User user = (User) session.load(User.class, new Integer(2));
+System.out.println("User ID= "+user.getId());
+System.out.println("User Name= "+user.getName());  
+//Close resources
+tx.commit();
+sessionFactory.close();
+}
+}
+```
+
 ----
 ### Q. How to create Bean
 
@@ -5081,6 +5121,7 @@ add and update operations are provided.
 - **TRACE:(Idempotency)** a method with debugging purposes. It returns the entire request to the client. Typically, gateways and proxies tests use this method 
 - **CONNECT:** employed for tunneling communications. For example, it is useful to establish connections with SSL-enabled websites 
 - **PATCH:** allows the modification of an entity of a resource. So, it can be applied to change only particular portions of an entity data
+- **HTTP OPTIONS** is used to request information about the communication options available for the target resource.
 
 #### Idempotency in API?
 > An API call or operation is idempotent if it has the same result no matter how many times it is applied.
@@ -5098,6 +5139,7 @@ add and update operations are provided.
 > The entity already exists; the server updates the entity and responds with a success code 200 or 204 to the client.
 
 > It has High Bandwidth
+
 #### PATCH
 > Clients use the PUT method to set up an entity of a resource into an HTTP server.
 
