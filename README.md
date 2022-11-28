@@ -304,19 +304,19 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ----
 ### Q. design patterns in spring?
 
-### Singleton Pattern
+#### Singleton Pattern
 
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
 
 >This pattern can be useful when managing shared resources or providing cross-cutting services, such as logging.
 
-#### Singleton Beans
+##### Singleton Beans
 > Generally, a singleton is globally unique for an application, but in Spring, this constraint is relaxed. Instead, Spring restricts
 > a singleton to one object per Spring IoC container. 
 
 >In practice, this means Spring will only create one bean for each type per application context.
 
-#### Autowired Singletons
+##### Autowired Singletons
 > we can create two controllers within a single application context and inject a bean of the same type into each.
 > First, we create a BookRepository that manages our Book domain objects.
 
