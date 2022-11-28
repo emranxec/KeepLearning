@@ -118,10 +118,9 @@
 35. [if we want to load only 75% of bean classes in spring? how to achieve it?](https://github.com/emranxec/KeepLearning#q-if-we-want-to-load-only-75-of-bean-classes-in-spring-how-to-achieve-it)
 36. [can we use @Component/@Configuration classes be final?](https://github.com/emranxec/KeepLearning#q-can-we-use-componentconfiguration-classes-be-final)
 37. [difference between application.properties vs application.yml ? which one to use when?](https://github.com/emranxec/KeepLearning#q-difference-between-applicationproperties-vs-applicationyml--which-one-to-use-when)
-38. [The difference between @Inject vs. @Autowired vs. @Resource?](https://github.com/emranxec/KeepLearning#q-the-difference-between-inject-vs-autowire-vs-resource)
-39. [Singleton scope in spring VS singleton class in java?](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
-40. [How to create Bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
-41. [Define all Spring Annotations ?](https://github.com/emranxec/KeepLearning#q-define-all-spring-annotations-)
+38. [Singleton scope in spring VS singleton class in java?](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
+39. [How to create Bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
+40. [Define all Spring Annotations ?](https://github.com/emranxec/KeepLearning#q-define-all-spring-annotations-)
 
 
 
@@ -5069,6 +5068,45 @@ Iterable - posses an iterator to allow traversal and removal its underlying elem
 >ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
 during iteration, and obtain the iterator's current position in the list. It allows complete modification - remove,
 add and update operations are provided.
+
+----
+### Q. HTTP Methods
+
+- **OPTIONS:(safe,Idempotency)** describes the supported HTTP methods of resources. Furthermore, it informs these resources options, requirements, and parameters 
+- **GET:(safe,Idempotency)** employed for receiving information about a resource. In this way, this method can both return already available data or trigger a data-producing process in the server
+- **HEAD:(safe,Idempotency)** returns only the metainformation of HTTP headers of a GET method. It means that the body content of an entity isn’t provided 
+- **POST:** designed to send a new entity of a resource within the request. Thus, the server subordinates the received entity to the resource 
+- **PUT:(Idempotency)** sends an enclosed entity of a resource to the server. If the entity already exists, the server updates its data. Otherwise, the server creates a new entity 
+- **DELETE:(Idempotency)** triggers the deletion of an entity of a resource. The request must inform the target entity 
+- **TRACE:(Idempotency)** a method with debugging purposes. It returns the entire request to the client. Typically, gateways and proxies tests use this method 
+- **CONNECT:** employed for tunneling communications. For example, it is useful to establish connections with SSL-enabled websites 
+- **PATCH:** allows the modification of an entity of a resource. So, it can be applied to change only particular portions of an entity data
+
+#### Idempotency in API?
+> An API call or operation is idempotent if it has the same result no matter how many times it is applied.
+
+#### Safe
+> a method is safe if it doesn’t intend to execute an action than an information retrieval when requested.
+
+----
+### Q. PUT vs PATCH
+#### PUT (Idempotency)
+> Clients use the PUT method to set up an entity of a resource into an HTTP server.
+
+> The entity doesn’t exist, and the server creates a new entity for the requested resource and responds with a success code 201 to the client
+
+> The entity already exists; the server updates the entity and responds with a success code 200 or 204 to the client.
+ 
+#### PATCH
+> Clients use the PUT method to set up an entity of a resource into an HTTP server.
+
+> The PATCH method executes the requested changes atomically.
+
+> It means that if the server can’t satisfy all the requested changes, it doesn’t modify the target entity.
+
+> if the request is successfully executed, the server returns the success code 204 to the client. Otherwise, the server returns an error code
+
+##### PUT is idempotent by definition. So, PUT is a more fault-tolerant option than PATCH, making it a better choice in the considered case.
 
 ----
 ### Q. Qualifier replacement
