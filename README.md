@@ -5234,6 +5234,93 @@ add and update operations are provided.
 [system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f](https://medium.com/@lk.snatch/system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f)
 
 ----
+### Q. What is Caching? Why do we use Cache? What should usually be cached?
+> Caching (pronounced “cashing”) is the process of storing data in a cache. A cache is a temporary storage area. 
+
+> For example, the files you automatically request by looking at a Web page are stored on your hard disk in a cache subdirectory under the directory for your browser.
+
+#### Caching Benefits
+- Decreased network costs 
+- Improved responsiveness 
+- Increased performance on the same hardware 
+- Availability of content during network interruptions
+
+#### General Cache Use Cases
+- In-memory data lookup
+- RDBMS Speedup
+- Manage Spike in web/mobile apps
+- Web Page Caching
+- Fast Access To Any Suitable Data
+- Gaming
+- Session Store
+- Token Caching
+- Global Id or Counter generation
+
+#### Caching Data Access Strategies
+- Lazy Loading (Load data into the cache only when necessary)
+- Write Through (While inserting or updating data in the database, upsert the data in the cache as well)
+- Write Behind Caching
+>  In this strategy, the application writes data directly to the caching system. 
+
+> Then after a certain configured interval, the written data is asynchronously synced to the underlying data source.
+
+- Refresh Ahead Caching
+>  It’s a technique in which the cached data is refreshed before it gets expired. Oracle coherence uses this technique.
+----
+### Q. The Table name is Employee with columns -  id, name, salary. Delete duplicate names keeping 1st name un-deleted.
+```roomsql
+DELETE FROM Employee
+WHERE ID NOT IN
+(
+SELECT MIN(ID) AS MinRecordID
+FROM Employee
+GROUP BY [name],
+[salary]
+);
+```
+----
+### Q. sql query for marks are greater than average marks?
+> There is a table which contains two columns Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above-average students
+----
+### Q. display the Department Name Having Highest Average Salary
+> SQL to display the Department Name Having Highest Average Salary. The table name is Company and has id, name, department, and salary as columns
+----
+### Q. Print the Name and Salary of the Person Having the Least Salary in each Department.
+> SQL to Print the Name and Salary of the Person Having the Least Salary in each Department. The table name is Company and has id, name, department, and salary as columns
+----
+### Q. What are the key components of an HTTP Request?
+>There are 5 major components for HTTP Request.
+
+- Verb − Indicate HTTP methods such as GET, POST, DELETE, PUT etc. 
+- URI − Uniform Resource Identifier (URI) to identify the resource on server. 
+- HTTP Version − Indicate HTTP version, for example HTTP v1.1 . 
+- Request Header − Contains metadata for the HTTP Request message as key-value pairs. 
+> For example, client ( or browser) type, format supported by client, format of message body, cache settings etc. 
+- Request Body − Message content or Resource representation
+----
+### Q. Explain JVM, JRE, and JDK?
+
+#### JDK 
+> JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. 
+
+> JDK is a kit(or package) that includes two things
+
+- Development Tools(to provide an environment to develop your java programs)
+- JRE (to execute your java program).
+
+#### JRE
+>  JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop) the java program(or application)onto your machine. 
+
+> JRE is only used by those who only want to run Java programs that are end-users of your system.
+
+#### JVM
+>  JVM is a very important part of both JDK and JRE because it is contained or inbuilt in both. 
+
+>  Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence it is also known as an interpreter.
+
+[differences-jdk-jre-jvm/](https://www.geeksforgeeks.org/differences-jdk-jre-jvm/)
+
+----
 ### Q. Qualifier replacement
 >
 ----
