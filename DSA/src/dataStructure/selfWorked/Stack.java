@@ -1,7 +1,5 @@
 package dataStructure.selfWorked;
 
-import java.util.List;
-
 public class Stack {
     private ArrayList myStack;
     int size;

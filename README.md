@@ -304,12 +304,13 @@ List<Integer> withoutDupes = withDupes.stream() .distinct() .collect(Collectors.
 ----
 ### Q. design patterns in spring?
 
-> ### programs.Singleton Pattern
+### Singleton Pattern
+
 >The singleton pattern is a mechanism that ensures only one instance of an object exists per application. 
 
 >This pattern can be useful when managing shared resources or providing cross-cutting services, such as logging.
 
-#### programs.Singleton Beans
+#### Singleton Beans
 > Generally, a singleton is globally unique for an application, but in Spring, this constraint is relaxed. Instead, Spring restricts
 > a singleton to one object per Spring IoC container. 
 
@@ -5058,10 +5059,21 @@ id, name, mgid
 ```
 ----
 
+### Q. What is difference between Iterator and ListIterator?
+
+- Iterator
+>An Iterator class provides us with 3 methods - next(), hasNext() and remove(). Every Collection in Java is
+Iterable - posses an iterator to allow traversal and removal its underlying elements.
+
+- ListIterator
+>ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
+during iteration, and obtain the iterator's current position in the list. It allows complete modification - remove,
+add and update operations are provided.
+
+----
 ### Q. Qualifier replacement
 >
 ----
-
 ### Q. handle pagination using webservice?
 >
 ----
