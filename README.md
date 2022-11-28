@@ -5096,7 +5096,8 @@ add and update operations are provided.
 > The entity doesn’t exist, and the server creates a new entity for the requested resource and responds with a success code 201 to the client
 
 > The entity already exists; the server updates the entity and responds with a success code 200 or 204 to the client.
- 
+
+> It has High Bandwidth
 #### PATCH
 > Clients use the PUT method to set up an entity of a resource into an HTTP server.
 
@@ -5105,6 +5106,8 @@ add and update operations are provided.
 > It means that if the server can’t satisfy all the requested changes, it doesn’t modify the target entity.
 
 > if the request is successfully executed, the server returns the success code 204 to the client. Otherwise, the server returns an error code
+
+> Since Only data that need to be modified if send in the request body as a payload , It has Low Bandwidth
 
 ##### PUT is idempotent by definition. So, PUT is a more fault-tolerant option than PATCH, making it a better choice in the considered case.
 
