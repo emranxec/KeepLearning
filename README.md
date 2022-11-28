@@ -5177,6 +5177,63 @@ add and update operations are provided.
 ##### PUT is idempotent by definition. So, PUT is a more fault-tolerant option than PATCH, making it a better choice in the considered case.
 
 ----
+### Q. What is Cache Invalidation?
+> Cache invalidation is a process where the computer system declares the cache entries as invalid and removes or replaces them.
+
+> The basic objective of using cache invalidation is that when the client requests the affected content, the latest version is returned.
+
+##### Methods
+
+- Purge
+> Purge removes the content from the proxy server instantly. 
+
+> When the client demands data again, it is fetched from the application again and stored in the proxy server before being returned to the client. 
+
+> This method eliminates all variants of cached content.
+
+- Refresh
+> This method fetches the content from the application even if it is available. 
+
+> Even the content stored in the cache is replaced with the new version of cache content.
+
+- Ban
+> Ban does not withdraw content from cache instantly. 
+
+> Instead, it creates a reference to the content and adds that to the blacklist. 
+
+> When the client makes a request, it is checked with the blacklist. 
+
+> If a match is found, new content is fetched again from the application and stored in the proxy being returned to the client before.
+
+----
+### Q. What are cache eviction algorithms?
+> A cache eviction algorithm is a way of deciding which element to evict when the cache is full. 
+
+>  In Ehcache, the MemoryStore may be limited in size. 
+
+> When the store gets full, elements are evicted. The eviction algorithms in Ehcache determine which elements are evicted
+
+> hashtable is the most suitable data structure for building a cache system. Because it has O(1) access for both put and get operations
+
+>But hashtable has O(n) occupied memory space. Therefore we need to remove some unnecessary entries and keep only those that are in demand.
+
+#### Eviction policies
+
+- FIFO (First In First Out)
+- LIFO (Last In First Out)
+- LRU (Least Recently Used)
+- TLRU (Time aware Least Recently Used)
+- MRU (Most Recently Used)
+- RR (Random Replacement)
+- SLRU (Segmented LRU)
+- LFU (Least Frequently Used)
+- LFRU (Least Frequent Recently Used)
+- LIRS (Low Inter-reference Recency Set)
+- ARC  (Adaptive Replacement Cache)
+
+[system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f](https://medium.com/@lk.snatch/system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f)
+
+----
 ### Q. Qualifier replacement
 >
 ----
