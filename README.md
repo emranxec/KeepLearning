@@ -148,8 +148,6 @@
 21. [When to use path param or when to use Query param? as per design perspective?](https://github.com/emranxec/KeepLearning#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
 22. [What is the difference between the session.get() method and the session.load() method?](https://github.com/emranxec/KeepLearning#q-what-is-the-difference-between-the-sessionget-method-and-the-sessionload-method)
 23. [best practices for defining your Hibernate persistent classes](https://github.com/emranxec/KeepLearning#q-what-are-the-general-considerations-or-best-practices-for-defining-your-hibernate-persistent-classes)
-24. [what is cascade in hibernate](https://github.com/emranxec/KeepLearning#q-what-is-cascade-in-hibernate)
-
 
 
 ## SQL
@@ -5098,7 +5096,7 @@ id, name, mgid
 ```
 ----
 
-### Q. What is difference between Iterator and ListIterator?
+### Q. What is difference between Iterator and ListIterator? fail-fast vs fail-safe?
 
 - Iterator
 >An Iterator class provides us with 3 methods - next(), hasNext() and remove(). Every Collection in Java is
@@ -5108,6 +5106,31 @@ Iterable - posses an iterator to allow traversal and removal its underlying elem
 >ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
 during iteration, and obtain the iterator's current position in the list. It allows complete modification - remove,
 add and update operations are provided.
+
+- Fail Fast Iterator
+> It throws a ConcurrentModificationException in modifying the object during the iteration process.
+
+> No clone object is created during the iteration process.
+
+> It requires low memory during the process.
+
+> It does not allow modification during iteration.
+
+> It is fast.
+
+> HashMap, ArrayList, Vector, HashSet, etc
+- Fail Safe Iterator
+> It does not throw Exception.
+
+> A copy or clone object is created during the iteration process.
+
+> It requires more memory during the process.
+
+> It allows modification during the iteration process.
+
+> It is slightly slower than Fail Fast.
+
+> CopyOnWriteArrayList, ConcurrentHashMap, etc.
 
 ----
 ### Q. HTTP Methods
