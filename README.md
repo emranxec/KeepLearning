@@ -26,7 +26,7 @@
 
 
 ## DSA & design
-1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/programs.utilClasses.interviewQuestions.md)
+1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
 2. [design-patterns-in-spring](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-design-patterns-in-spring)
 3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
 4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
