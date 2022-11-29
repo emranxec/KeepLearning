@@ -172,7 +172,8 @@
 9. What are Indexes and Its Types?
 10. [department-has-maximum-employees-join-which-year](https://github.com/emranxec/KeepLearning#q-total-number-of-employee-name-from-department-where-department-has-maximum-employees-join-which-year)
 11. [print-4th-highest-salary](https://github.com/emranxec/KeepLearning#q-print-4th-highest-salary)
-12. https://github.com/emranxec/KeepLearning/blob/main/README.md#q-the-table-name-is-employee-with-columns----id-name-salary-delete-duplicate-names-keeping-1st-name-un-deleted
+12. [Delete duplicate names keeping 1st name un-deleted.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-delete-duplicate-names-keeping-1st-name-un-deleted)
+
 
 ## Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
