@@ -2,7 +2,7 @@ package programs;
 
 // Java program to count
 // occurrences of an element
-class OccurencesInArray
+class GFG
 {
 
     // A recursive binary search
