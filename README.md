@@ -2684,9 +2684,6 @@ public class OrderProcessor {
     }
 ```
 ----
-### Q. explain Microservice framework Netflix?
->
-----
 ### Q. difference between @Primary & @Qualifier?
 
 #### @Primary
@@ -5491,5 +5488,8 @@ id, name, mgid
 
 ----
 ### Q. explain Thread with caching?
+>
+----
+### Q. explain Microservice framework Netflix?
 >
 ----
