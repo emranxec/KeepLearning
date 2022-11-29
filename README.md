@@ -5098,13 +5098,29 @@ id, name, mgid
 ### Q. What is difference between Iterator and ListIterator? fail-fast vs fail-safe?
 
 - Iterator
->An Iterator class provides us with 3 methods - next(), hasNext() and remove(). Every Collection in Java is
-Iterable - posses an iterator to allow traversal and removal its underlying elements.
+>An Iterator class provides us with 3 methods - next(), hasNext() and remove(). 
 
-- ListIterator
+> Every Collection in Java is Iterable - posses an iterator to allow traversal and removal its underlying elements.
+
+> Modification of any element is not allowed.
+
+> we can’t access the index of the traversed element.
+
+- ListIterator (java 1.2)
 >ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
-during iteration, and obtain the iterator's current position in the list. It allows complete modification - remove,
-add and update operations are provided.
+during iteration, and obtain the iterator's current position in the list. 
+
+>It allows complete modification - remove, add and update operations are provided.
+
+> public interface ListIterator<E> extends Iterator<E>
+
+>It supports all the four CRUD operations(Create, Read, Update, Delete)
+
+>  ArrayList, Vector, LinkedList, Stack
+
+> methods : hasNext(),next() ,nextIndex(),hasPrevious(),previous(),previousIndex()
+
+> Modification is allowed.
 
 - Fail Fast Iterator
 > It throws a ConcurrentModificationException in modifying the object during the iteration process.
