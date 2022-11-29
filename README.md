@@ -20,6 +20,10 @@
 4. [what-are-different-types-of-http-status-codes](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-different-types-of-http-status-codes)
 5. [when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective](https://github.com/emranxec/KeepLearning#q-when-to-use-path-param-or-when-to-use-query-param-as-per-design-perspective)
 6. [How to make sure the JSON structure is same from client to server?](https://github.com/emranxec/KeepLearning#q-how-to-make-sure-the-json-structure-is-same-from-client-to-server)
+7. [HTTP Methods](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-http-methods)
+8. [PUT vs PATCH](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-put-vs-patch)
+9. 
+
 
 ## DSA & design
 1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/programs.utilClasses.interviewQuestions.md)
@@ -27,6 +31,10 @@
 3. [what-are-microservices-design-patterns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-microservices-design-patterns)
 4. [what-are-design-principles](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-design-principles)
 5. [data-structure-and-usages](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-when-to-use-what-collection)
+6. [What is Caching? Why do we use Cache?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-caching-why-do-we-use-cache-what-should-usually-be-cached)
+7. [What are cache eviction algorithms?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-cache-eviction-algorithms)
+8. [What is Cache Invalidation?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-cache-invalidation)
+
 
 ## JAVA
 1. [what-factory-class-java-having](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-factory-class-java-having)
@@ -69,6 +77,7 @@
 38. [what-is-permgen-n-metaspace](https://github.com/emranxec/KeepLearning#q-what-is-permgen-n-metaspace)
 39. [How ArrayList internally works?](https://github.com/emranxec/KeepLearning#q-how-arraylist-internally-works)
 40. [Iterator and ListIterator? fail-fast vs fail-safe?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
+
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -5099,6 +5108,139 @@ during iteration, and obtain the iterator's current position in the list.
 > CopyOnWriteArrayList, ConcurrentHashMap, etc.
 
 ----
+### Q. HTTP Methods
+
+- **OPTIONS:(safe,Idempotency)** describes the supported HTTP methods of resources. Furthermore, it informs these resources options, requirements, and parameters
+- **GET:(safe,Idempotency)** employed for receiving information about a resource. In this way, this method can both return already available data or trigger a data-producing process in the server
+- **HEAD:(safe,Idempotency)** returns only the metainformation of HTTP headers of a GET method. It means that the body content of an entity isn’t provided
+- **POST:** designed to send a new entity of a resource within the request. Thus, the server subordinates the received entity to the resource
+- **PUT:(Idempotency)** sends an enclosed entity of a resource to the server. If the entity already exists, the server updates its data. Otherwise, the server creates a new entity
+- **DELETE:(Idempotency)** triggers the deletion of an entity of a resource. The request must inform the target entity
+- **TRACE:(Idempotency)** a method with debugging purposes. It returns the entire request to the client. Typically, gateways and proxies tests use this method
+- **CONNECT:** employed for tunneling communications. For example, it is useful to establish connections with SSL-enabled websites
+- **PATCH:** allows the modification of an entity of a resource. So, it can be applied to change only particular portions of an entity data
+- **HTTP OPTIONS** is used to request information about the communication options available for the target resource.
+
+#### Idempotency in API?
+> An API call or operation is idempotent if it has the same result no matter how many times it is applied.
+
+#### Safe
+> a method is safe if it doesn’t intend to execute an action than an information retrieval when requested.
+
+----
+### Q. PUT vs PATCH
+#### PUT (Idempotency)
+> Clients use the PUT method to set up an entity of a resource into an HTTP server.
+
+> The entity doesn’t exist, and the server creates a new entity for the requested resource and responds with a success code 201 to the client
+
+> The entity already exists; the server updates the entity and responds with a success code 200 or 204 to the client.
+
+> It has High Bandwidth
+
+#### PATCH
+
+> The PATCH method executes the requested changes atomically.
+
+> It means that if the server can’t satisfy all the requested changes, it doesn’t modify the target entity.
+
+> if the request is successfully executed, the server returns the success code 204 to the client. Otherwise, the server returns an error code
+
+> Since Only data that need to be modified if send in the request body as a payload , It has Low Bandwidth
+
+##### PUT is idempotent by definition. So, PUT is a more fault-tolerant option than PATCH, making it a better choice in the considered case.
+
+----
+### Q. What is Caching? Why do we use Cache? What should usually be cached?
+> Caching (pronounced “cashing”) is the process of storing data in a cache. A cache is a temporary storage area.
+
+> For example, the files you automatically request by looking at a Web page are stored on your hard disk in a cache subdirectory under the directory for your browser.
+
+#### Caching Benefits
+- Decreased network costs
+- Improved responsiveness
+- Increased performance on the same hardware
+- Availability of content during network interruptions
+
+#### General Cache Use Cases
+- In-memory data lookup
+- RDBMS Speedup
+- Manage Spike in web/mobile apps
+- Web Page Caching
+- Fast Access To Any Suitable Data
+- Gaming
+- Session Store
+- Token Caching
+- Global Id or Counter generation
+
+#### Caching Data Access Strategies
+- Lazy Loading (Load data into the cache only when necessary)
+- Write Through (While inserting or updating data in the database, upsert the data in the cache as well)
+- Write Behind Caching
+>  In this strategy, the application writes data directly to the caching system.
+
+> Then after a certain configured interval, the written data is asynchronously synced to the underlying data source.
+
+- Refresh Ahead Caching
+>  It’s a technique in which the cached data is refreshed before it gets expired. Oracle coherence uses this technique.
+----
+### Q. What are cache eviction algorithms?
+> A cache eviction algorithm is a way of deciding which element to evict when the cache is full.
+
+>  In Ehcache, the MemoryStore may be limited in size.
+
+> When the store gets full, elements are evicted. The eviction algorithms in Ehcache determine which elements are evicted
+
+> hashtable is the most suitable data structure for building a cache system. Because it has O(1) access for both put and get operations
+
+>But hashtable has O(n) occupied memory space. Therefore we need to remove some unnecessary entries and keep only those that are in demand.
+
+#### Eviction policies
+
+- FIFO (First In First Out)
+- LIFO (Last In First Out)
+- LRU (Least Recently Used)
+- TLRU (Time aware Least Recently Used)
+- MRU (Most Recently Used)
+- RR (Random Replacement)
+- SLRU (Segmented LRU)
+- LFU (Least Frequently Used)
+- LFRU (Least Frequent Recently Used)
+- LIRS (Low Inter-reference Recency Set)
+- ARC  (Adaptive Replacement Cache)
+
+[system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f](https://medium.com/@lk.snatch/system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f)
+
+----
+### Q. What is Cache Invalidation?
+> Cache invalidation is a process where the computer system declares the cache entries as invalid and removes or replaces them.
+
+> The basic objective of using cache invalidation is that when the client requests the affected content, the latest version is returned.
+
+##### Methods
+
+- Purge
+> Purge removes the content from the proxy server instantly.
+
+> When the client demands data again, it is fetched from the application again and stored in the proxy server before being returned to the client.
+
+> This method eliminates all variants of cached content.
+
+- Refresh
+> This method fetches the content from the application even if it is available.
+
+> Even the content stored in the cache is replaced with the new version of cache content.
+
+- Ban
+> Ban does not withdraw content from cache instantly.
+
+> Instead, it creates a reference to the content and adds that to the blacklist.
+
+> When the client makes a request, it is checked with the blacklist.
+
+> If a match is found, new content is fetched again from the application and stored in the proxy being returned to the client before.
+
+----
 ----STUDY----
 ----
 # self:
@@ -5147,142 +5289,6 @@ id, name, mgid
     select emp.name,man.name from Employee emp
     join Employee man on emp.madid=man.id;
 ```
-----
-
-
-### Q. HTTP Methods
-
-- **OPTIONS:(safe,Idempotency)** describes the supported HTTP methods of resources. Furthermore, it informs these resources options, requirements, and parameters 
-- **GET:(safe,Idempotency)** employed for receiving information about a resource. In this way, this method can both return already available data or trigger a data-producing process in the server
-- **HEAD:(safe,Idempotency)** returns only the metainformation of HTTP headers of a GET method. It means that the body content of an entity isn’t provided 
-- **POST:** designed to send a new entity of a resource within the request. Thus, the server subordinates the received entity to the resource 
-- **PUT:(Idempotency)** sends an enclosed entity of a resource to the server. If the entity already exists, the server updates its data. Otherwise, the server creates a new entity 
-- **DELETE:(Idempotency)** triggers the deletion of an entity of a resource. The request must inform the target entity 
-- **TRACE:(Idempotency)** a method with debugging purposes. It returns the entire request to the client. Typically, gateways and proxies tests use this method 
-- **CONNECT:** employed for tunneling communications. For example, it is useful to establish connections with SSL-enabled websites 
-- **PATCH:** allows the modification of an entity of a resource. So, it can be applied to change only particular portions of an entity data
-- **HTTP OPTIONS** is used to request information about the communication options available for the target resource.
-
-#### Idempotency in API?
-> An API call or operation is idempotent if it has the same result no matter how many times it is applied.
-
-#### Safe
-> a method is safe if it doesn’t intend to execute an action than an information retrieval when requested.
-
-----
-### Q. PUT vs PATCH
-#### PUT (Idempotency)
-> Clients use the PUT method to set up an entity of a resource into an HTTP server.
-
-> The entity doesn’t exist, and the server creates a new entity for the requested resource and responds with a success code 201 to the client
-
-> The entity already exists; the server updates the entity and responds with a success code 200 or 204 to the client.
-
-> It has High Bandwidth
-
-#### PATCH
-> Clients use the PUT method to set up an entity of a resource into an HTTP server.
-
-> The PATCH method executes the requested changes atomically.
-
-> It means that if the server can’t satisfy all the requested changes, it doesn’t modify the target entity.
-
-> if the request is successfully executed, the server returns the success code 204 to the client. Otherwise, the server returns an error code
-
-> Since Only data that need to be modified if send in the request body as a payload , It has Low Bandwidth
-
-##### PUT is idempotent by definition. So, PUT is a more fault-tolerant option than PATCH, making it a better choice in the considered case.
-
-----
-### Q. What is Cache Invalidation?
-> Cache invalidation is a process where the computer system declares the cache entries as invalid and removes or replaces them.
-
-> The basic objective of using cache invalidation is that when the client requests the affected content, the latest version is returned.
-
-##### Methods
-
-- Purge
-> Purge removes the content from the proxy server instantly. 
-
-> When the client demands data again, it is fetched from the application again and stored in the proxy server before being returned to the client. 
-
-> This method eliminates all variants of cached content.
-
-- Refresh
-> This method fetches the content from the application even if it is available. 
-
-> Even the content stored in the cache is replaced with the new version of cache content.
-
-- Ban
-> Ban does not withdraw content from cache instantly. 
-
-> Instead, it creates a reference to the content and adds that to the blacklist. 
-
-> When the client makes a request, it is checked with the blacklist. 
-
-> If a match is found, new content is fetched again from the application and stored in the proxy being returned to the client before.
-
-----
-### Q. What are cache eviction algorithms?
-> A cache eviction algorithm is a way of deciding which element to evict when the cache is full. 
-
->  In Ehcache, the MemoryStore may be limited in size. 
-
-> When the store gets full, elements are evicted. The eviction algorithms in Ehcache determine which elements are evicted
-
-> hashtable is the most suitable data structure for building a cache system. Because it has O(1) access for both put and get operations
-
->But hashtable has O(n) occupied memory space. Therefore we need to remove some unnecessary entries and keep only those that are in demand.
-
-#### Eviction policies
-
-- FIFO (First In First Out)
-- LIFO (Last In First Out)
-- LRU (Least Recently Used)
-- TLRU (Time aware Least Recently Used)
-- MRU (Most Recently Used)
-- RR (Random Replacement)
-- SLRU (Segmented LRU)
-- LFU (Least Frequently Used)
-- LFRU (Least Frequent Recently Used)
-- LIRS (Low Inter-reference Recency Set)
-- ARC  (Adaptive Replacement Cache)
-
-[system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f](https://medium.com/@lk.snatch/system-design-cache-eviction-policies-with-java-impl-37c1228e2b4f)
-
-----
-### Q. What is Caching? Why do we use Cache? What should usually be cached?
-> Caching (pronounced “cashing”) is the process of storing data in a cache. A cache is a temporary storage area. 
-
-> For example, the files you automatically request by looking at a Web page are stored on your hard disk in a cache subdirectory under the directory for your browser.
-
-#### Caching Benefits
-- Decreased network costs 
-- Improved responsiveness 
-- Increased performance on the same hardware 
-- Availability of content during network interruptions
-
-#### General Cache Use Cases
-- In-memory data lookup
-- RDBMS Speedup
-- Manage Spike in web/mobile apps
-- Web Page Caching
-- Fast Access To Any Suitable Data
-- Gaming
-- Session Store
-- Token Caching
-- Global Id or Counter generation
-
-#### Caching Data Access Strategies
-- Lazy Loading (Load data into the cache only when necessary)
-- Write Through (While inserting or updating data in the database, upsert the data in the cache as well)
-- Write Behind Caching
->  In this strategy, the application writes data directly to the caching system. 
-
-> Then after a certain configured interval, the written data is asynchronously synced to the underlying data source.
-
-- Refresh Ahead Caching
->  It’s a technique in which the cached data is refreshed before it gets expired. Oracle coherence uses this technique.
 ----
 ### Q. The Table name is Employee with columns -  id, name, salary. Delete duplicate names keeping 1st name un-deleted.
 ```roomsql
