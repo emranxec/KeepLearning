@@ -1100,8 +1100,10 @@ public class AnnotationExample {
 
 #### Decomposition Patterns
 ##### Decompose by Business Capability
+- **_How do we decompose an application into small services?_**
 >  Each business capability can be thought of as a service, except it’s business-oriented rather than technical.
 ##### Decompose by Subdomain (Domain-Driven Design)
+- **_how to decompose "God Classes" which will not be easy ?**_ 
 > It uses subdomains and bounded context concepts to solve this problem. 
 
 > DDD breaks the whole domain model created for the enterprise into subdomains. 
@@ -1111,12 +1113,16 @@ public class AnnotationExample {
 > Each microservice will be developed around the bounded context.
 
 ##### Strangler Pattern
+- how to breaking them into smaller pieces at the same time it's being used live is a big task?
 > This creates two separate applications that live side by side in the same URI space. 
 
 > Eventually, the newly refactored application “strangles” or replaces the original application until finally you can shut off the monolithic application.
 
 #### Integration Patterns
 ##### API Gateway Pattern
+- **_How to call multiple microservices abstracting producer information?_**
+- **_Who will do the data transformation or field manipulation?_**
+- **_How to handle different type of Protocols some of which might not be supported by producer microservice?_**
 > An API Gateway is the single point of entry for any microservice call.
 
 > It can work as a proxy service to route a request to the concerned microservice, abstracting the producer details.
@@ -1126,6 +1132,7 @@ public class AnnotationExample {
 >  It can also offload the authentication/authorization responsibility of the microservice.
 
 ##### Aggregator Pattern
+- **_how to collaborate the data returned by each service?_**
 > It talks about how we can aggregate the data from different services and then send the final response to the consumer.
 
 > A **composite microservice** will make calls to all the required microservices, consolidate the data, and transform the data before sending back.
@@ -1136,6 +1143,7 @@ public class AnnotationExample {
 
 
 ##### Client-Side UI Composition Pattern
+- **_how to replace only one call from the UI to a backend service?_**
 > Each section will make a call to an individual backend microservice to pull the data. 
 
 > That is called composing UI components specific to service.
