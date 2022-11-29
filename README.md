@@ -1152,7 +1152,7 @@ public class AnnotationExample {
 > Each microservice should have a separate database id so that separate access can be given to put up a barrier and prevent it from using other service tables.
 
 ##### Shared Database per Service
-- **_if denormalization is not that easy. What is the suitable architecture in that case?_**
+- **_if de-normalization is not that easy. What is the suitable architecture in that case?_**
 > This should not be applied for greenfield applications. 
 
 > In this pattern, one database can be aligned with more than one microservice, but it has to be restricted to 2-3 maximum.
