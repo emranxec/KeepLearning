@@ -5421,14 +5421,14 @@ COMPANY GROUP BY DEPARTMENT_NAME);
 ### Q. Difference between BeanFactory and the ApplicationContext (IoC container).
 
 #### BeanFactory
-> It adds some extra functionality than BeanFactory such as simple integration with Spring's AOP,
-> message resource handling (for I18N), event propagation, application layer specific context (e.g. WebApplicationContext)
-> for web application.
 
 `Resource resource=new ClassPathResource("applicationContext.xml");  
 BeanFactory factory=new XmlBeanFactory(resource);`
 
 #### ApplicationContext
+> It adds some extra functionality than BeanFactory such as simple integration with Spring's AOP,
+> message resource handling (for I18N), event propagation, application layer specific context (e.g. WebApplicationContext)
+> for web application.
 
 > ApplicationContext interface is built on top of the BeanFactory interface.
 
