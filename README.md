@@ -1150,7 +1150,7 @@ public class AnnotationExample {
 
 #### Database Patterns
 ##### Database per Service
-
+- **_how to handle Different services have different data storage requirements?_**
 > It should be accessed by the microservice API only. 
 
 > It cannot be accessed by other services directly. 
