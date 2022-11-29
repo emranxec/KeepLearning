@@ -1142,6 +1142,12 @@ public class AnnotationExample {
 
 #### Database Patterns
 ##### Database per Service
+**_- Services must be loosely coupled. They can be developed, deployed, and scaled independently. 
+- Business transactions may enforce invariants that span multiple services.
+- Some business transactions need to query data that is owned by multiple services. 
+- Databases must sometimes be replicated and sharded in order to scale. 
+- Different services have different data storage requirements._**
+
 > It should be accessed by the microservice API only. 
 
 > It cannot be accessed by other services directly. 
@@ -1150,12 +1156,14 @@ public class AnnotationExample {
 
 > Each microservice should have a separate database id so that separate access can be given to put up a barrier and prevent it from using other service tables.
 
-##### Shared Database per Service (if de-normalization is not that easy)
+##### Shared Database per Service
+- **_if denormalization is not that easy. What is the suitable architecture in that case?_**
 > This should not be applied for greenfield applications. 
 
 > In this pattern, one database can be aligned with more than one microservice, but it has to be restricted to 2-3 maximum.
 
 ##### Command Query Responsibility Segregation (CQRS) (there is a requirement to query, which requires joint data from multiple services)
+- **_how do we implement queries in microservice architecture?_**
 > CQRS suggests splitting the application into two parts — the command side and the query side.
 
 > The command side handles the Create, Update, and Delete requests.
@@ -1166,7 +1174,8 @@ public class AnnotationExample {
 
 > Materialized views are kept updated by subscribing to the stream of events.
 
-##### Saga Pattern (how do we ensure data consistency across services)
+##### Saga Pattern 
+-  **_how do we ensure data consistency across services?_**
 > A Saga represents a high-level business process that consists of several sub requests, which each update data within a single service.
 
 > Each request has a compensating request that is executed when the request fails.
@@ -1175,12 +1184,14 @@ public class AnnotationExample {
 
 #### Observability Patterns
 ##### Log Aggregation
+- **_How can we understand the application behavior through logs for a particular request?_**
 > We need a centralized logging service that aggregates logs from each service instance.
 
 > Users can search and analyze the logs.
 
 > They can configure alerts that are triggered when certain messages appear in the logs.
 ##### Performance Metrics
+- **_How should we collect metrics to monitor application perfomance?_**
 > A metrics service is required to gather statistics about individual operations.
 
 > There are two models for aggregating metrics:
@@ -1190,6 +1201,7 @@ public class AnnotationExample {
 > Pull — the metrics services pulls metrics from the service e.g. Prometheus
 
 ##### Distributed Tracing
+- **_how do we trace a request end-to-end to troubleshoot the problem?_**
 > Assigns each external request a unique external request id.
 
 > Passes the external request id to all services.
@@ -1198,18 +1210,21 @@ public class AnnotationExample {
 
 > Records information
 ##### Health Check
+- **_how do you ensure a request doesn't go to those failed instances?_**
 > Each service needs to have an endpoint which can be used to check the health of the application, such as /health
 
 > **Spring Boot Actuator** does implement a /health endpoint and the implementation can be customized, as well.
 
 #### Cross-Cutting Concern Patterns
 ##### External Configuration (change in any of those properties might require a re-build and re-deploy)
+- **_How do we avoid code modification for configuration changes?_**
 > Externalize all the configuration, including endpoint URLs and credentials. 
 
 > The application should load them either at startup or on the fly.
 
 > **Spring Cloud config serve**r provides the option to externalize the properties to GitHub and load them as environment properties.
 ##### Service Discovery Pattern ( IP addresses are dynamically allocated to the service instances)
+- **_So how does the consumer or router know all the available service instances and locations?_**
 > A service registry needs to be created which will keep the metadata of each producer service.
 
 > A service instance should register to the registry when starting and should de-register when shutting down.
@@ -1221,7 +1236,7 @@ public class AnnotationExample {
 > example of server-side discovery is **AWS ALB.**
 
 ##### Circuit Breaker Pattern (chance that the downstream service may be down)
->  How do we avoid cascading service failures and handle failures gracefully?
+-  **_How do we avoid cascading service failures and handle failures gracefully?_**
 
 > The consumer should invoke a remote service via a proxy that behaves in a similar fashion to an electrical circuit breaker.
 
@@ -1233,7 +1248,7 @@ public class AnnotationExample {
 > That provides a better user experience.
 
 ##### Blue-Green Deployment Pattern
-> How do we avoid or reduce downtime of the services during deployment?
+- _**How do we avoid or reduce downtime of the services during deployment?**_
 
 > It achieves this by running two identical production environments, Blue and Green.
 
