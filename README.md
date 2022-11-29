@@ -1780,7 +1780,7 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ----
 ### Q. what is default spring bean status?
 >The default scope for the bean is a singleton(single object instance per Spring IoC container), like the example below, 
-> in which we haven't explicitly given a scope. programs.Singleton means that the Spring container 
+> in which we haven't explicitly given a scope. singleton means that the Spring container 
 > creates only one instance of the bean, and cached in memory, 
 > and all the requests for that bean will return a shared reference to the same bean.
 ```java
@@ -3566,21 +3566,21 @@ process or not. If yes then terminate the startup process for second instance.
 [SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
 
 ----
-### Q. Prevent Breaking a programs.Singleton Class Pattern
+### Q. Prevent Breaking a singleton Class Pattern
 
 ```java
-public final class programs.Singleton {
+public final class singleton {
 
-    private static volatile programs.Singleton instance = null;
+    private static volatile singleton instance = null;
 
-    private programs.Singleton() {
+    private singleton() {
     }
 
-    public static programs.Singleton getInstance() {
+    public static singleton getInstance() {
         if (instance == null) {
-            synchronized (programs.Singleton.class) {
+            synchronized (singleton.class) {
                 if (instance == null) {
-                    instance = new programs.Singleton();
+                    instance = new singleton();
                 }
             }
         }
@@ -3606,10 +3606,10 @@ return instance;
 
 ##### Reflection
 ```
-private programs.Singleton() {
+private singleton() {
         // Check if we already have an instance
         if (instance != null) {
-           throw new IllegalStateException("programs.Singleton" +
+           throw new IllegalStateException("singleton" +
              " instance already created.");
         }
     }
