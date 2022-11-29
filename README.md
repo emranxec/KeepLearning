@@ -68,7 +68,7 @@
 37. [variables-static-variable--block-and-method-saves-data](https://github.com/emranxec/KeepLearning#q-where-variables-static-variable--block-and-method-saves-data)
 38. [what-is-permgen-n-metaspace](https://github.com/emranxec/KeepLearning#q-what-is-permgen-n-metaspace)
 39. [How ArrayList internally works?](https://github.com/emranxec/KeepLearning#q-how-arraylist-internally-works)
-40. [iterator-and-list_iterator-fail-fast-vs-fail-safe](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
+40. [Iterator and ListIterator? fail-fast vs fail-safe?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
