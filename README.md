@@ -3582,7 +3582,7 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
 instance try to start up then check if **the port os already occupied** or not and accordingly take the decision.
 2. Use a shared **file lock using FileChannel** and check if that temp file is already locked by some running
 process or not. If yes then terminate the startup process for second instance.
-[SingleInstanceLock.java](Threads/src/com/xec/thread/SingleInstanceLock.java)
+[SingleInstanceLock.java](https://github.com/emranxec/KeepLearning/blob/main/Threads/src/com/xec/SingleInstanceLock.java)
 
 ----
 ### Q. Prevent Breaking a singleton Class Pattern
@@ -5425,15 +5425,15 @@ COMPANY GROUP BY DEPARTMENT_NAME);
 > message resource handling (for I18N), event propagation, application layer specific context (e.g. WebApplicationContext)
 > for web application.
 
-> Resource resource=new ClassPathResource("applicationContext.xml");  
-BeanFactory factory=new XmlBeanFactory(resource);
+`Resource resource=new ClassPathResource("applicationContext.xml");  
+BeanFactory factory=new XmlBeanFactory(resource);`
 
 #### ApplicationContext
 
 > ApplicationContext interface is built on top of the BeanFactory interface.
 
-> ApplicationContext context =   
-new ClassPathXmlApplicationContext("applicationContext.xml");
+`ApplicationContext context =   
+new ClassPathXmlApplicationContext("applicationContext.xml");`
 
 ----
 ----STUDY----
