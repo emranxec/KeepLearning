@@ -5467,22 +5467,15 @@ new ClassPathXmlApplicationContext("applicationContext.xml");`
 
 ----
 ### Q. write a query for self join
-```
-Database
-Employee-- id, name, mgid
-id, name, mgid
-1.  Alok  3
-2   Niraj 3
-3   Saurya 4
-4   Siva   5
-
-    name , mgname
-    Alok  Saurya
-    Niraj Saurya,
-    Saurya Siva
-
-    select emp.name,man.name from Employee emp
-    join Employee man on emp.madid=man.id;
+```roomsql
+SELECT 
+    e.first_name || ' ' || e.last_name AS employee,
+    m.first_name || ' ' || m.last_name AS manager
+FROM
+    employees e
+        LEFT JOIN
+    employees m ON m.employee_id = e.manager_id
+ORDER BY manager;
 ```
 ----
 
