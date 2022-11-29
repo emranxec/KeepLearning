@@ -4363,7 +4363,7 @@ public class DBConfiguration {
 
 > And the requirement for CGLIB to work is to have your classes non-final. Otherwise, an exception will be thrown.
 
-> If @Configuration class will be final or will have a final method, Spring will throw BeanDefinitionParsingException.
+> If @Configuration class will be final or will have a final method, Spring will throw **BeanDefinitionParsingException**.
 ----
 ### Q. if we want to load only 75% of bean classes in spring? how to achieve it?
 > You can add @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) to the component or the bean, in order to not create it on boot time (unless another bean autowired it). But with this solution your bean will not be a singleton which mean that every place you are autowire the component, a new instance will be created.
@@ -5081,7 +5081,7 @@ class Geek implements Runnable {
 > Same thing applies for PermSize as well, every time PermGen resizes, a full GC will occur.
 ----
 ### Q. Best practices to invalidate JWT while changing passwords and logout ?
-> When No Refresh token needed and no expiry of access tokens:
+- When No Refresh token needed and no expiry of access tokens:
 
 > when user login, create a login token in his user database with no expiry time.
 
