@@ -81,14 +81,14 @@ numbers that is distinct from the account owner's login password.
 
 ##### The next step is assigning URLs to the resource
 
-| HTTP verb  | Endpoint | Action |
-| ----------- | ----------- | ----------- |
-| GET | /orders | List existing orders |
-| POST | /orders | Place a new order |
-| GET | /orders/1 | Get details for order #1 |
-| GET | /orders/2 | Get details for order #2 |
-| PUT | /orders/1 | Update order #1 |
-| DELETE | /orders/1 | Cancel order #1 |
+| HTTP verb | Endpoint  | Action                   |
+|-----------|-----------|--------------------------|
+| GET       | /orders   | List existing orders     |
+| POST      | /orders   | Place a new order        |
+| GET       | /orders/1 | Get details for order #1 |
+| GET       | /orders/2 | Get details for order #2 |
+| PUT       | /orders/1 | Update order #1          |
+| DELETE    | /orders/1 | Cancel order #1          |
 
 > **how do we associate orders with customers?** 
 
