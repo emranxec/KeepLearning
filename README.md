@@ -1142,11 +1142,6 @@ public class AnnotationExample {
 
 #### Database Patterns
 ##### Database per Service
-**_- Services must be loosely coupled. They can be developed, deployed, and scaled independently. 
-- Business transactions may enforce invariants that span multiple services.
-- Some business transactions need to query data that is owned by multiple services. 
-- Databases must sometimes be replicated and sharded in order to scale. 
-- Different services have different data storage requirements._**
 
 > It should be accessed by the microservice API only. 
 
