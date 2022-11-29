@@ -3926,7 +3926,7 @@ session.flush();
 - @Lazy (on method level)
 > This annotation is used on component classes.
 > By default, all autowired dependencies are created and
-> configured at startup.
+> configured at startup(eager).
 
 - @Value (on field, constructor parameter,method parameter)
 > The @Value annotation indicates a default value expression for the field or
@@ -3992,6 +3992,60 @@ return "welcome all";
 > up the dispatcher servlet, enabling the @Controller and the @RequestMapping annotations
 > and setting up other defaults.
 
+####  lombok
+
+##### Features of Lombok Project
+- It reduces the boilerplate 
+- It replaces boilerplate code with easy-to-use annotations. 
+- It makes code easier to read and less error-prone. 
+- By using Lombok the developers becomes more productive. 
+- It works well with all popular IDEs. 
+- Also provides delombok utility (adding back all the boilerplate code). 
+- Provide annotation for checking null values. 
+- Concise data objects 
+- Easy cleanup 
+- Locking safely 
+- Effortless logging
+
+##### lombok annotations
+- AllArgsConstructor
+- Builder
+- Builder.Default
+- Builder.ObtainVia
+- Cleanup
+- CustomLog
+- Data
+- EqualsAndHashCode
+- EqualsAndHashCode.Exclude
+- EqualsAndHashCode.Include
+- Generated
+- Getter
+- NoArgsConstructor
+- NonNull
+- RequiredArgsConstructor
+- Setter
+- Singular
+- SneakyThrows
+- Synchronized
+- ToString
+- ToString.Exclude
+- ToString.Include
+- val
+- Value
+- var
+- With
+```java
+@Data  
+public class StudentBean   
+{  
+@NonNull  
+private BigDecimal studentId;  
+@NonNull  
+private String studentName;  
+@NonNull  
+private String studentAddress;  
+}
+```
 ----
 ### Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
 1. You must have a default no-argument constructor for your persistent classes and there should be getXXX() (i.e accessor/getter) and setXXX( i.e. mutator/setter)
