@@ -172,7 +172,9 @@
 9. [department-has-maximum-employees-join-which-year](https://github.com/emranxec/KeepLearning#q-total-number-of-employee-name-from-department-where-department-has-maximum-employees-join-which-year)
 10. [print-4th-highest-salary](https://github.com/emranxec/KeepLearning#q-print-4th-highest-salary)
 11. [Delete duplicate names keeping 1st name un-deleted.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-delete-duplicate-names-keeping-1st-name-un-deleted)
-
+12. [marks are greater than average marks?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-sql-query-for-marks-are-greater-than-average-marks)
+13. [Department Name Having The Highest Average Salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-display-the-department-name-having-highest-average-salary)
+14. [Person Having the Least Salary in each Department](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-the-name-and-salary-of-the-person-having-the-least-salary-in-each-department)
 
 ## Maven & GIT
 1. [explain-maven-in-detail-explain-pom.xml-in-detail](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-maven-in-detail-explain-pomxml-in-detail)
@@ -5371,6 +5373,34 @@ GROUP BY [name],
 );
 ```
 ----
+
+### Q. sql query for marks are greater than average marks?
+> There is a table which contains two columns Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above-average students
+```roomsql
+SELECT Name 
+FROM Students 
+WHERE TotalMarks > (SELECT AVG(TotalMarks) FROM Students);
+```
+
+----
+### Q. display the Department Name Having Highest Average Salary
+> SQL to display the Department Name Having Highest Average Salary. The table name is Company and has id, name, department, and salary as columns
+```roomsql
+SELECT TOP 1 DEPARTMENT_NAME, AVG(SALARY) AS MAX_AVG_SALARY
+FROM COMPANY
+GROUP BY DEPARTMENT_NAME
+ORDER BY AVG(SALARY) DESC;
+```
+----
+### Q. Print the Name and Salary of the Person Having the Least Salary in each Department.
+> SQL to Print the Name and Salary of the Person Having the Least Salary in each Department. The table name is Company and has id, name, department, and salary as columns
+```roomsql
+SELECT EMPLOYEE_NAME,DEPARTMENT_NAME,
+SALARY FROM COMPANY WHERE
+SALARY IN (SELECT MIN(SALARY) FROM
+COMPANY GROUP BY DEPARTMENT_NAME);
+```
+----
 ----STUDY----
 ----
 # self:
@@ -5421,15 +5451,6 @@ id, name, mgid
 ```
 ----
 
-### Q. sql query for marks are greater than average marks?
-> There is a table which contains two columns Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above-average students
-----
-### Q. display the Department Name Having Highest Average Salary
-> SQL to display the Department Name Having Highest Average Salary. The table name is Company and has id, name, department, and salary as columns
-----
-### Q. Print the Name and Salary of the Person Having the Least Salary in each Department.
-> SQL to Print the Name and Salary of the Person Having the Least Salary in each Department. The table name is Company and has id, name, department, and salary as columns
-----
 ### Q. Qualifier replacement
 >
 ----
