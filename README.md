@@ -1097,16 +1097,6 @@ public class AnnotationExample {
 ----
 ### Q. what are Microservices design patterns?
 #### Microservices Design Patterns:
-- Aggregator
-- API Gateway 
-- Chained or Chain of Responsibility 
-- Asynchronous Messaging 
-- Database or Shared Data 
-- Event Sourcing 
-- Branch 
-- Command Query Responsibility Segregator 
-- Circuit Breaker 
-- Decomposition
 
 #### Decomposition Patterns
 - Decompose by Business Capability
