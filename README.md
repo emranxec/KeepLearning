@@ -68,6 +68,7 @@
 37. [variables-static-variable--block-and-method-saves-data](https://github.com/emranxec/KeepLearning#q-where-variables-static-variable--block-and-method-saves-data)
 38. [what-is-permgen-n-metaspace](https://github.com/emranxec/KeepLearning#q-what-is-permgen-n-metaspace)
 39. [How ArrayList internally works?](https://github.com/emranxec/KeepLearning#q-how-arraylist-internally-works)
+40. [iterator-and-list_iterator-fail-fast-vs-fail-safe](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -5045,6 +5046,59 @@ for(
 [reArrangeArray.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/reArrangeArray.java)
 
 ----
+### Q. What is difference between Iterator and ListIterator? fail-fast vs fail-safe?
+
+- Iterator
+>An Iterator class provides us with 3 methods - next(), hasNext() and remove().
+
+> Every Collection in Java is Iterable - posses an iterator to allow traversal and removal its underlying elements.
+
+> Modification of any element is not allowed.
+
+> we can’t access the index of the traversed element.
+
+- ListIterator (java 1.2)
+>ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
+during iteration, and obtain the iterator's current position in the list.
+
+>It allows complete modification - remove, add and update operations are provided.
+
+> public interface ListIterator<E> extends Iterator<E>
+
+>It supports all the four CRUD operations(Create, Read, Update, Delete)
+
+>  ArrayList, Vector, LinkedList, Stack
+
+> methods : hasNext(),next() ,nextIndex(),hasPrevious(),previous(),previousIndex()
+
+> Modification is allowed.
+
+- Fail Fast Iterator
+> It throws a ConcurrentModificationException in modifying the object during the iteration process.
+
+> No clone object is created during the iteration process.
+
+> It requires low memory during the process.
+
+> It does not allow modification during iteration.
+
+> It is fast.
+
+> HashMap, ArrayList, Vector, HashSet, etc
+- Fail Safe Iterator
+> It does not throw Exception.
+
+> A copy or clone object is created during the iteration process.
+
+> It requires more memory during the process.
+
+> It allows modification during the iteration process.
+
+> It is slightly slower than Fail Fast.
+
+> CopyOnWriteArrayList, ConcurrentHashMap, etc.
+
+----
 ----STUDY----
 ----
 # self:
@@ -5095,59 +5149,7 @@ id, name, mgid
 ```
 ----
 
-### Q. What is difference between Iterator and ListIterator? fail-fast vs fail-safe?
 
-- Iterator
->An Iterator class provides us with 3 methods - next(), hasNext() and remove(). 
-
-> Every Collection in Java is Iterable - posses an iterator to allow traversal and removal its underlying elements.
-
-> Modification of any element is not allowed.
-
-> we can’t access the index of the traversed element.
-
-- ListIterator (java 1.2)
->ListIterator - It is a specialized iterator for lists that allows to traverse the list bidirectionally, modify the list
-during iteration, and obtain the iterator's current position in the list. 
-
->It allows complete modification - remove, add and update operations are provided.
-
-> public interface ListIterator<E> extends Iterator<E>
-
->It supports all the four CRUD operations(Create, Read, Update, Delete)
-
->  ArrayList, Vector, LinkedList, Stack
-
-> methods : hasNext(),next() ,nextIndex(),hasPrevious(),previous(),previousIndex()
-
-> Modification is allowed.
-
-- Fail Fast Iterator
-> It throws a ConcurrentModificationException in modifying the object during the iteration process.
-
-> No clone object is created during the iteration process.
-
-> It requires low memory during the process.
-
-> It does not allow modification during iteration.
-
-> It is fast.
-
-> HashMap, ArrayList, Vector, HashSet, etc
-- Fail Safe Iterator
-> It does not throw Exception.
-
-> A copy or clone object is created during the iteration process.
-
-> It requires more memory during the process.
-
-> It allows modification during the iteration process.
-
-> It is slightly slower than Fail Fast.
-
-> CopyOnWriteArrayList, ConcurrentHashMap, etc.
-
-----
 ### Q. HTTP Methods
 
 - **OPTIONS:(safe,Idempotency)** describes the supported HTTP methods of resources. Furthermore, it informs these resources options, requirements, and parameters 
