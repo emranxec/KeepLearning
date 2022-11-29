@@ -5,7 +5,7 @@ There are three different types of Design Patterns
 
 # Design Patterns interview questions
 
-- Creational Patterns : Concerned with creation of Objects. Prototype, programs.Singleton, Builder etc.
+- Creational Patterns : Concerned with creation of Objects. Prototype, singleton, Builder etc.
 - Structural Patterns : Concerned with structure of Objects and the relationships between them. Decorator, Facade, Adapter etc.
 - Behavioural Patterns : Concerned with interaction between objects. Strategy, Template Method etc.
 
@@ -42,13 +42,13 @@ return meal;
 }
 }
 ```
-### programs.Singleton
-programs.Singleton is defined as “A class of which only a single instance can exist (in a jvm). A good example of programs.Singleton class in Java is java.lang.System.
+### singleton
+singleton is defined as “A class of which only a single instance can exist (in a jvm). A good example of singleton class in Java is java.lang.System.
 
 If you are a Java guys, then these things might be useful:
 
-Best way to implement programs.Singleton is using a Enum. Refer “Effective Java” by Joshua Bloch.
-JEE7 has inbuilt @programs.Singleton annotation with @Startup, @PostConstruct and @DependsOn("other beans") options
+Best way to implement singleton is using a Enum. Refer “Effective Java” by Joshua Bloch.
+JEE7 has inbuilt @singleton annotation with @Startup, @PostConstruct and @DependsOn("other beans") options
 Singletons make code difficult to unit test.
 In Spring, all beans are singletons by default (in the scope of application context).
 Structural
