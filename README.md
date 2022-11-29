@@ -1103,7 +1103,7 @@ public class AnnotationExample {
 - **_How do we decompose an application into small services?_**
 >  Each business capability can be thought of as a service, except it’s business-oriented rather than technical.
 ##### Decompose by Subdomain (Domain-Driven Design)
-- **_how to decompose "God Classes" which will not be easy ?**_ 
+- **_how to decompose "God Classes" which will not be easy ?_**
 > It uses subdomains and bounded context concepts to solve this problem. 
 
 > DDD breaks the whole domain model created for the enterprise into subdomains. 
