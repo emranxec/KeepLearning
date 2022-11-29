@@ -131,7 +131,7 @@
 38. [Singleton scope in spring VS singleton class in java?](https://github.com/emranxec/KeepLearning#q-singleton-scope-in-spring-vs-singleton-class-in-java)
 39. [How to create Bean](https://github.com/emranxec/KeepLearning#q-how-to-create-bean)
 40. [Define all Spring Annotations ?](https://github.com/emranxec/KeepLearning#q-define-all-spring-annotations-)
-
+41. [BeanFactory and the ApplicationContext](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-difference-between-beanfactory-and-the-applicationcontext-ioc-container)
 
 
 ## Hibernate
@@ -5436,6 +5436,18 @@ BeanFactory factory=new XmlBeanFactory(resource);`
 new ClassPathXmlApplicationContext("applicationContext.xml");`
 
 ----
+### Q. write a query for self join
+```roomsql
+SELECT 
+    e.first_name || ' ' || e.last_name AS employee,
+    m.first_name || ' ' || m.last_name AS manager
+FROM
+    employees e
+        LEFT JOIN
+    employees m ON m.employee_id = e.manager_id
+ORDER BY manager;
+```
+----
 ----STUDY----
 ----
 # self:
@@ -5466,18 +5478,7 @@ new ClassPathXmlApplicationContext("applicationContext.xml");`
 > Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
 
 ----
-### Q. write a query for self join
-```roomsql
-SELECT 
-    e.first_name || ' ' || e.last_name AS employee,
-    m.first_name || ' ' || m.last_name AS manager
-FROM
-    employees e
-        LEFT JOIN
-    employees m ON m.employee_id = e.manager_id
-ORDER BY manager;
-```
-----
+
 
 ### Q. Qualifier replacement
 >
