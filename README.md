@@ -167,12 +167,11 @@
 4. [what-is-difference-between-primary-key-and-unique-key](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-primary-key-and-unique-key)
 5. [why-do-we-need-indexing-on-database-table-columns](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-why-do-we-need-indexing-on-database-table-columns)
 6. [what-is-difference-between-drop-truncate-and-delete-commands-in-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-drop-truncate-and-delete-commands-in-sql)
-7. [what-are-clustered-and-non-clustered-indexes-in-database](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
+7. [What are Indexes and Its Types? clustered and non-clustered?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-clustered-and-non-clustered-indexes-in-database)
 8. [pessimistic-approach-and-optimistic-approach-in-dbms](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-if-the-equals-method-is-overridden-without-overriding-hashcode-or-vice-versa)
-9. What are Indexes and Its Types?
-10. [department-has-maximum-employees-join-which-year](https://github.com/emranxec/KeepLearning#q-total-number-of-employee-name-from-department-where-department-has-maximum-employees-join-which-year)
-11. [print-4th-highest-salary](https://github.com/emranxec/KeepLearning#q-print-4th-highest-salary)
-12. [Delete duplicate names keeping 1st name un-deleted.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-delete-duplicate-names-keeping-1st-name-un-deleted)
+9. [department-has-maximum-employees-join-which-year](https://github.com/emranxec/KeepLearning#q-total-number-of-employee-name-from-department-where-department-has-maximum-employees-join-which-year)
+10. [print-4th-highest-salary](https://github.com/emranxec/KeepLearning#q-print-4th-highest-salary)
+11. [Delete duplicate names keeping 1st name un-deleted.](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-delete-duplicate-names-keeping-1st-name-un-deleted)
 
 
 ## Maven & GIT
