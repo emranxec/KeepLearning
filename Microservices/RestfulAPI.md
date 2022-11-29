@@ -81,7 +81,7 @@ numbers that is distinct from the account owner's login password.
 
 ##### The next step is assigning URLs to the resource
 
-	| HTTP verb  | Endpoint | Action |
+| HTTP verb  | Endpoint | Action |
 | ----------- | ----------- | ----------- |
 | GET | /orders | List existing orders |
 | POST | /orders | Place a new order |
