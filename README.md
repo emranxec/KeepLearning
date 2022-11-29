@@ -1113,7 +1113,7 @@ public class AnnotationExample {
 > Each microservice will be developed around the bounded context.
 
 ##### Strangler Pattern
-- how to breaking them into smaller pieces at the same time it's being used live is a big task?
+- **_how to break them into smaller pieces at the same time it's being used live is a big task?_**
 > This creates two separate applications that live side by side in the same URI space. 
 
 > Eventually, the newly refactored application “strangles” or replaces the original application until finally you can shut off the monolithic application.
