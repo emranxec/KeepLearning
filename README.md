@@ -5045,10 +5045,9 @@ for(
 [reArrangeArray.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/reArrangeArray.java)
 
 ----
-----
+----STUDY----
 ----
 # self:
-
 ----
 ### Q. when to use what collection?
 #### HashSet 
