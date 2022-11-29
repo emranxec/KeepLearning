@@ -1099,9 +1099,9 @@ public class AnnotationExample {
 #### Microservices Design Patterns:
 
 #### Decomposition Patterns
-- Decompose by Business Capability
+##### Decompose by Business Capability
 >  Each business capability can be thought of as a service, except it’s business-oriented rather than technical.
-- Decompose by Subdomain (Domain-Driven Design)
+##### Decompose by Subdomain (Domain-Driven Design)
 > It uses subdomains and bounded context concepts to solve this problem. 
 
 > DDD breaks the whole domain model created for the enterprise into subdomains. 
@@ -1110,13 +1110,13 @@ public class AnnotationExample {
  
 > Each microservice will be developed around the bounded context.
 
-- Strangler Pattern
+##### Strangler Pattern
 > This creates two separate applications that live side by side in the same URI space. 
 
 > Eventually, the newly refactored application “strangles” or replaces the original application until finally you can shut off the monolithic application.
 
 #### Integration Patterns
-- API Gateway Pattern
+##### API Gateway Pattern
 > An API Gateway is the single point of entry for any microservice call.
 
 > It can work as a proxy service to route a request to the concerned microservice, abstracting the producer details.
@@ -1125,7 +1125,7 @@ public class AnnotationExample {
 
 >  It can also offload the authentication/authorization responsibility of the microservice.
 
-- Aggregator Pattern
+##### Aggregator Pattern
 > It talks about how we can aggregate the data from different services and then send the final response to the consumer.
 
 > A **composite microservice** will make calls to all the required microservices, consolidate the data, and transform the data before sending back.
@@ -1135,13 +1135,13 @@ public class AnnotationExample {
 > **if business login? composite microservice : API Gateway.**
 
 
--  Client-Side UI Composition Pattern
+##### Client-Side UI Composition Pattern
 > Each section will make a call to an individual backend microservice to pull the data. 
 
 > That is called composing UI components specific to service.
 
 #### Database Patterns
-- Database per Service
+##### Database per Service
 > It should be accessed by the microservice API only. 
 
 > It cannot be accessed by other services directly. 
@@ -1149,13 +1149,13 @@ public class AnnotationExample {
 > For example, for relational databases, we can use private-tables-per-service, schema-per-service, or database-server-per-service.
 
 > Each microservice should have a separate database id so that separate access can be given to put up a barrier and prevent it from using other service tables.
- 
-- Shared Database per Service (if de-normalization is not that easy)
+
+##### Shared Database per Service (if de-normalization is not that easy)
 > This should not be applied for greenfield applications. 
 
 > In this pattern, one database can be aligned with more than one microservice, but it has to be restricted to 2-3 maximum.
 
-- Command Query Responsibility Segregation (CQRS) (there is a requirement to query, which requires joint data from multiple services)
+##### Command Query Responsibility Segregation (CQRS) (there is a requirement to query, which requires joint data from multiple services)
 > CQRS suggests splitting the application into two parts — the command side and the query side.
 
 > The command side handles the Create, Update, and Delete requests.
@@ -1166,7 +1166,7 @@ public class AnnotationExample {
 
 > Materialized views are kept updated by subscribing to the stream of events.
 
-- Saga Pattern (how do we ensure data consistency across services)
+##### Saga Pattern (how do we ensure data consistency across services)
 > A Saga represents a high-level business process that consists of several sub requests, which each update data within a single service.
 
 > Each request has a compensating request that is executed when the request fails.
@@ -1174,13 +1174,13 @@ public class AnnotationExample {
 > implemented in two ways: Choreography (no central coordination), Orchestration (central coordination).
 
 #### Observability Patterns
-- Log Aggregation
+##### Log Aggregation
 > We need a centralized logging service that aggregates logs from each service instance.
 
 > Users can search and analyze the logs.
 
 > They can configure alerts that are triggered when certain messages appear in the logs.
-- Performance Metrics
+##### Performance Metrics
 > A metrics service is required to gather statistics about individual operations.
 
 > There are two models for aggregating metrics:
@@ -1189,7 +1189,7 @@ public class AnnotationExample {
 
 > Pull — the metrics services pulls metrics from the service e.g. Prometheus
 
-- Distributed Tracing
+##### Distributed Tracing
 > Assigns each external request a unique external request id.
 
 > Passes the external request id to all services.
@@ -1197,19 +1197,19 @@ public class AnnotationExample {
 > Includes the external request id in all log messages.
 
 > Records information
-- Health Check
+##### Health Check
 > Each service needs to have an endpoint which can be used to check the health of the application, such as /health
 
 > **Spring Boot Actuator** does implement a /health endpoint and the implementation can be customized, as well.
 
 #### Cross-Cutting Concern Patterns
-- External Configuration (change in any of those properties might require a re-build and re-deploy)
+##### External Configuration (change in any of those properties might require a re-build and re-deploy)
 > Externalize all the configuration, including endpoint URLs and credentials. 
 
 > The application should load them either at startup or on the fly.
 
 > **Spring Cloud config serve**r provides the option to externalize the properties to GitHub and load them as environment properties.
-- Service Discovery Pattern ( IP addresses are dynamically allocated to the service instances)
+##### Service Discovery Pattern ( IP addresses are dynamically allocated to the service instances)
 > A service registry needs to be created which will keep the metadata of each producer service.
 
 > A service instance should register to the registry when starting and should de-register when shutting down.
@@ -1220,7 +1220,7 @@ public class AnnotationExample {
 
 > example of server-side discovery is **AWS ALB.**
 
-- Circuit Breaker Pattern (chance that the downstream service may be down)
+##### Circuit Breaker Pattern (chance that the downstream service may be down)
 >  How do we avoid cascading service failures and handle failures gracefully?
 
 > The consumer should invoke a remote service via a proxy that behaves in a similar fashion to an electrical circuit breaker.
@@ -1232,7 +1232,7 @@ public class AnnotationExample {
 >  It also helps you to define a fallback mechanism which can be used when the circuit breaker trips. 
 > That provides a better user experience.
 
-- Blue-Green Deployment Pattern
+##### Blue-Green Deployment Pattern
 > How do we avoid or reduce downtime of the services during deployment?
 
 > It achieves this by running two identical production environments, Blue and Green.
