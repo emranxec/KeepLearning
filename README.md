@@ -1105,6 +1105,35 @@ public class AnnotationExample {
 - Command Query Responsibility Segregator 
 - Circuit Breaker 
 - Decomposition
+
+#### Decomposition Patterns
+- Decompose by Business Capability
+- Decompose by Subdomain
+- Strangler Pattern
+
+#### Integration Patterns
+- API Gateway Pattern
+- Aggregator Pattern
+-  Client-Side UI Composition Pattern
+
+#### Database Patterns
+- Database per Service
+- Shared Database per Service
+- Command Query Responsibility Segregation (CQRS)
+- Saga Pattern
+
+#### Observability Patterns
+- Log Aggregation
+- Performance Metrics
+- Distributed Tracing
+- Health Check
+
+#### Cross-Cutting Concern Patterns
+- External Configuration
+- Service Discovery Pattern
+- Circuit Breaker Pattern
+- Blue-Green Deployment Pattern
+
 > [design-patterns-for-microservices](https://dzone.com/articles/design-patterns-for-microservices)
 ----
 ### Q. SQL queries with Functions & stored procedures
