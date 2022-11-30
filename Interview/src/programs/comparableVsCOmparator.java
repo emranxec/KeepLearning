@@ -24,6 +24,8 @@ public class comparableVsCOmparator {
         CompareByAge compareByAge=new CompareByAge();
         employeeList.sort(compareByAge);
         System.out.println(employeeList);
+        System.out.println("---stream---");
+        employeeList.stream().sorted(Comparator.comparingInt(EmployeeHashcodeTest::getAge)).forEach(System.out::println);
     }
 }
 

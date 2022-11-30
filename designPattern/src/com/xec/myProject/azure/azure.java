@@ -89,7 +89,7 @@ class AzureCertificationCoursesInterface implements Cloneable, CertificationCour
     String cloudName;
     Map<String,Course> myLearnings=new HashMap<>();
     Map<String,Certification> myCertifications=new HashMap<>();
-    private List<Obeserver> obeservers =new ArrayList();
+    private final List<Obeserver> obeservers =new ArrayList();
 
     @Override
     public Map<String, Certification> getMyCertifications() {
@@ -108,25 +108,87 @@ class AzureCertificationCoursesInterface implements Cloneable, CertificationCour
 
     @Override
     public void notifySubscriber(String courseName, int price){
+        System.out.println("---------notifySubscriber------------");
+        List<Obeserver> obeserverList0=
+                obeservers
+                        .stream()
+                        .collect(filtering((Obeserver obeserver)->obeserver.getMembership().equals("gold"),toList()));
 
-       // List<Obeserver> obeserverList=obeservers.stream().collect(filtering((Obeserver obeserver)->obeserver.getMembership().equals("gold"),toList()));
-        //List<Obeserver> obeserverList=obeservers.stream().filter(obeserver -> obeserver.getMembership().equals("gold")).collect(toList());
-        List<Obeserver> obeserverList=obeservers.stream().filter(obeserver -> obeserver.getMembership().equals("gold")).collect(Collectors.toUnmodifiableList());
-        List<String> obeserverMembership=obeservers.stream().map(Obeserver::getMembership).collect(toList());
-        Map<String,String> obeserverMap=obeservers.stream().filter(obeserver -> obeserver.getMembership().equals("gold")).collect(toMap(Obeserver::getName,Obeserver::getMembership));
+        List<Obeserver> obeserverList1=
+                obeservers
+                        .stream()
+                        .filter(obeserver -> obeserver.getMembership().equals("gold")).toList();
+        List<Obeserver> obeserverList2=
+                obeservers
+                        .stream()
+                        .filter(obeserver -> obeserver.getMembership().equals("gold")).toList();
 
-        System.out.println(obeservers.stream().collect(partitioningBy(obeserver -> obeserver.getMembership().equals("gold"))));
-        System.out.println(obeservers.stream().collect(groupingBy(obeserver -> obeserver.getMembership())));
-        Map<String, List<Obeserver>> obeserverMap1=obeservers.stream().collect(groupingBy(obeserver -> obeserver.getMembership()));
+        List<String> obeserverMembership=
+                obeservers
+                        .stream()
+                        .map(Obeserver::getMembership).toList();
+        Map<String,String> obeserverMap=
+                obeservers
+                        .stream()
+                        .filter(obeserver -> obeserver.getMembership()
+                                .equals("gold")).collect(toMap(Obeserver::getName,Obeserver::getMembership));
+
+        System.out.println("obeserverList0 : " +obeserverList0);
+        System.out.println("obeserverList1 : " +obeserverList1);
+        System.out.println("obeserverList2 : " +obeserverList2);
+        System.out.println("obeserverMembership : " +obeserverMembership);
+        System.out.println("obeserverMap : " +obeserverMap);
+        System.out.println(
+                obeservers
+                        .stream()
+                        .collect(partitioningBy(obeserver -> obeserver.getMembership().equals("gold"))));
+
+        System.out.println(
+                obeservers
+                        .stream()
+                        .collect(groupingBy(Obeserver::getMembership)));
+
+        Map<String, List<Obeserver>> obeserverMap1=
+                obeservers
+                        .stream()
+                        .collect(groupingBy(Obeserver::getMembership));
 
         //gold,name
-        System.out.println(obeservers.stream().collect(groupingBy(Obeserver::getMembership,mapping(Obeserver::getName,toList()))));
-        System.out.println(obeservers.stream().collect(groupingBy(Obeserver::getName,mapping(Obeserver::getMembership,toSet()))));
-        System.out.println(obeservers.stream().collect(groupingBy(Obeserver::getMembership,counting())));//long
-        System.out.println(obeservers.stream().collect(groupingBy(Obeserver::getMembership,collectingAndThen(counting(),Long::intValue))));//int
-        System.out.println(obeservers.stream().collect(maxBy(Comparator.comparing(Obeserver::getMembership))));//int
-        System.out.println(obeservers.stream().collect(minBy(Comparator.comparing(Obeserver::getMembership))));//int
-        String result = obeservers.stream().collect(collectingAndThen(minBy(Comparator.comparing(Obeserver::getMembership)), ob->ob.map(Obeserver::getName).orElse("")));//int
+        System.out.println(obeservers
+                .stream()
+                .collect(
+                        groupingBy(Obeserver::getMembership,
+                                mapping(Obeserver::getName,toList()))));
+        System.out.println(
+                obeservers
+                        .stream()
+                        .collect(
+                                groupingBy(Obeserver::getName,
+                                        mapping(Obeserver::getMembership,toSet()))));
+        System.out.println(
+                obeservers
+                        .stream()
+                        .collect(groupingBy(Obeserver::getMembership,counting())));//long
+        System.out.println(
+                obeservers
+                        .stream()
+                        .collect(
+                                groupingBy(Obeserver::getMembership,
+                                        collectingAndThen(counting(),Long::intValue))));//int
+        System.out.println(
+                obeservers
+                        .stream()
+                        .max(Comparator.comparing(Obeserver::getMembership)));//int
+        System.out.println(
+                obeservers
+                        .stream()
+                        .min(Comparator.comparing(Obeserver::getMembership)));//int
+        String result =
+                obeservers
+                        .stream()
+                        .collect(collectingAndThen(
+                                minBy(Comparator.comparing(Obeserver::getMembership)),
+                                ob->ob.map(Obeserver::getName).orElse("")));//int
         System.out.println(result);
 
 

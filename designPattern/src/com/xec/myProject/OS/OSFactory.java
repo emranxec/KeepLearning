@@ -11,16 +11,12 @@ public class OSFactory {
     }
 
     public static OS getInstance(String type) {
-        switch (type) {
-            case "FREE":
-                return new Android();
-            case "KIDNEY":
-                return new IOS();
-            case "OUTDATED":
-                return new Windows();
-            default:
-                return ProjectOSFactory.getInstance(type);
-        }
+        return switch (type) {
+            case "FREE" -> new Android();
+            case "KIDNEY" -> new IOS();
+            case "OUTDATED" -> new Windows();
+            default -> ProjectOSFactory.getInstance(type);
+        };
     }
 }
 

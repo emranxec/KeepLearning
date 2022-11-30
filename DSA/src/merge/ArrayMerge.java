@@ -2,9 +2,8 @@ package merge;
 
 import java.util.*;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
-public class merge {
+public class ArrayMerge {
 
     public static void main(String[] args) {
             int a[] = {1, 3, 5, 7}, b[] = {2, 4, 6, 8};

@@ -3,7 +3,7 @@ package programs;
 import java.util.Arrays;
 
 public class CountTriplets {
-    static int arr[] = new int[]{5, 1, 3, 4, 7};
+    static int[] arr = new int[]{5, 1, 3, 4, 7};
 
     public static void main(String[] args) {
         int sum = 12;

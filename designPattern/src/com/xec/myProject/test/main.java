@@ -1,7 +1,7 @@
 package com.xec.myProject.test;
 
 interface hasexo{
-    abstract  int getNumber();
+    int getNumber();
 }
 
 abstract class insect implements hasexo{

@@ -15,10 +15,10 @@ public class single {
 
         //if uncomment reflection exception :: IllegalAccessException :: object not created by Reflaction
 
-          Class<?> singletonClass = Class.forName("com.xec.myProject.OS.SingletonReal");
-        Constructor<SingletonReal> singletonRealConstructor = (Constructor<SingletonReal>) singletonClass.getDeclaredConstructor();
+        Class<?> singletonClass = Class.forName("com.xec.myProject.OS.SingletonReal");
+        Constructor<Object> singletonRealConstructor = (Constructor<Object>) singletonClass.getDeclaredConstructor();
         singletonRealConstructor.setAccessible(true);
-        SingletonReal singletonReflection = singletonRealConstructor.newInstance();
+        Object singletonReflection = singletonRealConstructor.newInstance();
 
         System.out.println("singletonReal for 1 is " + singletonReal.hashCode());
         System.out.println("singletonReflection for 1 is " + singletonReflection.hashCode());
@@ -45,16 +45,20 @@ public class single {
         SingletonUsingEnum myCar = SingletonUsingEnum.INSTANCE;
         myCar.i = 5;
         myCar.getI();
-        System.out.println("hashcode for enam 1 is " + myCar.hashCode());
+        System.out.println("hashcode for enum 1 is " + myCar.hashCode());
 
         SingletonUsingEnum myCar1 = SingletonUsingEnum.INSTANCE;
         myCar1.i = 6;
         myCar.getI();
-        System.out.println("hashcode for enam 2 is " + myCar1.hashCode());
-
-
+        System.out.println("hashcode for enum 2 is " + myCar1.hashCode());
     }
-
+}
+enum SingletonUsingEnum {
+    INSTANCE;
+    int i;
+    public void getI(){
+        System.out.println("value :" + i);
+    }
 }
 
 /**
@@ -72,16 +76,15 @@ class SingletonReal implements Serializable, Cloneable {
 
     private SingletonReal() throws IllegalAccessException {
 
-        // todo stop reflaction breaking of singleton
-        if(singletonReal!=null) {
-            throw new IllegalAccessException("object not created by Reflaction");
-        }
+        // todo stop reflection breaking of singleton
+       /* if(singletonReal!=null) {
+            throw new IllegalAccessException("object not created by Reflection");
+        }*/
         System.out.println("created");
     }
 
     // todo stop deserialization breaking of singleton
     protected Object readResolve(){
-
         System.out.println("stop deserialization breaking of singleton");
         return singletonReal;
     }
@@ -106,13 +109,7 @@ class SingletonReal implements Serializable, Cloneable {
 
 }
 
-enum SingletonUsingEnum {
-    INSTANCE;
-    int i;
-    public void getI(){
-        System.out.println(i);
-    }
-}
+
 
 
 

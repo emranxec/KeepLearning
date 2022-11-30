@@ -15,7 +15,7 @@ public class Hibernate {
         Query query=session.createQuery("from Employee where email = :email");
         query.setParameter("email","imran@gmail.com");
         query.setCacheable(true);
-        session.getTransaction();
+        session.getTransaction().commit();
         session.close();
     }
 /*  public Employee getEmployeeByEmail(String empEmail) {

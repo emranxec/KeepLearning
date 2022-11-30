@@ -15,10 +15,8 @@ public class example {
 }
 
 class myThread implements Runnable{
-
-
     @Override
     public void run() {
-        System.out.println("Sridharan is smart");
+        System.out.println("Harridan is smart");
     }
 }
