@@ -14,6 +14,7 @@ public class Patterns {
     }
 
     static void pattern1(int n){
+        System.out.println("------pattern1------");
         for(int row= 1;row<=n;row++){
             for(int column=1 ; column<=n;column++){
                 System.out.print("* ");
@@ -22,6 +23,7 @@ public class Patterns {
         }
     }
     static void pattern2(int n){
+        System.out.println("------pattern2------");
         for(int row= 1;row<=n;row++){
             for(int column=1 ; column<=row;column++){
                 System.out.print("* ");
@@ -31,6 +33,7 @@ public class Patterns {
     }
 
     static void pattern3(int n){
+        System.out.println("------pattern3------");
         for(int row= n;row>=1;row--){
             for(int column=1 ; column<=row;column++){
                 System.out.print("* ");
@@ -39,6 +42,7 @@ public class Patterns {
         }
     }
     static void pattern4(int n){
+        System.out.println("------pattern4------");
         for(int row= 1;row<=n;row++){
             for(int column=1 ; column<=row;column++){
                 System.out.print(column + " ");
@@ -48,7 +52,7 @@ public class Patterns {
     }
 
     static void pattern5(int n){
-        int pattern=0;
+        System.out.println("------pattern5------");
         for(int row= 1;row<=n*2-1;row++){
             int rowInCol=row>n?2*n-row:row;
             for(int column=1 ; column<=rowInCol;column++){
@@ -59,6 +63,7 @@ public class Patterns {
     }
 
     static void pattern6(int n){
+        System.out.println("------pattern6------");
         for(int row= 1;row<=n*2-1;row++){
             int rowInCol=row>n?2*n-row:row;
             int noOfSpaces=n-rowInCol;
@@ -73,6 +78,7 @@ public class Patterns {
     }
 
     static void pattern7(int n){
+        System.out.println("------pattern7------");
         for(int row= 1;row<=n;row++){
             int noOfSpaces=n-row;
             for(int s=0;s<noOfSpaces;s++){

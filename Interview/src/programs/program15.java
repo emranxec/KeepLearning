@@ -12,25 +12,8 @@ public class program15 {
     }
 
     private static void pairs(int[] pairs,int k) {
-
-        //{1,2,3,4,5,6,7,8,9}
-        int count = 0;
-        Arrays.sort(pairs); // Sort array elements
-
-        int l = 0;
-        int r = 0;
-        while(r < pairs.length){
-            if(pairs[r]-pairs[l]==k){
-                count++;
-                l++;
-                r++;
-            }else if(pairs[r]-pairs[l]>k){
-                l++;
-            }else {
-                r++;
-            }
-
-        }
-        System.out.println(count);
+        int count=0;
+        Arrays.sort(pairs);
+        int l=0,r=0;
     }
 }

@@ -1,5 +1,7 @@
 package programs;
 
+import java.nio.channels.AcceptPendingException;
+
 public class designClass {
 
 
@@ -10,9 +12,10 @@ public class designClass {
 // new A(); // causes an exception
 // new B(); // works fine as this is the first instance of B
 // new B(); // causes an exception
-public static void main(String[] args) {
+public static void main(String[] args) throws IllegalAccessException {
 
     A a=new A();
+  //  A a1=new A();
     //A a1=new A();
     //A ab1=new B();
     //A ab2=new B();
@@ -24,33 +27,23 @@ public static void main(String[] args) {
 }
 
 class A{
-    static int ONE_OBJECT;
-    static boolean is_reset=false;
-    A(){
-        if(ONE_OBJECT>0 && !is_reset){
-            throw new RuntimeException("class already created BOSS!!");
-        }
-        if(!is_reset){
-            System.out.println("created A");
-        }
-        ONE_OBJECT++;
-    }
-
-    static void reset(){
-        is_reset=true;
+  public static String myInstance=null;
+    A() throws IllegalAccessException {
+       if(myInstance!=null){
+           throw new IllegalAccessException("cannot create duplicate");
+       }
+       myInstance= "Now init Done";
+        System.out.println(myInstance);
     }
 }
 
 class B extends A{
-    static int ONE_OBJECT_B;
-    static{
-        reset();
-    }
-    B(){
-        if(ONE_OBJECT_B>0){
-            throw new RuntimeException("class already created BOSS!!");
+    public static String mySecondInstance=null;
+        B() throws IllegalAccessException {
+        if(mySecondInstance!=null){
+            throw new IllegalAccessException("cannot create duplicate mySecondInstance");
         }
-        System.out.println("created B");
-        ONE_OBJECT_B++;
+        mySecondInstance= "Now mySecondInstance init Done";
+        System.out.println(mySecondInstance);
     }
 }

@@ -27,6 +27,7 @@ public class EmployeeSerialize implements Serializable {
         // make defensive copy of the mutable Date field
         if (phone.equals("9096919090")) {
             System.out.println("tring");
+            System.out.println("name :" + name);
         }
 
     }

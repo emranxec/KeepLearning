@@ -23,15 +23,16 @@ public class Threads {
         t2.start();
         t2.join();
 
-        /*ThreadGroup threadGroup=new ThreadGroup("newGroup");
+        ThreadGroup threadGroup=new ThreadGroup("newGroup");
 
         MyThread1 odd=new MyThread1(threadGroup,"MyThread1");
         odd.start();
 
         MyThread2 even=new MyThread2();
         even.start();
-*/
-/*        //thread cycle overhead and resource thrashing
+/*
+
+       //thread cycle overhead and resource thrashing
         ExecutorService e= Executors.newScheduledThreadPool(10);
         e.execute(myThread2);
 
@@ -40,6 +41,7 @@ public class Threads {
 
         List<Thread> t=new ArrayList<>();
         t.add(myThread1);
+*/
 
         Callable callable= (Callable) new Callable() {
             @Override
@@ -53,7 +55,7 @@ public class Threads {
         AtomicInteger atomicInteger=new AtomicInteger();
 
         System.out.println(atomicInteger.incrementAndGet());
-        System.out.println(atomicInteger.incrementAndGet());*/
+        System.out.println(atomicInteger.incrementAndGet());
 
 
     }
@@ -73,7 +75,21 @@ class MyThread1 extends Thread{
         for(int i=1;i<10;i+=2){
             System.out.println(i);
         }
+        int totalHits=callSelf();
+        System.out.println("total hits :" + totalHits);
        // System.out.println(threadGroup.getName() + " of group and thread running " + getName());
+    }
+
+    static int selfCalls=0;
+    static int totalHits=0;
+    public static synchronized int callSelf() {
+
+        if(selfCalls<5) {
+            selfCalls++;
+            System.out.println("called times :"+ selfCalls);
+            totalHits=callSelf();
+        }
+        return ++totalHits;
     }
 }
 

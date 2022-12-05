@@ -1,5 +1,6 @@
 package programs;
 
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class fibbonacci {
@@ -16,21 +17,20 @@ public class fibbonacci {
         Stream.iterate(new int[]{0,1},t->new int[]{t[1],t[0]+t[1]})
                 .limit(10)
                 .map(t->t[0])
-                .forEach(System.out::print);
+                .forEach(System.out::println);
     }
 
     private static void printFibbonacciUsingIterator(int n) {
-        int i=0,a=-1,b=1;
-        int c;
-        System.out.print("----using iterator: ------");
-        while (i < n) {
-            c = a + b;
-            System.out.print(c + ",");
+      int i=0,a=-1,b=1,c;
+        System.out.println("-----printFibbonacciUsingIterator--");
+      while(i<n){
+          c=a+b;
+          System.out.print(c+" ");
+          a=b;
+          b=c;
+          i++;
+      }
 
-            a = b;
-            b = c;
-            i++;
-        }
     }
 
     static void printFibbonacci(int n){

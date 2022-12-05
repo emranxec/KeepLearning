@@ -222,7 +222,7 @@
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
-2. [all the employee name from department joined in which year](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-all-the-employee-name-from-department--ab--which-department-has-maximum-employees-join-which-year)
+2. [all the employee name from department joined in which year](https://github.com/emranxec/KeepLearning/blob/ main/README.md#q-all-the-employee-name-from-department--ab--which-department-has-maximum-employees-join-which-year)
 3. [print all children and all parents](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-all-children-and-all-parents)
 4. [print 4th highest salary](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-print-4th-highest-salary)
 5. [write a query for self join](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-write-a-query-for-self-join)
@@ -716,16 +716,6 @@ class test {
     }
 }
  ```
-----
-### Q.  can mutable object is instance of immutable class? how to fix? 
-
-- can private constructer of immutable class always create a new object of mutable instance? 
-- getter of immutable class always return a new object of mutable instance? 
-- what if we have a mutable instance in your immutable class such as Date? 
-- in private constructor of your immutable class always? 
-- create a new instance of mutable field? 
-- and in getter always return a new instance of mutable field?
->
 ----
 ### Q. what is SAAS?
 > What is SaaS? Software as a service (or SaaS) is a way of delivering applications over the Internet—as a service. 
@@ -5648,5 +5638,47 @@ ORDER BY manager;
 >
 ----
 ### Q. how to secure microservices?
+>
+----
+### Q.  can mutable object is instance of immutable class? how to fix?
+
+- can private constructer of immutable class always create a new object of mutable instance?
+- getter of immutable class always return a new object of mutable instance?
+- what if we have a mutable instance in your immutable class such as Date?
+- in private constructor of your immutable class always?
+- create a new instance of mutable field?
+- and in getter always return a new instance of mutable field?
+>
+----
+### Q. how to secure microservices?
+>
+----
+### Q. how two threads communicate?
+>
+----
+### Q. how one thread pass details from to another method? 
+>
+----
+### Q. can one synchronized method call itself? is it reentrant?
+#### Reentrant Synchronization
+- Recall that a thread cannot acquire a lock owned by another thread. 
+- But a thread can acquire a lock that it already owns. 
+- Allowing a thread to acquire the same lock more than once enables reentrant synchronization. 
+- This describes a situation where synchronized code, directly or indirectly, invokes a method that also contains synchronized code, and both sets of code use the same lock. 
+- Without reentrant synchronization, synchronized code would have to take many additional precautions to avoid having a thread cause itself to block.
+----
+### Q. how to manage huge data as view in different microservice? 
+>
+----
+### Q. how to manage cache data?
+>
+----
+### Q. what is transactional propagation level
+>
+----
+### Q. hibernate evict method? any exception?
+>
+----
+### Q. 
 >
 ----

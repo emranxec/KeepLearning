@@ -12,7 +12,7 @@ public class program20 {
         Map<Employee, List<Address>> hashMap = new HashMap<>();
         Department department=new Department("IT",10);
         Employee employee=new Employee("A", department);
-        hashMap.put(new Employee("A", department),
+        hashMap.put(employee,
                 Arrays.asList(new Address("St1", "goa"), new Address("St2", "goa")));
 
         hashMap.put(new Employee("A", department),
