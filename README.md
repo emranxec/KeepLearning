@@ -5679,6 +5679,6 @@ ORDER BY manager;
 ### Q. hibernate evict method? any exception?
 >
 ----
-### Q. 
+### Q. x&y vs X&&Y
 >
 ----
