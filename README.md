@@ -5682,3 +5682,21 @@ ORDER BY manager;
 ### Q. x&y vs X&&Y
 >
 ----
+### Q. how do stream faster than loops?
+>
+----
+### Q. greedy algorithm problem?
+>
+----
+### Q. max item a truk can carry on a single trip from wearhouse
+>
+----
+### Q. time complexity hashmap with multiple values in the same bucket?
+>
+----
+### Q. optimise singleton for multithreading
+>
+----
+### Q. tricky question of oops
+>
+----
