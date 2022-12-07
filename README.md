@@ -5639,7 +5639,7 @@ ORDER BY manager;
 ----
 ### Q. how to secure microservices?
 >
-----
+---- 
 ### Q.  can mutable object is instance of immutable class? how to fix?
 
 - can private constructer of immutable class always create a new object of mutable instance?
@@ -5700,3 +5700,68 @@ ORDER BY manager;
 ### Q. tricky question of oops
 >
 ----
+### Q. explain system.out.println why cannot we call out directly?
+>
+----
+### Q. how JWT token is formed?
+>
+----
+### Q. traverse tree and find the top ancestor
+>
+----
+### Q. find all the combinations of sum from array?
+>
+----
+### Q. write all different ways to find prime number,fibonacci,palindrome,anagram?
+>
+----
+### Q. write all logic to find prime number,fibonacci,palindrome,anagram?
+>
+----
+### Q. what sorting algorithm for which scenarios?
+
+#### Selection Sort O(N2)
+- This sorting algorithm sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the beginning.
+##### when to use?
+- When the list is small.
+- When memory space is limited because it makes the minimum possible number of swaps during sorting.
+
+#### Bubble Sort 
+-  works by repeatedly swapping the adjacent elements if they are in the wrong order.
+- If we have total N elements, then we need to repeat the above process for N-1 times.
+
+##### when to use?
+- It works well with large datasets where the items are almost sorted because it takes only one iteration to detect whether the list is sorted or not.
+- This algorithm is fastest on an extremely small or nearly sorted set of data.
+
+#### Insertion Sort O(N2)
+-  It places an unsorted element at its suitable place in each iteration.
+##### when to use?
+- If the data is nearly sorted or when the list is small.
+- This algorithm is stable and it has fast running case when the list is nearly sorted.
+- space : O(1)
+
+#### Merge Sort (Divide and Conquer)
+-  It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves.
+
+##### when to use?
+- Merge sort is used when the data structure doesn’t support random access.
+- It is used where it is known that the data is similar data.
+- Merge sort is fast in the case of a linked list.
+- The main advantage of the merge sort is its stability, the elements compared equally retain their original order.
+
+#### Quick Sort (Divide and Conquer) (B =O(N*log N), W=O(N2) )
+- It picks an element as a pivot and partitions the given list around the picked pivot.
+##### when to use?
+- Quick sort is the fastest
+- Quicksort is probably more effective for datasets that fit in memory.
+- Quick Sort is an in-place sort (i.e. it doesn’t require any extra storage) so it is appropriate to use it for arrays.
+
+[When to use each Sorting Algorithm](https://www.geeksforgeeks.org/when-to-use-each-sorting-algorithms/)
+
+---- 
+### Q. Design microservice architecture for different domains (oyo)
+
+[hotel booking](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
+
+---- 
