@@ -79,6 +79,7 @@
 40. [Iterator and ListIterator? fail-fast vs fail-safe?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
 41. [Explain JVM, JRE, and JDK?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-jvm-jre-and-jdk)
 42. [can one synchronized method call itself? is it reentrant?](https://github.com/emranxec/KeepLearning#q-can-one-synchronized-method-call-itself-is-it-reentrant)
+
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
 2. [map-vs-flatmap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-map-vs-flatmap)
@@ -188,6 +189,7 @@
 4. [how-to-convert-monolithic-application-to-microservices](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-convert-monolithic-application-to-microservices)
 5. [explain-microservice-framework-netflix PENDING](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-microservice-framework-netflix)
 6. [mqs](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-mqs)
+7. [Design microservice architecture for different domains](https://github.com/emranxec/KeepLearning#q-design-microservice-architecture-for-different-domains-oyo)
 
 ## Programs
 1. [how-to-create-an-immutable-class](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-to-create-an-immutable-class)
@@ -5610,6 +5612,11 @@ ORDER BY manager;
 - This describes a situation where synchronized code, directly or indirectly, invokes a method that also contains synchronized code, and both sets of code use the same lock.
 - Without reentrant synchronization, synchronized code would have to take many additional precautions to avoid having a thread cause itself to block.
 ----
+### Q. Design microservice architecture for different domains (oyo)
+
+[hotel booking](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
+
+---- 
 ----STUDY----
 ----
 # self:
@@ -5761,9 +5768,3 @@ ORDER BY manager;
 ### Q. write all logic to find prime number,fibonacci,palindrome,anagram?
 >
 ----
-
-### Q. Design microservice architecture for different domains (oyo)
-
-[hotel booking](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
-
----- 
