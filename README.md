@@ -221,6 +221,8 @@
 27. [chocolate-distribution-problem](https://github.com/emranxec/KeepLearning#q-chocolate-distribution-problem)
 28. [two-threads-running-one-after-another](https://github.com/emranxec/KeepLearning#q-implement-two-threads-running-one-after-another)
 29. [Rearrange array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-rearrangearray)
+30. [prime number,fibonacci,palindrome,anagram](https://github.com/emranxec/KeepLearning#q-write-all-logic-to-find-prime-numberfibonaccipalindromeanagram)
+
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -5617,6 +5619,12 @@ ORDER BY manager;
 [hotel booking](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
 
 ---- 
+### Q. write all logic to find prime number,fibonacci,palindrome,anagram?
+
+[InterviewPrograms.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/practice/InterviewPrograms.java)
+
+----
+
 ----STUDY----
 ----
 # self:
@@ -5763,8 +5771,5 @@ ORDER BY manager;
 >
 ----
 ### Q. write all different ways to find prime number,fibonacci,palindrome,anagram?
->
-----
-### Q. write all logic to find prime number,fibonacci,palindrome,anagram?
 >
 ----
