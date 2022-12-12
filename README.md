@@ -78,7 +78,7 @@
 39. [How ArrayList internally works?](https://github.com/emranxec/KeepLearning#q-how-arraylist-internally-works)
 40. [Iterator and ListIterator? fail-fast vs fail-safe?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
 41. [Explain JVM, JRE, and JDK?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-jvm-jre-and-jdk)
-
+42. [can one synchronized method call itself? is it reentrant?](https://github.com/emranxec/KeepLearning#q-can-one-synchronized-method-call-itself-is-it-reentrant)
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
 2. [map-vs-flatmap](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-map-vs-flatmap)
@@ -5602,6 +5602,14 @@ ORDER BY manager;
 [When to use each Sorting Algorithm](https://www.geeksforgeeks.org/when-to-use-each-sorting-algorithms/)
 
 ---- 
+### Q. can one synchronized method call itself? is it reentrant?
+#### Reentrant Synchronization
+- Recall that a thread cannot acquire a lock owned by another thread.
+- But a thread can acquire a lock that it already owns.
+- Allowing a thread to acquire the same lock more than once enables reentrant synchronization.
+- This describes a situation where synchronized code, directly or indirectly, invokes a method that also contains synchronized code, and both sets of code use the same lock.
+- Without reentrant synchronization, synchronized code would have to take many additional precautions to avoid having a thread cause itself to block.
+----
 ----STUDY----
 ----
 # self:
@@ -5701,14 +5709,7 @@ ORDER BY manager;
 ### Q. how one thread pass details from to another method? 
 >
 ----
-### Q. can one synchronized method call itself? is it reentrant?
-#### Reentrant Synchronization
-- Recall that a thread cannot acquire a lock owned by another thread. 
-- But a thread can acquire a lock that it already owns. 
-- Allowing a thread to acquire the same lock more than once enables reentrant synchronization. 
-- This describes a situation where synchronized code, directly or indirectly, invokes a method that also contains synchronized code, and both sets of code use the same lock. 
-- Without reentrant synchronization, synchronized code would have to take many additional precautions to avoid having a thread cause itself to block.
-----
+
 ### Q. how to manage huge data as view in different microservice? 
 >
 ----
