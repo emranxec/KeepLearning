@@ -222,7 +222,7 @@
 28. [two-threads-running-one-after-another](https://github.com/emranxec/KeepLearning#q-implement-two-threads-running-one-after-another)
 29. [Rearrange array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-rearrangearray)
 30. [prime number,fibonacci,palindrome,anagram](https://github.com/emranxec/KeepLearning#q-write-all-logic-to-find-prime-numberfibonaccipalindromeanagram)
-
+31. [find all the combinations of sum from array?](https://github.com/emranxec/KeepLearning#q-find-all-the-combinations-of-sum-from-array)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -5624,6 +5624,11 @@ ORDER BY manager;
 [InterviewPrograms.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/practice/InterviewPrograms.java)
 
 ----
+### Q. find all the combinations of sum from array?
+
+[FindCombinations.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/FindCombinations.java)
+
+----
 
 ----STUDY----
 ----
@@ -5767,6 +5772,4 @@ ORDER BY manager;
 ### Q. traverse tree and find the top ancestor
 >
 ----
-### Q. find all the combinations of sum from array?
->
-----
+
