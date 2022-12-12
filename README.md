@@ -5770,6 +5770,3 @@ ORDER BY manager;
 ### Q. find all the combinations of sum from array?
 >
 ----
-### Q. write all different ways to find prime number,fibonacci,palindrome,anagram?
->
-----
