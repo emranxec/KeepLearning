@@ -81,6 +81,7 @@
 41. [Explain JVM, JRE, and JDK?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-jvm-jre-and-jdk)
 42. [can one synchronized method call itself? is it reentrant?](https://github.com/emranxec/KeepLearning#q-can-one-synchronized-method-call-itself-is-it-reentrant)
 43. [ explain system.out.println why cannot we call out directly?](https://github.com/emranxec/KeepLearning#q-explain-systemoutprintln-why-cannot-we-call-out-directly)
+44. [optimise singleton for multithreading](https://github.com/emranxec/KeepLearning#q-optimise-singleton-for-multithreading)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -260,7 +261,7 @@
   - Data members in the class must be declared private so that direct access is not allowed.
   - Data members in the class must be declared as final so that we can’t change the value of it after object creation.
   - A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
-  - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
+  - Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference
 
 [programs.utilClasses.ImmutableOne.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs.utilClasses.ImmutableOne.java)
 
@@ -559,7 +560,7 @@ BlogRespository blogRespository;
 - It increases customer satisfaction.
 - It reduces downtime.
 - It boosts productivity.
-- It improves Cyber security Management.
+- It improves Cybersecurity Management.
 - It increases the conversion rate.
 
 ##### In Maven:
@@ -692,7 +693,7 @@ public class ResourceController {
 
 #### This design pattern has been widely used in JDK, such as
 - **getInstance()** method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
-- All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using **valueOf()** method.
+- All the wrapper classes like Integer, Boolean etc., in Java uses this pattern to evaluate the values using **valueOf()** method.
 - java.nio.charset.**Charset.forName()**, 
 - java.sql.**DriverManager#getConnection()**, 
 - java.net.**URL.openConnection()**, 
@@ -1166,7 +1167,7 @@ public class AnnotationExample {
 - **_how do we implement queries in microservice architecture?_**
 > CQRS suggests splitting the application into two parts — the command side and the query side.
 
-> The command side handles the Create, Update, and Delete requests.
+> The command side handles the Creation, Update, and Delete requests.
 
 > The query side handles the query part by using the materialized views.
 
@@ -1307,25 +1308,25 @@ Dependencies can be classified into:
 >It is an open application protocol for maintaining and accessing distributed directory information services over an Internet Protocol.
 
 #### Single sign-on
->This feature allows a user to access multiple applications with the help of single account(user name and password).
+>This feature allows a user to access multiple applications with the help of single account(username and password).
 
 #### JAAS (Java Authentication and Authorization Service) LoginModule
 >It is a Pluggable Authentication Module implemented in Java. Spring Security supports it for its authentication process.
 
 #### Basic Access Authentication
->Spring Security supports Basic Access Authentication that is used to provide user name and password while making request over the network.
+>Spring Security supports Basic Access Authentication that is used to provide username and password while making request over the network.
 
 #### Digest Access Authentication
->This feature allows us to make authentication process more secure than Basic Access Authentication. It asks to the browser to confirm the identity of the user before sending sensitive data over the network.
+>This feature allows us to make authentication process more secure than Basic Access Authentication. It asks the browser to confirm the identity of the user before sending sensitive data over the network.
 
 #### Remember-me
->Spring Security supports this feature with the help of HTTP Cookies. It remember to the user and avoid login again from the same machine until the user logout.
+>Spring Security supports this feature with the help of HTTP Cookies. It remembers to the user and avoid login again from the same machine until the user logout.
 
 #### Web Form Authentication
 >In this process, web form collect and authenticate user credentials from the web browser. Spring Security supports it while we want to implement web form authentication.
 
 #### Authorization
->Spring Security provides the this feature to authorize the user before accessing resources. It allows developers to define access policies against the resources.
+>Spring Security provides the feature to authorize the user before accessing resources. It allows developers to define access policies against the resources.
 
 #### Software Localization
 >This feature allows us to make application user interface in any language.
@@ -1413,7 +1414,7 @@ try {Class.forName("MyFirstJavaClass");
 ----
 ### Q. is static method override possible?
 > We can declare static methods with the same signature in the subclass, 
-> but it is not considered overriding as there won't be any run-time polymorphism. Hence the answer is 'No
+> but it is not considered overriding as there won't be any run-time polymorphism. Hence, the answer is 'No
 ----
 ### Q. explain save,update, save and persist methods?
 
@@ -1517,7 +1518,7 @@ public ResponseEntity<Object> getOneParameterMap() {
 }
 ```
 ----
-### Q. when to used native query & hibernate query?
+### Q. when to use native query & hibernate query?
 ###### You do not need to create a native query unless you want to. 
 
 > JPQL eventually is translated into SQL by the framework but the framework lets you call the native query also. 
@@ -1645,7 +1646,7 @@ tx = session.beginTransaction();
 > React Is Faster Than jQuery. One of the biggest things that React has going for it is the use of the Virtual DOM (Document Object Model) instead of the traditional DOM. While jQuery works with the DOM directly, React uses the virtual DOM which is what makes React so much faster.
 
 #### Is Angular better than React? 
->Angular is better than React if your application is enterprise-grade and you need to incorporate complex functionalities like progressive, single-page, and native web apps. However, React specializes in creating UI components and can be used in any application, including single-page apps
+>Angular is better than React if your application is enterprise-grade, and you need to incorporate complex functionalities like progressive, single-page, and native web apps. However, React specializes in creating UI components and can be used in any application, including single-page apps
 ----
 ### Q. what is bootstrap?
 > Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. 
@@ -1667,7 +1668,7 @@ tx = session.beginTransaction();
 
 - Provide Loose Coupling-
 
->Service layer can also be used to serve loose coupling in the application.Suppose your controller has 50 methods and in turn it calls 20 Dao methods,Now at later point you decide to change the Dao methods serving these controllers.You need to change all the 50 methods in controller. Instead if you have 20 service methods calling those 20 Dao methods, you need to make change in only 20 Service methods to point to a new Dao.
+>Service layer can also be used to serve loose coupling in the application.Suppose your controller has 50 methods and in turn it calls 20 Dao methods,Now at later point you decide to change the Dao methods serving these controllers.You need to change all the 50 methods in controller. Instead, if you have 20 service methods calling those 20 Dao methods, you need to make change in only 20 Service methods to point to a new Dao.
     
 [why-to-use-service-layer-in-spring-mvc](https://blog1.westagilelabs.com/why-to-use-service-layer-in-spring-mvc-5f4fc52643c0)
 
@@ -1683,7 +1684,7 @@ tx = session.beginTransaction();
 
 ----
 ### Q. What is docker?
->Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
+>Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure, so you can deliver software quickly.
 
 #### What can I use Docker for?
 - Fast, consistent delivery of your applications
@@ -1848,7 +1849,7 @@ ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ### Q. what is functional interface?
 [functional-interfaces-java](https://www.geeksforgeeks.org/functional-interfaces-java/?ref=lbp)
 ----
-### Q. why serialize a object? How to serialize and deserialize object? 
+### Q. why serialize an object? How to serialize and deserialize object? 
 ### Q. explain Serialisation, UUID and its concepts?
 
 - You can think of serialization as the process of converting an **object instance into a sequence of bytes** (which may be binary or not depending on the implementation).
@@ -2276,7 +2277,7 @@ throw new RuntimeException();
 
 #### Finalization
 - Just before destroying an object, Garbage Collector calls finalize() method on the object to perform cleanup activities.
-- The finalize() method is never invoked more than once for any object.
+- To finalize() method is never invoked more than once for any object.
 
 [garbage-collection-java](https://www.geeksforgeeks.org/garbage-collection-java/)
 
@@ -2430,9 +2431,9 @@ entityManager.createQuery("select f from Foo f")
 
 ----
 ### Q. MQS?
->A message queue is mostly meant for asynchronous things where you dont have to wait for the response. 
+>A message queue is mostly meant for asynchronous things where you don't have to wait for the response. 
 
->You could block the caller until a response is sought, but thats typically what an MQ is not meant for. 
+>You could block the caller until a response is sought, but that's typically what an MQ is not meant for. 
 
 >You would use it only in cases where a user is NOT waiting for an output. A webservice is the opposite. 
 
@@ -2444,7 +2445,7 @@ entityManager.createQuery("select f from Foo f")
 
 >There are no constraints regarding the placement of the MQs. 
 
->Just like webservices they can be anywhere and you can write and read from the Queue.
+>Just like webservices they can be anywhere, and you can write and read from the Queue.
 
 ##### Benefits of Message Queues
 - Better performance
@@ -2497,7 +2498,7 @@ entityManager.createQuery("select f from Foo f")
 - We can add jars and other dependencies of the project easily using the help of maven.
 - Maven provides project information (log document, dependency list, unit test reports etc.)
 - Maven is very helpful for a project while updating central repository of JARs and other dependencies.
-- we can build any number of projects into output types like the JAR, WAR etc without doing any scripting.
+- we can build any number of projects into output types like the JAR, WAR etc. without doing any scripting.
 - Using maven we can easily integrate our project with source control system (such as Subversion or Git).
 
 ##### Core Concepts of Maven?
@@ -2850,7 +2851,7 @@ public class UniversityController {
 - Both annotations can be used together
 - @Qualifier has higher priority than @Primary annotation
 
-##### if we dont use both primary and qualifier and have multiple beans instances?
+##### if we don't use both primary and qualifier and have multiple beans instances?
 > When we run the integration test, an org.springframework.beans.factory.NoUniqueBeanDefinitionException will be thrown.
 
 > This will happen because the application context will find two bean definitions of type University, 
@@ -2936,7 +2937,7 @@ public class TwoWheeler extends Vehicle{}
 public class FourWheeler extends Vehicle{}
 ```
 
-> @Inheritance - It is used to define the type of inheritance used in hibernate and it is defined in the parent class.
+> @Inheritance - It is used to define the type of inheritance used in hibernate, and it is defined in the parent class.
 
 >@DiscriminatorValue - This annotation is used to specify the DType column name. Here we have defined it as Bike  
 > in case of TwoWheeler.java and Car in case of FourWheeler.java
@@ -2964,7 +2965,7 @@ public class FourWheeler extends Vehicle{}
 > Developers, architects, and operations people are driven by performance. **They want to address the technical and 
 > business problems they see using the best tools available**. If you want to attract top talent – and keep the talent 
 > you have – it’s important to keep up-to-date on current ideas in IT. That means being ready to start working with 
-> a microservices architecture.
+> a microservices' architecture.
 
 - Reduce costs
 > **Change in one place affects other aspects**. This means a lot more work for developers and operations professionals
@@ -3216,7 +3217,7 @@ public class DevDatasourceConfig{}
 2. A table can have one and only one Primary Key, while there could be multiple unique keys inside a single
    table.
 3. Primary Key can not have Null values while Unique key column can contain a Null value
-4. **Primary key creates the Clustered index**, but _unique key creates the Non clustered index_.
+4. **Primary key creates the Clustered index**, but _unique key creates the Non-clustered index_.
 
 ----
 ### Q. Why do we need indexing on database table columns?
@@ -3284,7 +3285,7 @@ triggers will be fired and no rollback.
 > Non-Clustered Index contains pointers to the data that is stored in the data page. It is a kind of index backside
 > of the book where you see only the reference of a kind of data.
 
-> Clustered index usually provides faster data retrieval than the non-clustered index. Moreover clustered indexes
+> Clustered index usually provides faster data retrieval than the non-clustered index. Moreover, clustered indexes
 > provides faster access to the contiguous rows because those rows are present physically adjacent in the actual
 > table
 
@@ -3408,7 +3409,7 @@ session.close();
 ### Q. What are different types of Http Status Codes?
 
 - 1xx - **Informational** Status Code. 
->It means request has been received and process is continuing. (Its rarely used in production)
+>It means request has been received and process is continuing. (It's rarely used in production)
 
 - 2xx - **Success**. 
 > Action was successfully received, understood and accepted.
@@ -3430,7 +3431,7 @@ session.close();
 - 5xx - **Server Error**
 1. 500 - Internal Server Error, server encountered unexpected condition 
 2. 501 - Not Implemented 
-3. 503 - Service Unavailable (may be down for maintenance)
+3. 503 - Service Unavailable (maybe down for maintenance)
 
 ----
 ### Q. What is Inversion of Control (or Dependency Injection)?
@@ -3690,12 +3691,12 @@ persons.add(new Person("Ayesha","Siddiqua", 22));
   threads can work on the same String object without any data corruption. There is **absolutely no need to
   synchronize** the code because of String objects.
 * StringPooling is possible only because of immutability because the underlying contents of the String will
-  never change. This helps **reducing the overall memory footprint** of the application using lots of String objects.
+  never change. This helps **to reduce the overall memory footprint** of the application using lots of String objects.
 * Hash code for **Immutable objects** are calculated lazily on first usage and then **cached for future reference.** 
   This gives the **benefit of performance** when we use Immutable Key's in any hashing data structure.
 
 ----
-### Q. We have an Application and we want that only Single Instance should run for that Application. If Application is already running then second instance should never be started. How would you handle this in Java?
+### Q. We have an Application, and we want that only Single Instance should run for that Application. If Application is already running then second instance should never be started. How would you handle this in Java?
 >There are two main ways to handle such scenario in Java -
 1. Use a Socket networking in your application and start a server socket on a predefined port. When second
 instance try to start up then check if **the port os already occupied** or not and accordingly take the decision.
@@ -3824,7 +3825,7 @@ System.out.println( Arrays.stream(myInt) //IntStream
 - Pessimistic
 > This approach is found to use where there are more transaction conflicts
 
-> It is suitable for a small database or a table which has less records
+> It is suitable for a small database or a table which has fewer records
 - Optimistic
 > This approach is found to use where there are fewer transaction conflicts or very rare.
 
@@ -4006,8 +4007,8 @@ session.merge(savedPersonEntity); //address also merge
 session.flush();
 ```
 - REMOVE
->  propagates the remove operation from parent to child entity. Similar to JPA's CascadeType.REMOVE,
-> we have CascadeType.DELETE, which is specific to Hibernate
+>  propagates the remove operation from parent to child entity. Similar to JPA's CascadeType. REMOVE,
+> we have CascadeType. DELETE, which is specific to Hibernate
 ```
 Person savedPersonEntity = session.find(Person.class, personId);
 session.remove(savedPersonEntity);
@@ -4046,7 +4047,7 @@ session.flush();
 - @Repository (on class level) (form of @Component)
 >  The @Repository annotation works as marker for any class that fulfills the role of repository or Data Access Object.
 
-> This annotation has a automatic translation feature. 
+> This annotation has an automatic translation feature. 
 
 > For
 > example, when an exception occurs in
@@ -4188,9 +4189,9 @@ private String studentAddress;
 ### Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
 1. You must have a default no-argument constructor for your persistent classes and there should be getXXX() (i.e accessor/getter) and setXXX( i.e. mutator/setter)
 methods for all your persistable instance variables.
-2. You should implement the equals() and hashCode() methods based on your business key and it is important not to use the id field in your equals() and hashCode()
+2. You should implement the equals() and hashCode() methods based on your business key, and it is important not to use the id field in your equals() and hashCode()
 definition if the id field is a surrogate key (i.e. Hibernate managed identifier). This is because the Hibernate only generates and sets the field when saving the object.
-3. It is recommended to implement the Serializable interface. This is potentially useful if you want to migrate around a multi-processor cluster. 
+3. It is recommended to implement the Serializable interface. This is potentially useful if you want to migrate around a multiprocessor cluster. 
 4. The persistent class should not be final because if it is final then lazy loading cannot be used by creating proxy objects. 
 5. Use XDoclet tags for generating your *.hbm.xml files or Annotations (JDK 1.5 onwards), which are less verbose than *.hbm.xml files.
 
@@ -4201,13 +4202,13 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 >But if there was not such object in the database then the method session.load(..) throws an exception whereas session.get(&) returns null.
 
 #### get
-> It object not found for the given identifier then it will return null object
+> It objects not found for the given identifier then it will return null object
 
 > It returns fully initialized object so this method eager load the object
 
-> It is slower than load() because it return fully initialized object which impact the performance of the application
+> It is slower than load() because it returns fully initialized object which impact the performance of the application
 
-> If you are not sure that object exist then use get() method
+> If you are not sure that object exists then use get() method
 
 #### load
 > It will throw object not found exception
@@ -4216,7 +4217,7 @@ definition if the id field is a surrogate key (i.e. Hibernate managed identifier
 
 > It is slightly faster.
 
-> If you are sure that object exist then use load() method.
+> If you are sure that object exists then use load() method.
 ```java
 public class LoadGetExample {
 public static void main(String[] args) {
@@ -4250,7 +4251,7 @@ sessionFactory.close();
 
 ----
 ### Q. Singleton scope in spring VS singleton class in java?
-> Singleton scope in Spring is not same as singleton pattern. Some of the main differences between these 2 are
+> Singleton scope in Spring is not same as singleton pattern. Some main differences between these 2 are
 
 - Singleton pattern ensures one instance of a particular class of per class loader.
 - Spring Singleton is  “per container per bean”.
@@ -4577,11 +4578,11 @@ System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(data));
 > it will update or insert into your tables in the running transaction, **but it may not commit those changes.**
 
 - Commit(): 
-> Commit will make the database commit.When you have a persisted object and you change a value on it, 
+> Commit will make the database commit.When you have a persisted object, and you change a value on it, 
 
 > it becomes dirty and hibernate needs to flush these changes to your persistence layer.
 
-> So You should commit but it also **ends the unit of work.**
+> So You should commit, but it also **ends the unit of work.**
 
 ----
 ### Q. How ArrayList internally works?
@@ -4617,7 +4618,7 @@ System.out.println(department.getName());
 > where it lays down with all the data applying to classes(non-instance data). Starting from Java 8 the PermGen became - Metaspace.
 
 >The difference is that Metaspace is auto-growing space, 
-> while PermGen has a fixed Max size, and this space is shared among all of the instances.
+> while PermGen has a fixed Max size, and this space is shared among all the instances.
 
 > Static methods are stored in Metaspace space of native heap as they are associated to the class 
 > in which they reside not to the objects of that class. But their local variables and the passed 
@@ -5690,6 +5691,51 @@ System.out.println("hello");
 ```
 
 ----
+### Q. optimise singleton for multithreading
+
+```java
+class Foo {
+ private Helper helper;
+
+ public Helper getHelper() {
+  if (helper == null) {
+   helper = new Helper();
+  }
+  return helper;
+ }
+
+ // other functions and members...
+}
+```
+
+> There are three ways through which we can achieve thread safety.
+
+1. Create the instance variable at the time of class loading.
+2. Synchronize the getInstance() method.
+3. Use synchronized block inside the if loop and volatile variable
+
+```java
+class Foo {
+ private volatile Helper helper;
+
+ public Helper getHelper() {
+  Helper localRef = helper;
+  if (localRef == null) {
+   synchronized (this) {
+    localRef = helper;
+    if (localRef == null) {
+     helper = localRef = new Helper();
+    }
+   }
+  }
+  return localRef;
+ }
+
+ // other functions and members...
+}
+```
+
+----
 ----STUDY----
 ----
 # self:
@@ -5817,9 +5863,7 @@ System.out.println("hello");
 ### Q. time complexity hashmap with multiple values in the same bucket?
 >
 ----
-### Q. optimise singleton for multithreading
->
-----
+
 ### Q. tricky question of oops
 >
 ----
