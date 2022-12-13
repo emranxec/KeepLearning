@@ -82,6 +82,7 @@
 42. [can one synchronized method call itself? is it reentrant?](https://github.com/emranxec/KeepLearning#q-can-one-synchronized-method-call-itself-is-it-reentrant)
 43. [ explain system.out.println why cannot we call out directly?](https://github.com/emranxec/KeepLearning#q-explain-systemoutprintln-why-cannot-we-call-out-directly)
 44. [optimise singleton for multithreading](https://github.com/emranxec/KeepLearning#q-optimise-singleton-for-multithreading)
+45. [time complexity hashmap with multiple values in the same bucket?](https://github.com/emranxec/KeepLearning#q-time-complexity-hashmap-with-multiple-values-in-the-same-bucket)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -5736,6 +5737,10 @@ class Foo {
 ```
 
 ----
+### Q. time complexity hashmap with multiple values in the same bucket?
+> You could just return 0(hashcode) for all objects, but that will mean the hashing (both storage and retrieval)
+> will become O(n) instead of O(1) ... or in lay terms, it will be dog slow.
+----
 ----STUDY----
 ----
 # self:
@@ -5860,9 +5865,7 @@ class Foo {
 ### Q. max item a truk can carry on a single trip from wearhouse
 >
 ----
-### Q. time complexity hashmap with multiple values in the same bucket?
->
-----
+
 
 ### Q. tricky question of oops
 >
