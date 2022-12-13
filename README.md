@@ -223,6 +223,7 @@
 29. [Rearrange array](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-rearrangearray)
 30. [prime number,fibonacci,palindrome,anagram](https://github.com/emranxec/KeepLearning#q-write-all-logic-to-find-prime-numberfibonaccipalindromeanagram)
 31. [find all the combinations of sum from array?](https://github.com/emranxec/KeepLearning#q-find-all-the-combinations-of-sum-from-array)
+32. [traverse tree and find the top ancestor](https://github.com/emranxec/KeepLearning#q-traverse-tree-and-find-the-top-ancestor)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -5629,6 +5630,11 @@ ORDER BY manager;
 [FindCombinations.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/FindCombinations.java)
 
 ----
+### Q. traverse tree and find the top ancestor
+
+[FindAncestor.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/FindAncestor.java)
+
+----
 
 ----STUDY----
 ----
@@ -5769,7 +5775,5 @@ ORDER BY manager;
 ### Q. how JWT token is formed?
 >
 ----
-### Q. traverse tree and find the top ancestor
->
-----
+
 
