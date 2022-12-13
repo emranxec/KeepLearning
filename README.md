@@ -80,6 +80,7 @@
 40. [Iterator and ListIterator? fail-fast vs fail-safe?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-difference-between-iterator-and-listiterator-fail-fast-vs-fail-safe)
 41. [Explain JVM, JRE, and JDK?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-explain-jvm-jre-and-jdk)
 42. [can one synchronized method call itself? is it reentrant?](https://github.com/emranxec/KeepLearning#q-can-one-synchronized-method-call-itself-is-it-reentrant)
+43. [ explain system.out.println why cannot we call out directly?](https://github.com/emranxec/KeepLearning#q-explain-systemoutprintln-why-cannot-we-call-out-directly)
 
 ## Java 8
 1. [what-is-sequential--parallel-streams](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-is-sequential--parallel-streams)
@@ -5666,6 +5667,29 @@ var JTW = HEADER_HASH + '.' + PAYLOAD_HASH + '.' + SIGNATURE_HASH;
 [So what the heck is JWT or JSON Web Token?](https://medium.com/jspoint/so-what-the-heck-is-jwt-or-json-web-token-dca8bcb719a6)
 
 ----
+### Q. explain system.out.println why cannot we call out directly?
+> It is just a convenient way to get hold of the PrintStream object for writing to standard output.
+
+> It depends on how you obtained the PrintStream object.
+
+> System.out == PrintStream
+
+> println() is a method in PrintStream class
+
+> PrintStream class which is defined as static constant in System
+
+> But if you dont want to use System class, you need to create the PrintStream object by giving the standard output address.
+
+> below code does same task
+```
+public void sayHello(PrintStream ps) {
+ps.println("hello");
+}
+sayHello(System.out);
+System.out.println("hello");
+```
+
+----
 ----STUDY----
 ----
 # self:
@@ -5799,9 +5823,7 @@ var JTW = HEADER_HASH + '.' + PAYLOAD_HASH + '.' + SIGNATURE_HASH;
 ### Q. tricky question of oops
 >
 ----
-### Q. explain system.out.println why cannot we call out directly?
->
-----
+
 
 
 
