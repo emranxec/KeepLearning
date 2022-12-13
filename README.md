@@ -24,6 +24,7 @@
 8. [PUT vs PATCH](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-put-vs-patch)
 9. [What are the key components of an HTTP Request?](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-what-are-the-key-components-of-an-http-request)
 10. [Design a complete webservice](https://github.com/emranxec/KeepLearning/blob/main/Microservices/RestfulAPI.md)
+11. [how JWT token is formed?](https://github.com/emranxec/KeepLearning#q-how-jwt-token-is-formed)
 
 ## DSA & design
 1. [Design patterns](https://github.com/emranxec/KeepLearning/blob/main/designPattern/interviewQuestions.md)
@@ -5635,7 +5636,36 @@ ORDER BY manager;
 [FindAncestor.java](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/FindAncestor.java)
 
 ----
+### Q. how JWT token is formed?
+> JWT is created with a secret key and that secret key is private to you which means you will never reveal that to the public or inject inside the JWT token.
 
+> When you receive a JWT from the client, you can verify that JWT with this that secret key stored on the server.
+
+> Any modification to the JWT will result in verification (JWT validation) failure.
+
+- A JWT is simply a string but it contains three distinct parts separated with dots (.).
+```shell
+var header = '{"typ":"JWT", "alg":"HS256"}';
+var payload = '{"userId":"1101001", "name":"John Doe", "exp":"Sun Apr 25 2018 22:42:28 GMT+0530 (India Standard Time)"}';
+
+var HEADER_HASH = base64(header);
+var PAYLOAD_HASH = base64(payload);
+var SIGNATURE_HASH = base64(signature);
+var JTW = HEADER_HASH + '.' + PAYLOAD_HASH + '.' + SIGNATURE_HASH;
+//JTW ~ xxxx.yyyy.zzzz
+```
+#### signature
+> signature is an encrypted string.
+
+> Whatever algorithm you choose in the header part, you need to encrypt the first two parts of JWT which is base64(header) + '.' + base64(payload) with that algorithm.
+
+> This is the only part of JWT which is not publically readable because it is encrypted with a secret key.
+
+> Unless someone has the secret key, they can not decrypt this information.
+
+[So what the heck is JWT or JSON Web Token?](https://medium.com/jspoint/so-what-the-heck-is-jwt-or-json-web-token-dca8bcb719a6)
+
+----
 ----STUDY----
 ----
 # self:
@@ -5772,8 +5802,6 @@ ORDER BY manager;
 ### Q. explain system.out.println why cannot we call out directly?
 >
 ----
-### Q. how JWT token is formed?
->
-----
+
 
 
