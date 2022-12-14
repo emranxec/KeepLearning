@@ -228,6 +228,7 @@
 30. [prime number,fibonacci,palindrome,anagram](https://github.com/emranxec/KeepLearning#q-write-all-logic-to-find-prime-numberfibonaccipalindromeanagram)
 31. [find all the combinations of sum from array?](https://github.com/emranxec/KeepLearning#q-find-all-the-combinations-of-sum-from-array)
 32. [traverse tree and find the top ancestor](https://github.com/emranxec/KeepLearning#q-traverse-tree-and-find-the-top-ancestor)
+33. [max item a truck can carry on a single trip from wearhouse](https://github.com/emranxec/KeepLearning#q-max-item-a-truck-can-carry-on-a-single-trip-from-wearhouse)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
@@ -5741,6 +5742,11 @@ class Foo {
 > You could just return 0(hashcode) for all objects, but that will mean the hashing (both storage and retrieval)
 > will become O(n) instead of O(1) ... or in lay terms, it will be dog slow.
 ----
+### Q. max item a truck can carry on a single trip from wearhouse
+
+[MaximumUnitsTruck](https://github.com/emranxec/KeepLearning/blob/main/Interview/src/programs/MaximumUnitsTruck.java)
+
+----
 ----STUDY----
 ----
 # self:
@@ -5862,9 +5868,7 @@ class Foo {
 ### Q. greedy algorithm problem?
 >
 ----
-### Q. max item a truck can carry on a single trip from wearhouse
->
-----
+
  
 ### Q. tricky question of oops
 >
