@@ -5862,11 +5862,10 @@ class Foo {
 ### Q. greedy algorithm problem?
 >
 ----
-### Q. max item a truk can carry on a single trip from wearhouse
+### Q. max item a truck can carry on a single trip from wearhouse
 >
 ----
-
-
+ 
 ### Q. tricky question of oops
 >
 ----
