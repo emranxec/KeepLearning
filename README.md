@@ -5777,8 +5777,9 @@ class Foo {
 > Finding top 1 million numbers from a given large file containing 5 billion numbers in O(n)
 
 ----
-
-
+### Q. tricky question of oops
+>
+----
 ### Q. Qualifier replacement
 >
 ----
@@ -5866,11 +5867,6 @@ class Foo {
 >
 ----
 ### Q. greedy algorithm problem?
->
-----
-
- 
-### Q. tricky question of oops
 >
 ----
 
