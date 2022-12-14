@@ -228,7 +228,7 @@
 30. [prime number,fibonacci,palindrome,anagram](https://github.com/emranxec/KeepLearning#q-write-all-logic-to-find-prime-numberfibonaccipalindromeanagram)
 31. [find all the combinations of sum from array?](https://github.com/emranxec/KeepLearning#q-find-all-the-combinations-of-sum-from-array)
 32. [traverse tree and find the top ancestor](https://github.com/emranxec/KeepLearning#q-traverse-tree-and-find-the-top-ancestor)
-33. [max item a truck can carry on a single trip from wearhouse](https://github.com/emranxec/KeepLearning#q-max-item-a-truck-can-carry-on-a-single-trip-from-wearhouse)
+33. [max item a truck can carry on a single trip from warehouse](https://github.com/emranxec/KeepLearning#q-max-item-a-truck-can-carry-on-a-single-trip-from-wearhouse)
 
 ## SQL Queries
 1. [nth-highest-age-from-employee-table-using-sql](https://github.com/emranxec/KeepLearning/blob/main/README.md#q-how-would-you-fetch-employee-with-nth-highest-age-from-employee-table-using-sql)
